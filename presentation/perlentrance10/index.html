@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://localhost:3000/perl_entrance_10.md#/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <title></title>
+  <link href="http://localhost:3000/reveal/css/reveal.min.css" media="all" rel="stylesheet">
+  <link href="http://localhost:3000/reveal/css/theme/beige.css" media="all" rel="stylesheet">
+    <link href="http://localhost:3000/reveal/css/print/paper.css" media="print" rel="stylesheet">
+  <link href="http://localhost:3000/reveal/lib/css/zenburn.css" media="all" rel="stylesheet">
+  <link href="http://localhost:3000/app/app.css" media="all" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/style.css"><script type="text/javascript" charset="utf-8" src="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/page_context.js"></script></head>
+<body screen_capture_injected="true" style="-webkit-transition: -webkit-transform 0.8s ease;">
+<div id="md2reveal" class="reveal center">
+  <div class="slides">
+<section style="top: 0px; display: block;" class="stack present">
+      <section style="top: -369.5px; display: block;" class="present">
+<h1><img src="./index_files/perl-entrance_t.png" alt="Perl入学式"></h1>
+
+<ul>
+<li>スペースキーを押すと進み、ESCキーを押すと全体を俯瞰できます。</li>
+<li><a href="https://www.google.com/intl/ja/chrome/browser/" class="roll"><span data-title="Chrome">Chrome</span></a>や<a href="http://www.mozilla.jp/firefox/" class="roll"><span data-title="Firefox">Firefox</span></a>でご覧ください。</li>
+</ul>
+
+</section>
+
+</section>
+<section style="top: 0px; display: block;" class="future stack">
+      <section style="top: -20px;">
+<h1>Perl入学式 #10</h1>
+
+<p><a href="http://www.perl-entrance.org/" class="roll"><span data-title="http://www.perl-entrance.org">http://www.perl-entrance.org</span></a></p>
+
+<ul>
+<li>日時
+<ul>
+<li>2012年11月25日（日） 14:00 - 17:00</li>
+</ul></li>
+<li>会場
+<ul>
+<li>Joe'sビジネスセンター</li>
+<li><a href="http://www.joeswebhosting.net/" class="roll"><span data-title="http://www.joeswebhosting.net">http://www.joeswebhosting.net</span></a></li>
+</ul></li>
+</ul>
+
+</section>
+
+</section>
+<section style="top: 0px; display: block;" class="future stack">
+      <section style="top: -20px;">
+<h1>Perl入学式について</h1>
+
+<ul>
+<li>Perl入学式(<a href="http://www.perl-entrance.org/" class="roll"><span data-title="http://www.perl-entrance.org">http://www.perl-entrance.org</span></a>)は, プログラミング未経験者からPerl初心者を対象としたワークショップです</li>
+<li>公式Twitter
+<ul>
+<li><a href="http://twitter.com/perl_entrance" class="roll"><span data-title="@Perl_Entrance">@Perl_Entrance</span></a></li>
+</ul></li>
+<li>公式ハッシュタグ
+<ul>
+<li>#Perl入学式</li>
+</ul></li>
+<li>公式Facebookページ
+<ul>
+<li><a href="https://www.facebook.com/PerlEntrance" class="roll"><span data-title="https://www.facebook.com/PerlEntrance">https://www.facebook.com/PerlEntrance</span></a></li>
+</ul></li>
+</ul>
+
+</section>
+
+</section>
+<section style="top: 0px; display: block;" class="future stack">
+      <section style="top: -20px;">
+<h1>会場について</h1>
+
+<ul>
+<li>今回のPerl入学式は「Joe'sオープンソースJelly」の一環ということで、株式会社Joe'sクラウドコンピューティング（<a href="http://www.joeswebhosting.net/" class="roll"><span data-title="http://www.joeswebhosting.net">http://www.joeswebhosting.net</span></a>）様より特別に会場をお借りしています</li>
+<li>この場をお借りしてお礼申し上げます</li>
+</ul>
+
+</section>
+
+</section>
+<section style="top: -20px; display: none;" class="future stack">
+      <section style="top: -20px;">
+<h1>ロゴについて</h1>
+
+<p><img src="./index_files/perl-entrance_t_300.png" alt="Perl入学式"></p>
+
+<ul>
+<li>横山陽平さん(<a href="http://yokoyamayohei.com/" class="roll"><span data-title="http://yokoyamayohei.com/">http://yokoyamayohei.com/</span></a>)にデザインしていただきました</li>
+<li>この場をお借りしてお礼申し上げます</li>
+</ul>
+
+</section>
+
+</section>
+<section style="top: -20px; display: none;" class="future stack">
+      <section style="top: -20px;">
+<h1>IT勉強会スタンプラリー</h1>
+
+<p><img src="./index_files/it-stamp.png" alt="IT勉強会スタンプラリー"></p>
+
+<ul>
+<li>Perl入学式は, IT勉強会スタンプラリー(<a href="http://it-stamp.jp/" class="roll"><span data-title="http://it-stamp.jp/">http://it-stamp.jp/</span></a>)に参加しています</li>
+<li>今回のPerl入学式は, スタンプラリーの対象となる勉強会です</li>
+<li>台紙は勉強会終了後にお渡しします</li>
+</ul>
+
+</section>
+
+</section>
+<section style="top: -20px; display: none;" class="future stack">
+      <section style="top: -20px;">
+<h1>喋ってる人</h1>
+
+<ul>
+<li>名前 ： 若林 信敬</li>
+<li>Twitter ： <a href="http://twitter.com/nqounet" class="roll"><span data-title="@nqounet">@nqounet</span></a></li>
+<li>Facebook ： <a href="https://www.facebook.com/nobutaka.wakabayashi" class="roll"><span data-title="nobutaka.wakabayashi">nobutaka.wakabayashi</span></a></li>
+<li>仕事 ： フリーエンジニア（IT系）</li>
+<li>屋号 ： <a href="http://www.nishimiyahara.net/" class="roll"><span data-title="IT Office 西宮原">IT Office 西宮原</span></a></li>
+</ul>
+
+</section>
+
+</section>
+<section style="top: -20px; display: none;" class="future stack">
+      <section style="top: -20px;">
+<h1>#10の目標</h1>
+
+<ul>
+<li>Perl入学式の最終目標である簡易掲示板を、復習しながら実際に作成していきます。</li>
+</ul>
+
+</section>
+
+</section>
+<section style="top: -20px; display: none;" class="future stack">
+      <section style="top: -20px;">
+<h1>本日の内容</h1>
+
+</section>
+
+      <section style="top: -20px;">
+<h2>本日の内容（その１）</h2>
+
+<ul>
+<li>とりあえずページを表示してみよう（helloworld）</li>
+<li>フォームを作ってみよう(form)</li>
+<li>フォームから投稿された文字列をそのまま表示してみよう（get）</li>
+<li>長い文が投稿されてもちゃんと表示できるようにしてみよう（post）</li>
+</ul>
+
+</section>
+
+      <section style="top: -20px;">
+<h2>本日の内容（その２）</h2>
+
+<ul>
+<li>テンプレートの重複部分をまとめてみよう（include）</li>
+<li>投稿された記事を蓄えてみよう（file）</li>
+<li>日本語（マルチバイト文字）をちゃんと保存してみよう（encode_utf8）</li>
+<li>蓄えられた記事を表示してみよう（decode_utf8）</li>
+</ul>
+
+</section>
+
+</section>
+<section style="top: -20px; display: none;" class="future stack">
+      <section style="top: -20px;">
+<h1>準備</h1>
+
+<ul>
+<li>Perl</li>
+<li>Mojolicious</li>
+</ul>
+
+</section>
+
+      <section style="top: -20px;">
+<h2>Perl</h2>
+
+<ul>
+<li><code>Perl</code>の環境を構築しておきましょう。</li>
+</ul>
+
+<h4><a href="http://www.perl-entrance.org/p/modernperl20128.html" class="roll"><span data-title="Perl入学式: ModernなPerlの開発環境の構築方法（2012年8月版）">Perl入学式: ModernなPerlの開発環境の構築方法（2012年8月版）</span></a></h4>
+
+</section>
+
+      <section code="" style="top: -20px;">
+<h2>Mojolicious</h2>
+
+<ul>
+<li><code>Mojolicious</code>をインストールしておきましょう。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="ruby"><span class="variable">$ </span><span class="identifier">cpanm</span> <span class="constant">Mojolicious</span>
+</code></pre>
+
+</section>
+
+</section>
+<section style="top: -20px; display: none;" class="future stack">
+      <section style="top: -20px;">
+<h1>Hello World</h1>
+
+</section>
+
+      <section code="" style="top: -20px;">
+<h2>とりあえずページを表示してみよう</h2>
+
+<ul>
+<li>Mojoliciousの機能を使って雛形を作成します。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="ruby"><span class="variable">$ </span><span class="identifier">mojo</span> <span class="identifier">generate</span> <span class="identifier">lite_app</span>
+</code></pre>
+
+<ul>
+<li>以下のような表示が出ていれば、ちゃんと実行できています。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="css"><span class="attr_selector">[chmod]</span> <span class="tag">myapp</span><span class="class">.pl</span> 744
+</code></pre>
+
+</section>
+
+      <section code="" style="top: -20px;">
+<h2>Hello World</h2>
+
+<ul>
+<li><code>myapp.pl</code>というファイル名プログラムが作成されているので、そのプログラムを実行します。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="ruby"><span class="variable">$ </span><span class="identifier">morbo</span> <span class="identifier">myapp</span>.<span class="identifier">pl</span>
+</code></pre>
+
+<ul>
+<li>以下のような表示が出ていれば、ちゃんと実行できています。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="cs">Server available at http:<span class="comment">//127.0.0.1:3000.</span>
+</code></pre>
+
+</section>
+
+      <section code="" style="top: -20px;">
+<h2>Hello World</h2>
+
+<ul>
+<li>ブラウザを開いて、<code>http://localhost:3000</code>にアクセスしてみてください。</li>
+<li>以下のような文字が表示されればOKです。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="perl">Welcome to the Mojolicious real-<span class="keyword">time</span> web framework!
+</code></pre>
+
+</section>
+
+</section>
+<section style="top: -20px; display: none;" class="future stack">
+      <section style="top: -20px;">
+<h1>Form</h1>
+
+</section>
+
+      <section style="top: -20px;">
+<h2>フォームを作ってみよう</h2>
+
+<ul>
+<li>まずはフォームを作ってみます。</li>
+</ul>
+
+</section>
+
+      <section code="" style="top: -20px;">
+<h2>Form</h2>
+
+<ul>
+<li>日本語を都合よく扱うための処理を書きます。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="php"><span class="comment">#!/usr/bin/env perl</span>
+<span class="keyword">use</span> utf8; <span class="comment"># &lt;この行を挿入</span>
+<span class="keyword">use</span> Mojolicious::Lite;
+</code></pre>
+
+</section>
+
+      <section data-state="appendix" code="" style="top: -20px;">
+<h2>use utf8;</h2>
+
+<!-- data-state="appendix" -->
+
+<ul>
+<li><code>use utf8;</code>した状態のPerlは、日本語などのマルチバイト文字でも、文字として正しく扱うことができます。</li>
+<li>ターミナルで試してみましょう</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="ruby"><span class="comment"># use utf8;していない状態</span>
+<span class="variable">$ </span><span class="identifier">perl</span> -<span class="identifier">e</span> <span class="string">'print length "abcあいう";'</span>
+</code></pre>
+
+<!-- code -->
+
+<pre><code class="ruby"><span class="comment"># use utf8;した状態</span>
+<span class="variable">$ </span><span class="identifier">perl</span> -<span class="constant">Mutf8</span> -<span class="identifier">e</span> <span class="string">'print length "abcあいう";'</span>
+</code></pre>
+
+</section>
+
+      <section code="" style="top: -20px;">
+<h2>Form</h2>
+
+<ul>
+<li>その後ろ2行ほどを削除します。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="ruby"><span class="comment"># Documentation browser under "/perldoc" # &lt;この行を削除</span>
+<span class="identifier">plugin</span> <span class="string">'PODRenderer'</span>; <span class="comment"># &lt;この行を削除</span>
+</code></pre>
+
+</section>
+
+      <section data-state="appendix" style="top: -20px;">
+<h2>PODRenderer</h2>
+
+<!-- data-state="appendix" -->
+
+<ul>
+<li><code>PODRenderer</code>は<code>Mojolicious</code>のプラグインで、<code>perldoc</code>を綺麗に見るためのプラグインです。</li>
+<li>削除する前に、<code>http://localhost:3000/perldoc</code>にアクセスして確認してみてください。</li>
+</ul>
+
+</section>
+
+      <section code="" style="top: -20px;">
+<h2>Form</h2>
+
+<ul>
+<li>もともと表示されている文字列を削除します。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="perl">Welcome to the Mojolicious real-<span class="keyword">time</span> web framework! <span class="comment"># &lt;削除</span>
+</code></pre>
+
+</section>
+
+      <section code="" style="top: -20px;">
+<h2>Form</h2>
+
+<ul>
+<li>削除したところに、フォームを出力するコードを書きます。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="perl"><span class="variable">%=</span> form_for <span class="string">'/'</span> =&gt; begin
+  <span class="variable">%=</span> text_field <span class="string">'body'</span>
+  <span class="variable">%=</span> submit_button <span class="string">'投稿する'</span>
+% end
+</code></pre>
+
+</section>
+
+      <section data-state="appendix" style="top: -20px;">
+<h2>helper</h2>
+
+<!-- data-state="appendix" -->
+
+<ul>
+<li><code>form_for</code>、<code>text_field</code>、<code>submit_button</code>などは、<code>Mojolicious</code>の<code>helper</code>という機能で定義されたPerlの関数（サブルーチン）です。</li>
+<li><p><code>helper</code>については、次回詳しく説明する予定です。</p></li>
+<li><p>参考になるページ</p>
+
+<ul>
+<li><a href="https://github.com/yuki-kimoto/mojolicious-guides-japanese/wiki/Mojolicious%3A%3APlugin%3A%3ATagHelpers" class="roll"><span data-title="Mojolicious::Plugin::TagHelpers · yuki-kimoto/mojolicious-guides-japanese Wiki">Mojolicious::Plugin::TagHelpers · yuki-kimoto/mojolicious-guides-japanese Wiki</span></a></li>
+</ul></li>
+</ul>
+
+</section>
+
+      <section style="top: -20px;">
+<h2>Form</h2>
+
+<ul>
+<li>ここまで出来たら、保存してから、ブラウザをリロード（あるいは<code>http://localhost:3000</code>にアクセス）してみてください。</li>
+<li>この後も、入力が終わったら動作を確認するので、ブラウザはそのまま開いておいてください。</li>
+<li>こんな感じでフォームが表示されていればOKです。</li>
+</ul>
+
+<p><img src="./index_files/pe10-01.png" alt="image"></p>
+
+<ul>
+<li>しかし、フォームから投稿しても、画面上は何も変わりません。</li>
+<li>次は、フォームから投稿された文字列を、画面に表示するようにしてみましょう。</li>
+</ul>
+
+</section>
+
+</section>
+<section style="top: -20px; display: none;" class="future stack">
+      <section style="top: -20px;">
+<h1>Get</h1>
+
+</section>
+
+      <section style="top: -20px;">
+<h2>フォームから投稿された文字列をそのまま表示してみよう</h2>
+
+<ul>
+<li>フォームは出来ましたので、次はフォームをちゃんと機能させてみましょう。</li>
+</ul>
+
+</section>
+
+      <section code="" style="top: -20px;">
+<h2>Get</h2>
+
+<ul>
+<li>まずはテンプレートを変更します。</li>
+<li>19行目あたりに以下のように追加します。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="php">  %= submit_button <span class="string">'投稿する'</span>
+% end
+&lt;p&gt;&lt;%= <span class="variable">$body</span> %&gt;&lt;/p&gt; &lt;この行を挿入
+</code></pre>
+
+<ul>
+<li><code>&lt;%= $body %&gt;</code>は、テンプレートの中でPerlの変数などを表示するときに使用します。</li>
+<li>今の場合、Perlで書いてある<code>$body</code>という変数の値を表示する、という意味になります。</li>
+</ul>
+
+</section>
+
+      <section data-state="appendix" style="top: -20px;">
+<h2>.ep</h2>
+
+<!-- data-state="appendix" -->
+
+<ul>
+<li>テンプレート（例えば<code>index.html.ep</code>）の最後には<code>.ep</code>という拡張子がついています。</li>
+<li>この拡張子は<code>Embedded Perl</code>の頭文字をとったものです。</li>
+<li>これは<code>Mojolicious</code>が標準で使えるテンプレートのシステムを示しています。</li>
+</ul>
+
+</section>
+
+      <section data-state="appendix" code="" style="top: -20px;">
+<h2>template</h2>
+
+<!-- data-state="appendix" -->
+
+<ul>
+<li><code>Mojolicious</code>のテンプレートでPerlのコードを実行させる書き方としては、<code>タグ</code>と<code>行</code>の二種類があります。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="perl"><span class="comment"># タグ</span>
+&lt;% Perlのコード <span class="variable">%&gt;</span>
+&lt;<span class="variable">%=</span> Perlのコード <span class="variable">%&gt;</span>
+&lt;<span class="variable">%=</span>= Perlのコード <span class="variable">%&gt;</span>
+
+<span class="comment"># 行</span>
+% Perlのコード
+<span class="variable">%=</span> Perlのコード
+<span class="variable">%=</span>= Perlのコード
+</code></pre>
+
+<ul>
+<li>参考になるページ
+<ul>
+<li><a href="https://github.com/yuki-kimoto/mojolicious-guides-japanese/wiki/Mojolicious%3A%3AGuides%3A%3ARendering" class="roll"><span data-title="Mojolicious::Guides::Rendering · yuki-kimoto/mojolicious-guides-japanese Wiki">Mojolicious::Guides::Rendering · yuki-kimoto/mojolicious-guides-japanese Wiki</span></a></li>
+</ul></li>
+</ul>
+
+</section>
+
+      <section code="" style="top: -20px;">
+<h2>Get</h2>
+
+<ul>
+<li>次に、formの情報を取得します。</li>
+<li>6行目あたりに以下のように追加します。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="perl">get <span class="string">'/'</span> =&gt; <span class="sub"><span class="keyword">sub</span> {</span>
+  <span class="keyword">my</span> <span class="variable">$self</span> = <span class="keyword">shift</span>;
+  <span class="keyword">my</span> <span class="variable">$body</span> = <span class="variable">$self</span>-&gt;param(<span class="string">'body'</span>); <span class="comment"># &lt; この行を追加</span>
+</code></pre>
+
+<ul>
+<li><code>$self-&gt;param('body')</code>は、フォームから投稿した<code>body</code>という名前がついている値を取得します。</li>
+</ul>
+
+</section>
+
+      <section code="" style="top: -20px;">
+<h2>Get</h2>
+
+<ul>
+<li>続いて、先ほど取得した情報を、テンプレートで使えるようにします。</li>
+<li>7行目あたりに以下のように追加します。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="perl">  <span class="keyword">my</span> <span class="variable">$body</span> = <span class="variable">$self</span>-&gt;param(<span class="string">'body'</span>);
+  <span class="variable">$self</span>-&gt;stash(<span class="string">body =&gt;</span> <span class="variable">$body</span>); <span class="comment"># &lt; この行を追加</span>
+</code></pre>
+
+<ul>
+<li><code>$self-&gt;stash()</code>に、値を渡すと、テンプレートでも使えるようになります。</li>
+<li>今の場合は、<code>body</code>に、変数<code>$body</code>を渡したので、テンプレートでは<code>$body</code>として使えるようになります。</li>
+</ul>
+
+</section>
+
+      <section style="top: -20px;">
+<h2>Get</h2>
+
+<ul>
+<li>ここまで出来たら、保存してから、ブラウザをリロード（あるいは<code>http://localhost:3000</code>にアクセス）してみてください。</li>
+<li>そして、フォームに何か文字を入力して<code>投稿する</code>ボタンをクリックしてみてください。</li>
+<li>フォームに書いた文字がフォームの下に表示されたでしょうか？</li>
+</ul>
+
+<p><img src="./index_files/pe10-02.png" alt="image"></p>
+
+</section>
+
+      <section style="top: -20px;">
+<h2>Get</h2>
+
+<ul>
+<li>画面に投稿した文字列が表示できるようになりましたが、実はとても長い文字列を入力すると、正しく処理できません。</li>
+<li>例えば、<code>http://www.yahoo.co.jp/</code>を開いて、ページの情報をコピー＆貼り付けして投稿してみましょう。</li>
+<li>アドレスバーには、投稿されたような形跡がありますが、画面上は空のフォームが表示されていると思います。</li>
+<li>次は、長い文字列でも正しく動作できるように変更してみましょう。</li>
+</ul>
+
+</section>
+
+</section>
+<section style="top: -20px; display: none;" class="future stack">
+      <section style="top: -20px;">
+<h1>Post</h1>
+
+</section>
+
+      <section style="top: -20px;">
+<h2>長い文が投稿されても、ちゃんと表示できるようにしてみよう</h2>
+
+<ul>
+<li>先ほどのフォームは、<code>HTTP</code>でいうところの<code>GET</code>でのリクエストです。</li>
+<li><code>GET</code>でのリクエストは文字数の制限（おおよそ2KB程度）がありますので、掲示板など、多くのデータを送信する必要がある場合は適しません。</li>
+<li>このような場合は<code>POST</code>によるリクエストを行います。</li>
+</ul>
+
+</section>
+
+      <section data-state="appendix" style="top: -20px;">
+<h2>HTTP</h2>
+
+<!-- data-state="appendix" -->
+
+<ul>
+<li><code>HTTP</code>については、ネットワークの知識も必須となるので、Perl入学式では深く取り上げません。</li>
+<li>通常の用途で使用するのは<code>GET</code>と<code>POST</code>であり、それらをうまく使い分けられれば当分は問題ありません。</li>
+<li>参考になるページ
+<ul>
+<li><a href="http://www.studyinghttp.net/" class="roll"><span data-title="Studying HTTP">Studying HTTP</span></a></li>
+</ul></li>
+</ul>
+
+</section>
+
+      <section code="" style="top: -20px;">
+<h2>Post</h2>
+
+<ul>
+<li>まずは、テンプレートを追加します。</li>
+<li><code>index.html.ep</code>の部分をすべてコピーして貼り付けて、<code>post.html.ep</code>というテンプレートを作成します。</li>
+<li>こうすることで、<code>http://localhost:3000/post</code>にアクセスした時に読み込まれます。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="xml"># @@ index.html.epを貼り付け
+@@ post.html.ep             # テンプレート名を変更
+% layout 'default';
+% title '出力';             # タイトルを変更
+%= form_for '/post' =&gt; method =&gt; 'POST' =&gt; begin # 投稿先などを変更
+  %= text_field 'body'
+  %= submit_button '投稿する'
+% end
+<span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="vbscript">&lt;%= $body %&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+</code></pre>
+
+<ul>
+<li><code>form_for</code>に書いた<code>method =&gt; 'POST'</code>で、<code>get</code>ではなく<code>post</code>で送信するようになります。</li>
+</ul>
+
+</section>
+
+      <section code="" style="top: -20px;">
+<h2>Post</h2>
+
+<ul>
+<li><code>@@ index.html.ep</code>の方は、<code>$body</code>を表示しないようにしておきます。</li>
+<li><code>form_for</code>も忘れずに変更しておきましょう。</li>
+<li>検証しやすいように<code>title</code>も変更しておきましょう。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="perl"><span class="variable">@@</span> <span class="keyword">index</span>.html.ep
+% layout <span class="string">'default'</span>;
+% title <span class="string">'入力フォーム'</span>;     <span class="comment"># タイトルを変更</span>
+<span class="variable">%=</span> form_for <span class="string">'/post'</span> =&gt; <span class="string">method =&gt;</span> <span class="string">'POST'</span> =&gt; begin  <span class="comment"># 投稿先などを変更</span>
+  <span class="variable">%=</span> text_field <span class="string">'body'</span>
+  <span class="variable">%=</span> submit_button <span class="string">'投稿する'</span>
+% end
+</code></pre>
+
+</section>
+
+      <section code="" style="top: -20px;">
+<h2>Post</h2>
+
+<ul>
+<li>続いて、Perlのコードの方も変更します。</li>
+<li>現在の<code>get</code>の部分のコードをすべてコピーして貼り付けます。</li>
+<li>そして、<code>body</code>の処理をしている部分を削除します。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="perl">get <span class="string">'/'</span> =&gt; <span class="sub"><span class="keyword">sub</span> {</span>
+  <span class="keyword">my</span> <span class="variable">$self</span> = <span class="keyword">shift</span>;
+  <span class="keyword">my</span> <span class="variable">$body</span> = <span class="variable">$self</span>-&gt;param(<span class="string">'body'</span>); <span class="comment"># 貼り付けしたあと削除</span>
+  <span class="variable">$self</span>-&gt;stash(<span class="string">body =&gt;</span> <span class="variable">$body</span>);     <span class="comment"># 貼り付けしたあと削除</span>
+  <span class="variable">$self</span>-&gt;render(<span class="string">'index'</span>);
+};
+</code></pre>
+
+</section>
+
+      <section code="" style="top: -20px;">
+<h2>Post</h2>
+
+<ul>
+<li>続いて、postについての処理を書きます。</li>
+<li><code>body</code>の処理が書いてある方を一部変更します。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="perl">post <span class="string">'/post'</span> =&gt; <span class="sub"><span class="keyword">sub</span> {</span>             <span class="comment"># この行を変更</span>
+  <span class="keyword">my</span> <span class="variable">$self</span> = <span class="keyword">shift</span>;
+  <span class="keyword">my</span> <span class="variable">$body</span> = <span class="variable">$self</span>-&gt;param(<span class="string">'body'</span>);
+  <span class="variable">$self</span>-&gt;stash(<span class="string">body =&gt;</span> <span class="variable">$body</span>);
+  <span class="variable">$self</span>-&gt;render(<span class="string">'post'</span>);          <span class="comment"># この行を変更</span>
+};
+</code></pre>
+
+</section>
+
+      <section data-state="appendix" style="top: -20px;">
+<h2>param</h2>
+
+<!-- data-state="appendix" -->
+
+<ul>
+<li><code>param</code>は、<code>get</code>でも<code>post</code>でも同じように動作します。</li>
+</ul>
+
+</section>
+
+      <section style="top: -20px;">
+<h2>Post</h2>
+
+<ul>
+<li>ここまで出来たら、保存してから、ブラウザをリロード（あるいは<code>http://localhost:3000</code>にアクセス）してみてください。</li>
+<li>そして、フォームに<a href="http://www.yahoo.co.jp/" class="roll"><span data-title="http://www.yahoo.co.jp">http://www.yahoo.co.jp</span></a>のページの内容をコピー＆貼り付けして<code>投稿する</code>ボタンをクリックしてみてください。</li>
+<li>getの時には出力できなかった文字列が、フォームの下に表示されたでしょうか？</li>
+</ul>
+
+</section>
+
+      <section style="top: -20px;">
+<h2>Post</h2>
+
+<ul>
+<li>作成した<code>post</code>のテンプレートは、<code>index.html.ep</code>をコピー＆貼り付けして作成しましたが、フォームの部分を両方共変更する必要がありました。</li>
+<li>このまま使いつづけると、フォームを変更する度に2箇所とも変更する必要があります。</li>
+<li>次は、共通しているテンプレートを一つにまとめてみましょう。</li>
+</ul>
+
+</section>
+
+</section>
+<section style="top: -20px; display: none;" class="future stack">
+      <section style="top: -20px;">
+<h1>Include</h1>
+
+</section>
+
+      <section style="top: -20px;">
+<h2>テンプレートの重複部分をまとめてみよう</h2>
+
+<ul>
+<li><code>Mojolicious</code>には、テンプレートを共通化する仕組みがあります。</li>
+<li>その機能を使って、重複している部分をまとめてみましょう。</li>
+</ul>
+
+</section>
+
+      <section code="" style="top: -20px;">
+<h2>Include</h2>
+
+<ul>
+<li>まずは共通の部分を作成します。</li>
+<li>共通になっているのは以下の部分です。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="ruby">%= <span class="identifier">form_for</span> <span class="string">'/post'</span> =&gt; <span class="identifier"><span class="keymethods">method</span></span> =&gt; <span class="string">'POST'</span> =&gt; <span class="identifier"><span class="keyword">begin</span></span>
+  %= <span class="identifier">text_field</span> <span class="string">'body'</span>
+  %= <span class="identifier">submit_button</span> <span class="string">'投稿する'</span>
+% <span class="identifier"><span class="keyword">end</span></span>
+</code></pre>
+
+<ul>
+<li>この部分だけを<code>form.html.ep</code>として定義します。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="perl"><span class="variable">@@</span> form.html.ep
+<span class="variable">%=</span> form_for <span class="string">'/post'</span> =&gt; <span class="string">method =&gt;</span> <span class="string">'POST'</span> =&gt; begin
+  <span class="variable">%=</span> text_field <span class="string">'body'</span>
+  <span class="variable">%=</span> submit_button <span class="string">'投稿する'</span>
+% end
+</code></pre>
+
+</section>
+
+      <section code="" style="top: -20px;">
+<h2>Include</h2>
+
+<ul>
+<li>新しく作成した<code>form.heml.ep</code>を使うには<code>include</code>という命令を使います。</li>
+<li><code>index</code>の部分は以下のようになります。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="perl"><span class="variable">@@</span> <span class="keyword">index</span>.html.ep
+% layout <span class="string">'default'</span>;
+% title <span class="string">'入力フォーム'</span>;
+<span class="variable">%=</span> include <span class="string">'form'</span>;
+</code></pre>
+
+<ul>
+<li><code>post</code>の部分は以下のようになります。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="xml">@@ post.html.ep
+% layout 'default';
+% title '出力';
+%= include 'form';
+<span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="vbscript">&lt;%= $body %&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+</code></pre>
+
+</section>
+
+      <section style="top: -20px;">
+<h2>Include</h2>
+
+<ul>
+<li>ここまで出来たら、保存してから、ブラウザをリロード（あるいは<code>http://localhost:3000</code>にアクセス）してみてください。</li>
+<li>変化はありませんが、それが正解です。</li>
+<li>テンプレートは変えましたが、出力されるHTMLは変えていません。</li>
+<li>テンプレートは<code>include</code>を使うことで、共通の部品として利用できます。</li>
+</ul>
+
+</section>
+
+      <section style="top: -20px;">
+<h2>Include</h2>
+
+<ul>
+<li>ここまでで表示することは出来ていますが、このままでは自分自身の投稿（しかも、1回分だけ）しか見ることはできません。</li>
+<li>掲示板らしく、自分自身の過去の投稿や、他の人が投稿したデータも見ることが出来るようにしましょう。</li>
+</ul>
+
+</section>
+
+</section>
+<section style="top: -20px; display: none;" class="future stack">
+      <section style="top: -20px;">
+<h1>File</h1>
+
+</section>
+
+      <section style="top: -20px;">
+<h2>投稿された記事を蓄えてみよう</h2>
+
+<ul>
+<li>投稿された文字列を表示させる前に、まずは投稿された文字列を蓄えるようにしましょう。</li>
+<li>保存する方法は何種類もありますが、今回は簡単に扱えるファイルを使って保存するようにします。</li>
+</ul>
+
+</section>
+
+      <section code="" style="top: -20px;">
+<h2>File</h2>
+
+<ul>
+<li>今回はテンプレートの変更はありません。</li>
+<li>Perlのコードの部分を変更します。</li>
+<li>記事を投稿した時の処理なので、<code>post</code>の部分を変更します。</li>
+<li>12行目あたりに以下のコードを追加します。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="perl"><span class="keyword">my</span> <span class="variable">$body</span> = <span class="variable">$self</span>-&gt;param(<span class="string">'body'</span>); <span class="comment"># この行の後ろに追加</span>
+<span class="keyword">my</span> <span class="variable">$datafile</span> = <span class="string">qq{myapp.dat}</span>;
+<span class="keyword">open</span> <span class="keyword">my</span> <span class="variable">$fh</span>, <span class="string">'&gt;&gt;'</span>, <span class="variable">$datafile</span> <span class="keyword">or</span> <span class="keyword">die</span> <span class="variable">$!</span>;
+<span class="keyword">print</span> <span class="variable">$fh</span> <span class="string">qq{<span class="variable">$body</span>\n}</span>;
+<span class="keyword">close</span> <span class="variable">$fh</span>;
+</code></pre>
+
+</section>
+
+      <section data-state="appendix" style="top: -20px;">
+<h2>open</h2>
+
+<!-- data-state="appendix" -->
+
+<ul>
+<li><code>open</code>の行は、<code>$datafile</code>を追加モード（<code>&gt;&gt;</code>）で開いています。</li>
+<li>エラーの場合は、ここで異常終了（<code>die</code>）させます。例外を発生させる、とも言います。</li>
+<li><code>$!</code>にはエラーの内容が入っています。</li>
+<li>ファイルが正しく開けなかった場合には、プログラムの実行を続けないことが肝心です。</li>
+<li>参考になるページ
+<ul>
+<li><a href="http://perldoc.jp/func/open" class="roll"><span data-title="open - perldoc.jp">open - perldoc.jp</span></a></li>
+</ul></li>
+</ul>
+
+</section>
+
+      <section data-state="appendix" style="top: -20px;">
+<h2>print $fh</h2>
+
+<!-- data-state="appendix" -->
+
+<ul>
+<li>開いたファイルは、今回の場合は<code>$fh</code>で操作します。</li>
+<li>今回の<code>$fh</code>のような変数を、ファイルハンドル、と言います。</li>
+<li><code>print</code>のあとにファイルハンドルを書き、その次に出力する文字列を書きます。</li>
+<li>ファイルハンドルの後ろにはカンマは不要です。</li>
+<li>参考になるページ
+<ul>
+<li><a href="http://perldoc.jp/func/print" class="roll"><span data-title="print - perldoc.jp">print - perldoc.jp</span></a></li>
+</ul></li>
+</ul>
+
+</section>
+
+      <section data-state="appendix" style="top: -20px;">
+<h2>qq{}</h2>
+
+<!-- data-state="appendix" -->
+
+<ul>
+<li><code>qq{}</code>は、<code>"（ダブルクォーテーション）</code>と同じ意味です。</li>
+<li><p>出力する文字列の中に<code>"</code>があるような場合に使うとエスケープが不要になるので、コードが読みやすくなります。</p></li>
+<li><p>参考になるページ</p>
+
+<ul>
+<li><a href="http://perldoc.jp/func/qq" class="roll"><span data-title="qq - perldoc.jp">qq - perldoc.jp</span></a></li>
+</ul></li>
+</ul>
+
+</section>
+
+      <section data-state="appendix" style="top: -20px;">
+<h2>close $fh</h2>
+
+<!-- data-state="appendix" -->
+
+<ul>
+<li>開いたファイルは、ちゃんと閉じましょう。</li>
+<li>プログラムが終了すれば自動的に閉じられますが、<code>close</code>をした時点でファイルの取り扱いを終えたことが、コードを読む人にもわかります。</li>
+<li><p>将来の自分自身のために、ちゃんと閉じておきましょう。</p></li>
+<li><p>参考になるページ</p>
+
+<ul>
+<li><a href="http://perldoc.jp/func/close" class="roll"><span data-title="close - perldoc.jp">close - perldoc.jp</span></a></li>
+</ul></li>
+</ul>
+
+</section>
+
+      <section style="top: -20px;">
+<h2>File</h2>
+
+<ul>
+<li>ここまで出来たら、保存してから、ブラウザをリロード（あるいは<code>http://localhost:3000</code>にアクセス）してみてください。</li>
+<li>何度か書き込みをしてみて、実際にデータファイルが出来ているか確認してみてください。</li>
+</ul>
+
+</section>
+
+      <section code="" style="top: -20px;">
+<h2>File</h2>
+
+<ul>
+<li>ファイルにデータが保存されていると思いますが、この状態では日本語を保存するときに警告が出ます。</li>
+<li><code>morbo myapp.pl</code>したターミナルを確認し、以下のようなエラーが出ているのを確認してください。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="ruby"><span class="constant">Wide</span> <span class="identifier">character</span> <span class="identifier"><span class="keyword">in</span></span> <span class="identifier"><span class="keymethods">print</span></span> <span class="identifier"><span class="keymethods">at</span></span> <span class="identifier">myapp</span>.<span class="identifier">pl</span> <span class="identifier">line</span> <span class="number">15</span>.
+</code></pre>
+
+<ul>
+<li>次は、このエラーを修正し、日本語のデータを正しく扱ってみましょう。</li>
+</ul>
+
+</section>
+
+</section>
+<section style="top: -20px; display: none;" class="future stack">
+      <section style="top: -20px;">
+<h1>encode_utf8</h1>
+
+</section>
+
+      <section style="top: -20px;">
+<h2>日本語（マルチバイト文字）をちゃんと保存してみよう</h2>
+
+<ul>
+<li><code>use utf8;</code>した状態のPerlは、日本語も含め文字をちゃんと扱うように考えられています。</li>
+<li>しかし、そのまま画面やファイルに出力しようとすると、警告が出ますので、適切に処理する必要があります。</li>
+<li>ちなみに、<code>Mojolicious</code>が最終的に出力する文字列に関しては、<code>Mojolicious</code>自体が適切に処理しています。</li>
+</ul>
+
+</section>
+
+      <section code="" style="top: -20px;">
+<h2>encode_utf8</h2>
+
+<ul>
+<li>今回はテンプレートの変更はありません。</li>
+<li>Perlのコードの部分を変更します。</li>
+<li>Perlで文字コードを扱う場合は、<code>Encode</code>というモジュールを使います。</li>
+<li>3行目あたりに以下のコードを追加してください。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="php"><span class="keyword">use</span> Mojolicious::Lite;
+<span class="keyword">use</span> Encode; <span class="comment"># &lt; この行を追加</span>
+</code></pre>
+
+<ul>
+<li>大文字と小文字は区別しますので、間違えないように入力してください。</li>
+</ul>
+
+</section>
+
+      <section data-state="appendix" style="top: -20px;">
+<h2>jcode.pl, Jcode.pm</h2>
+
+<!-- data-state="appendix" -->
+
+<ul>
+<li>昔、Perlを使ったことがある方は、<code>jcode.pl</code>や<code>Jcode.pm</code>を知っているかもしれませんが、それらのことは、もう忘れてください。モダンなPerlを理解する上での弊害になります。</li>
+<li>モダンなPerl（バージョン5.8.1以降）では、日本語などのマルチバイト文字を扱うスクリプトを書く場合は、文字コードを<code>UTF-8</code>にして、<code>use utf8;</code>を書いておくことが推奨されています。</li>
+<li>参考になるページ
+<ul>
+<li><a href="http://perl-users.jp/articles/advent-calendar/2009/casual/10.html" class="roll"><span data-title="Encodeでラクラク日本語処理 - JPerl Advent Calendar 2009">Encodeでラクラク日本語処理 - JPerl Advent Calendar 2009</span></a></li>
+<li><a href="http://d.hatena.ne.jp/perlcodesample/20091118/1246679588" class="roll"><span data-title="Encode - 日本語などのマルチバイト文字列を適切に処理する / Perlモジュール徹底解説 - サンプルコードによるPerl入門">Encode - 日本語などのマルチバイト文字列を適切に処理する / Perlモジュール徹底解説 - サンプルコードによるPerl入門</span></a></li>
+</ul></li>
+</ul>
+
+</section>
+
+      <section code="" style="top: -20px;">
+<h2>encode_utf8</h2>
+
+<ul>
+<li><code>use Encode;</code>すると、幾つかの関数が使えるようになります。（エクスポートされる、とも言います）</li>
+<li>その中の一つ<code>encode_utf8</code>を使ってエンコードした文字列をファイルに書き込むようにします。</li>
+<li>16行目あたりのコードを以下のように変更してください。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="perl"><span class="keyword">print</span> <span class="variable">$fh</span> <span class="string">qq{<span class="variable">$body</span>\n}</span>; <span class="comment"># &lt; この行を以下のように変更</span>
+    ↓
+<span class="keyword">print</span> <span class="variable">$fh</span> encode_utf8(<span class="string">qq{<span class="variable">$body</span>\n}</span>);
+</code></pre>
+
+</section>
+
+      <section style="top: -20px;">
+<h2>encode_utf8</h2>
+
+<ul>
+<li>ここまで出来たら、保存してから、ブラウザをリロード（あるいは<code>http://localhost:3000</code>にアクセス）してみてください。</li>
+<li>ひらがなでもカタカナでも漢字でも構いませんので、何度か書き込みをしてみてください。</li>
+<li>先ほどのようなエラーは出なくなっていると思います。</li>
+</ul>
+
+</section>
+
+      <section style="top: -20px;">
+<h2>encode_utf8</h2>
+
+<ul>
+<li>書いた記事が蓄えられるようになりました。</li>
+<li>次は、その蓄えた記事を表示するようにしてみましょう。</li>
+</ul>
+
+</section>
+
+</section>
+<section style="top: -20px; display: none;" class="future stack">
+      <section style="top: -20px;">
+<h1>decode_utf8</h1>
+
+</section>
+
+      <section style="top: -20px;">
+<h2>蓄えられた記事を表示してみよう</h2>
+
+<ul>
+<li>ファイルに蓄えた記事をPerlで読み込む際には、単純にファイルを読むだけではなく、Perlが扱えるようにしてやる必要があります。</li>
+</ul>
+
+</section>
+
+      <section code="" style="top: -20px;">
+<h2>decode_utf8</h2>
+
+<ul>
+<li>まずはテンプレートの方を変更します。</li>
+<li>トップページのテンプレート（<code>@@ index.html.ep</code>）に、どのように表示するかを考えながら書いて行きましょう。</li>
+<li>34行目あたりに以下のコードを追加してください。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="xml">% for my $entry (@{$entries}) {
+  <span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="vbscript">&lt;%= $entry %&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+% }
+</code></pre>
+
+<ul>
+<li>ここでは段落で書いていきますが、余裕がある人は、番号なしリストなどで書いてみてください。</li>
+</ul>
+
+</section>
+
+      <section code="" style="top: -20px;">
+<h2>decode_utf8</h2>
+
+<ul>
+<li>続いてコードの方も変更します。</li>
+<li>ファイルから読み込む時は、Perlで正しく扱うためにデコードしてやる必要があります。</li>
+<li>まずは、データファイルの設定、そして、ファイルの読み込みです。</li>
+<li>7行目あたりに、以下のコードを追加してください。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="perl">get <span class="string">'/'</span> =&gt; <span class="sub"><span class="keyword">sub</span> {</span>
+  <span class="keyword">my</span> <span class="variable">$self</span> = <span class="keyword">shift</span>; <span class="comment"># この行の後ろに追加します。</span>
+  <span class="keyword">my</span> <span class="variable">$datafile</span> = <span class="string">qq{myapp.dat}</span>;
+  <span class="keyword">open</span> <span class="keyword">my</span> <span class="variable">$fh</span>, <span class="string">'&lt;'</span>, <span class="variable">$datafile</span> <span class="keyword">or</span> <span class="keyword">die</span> <span class="variable">$!</span>;
+  <span class="keyword">my</span> <span class="variable">@entries</span> = &lt;<span class="variable">$fh</span>&gt;;
+  <span class="keyword">close</span> <span class="variable">$fh</span>;
+</code></pre>
+
+</section>
+
+      <section data-state="appendix" style="top: -20px;">
+<h2>&lt;$fh&gt;</h2>
+
+<!-- data-state="appendix" -->
+
+<ul>
+<li>ファイルから読み込む時は、ファイルハンドルを<code>&lt;$fh&gt;</code>のように<code>&lt;</code>と<code>&gt;</code>でくくります。</li>
+<li>配列に代入すると、ファイルの1行が1項目となり、すべての行が代入されます。ただし、行末の改行は削除されませんので、注意が必要です。</li>
+<li>改行を削除するには<code>chomp</code>を使います。</li>
+<li>参考になるページ
+<ul>
+<li><a href="http://perldoc.jp/func/chomp" class="roll"><span data-title="chomp - perldoc.jp">chomp - perldoc.jp</span></a></li>
+</ul></li>
+</ul>
+
+</section>
+
+      <section code="" style="top: -20px;">
+<h2>decode_utf8</h2>
+
+<ul>
+<li>続いて、デコードと、テンプレートへの引渡しです。</li>
+<li>11行目あたりに、以下のコードを追加してください。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="perl">  <span class="variable">@entries</span> = <span class="keyword">map</span> { decode_utf8(<span class="variable">$_</span>) } <span class="variable">@entries</span>;
+  <span class="variable">$self</span>-&gt;stash(<span class="string">entries =&gt;</span> \<span class="variable">@entries</span>);
+</code></pre>
+
+</section>
+
+      <section code="" style="top: -20px;">
+<h2>decode_utf8</h2>
+
+<ul>
+<li>トップページの処理は、最終的には以下のようになります。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="perl">get <span class="string">'/'</span> =&gt; <span class="sub"><span class="keyword">sub</span> {</span>
+  <span class="keyword">my</span> <span class="variable">$self</span> = <span class="keyword">shift</span>;
+  <span class="keyword">my</span> <span class="variable">$datafile</span> = <span class="string">qq{myapp.dat}</span>;
+  <span class="keyword">open</span> <span class="keyword">my</span> <span class="variable">$fh</span>, <span class="string">'&lt;'</span>, <span class="variable">$datafile</span> <span class="keyword">or</span> <span class="keyword">die</span> <span class="variable">$!</span>;
+  <span class="keyword">my</span> <span class="variable">@entries</span> = &lt;<span class="variable">$fh</span>&gt;;
+  <span class="keyword">close</span> <span class="variable">$fh</span>;
+  <span class="variable">@entries</span> = <span class="keyword">map</span> {decode_utf8(<span class="variable">$_</span>)} <span class="variable">@entries</span>;
+  <span class="variable">$self</span>-&gt;stash(<span class="string">entries =&gt;</span> \<span class="variable">@entries</span>);
+  <span class="variable">$self</span>-&gt;render(<span class="string">'index'</span>);
+};
+</code></pre>
+
+</section>
+
+      <section style="top: -20px;">
+<h2>decode_utf8</h2>
+
+<ul>
+<li>ここまで出来たら、保存してから、ブラウザをリロード（あるいは<code>http://localhost:3000</code>にアクセス）してみてください。</li>
+<li>前回から投稿してある文字列が表示されたと思います。</li>
+</ul>
+
+</section>
+
+      <section style="top: -20px;">
+<h2>decode_utf8</h2>
+
+<ul>
+<li>今の状態では、投稿したあとの画面では、最後の投稿しか反映されていません。</li>
+<li>連続して投稿はできますが、過去の投稿を見るためにはどうすればよいでしょうか？</li>
+<li>続きは次回（Perl入学式 #11）に実施します。</li>
+</ul>
+
+</section>
+
+</section>
+<section style="top: -20px; display: none;" class="future stack">
+      <section style="top: -20px;">
+<h1>次回予告</h1>
+
+<ul>
+<li>投稿した後、記事を表示するページを表示してみよう（redirect_to）</li>
+<li>コードの重複部分をまとめてみよう（helper）</li>
+<li>URLが投稿されたら自動的にリンクしよう（正規表現）</li>
+<li>何も入力しないで投稿したら、リロードしよう</li>
+<li>スペース（全角含む）だけの投稿があったらエラーを出そう（バリデーション）</li>
+<li>投稿する項目を増やしてみよう</li>
+<li>スタイルシートでデザインをつけよう（public）</li>
+<li>内容は変わる場合があります。</li>
+</ul>
+
+</section>
+
+</section>
+<section style="top: 0px; display: block;" class="future stack">
+      <section code="" style="top: -20px;">
+<h1>今回のコード</h1>
+
+<ul>
+<li>今回動作させてきた最終的な<code>myapp.pl</code>は、以下のようになります。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code class="perl"><span class="comment">#!/usr/bin/env perl</span>
+<span class="keyword">use</span> utf8;
+<span class="keyword">use</span> Mojolicious::Lite;
+<span class="keyword">use</span> Encode;
+
+get <span class="string">'/'</span> =&gt; <span class="sub"><span class="keyword">sub</span> {</span>
+  <span class="keyword">my</span> <span class="variable">$self</span> = <span class="keyword">shift</span>;
+  <span class="keyword">my</span> <span class="variable">$datafile</span> = <span class="string">qq{myapp.dat}</span>;
+  <span class="keyword">open</span> <span class="keyword">my</span> <span class="variable">$fh</span>, <span class="string">'&lt;'</span>, <span class="variable">$datafile</span> <span class="keyword">or</span> <span class="keyword">die</span> <span class="variable">$!</span>;
+  <span class="keyword">my</span> <span class="variable">@entries</span> = &lt;<span class="variable">$fh</span>&gt;;
+  <span class="keyword">close</span> <span class="variable">$fh</span>;
+  <span class="variable">@entries</span> = <span class="keyword">map</span> {decode_utf8(<span class="variable">$_</span>)} <span class="variable">@entries</span>;
+  <span class="variable">$self</span>-&gt;stash(<span class="string">entries =&gt;</span> \<span class="variable">@entries</span>);
+  <span class="variable">$self</span>-&gt;render(<span class="string">'index'</span>);
+};
+
+post <span class="string">'/post'</span> =&gt; <span class="sub"><span class="keyword">sub</span> {</span>
+  <span class="keyword">my</span> <span class="variable">$self</span> = <span class="keyword">shift</span>;
+  <span class="keyword">my</span> <span class="variable">$body</span> = <span class="variable">$self</span>-&gt;param(<span class="string">'body'</span>);
+  <span class="keyword">my</span> <span class="variable">$datafile</span> = <span class="string">qq{myapp.dat}</span>;
+  <span class="keyword">open</span> <span class="keyword">my</span> <span class="variable">$fh</span>, <span class="string">'&gt;&gt;'</span>, <span class="variable">$datafile</span> <span class="keyword">or</span> <span class="keyword">die</span> <span class="variable">$!</span>;
+  <span class="keyword">print</span> <span class="variable">$fh</span> encode_utf8(<span class="string">qq{<span class="variable">$body</span>\n}</span>);
+  <span class="keyword">close</span> <span class="variable">$fh</span>;
+  <span class="variable">$self</span>-&gt;stash(<span class="string">body =&gt;</span> <span class="variable">$body</span>);
+  <span class="variable">$self</span>-&gt;render(<span class="string">'post'</span>);
+};
+
+app-&gt;start;
+<span class="comment">__DATA__
+</span>
+<span class="variable">@@</span> form.html.ep
+<span class="variable">%=</span> form_for <span class="string">'/post'</span> =&gt; <span class="string">method =&gt;</span> <span class="string">'POST'</span> =&gt; begin
+  <span class="variable">%=</span> text_field <span class="string">'body'</span>
+  <span class="variable">%=</span> submit_button <span class="string">'投稿する'</span>
+% end
+
+<span class="variable">@@</span> <span class="keyword">index</span>.html.ep
+% layout <span class="string">'default'</span>;
+% title <span class="string">'入力フォーム'</span>;
+<span class="variable">%=</span> include <span class="string">'form'</span>;
+% <span class="keyword">for</span> <span class="keyword">my</span> <span class="variable">$entry</span> (@{<span class="variable">$entries</span>}) {
+  &lt;p&gt;&lt;<span class="variable">%=</span> <span class="variable">$entry</span> <span class="variable">%&gt;</span>&lt;<span class="regexp">/p&gt;
+% }
+
+@@ post.html.ep
+% layout 'default';
+% title '出力';
+%= include 'form';
+&lt;p&gt;&lt;%= $body %&gt;&lt;/p</span>&gt;
+
+<span class="variable">@@</span> layout<span class="variable">s/default.html.ep
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;&lt;title&gt;&lt;%= title %&gt;&lt;/title&gt;&lt;/head</span>&gt;
+  &lt;body&gt;&lt;<span class="variable">%=</span> content <span class="variable">%&gt;</span>&lt;<span class="regexp">/body&gt;
+&lt;/html</span>&gt;
+</code></pre>
+
+</section>
+
+</section>
+<section style="top: 0px; display: block;" class="future stack">
+      <section style="top: -20px;">
+<h1>質問タイム</h1>
+
+</section>
+
+</section>
+<section style="top: 0px; display: block;" class="future stack">
+      <section style="top: -20px;">
+<h1>お疲れさまでした</h1>
+
+</section>
+
+</section>
+
+  </div>
+<div class="progress" style="display: block;"><span style="width: 0px;"></span></div><aside class="controls" style="display: block;"><div class="navigate-left"></div><div class="navigate-right enabled"></div><div class="navigate-up"></div><div class="navigate-down"></div></aside><div class="state-background"></div><div class="pause-overlay"></div></div>
+<div style="position: absolute; top: 0; right: 0; z-index: 999;">
+<a href="http://localhost:3000/">TOP</a>
+</div>
+<script src="./index_files/head.min.js"></script>
+<script src="./index_files/reveal.min.js"></script>
+<script>
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    keyboard: true,
+    overview: true,
+    center: true,
+    loop: false,
+    autoSlide: 0,
+    mouseWheel: false,
+    rollingLinks: true,
+    theme: null,
+    transition: 'default',
+    dependencies: [
+      { src: '/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: '/reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: '/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: '/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: '/reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: '/reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+    ]
+  });
+</script><script type="text/javascript" src="./index_files/highlight.js"></script><script type="text/javascript" src="./index_files/zoom.js"></script><script type="text/javascript" src="./index_files/notes.js"></script>
+<script src="./index_files/app.js"></script>
+
+
+</body></html>
