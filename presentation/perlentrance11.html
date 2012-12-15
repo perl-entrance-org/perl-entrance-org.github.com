@@ -1,0 +1,549 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title></title>
+  <link href="reveal/css/reveal.min.css" media="all" rel="stylesheet" />
+  <link href="reveal/css/theme/beige.css" media="all" rel="stylesheet" />
+    <link href="reveal/css/print/paper.css" media="print" rel="stylesheet" />
+  <link href="reveal/lib/css/zenburn.css" media="all" rel="stylesheet" />
+  <link href="app/app.css" media="all" rel="stylesheet" />
+</head>
+<body>
+<div id="md2reveal" class="reveal">
+  <div class="slides">
+<section>
+      <section>
+<h1><img src="images/perl-entrance_t.png" alt="Perl入学式" /></h1>
+
+<ul>
+<li>スペースキーを押すと進み、ESCキーを押すと全体を俯瞰できます。</li>
+<li><a href="https://www.google.com/intl/ja/chrome/browser/">Chrome</a>や<a href="http://www.mozilla.jp/firefox/">Firefox</a>でご覧ください。</li>
+</ul>
+
+</section>
+
+</section>
+<section>
+      <section>
+<h1>Perl入学式 #11</h1>
+
+<p><a href="http://www.perl-entrance.org">http://www.perl-entrance.org</a></p>
+
+<ul>
+<li>日時
+<ul>
+<li>2012年12月16日（日） 14:00 - 17:00</li>
+</ul></li>
+<li>会場
+<ul>
+<li>Joe'sビジネスセンター</li>
+<li><a href="http://www.joeswebhosting.net">http://www.joeswebhosting.net</a></li>
+</ul></li>
+</ul>
+
+</section>
+
+</section>
+<section>
+      <section>
+<h1>Perl入学式について</h1>
+
+<ul>
+<li>Perl入学式(<a href="http://www.perl-entrance.org">http://www.perl-entrance.org</a>)は, プログラミング未経験者からPerl初心者を対象としたワークショップです</li>
+<li>公式Twitter
+<ul>
+<li><a href="http://twitter.com/perl_entrance">@Perl_Entrance</a></li>
+</ul></li>
+<li>公式ハッシュタグ
+<ul>
+<li>#Perl入学式</li>
+</ul></li>
+<li>公式Facebookページ
+<ul>
+<li><a href="https://www.facebook.com/PerlEntrance">https://www.facebook.com/PerlEntrance</a></li>
+</ul></li>
+</ul>
+
+</section>
+
+</section>
+<section>
+      <section>
+<h1>会場について</h1>
+
+<ul>
+<li>今回のPerl入学式は「Joe'sオープンソースJelly」の一環ということで、株式会社Joe'sクラウドコンピューティング（<a href="http://www.joeswebhosting.net">http://www.joeswebhosting.net</a>）様より特別に会場をお借りしています</li>
+<li>この場をお借りしてお礼申し上げます</li>
+</ul>
+
+</section>
+
+</section>
+<section>
+      <section>
+<h1>ロゴについて</h1>
+
+<p><img src="images/perl-entrance_t_300.png" alt="Perl入学式" /></p>
+
+<ul>
+<li>横山陽平さん(<a href="http://yokoyamayohei.com/">http://yokoyamayohei.com/</a>)にデザインしていただきました</li>
+<li>この場をお借りしてお礼申し上げます</li>
+</ul>
+
+</section>
+
+</section>
+<section>
+      <section>
+<h1>IT勉強会スタンプラリー</h1>
+
+<p><img src="images/it-stamp.png" alt="IT勉強会スタンプラリー" /></p>
+
+<ul>
+<li>Perl入学式は, IT勉強会スタンプラリー(<a href="http://it-stamp.jp/">http://it-stamp.jp/</a>)に参加しています</li>
+<li>今回のPerl入学式は, スタンプラリーの対象となる勉強会です</li>
+<li>台紙は勉強会終了後にお渡しします</li>
+</ul>
+
+</section>
+
+</section>
+<section>
+      <section>
+<h1>喋ってる人</h1>
+
+<ul>
+<li>名前 ： 若林 信敬</li>
+<li>Twitter ： <a href="http://twitter.com/nqounet">@nqounet</a></li>
+<li>Facebook ： <a href="https://www.facebook.com/nobutaka.wakabayashi">nobutaka.wakabayashi</a></li>
+<li>仕事 ： フリーエンジニア（IT系）</li>
+<li>屋号 ： <a href="http://www.nishimiyahara.net">IT Office 西宮原</a></li>
+</ul>
+
+</section>
+
+</section>
+<section>
+      <section>
+<h1>#11の目標</h1>
+
+<ul>
+<li>Perl入学式の最終目標である簡易掲示板を、復習しながら実際に作成していきます。</li>
+</ul>
+
+</section>
+
+</section>
+<section>
+      <section>
+<h1>本日の内容</h1>
+
+</section>
+
+      <section>
+<h2>本日の内容（その１）</h2>
+
+<ul>
+<li>開発環境の準備</li>
+<li>ファイルがない場合は作成する</li>
+<li>記事を投稿したあとに記事を表示するページに戻る</li>
+<li>記事を新しい順に表示する</li>
+<li>空文字または空白だけの投稿は無効にする</li>
+<li>投稿した時間を表示する</li>
+<li>投稿した時間をもう少しちゃんと表示する</li>
+</ul>
+
+</section>
+
+      <section>
+<h2>本日の内容（その２）</h2>
+
+<ul>
+<li>投稿した時間を好きな形式で表示する</li>
+<li>URLっぽい文字列をリンクにする</li>
+<li>HTMLタグをエスケープする</li>
+<li>記事ではなくデータとして保存する</li>
+<li>リダイレクト後にメッセージを表示させる</li>
+<li>スタイルシートを読み込むようにする</li>
+<li>コマンドを使ってみる</li>
+</ul>
+
+</section>
+
+</section>
+<section>
+      <section>
+<h1>開発環境の準備</h1>
+
+<ul>
+<li>Perl</li>
+<li>Mojolicious</li>
+<li>前回の最終型をダウンロード</li>
+</ul>
+
+</section>
+
+      <section>
+<h2>Perl</h2>
+
+<ul>
+<li><code>Perl</code>の環境を構築しておきましょう。</li>
+</ul>
+
+<h4><a href="http://www.perl-entrance.org/p/modernperl20128.html">Perl入学式: ModernなPerlの開発環境の構築方法（2012年8月版）</a></h4>
+
+</section>
+
+      <section code>
+<h2>Mojolicious</h2>
+
+<ul>
+<li><code>Mojolicious</code>をインストールしておきましょう。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code>$ cpanm Mojolicious
+</code></pre>
+
+</section>
+
+      <section code>
+<h2>前回（#10）の最終型をダウンロード（git版）</h2>
+
+<ul>
+<li>ターミナル（端末）を起動して、適当なディレクトリに移動してから以下のコマンドを実行してください。</li>
+</ul>
+
+<!-- code -->
+
+<pre><code>$ git clone https://github.com/perl-entrance-org/perl-entrance-2012-10.git
+$ cd perl-entrance-2012-10
+</code></pre>
+
+</section>
+
+      <section>
+<h2>前回（#10）の最終型をダウンロード（zip版）</h2>
+
+<ul>
+<li>以下のファイルをダウンロードしましょう。</li>
+<li><a href="https://github.com/perl-entrance-org/perl-entrance-2012-10/archive/master.zip">https://github.com/perl-entrance-org/perl-entrance-2012-10/archive/master.zip</a></li>
+<li>ダウンロードしたら、適当なフォルダに移動させて解凍（展開）してください。</li>
+<li>ターミナル（端末）を起動して、解凍後のフォルダに移動してください。</li>
+</ul>
+
+</section>
+
+</section>
+<section>
+      <section>
+<h1>ファイル検査</h1>
+
+</section>
+
+      <section>
+<h2>データファイルがない場合は作成する</h2>
+
+<ul>
+<li><a href="https://github.com/perl-entrance-org/perl-entrance-2012-11/commit/a7c784a7a4d748b19d1485e2ab2131816ed7540e">ソースコード</a></li>
+<li>参考になるページ
+<ul>
+<li><a href="http://perldoc.jp/func/-X">-X - perldoc.jp</a></li>
+</ul></li>
+</ul>
+
+</section>
+
+</section>
+<section>
+      <section>
+<h1>リダイレクト</h1>
+
+</section>
+
+      <section>
+<h2>記事を投稿したあとに記事を表示するページに戻る</h2>
+
+<ul>
+<li><a href="https://github.com/perl-entrance-org/perl-entrance-2012-11/commit/b6af6ab8f510d75cc5a71574317a7ab7595a5364">ソースコード</a></li>
+<li>参考になるページ
+<ul>
+<li><a href="https://github.com/yuki-kimoto/mojolicious-guides-japanese/wiki/Mojolicious%3A%3AController#wiki-redirect_to">redirect_to - Mojolicious::Controller</a></li>
+</ul></li>
+</ul>
+
+</section>
+
+</section>
+<section>
+      <section>
+<h1>reverse</h1>
+
+</section>
+
+      <section>
+<h2>記事を新しい順に表示する</h2>
+
+<ul>
+<li><a href="https://github.com/perl-entrance-org/perl-entrance-2012-11/commit/fa48cd9b66f147da9b66309891366743ce1c532e">ソースコード</a></li>
+<li>参考になるページ
+<ul>
+<li><a href="http://perldoc.jp/func/reverse">reverse - perldoc.jp</a></li>
+</ul></li>
+</ul>
+
+</section>
+
+</section>
+<section>
+      <section>
+<h1>正規表現</h1>
+
+</section>
+
+      <section>
+<h2>空白だけの投稿は無効にする</h2>
+
+<ul>
+<li><a href="https://github.com/perl-entrance-org/perl-entrance-2012-11/commit/6d250825f452eccd94179dabe96077c61860424f">ソースコード</a></li>
+<li>参考になるページ
+<ul>
+<li><a href="http://perldoc.jp/docs/perl/5.14.1/perlretut.pod">perlretut - Perl の正規表現のチュートリアル - perldoc.jp</a></li>
+</ul></li>
+</ul>
+
+</section>
+
+</section>
+<section>
+      <section>
+<h1>time</h1>
+
+</section>
+
+      <section>
+<h2>投稿した時間を表示する</h2>
+
+<ul>
+<li><a href="https://github.com/perl-entrance-org/perl-entrance-2012-11/commit/ecb665009f18efebef0670b5c18423849c4d00db">ソースコード</a></li>
+<li>参考になるページ
+<ul>
+<li><a href="http://perldoc.jp/func/time">time - perldoc.jp</a></li>
+</ul></li>
+</ul>
+
+</section>
+
+</section>
+<section>
+      <section>
+<h1>localtime</h1>
+
+</section>
+
+      <section>
+<h2>投稿した時間をもう少しちゃんと表示する</h2>
+
+<ul>
+<li><a href="https://github.com/perl-entrance-org/perl-entrance-2012-11/commit/2726228599930f6876057e090c82f3bf67b259db">ソースコード</a></li>
+<li>参考になるページ
+<ul>
+<li><a href="http://perldoc.jp/func/localtime">localtime - perldoc.jp</a></li>
+</ul></li>
+</ul>
+
+</section>
+
+</section>
+<section>
+      <section>
+<h1>Time::Piece</h1>
+
+</section>
+
+      <section>
+<h2>投稿した時間を好きな形式で表示する</h2>
+
+<ul>
+<li><a href="https://github.com/perl-entrance-org/perl-entrance-2012-11/commit/ef04e9b712c922a4d9f228e1a397504bec23135b">ソースコード</a></li>
+<li>参考になるページ
+<ul>
+<li><a href="http://perldoc.jp/docs/modules/Time-Piece-1.08/Piece.pod">Time::Piece - オブジェクト指向な時間オブジェクト - perldoc.jp</a></li>
+<li><a href="http://perldoc.jp/func/sprintf">sprintf - perldoc.jp</a></li>
+</ul></li>
+</ul>
+
+</section>
+
+</section>
+<section>
+      <section>
+<h1>正規表現その2</h1>
+
+</section>
+
+      <section>
+<h2>URLっぽい文字列をリンクにする</h2>
+
+<ul>
+<li><a href="https://github.com/perl-entrance-org/perl-entrance-2012-11/commit/a03bd399f2361e049f00db6e106ab2fac055fa7d">ソースコード</a></li>
+<li>参考になるページ
+<ul>
+<li><a href="http://www.din.or.jp/~ohzaki/perl.htm#httpURL">httpURL - Perlメモ</a></li>
+<li><a href="http://perldoc.jp/func/chomp">chomp - perldoc.jp</a></li>
+</ul></li>
+</ul>
+
+</section>
+
+</section>
+<section>
+      <section>
+<h1>helper</h1>
+
+</section>
+
+      <section>
+<h2>HTMLタグをエスケープする</h2>
+
+<ul>
+<li><a href="https://github.com/perl-entrance-org/perl-entrance-2012-11/commit/c03d0eac621ef3281df1e116e4673cbb58e51e2e">ソースコード</a></li>
+<li>参考になるページ
+<ul>
+<li><a href="https://github.com/yuki-kimoto/mojolicious-guides-japanese/wiki/Mojolicious#wiki-helper">helper - Mojolicious</a></li>
+<li><a href="https://github.com/yuki-kimoto/mojolicious-guides-japanese/wiki/Mojo%3A%3AUtil#wiki-xml_escape">xml_escape - Mojo::Util</a></li>
+</ul></li>
+</ul>
+
+</section>
+
+</section>
+<section>
+      <section>
+<h1>データ構造</h1>
+
+</section>
+
+      <section>
+<h2>記事ではなくデータとして保存する</h2>
+
+<ul>
+<li><a href="https://github.com/perl-entrance-org/perl-entrance-2012-11/commit/09d77f2546c368cc1d18922ffbfc1cb5e646ae51">ソースコード</a></li>
+<li>参考になるページ
+<ul>
+<li><a href="http://perldoc.jp/docs/perl/5.14.1/perldsc.pod">perldsc - Perl のデータ構造クックブック - perldoc.jp</a></li>
+<li><a href="https://github.com/yuki-kimoto/mojolicious-guides-japanese/wiki/Mojo%3A%3AJSON">Mojo::JSON</a></li>
+</ul></li>
+</ul>
+
+</section>
+
+</section>
+<section>
+      <section>
+<h1>flash</h1>
+
+</section>
+
+      <section>
+<h2>リダイレクト後にメッセージを表示させる</h2>
+
+<ul>
+<li><a href="https://github.com/perl-entrance-org/perl-entrance-2012-11/commit/9b6f3bda135828de0bcbf1d14790b4b1df2e0d54">ソースコード</a></li>
+<li>参考になるページ
+<ul>
+<li><a href="https://github.com/yuki-kimoto/mojolicious-guides-japanese/wiki/Mojolicious%3A%3AController#wiki-flash">flash - Mojolicious::Controller</a></li>
+</ul></li>
+</ul>
+
+</section>
+
+</section>
+<section>
+      <section>
+<h1>外部ファイル</h1>
+
+</section>
+
+      <section>
+<h2>スタイルシートを読み込むようにする</h2>
+
+<ul>
+<li><a href="https://github.com/perl-entrance-org/perl-entrance-2012-11/commit/82603f4e69e28476d62c62108ef61af69f5cda1d">ソースコード</a></li>
+<li>参考になるページ
+<ul>
+<li><a href="https://github.com/yuki-kimoto/mojolicious-guides-japanese/wiki/Mojolicious%3A%3ALite#wiki-%2838745%29%2830340%29%2812501%29%2812449%29%2812452%29%2812523%29">静的ファイル - Mojolicious::Lite</a></li>
+</ul></li>
+</ul>
+
+</section>
+
+</section>
+<section>
+      <section>
+<h1>inflate</h1>
+
+</section>
+
+      <section>
+<h2>コマンドを使ってみる</h2>
+
+<ul>
+<li>./myapp.pl inflate</li>
+</ul>
+
+</section>
+
+</section>
+<section>
+      <section>
+<h1>質問タイム</h1>
+
+</section>
+
+</section>
+<section>
+      <section>
+<h1>お疲れさまでした</h1>
+
+</section>
+
+</section>
+
+  </div>
+</div>
+<div style="position: absolute; top: 0; right: 0; z-index: 999;">
+<a href="/">TOP</a>
+</div>
+<script src="reveal/lib/js/head.min.js"></script>
+<script src="reveal/js/reveal.min.js"></script>
+<script>
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    keyboard: true,
+    overview: true,
+    center: true,
+    loop: false,
+    autoSlide: 0,
+    mouseWheel: false,
+    rollingLinks: true,
+    theme: null,
+    transition: 'default',
+    dependencies: [
+      { src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+    ]
+  });
+</script>
+<script src="app/app.js"></script>
+</body>
+</html>
