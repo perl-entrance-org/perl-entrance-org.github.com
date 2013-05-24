@@ -161,11 +161,21 @@ print $string . $numbrer . "\n";
 </div><div class="step" data-y="768" data-x="6144"><h2>Perlを使っている会社</h2>
 
 <ul>
-<li>NHN Japan, DeNA, Seesaa, はてな, カヤック, mixi, Mobile Factory, FreakOut, GaiaXなどもPerlを活用しており, 優秀なPerl Mongerが数多く所属している.</li>
-<li>Perlを使ったサービスとしては, NHN Japanの｢ライブドアブログ｣やオモロキの｢ボケて｣などが有名.</li>
+<li>Line, DeNA, Seesaa, はてな, カヤック, mixi, Mobile Factory, FreakOut, GaiaXなどもPerlを活用しており, 優秀なPerl Mongerが数多く所属している.</li>
+<li>Perlを使ったサービスとしては, はてなの｢はてなダイアリー｣やLineの｢ライブドアブログ｣, オモロキの｢ボケて｣などが有名.</li>
 </ul>
-</div><div class="step" data-y="1536" data-x="0"><h2>plenv</h2>
-</div><div class="step" data-y="1536" data-x="1024"><h2>plenvとは</h2>
+</div><div class="step" data-y="1536" data-x="0"><h2>PerlとCGI</h2>
+
+<ul>
+<li>一時期, ｢PerlでWebサービスを作るならCGI｣という時代がありましたが, 今はそうではありません.</li>
+<li>最近は, PSGI(Perl Web Server Gateway Interface)という仕様に対応したWAF(Web Application Framework)を使っての開発が増えています.
+<ul>
+<li>Perlの代表的なWAFとしては, MojoliciousやAmon2などがあります.</li>
+</ul></li>
+<li>Perl入学式は｢モダンなPerlを教える｣という方針を取っていますので, CGIについては触れません.</li>
+</ul>
+</div><div class="step" data-y="1536" data-x="1024"><h2>plenv</h2>
+</div><div class="step" data-y="1536" data-x="2048"><h2>plenvとは</h2>
 
 <ul>
 <li><code>plenv</code>とは, @tokuhiromさんが開発した, 国産のPerl管理ツールです.
@@ -176,7 +186,7 @@ print $string . $numbrer . "\n";
 <li>デフォルトのperlを使ってもいいのですが, モジュールの導入でデフォルトのperlを汚したくない為, plenvを利用します.</li>
 </ul></li>
 </ul>
-</div><div class="step" data-y="1536" data-x="2048"><h2>plenvの導入(homebrew)</h2>
+</div><div class="step" data-y="1536" data-x="3072"><h2>plenvの導入(homebrew)</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>$ brew update
 $ brew install plenv
@@ -185,9 +195,11 @@ $ brew install plenv
 <ul>
 <li>MacでHomebrewを使っている方は, <code>brew</code>コマンドでインストールすることができます.</li>
 </ul>
-</div><div class="step" data-y="1536" data-x="3072"><h2>plenvの導入(git)</h2>
+</div><div class="step" data-y="1536" data-x="4096"><h2>plenvの導入(git)</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>$ git clone git://github.com/tokuhirom/plenv.git ~/.plenv
+# もし, gitのインストールがまだの場合は導入してから実行しましょう.
+$ sudo apt-get install git # gitのインストール(for Ubuntu)
 </code></pre>
 
 <ul>
@@ -196,7 +208,7 @@ $ brew install plenv
 <li>まず, このコマンドでplenvをダウンロードします.</li>
 </ul></li>
 </ul>
-</div><div class="step" data-y="1536" data-x="4096"><h2>plenvの導入</h2>
+</div><div class="step" data-y="1536" data-x="5120"><h2>plenvの導入</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>$ echo 'export PATH="$HOME/.plenv/bin:$PATH"' &gt;&gt; ~/.bash_profile
 $ echo 'eval "$(plenv init -)"' &gt;&gt; ~/.bash_profile
@@ -209,7 +221,7 @@ $ echo 'eval "$(plenv init -)"' &gt;&gt; ~/.bash_profile
 </ul></li>
 <li>Ubuntuをお使いの方で, シェルを<code>bash</code>から変更していない方は<code>~/.bash_profile</code>のままで問題ありません.</li>
 </ul>
-</div><div class="step" data-y="1536" data-x="5120"><h2>plenvの導入</h2>
+</div><div class="step" data-y="1536" data-x="6144"><h2>plenvの導入</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>$ source ~/.bash_profile
 $ which plenv
@@ -220,7 +232,7 @@ $ which plenv
 <li>シェルを再起動したり, <code>~/.bash_profile</code>を再度読み込むことで<code>plenv</code>が有効になります.</li>
 <li><code>which</code>コマンドで<code>plenv</code>にパスが通っているか確認してみましょう.</li>
 </ul>
-</div><div class="step" data-y="1536" data-x="6144"><h2>plenvでのperlの導入</h2>
+</div><div class="step" data-y="2304" data-x="0"><h2>plenvでのperlの導入</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>$ plenv install 5.16.3
 </code></pre>
@@ -232,7 +244,7 @@ $ which plenv
 <li>インストールにはそれなりの時間がかかりますので, 暫く待ちましょう.</li>
 </ul></li>
 </ul>
-</div><div class="step" data-y="2304" data-x="0"><h2>plenvでのperlの導入</h2>
+</div><div class="step" data-y="2304" data-x="1024"><h2>plenvでのperlの導入</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>$ plenv list
   5.16.3
@@ -244,7 +256,7 @@ $ which plenv
 <li><code>system</code>はデフォルトで入っているperlです.</li>
 <li>先頭に<code>*</code>が付いているものが, 現在有効になっているperlです.</li>
 </ul>
-</div><div class="step" data-y="2304" data-x="1024"><h2>plenvでのperlの導入</h2>
+</div><div class="step" data-y="2304" data-x="2048"><h2>plenvでのperlの導入</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>$ plenv global 5.16.3
 $ plenv list
@@ -256,7 +268,7 @@ $ plenv list
 <li><code>plenv global</code>コマンドで, デフォルトで使うperlを指定します.</li>
 <li><code>plenv global 5.16.3</code>で, インストールした<code>perl-5.16.3</code>を指定すると, <code>plenv list</code>の出力がこのように変わるはずです.</li>
 </ul>
-</div><div class="step" data-y="2304" data-x="2048"><h2>plenvでのperlの導入</h2>
+</div><div class="step" data-y="2304" data-x="3072"><h2>plenvでのperlの導入</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>$ perl -v
 This is perl 5, version 16, subversion 3 (v5.16.3) ... (以下略)
@@ -265,7 +277,7 @@ This is perl 5, version 16, subversion 3 (v5.16.3) ... (以下略)
 <ul>
 <li>確かに, <code>perl-5.16.3</code>が使われていることが確認できます.</li>
 </ul>
-</div><div class="step" data-y="2304" data-x="3072"><h2>現在有効なPerlの確認</h2>
+</div><div class="step" data-y="2304" data-x="4096"><h2>現在有効なPerlの確認</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>$ plenv version
 5.16.3 (set by /home/username/.plenv/version)
@@ -274,7 +286,7 @@ This is perl 5, version 16, subversion 3 (v5.16.3) ... (以下略)
 <ul>
 <li><code>plenv version</code>で, 現在有効になっているPerlと, それがどこで設定されているかを確認することができます.</li>
 </ul>
-</div><div class="step" data-y="2304" data-x="4096"><h2>エディタ</h2>
+</div><div class="step" data-y="2304" data-x="5120"><h2>エディタ</h2>
 
 <ul>
 <li>Perlの準備が出来ました. 早速, 簡単なコードを書いてみましょう.</li>
@@ -285,7 +297,7 @@ This is perl 5, version 16, subversion 3 (v5.16.3) ... (以下略)
 </ul></li>
 <li>EmacsやVimなど, 既に使い慣れているエディタがある方はそちらをお使いください.</li>
 </ul>
-</div><div class="step" data-y="2304" data-x="5120"><h2>Sublime Text2</h2>
+</div><div class="step" data-y="2304" data-x="6144"><h2>Sublime Text2</h2>
 
 <ul>
 <li>特にこだわりのない方は, Sublime Text2を試してみることをおすすめします.</li>
@@ -293,7 +305,7 @@ This is perl 5, version 16, subversion 3 (v5.16.3) ... (以下略)
 <li>ダウンロードしたファイルを右クリック -> <code>ここに展開する</code>をクリック.</li>
 <li><code>Sublime Text2</code>というフォルダができるので, その中の<code>sublime text</code>をクリックして起動します.</li>
 </ul>
-</div><div class="step" data-y="2304" data-x="6144"><h2>Hello, world!</h2>
+</div><div class="step" data-y="3072" data-x="0"><h2>Hello, world!</h2>
 
 <ul>
 <li>プログラミングの第一歩, Hello, world!に挑戦してみましょう.
@@ -301,7 +313,7 @@ This is perl 5, version 16, subversion 3 (v5.16.3) ... (以下略)
 <li>これは, 端末上に<code>Hello, world!</code>という文字列を表示するプログラムです.</li>
 </ul></li>
 </ul>
-</div><div class="step" data-y="3072" data-x="0"><h2>Hello, world!</h2>
+</div><div class="step" data-y="3072" data-x="1024"><h2>Hello, world!</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>print "hello, world!\n";
 </code></pre>
@@ -318,7 +330,7 @@ This is perl 5, version 16, subversion 3 (v5.16.3) ... (以下略)
 </ul></li>
 <li>C言語と同じく, 文の最後には<code>;</code>を付けましょう.</li>
 </ul>
-</div><div class="step" data-y="3072" data-x="1024"><h2>スクリプトの実行</h2>
+</div><div class="step" data-y="3072" data-x="2048"><h2>スクリプトの実行</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>$ perl hello.pl
 hello, world!
@@ -327,7 +339,7 @@ hello, world!
 <ul>
 <li><code>perl</code>の引数に, 実行したいスクリプトファイル名を与えると, そのスクリプトを実行してくれます.</li>
 </ul>
-</div><div class="step" data-y="3072" data-x="2048"><h2>練習問題</h2>
+</div><div class="step" data-y="3072" data-x="3072"><h2>練習問題</h2>
 
 <ul>
 <li>print命令を複数個使って, あなたのプロフィール(名前, 年齢, 大学etc...)を表示するスクリプトを書いてみよう.
@@ -335,7 +347,7 @@ hello, world!
 <li>スクリプトの名前は<code>profile.pl</code>として, 実行してみましょう.</li>
 </ul></li>
 </ul>
-</div><div class="step" data-y="3072" data-x="3072"><h2>plenvとcpanm</h2>
+</div><div class="step" data-y="3072" data-x="4096"><h2>plenvとcpanm</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>$ plenv install-cpanm
 </code></pre>
@@ -345,7 +357,7 @@ hello, world!
 <li><code>plenv</code>で導入したperlに, モジュールのインストールを行うツールである<code>cpanm</code>を用意しましょう.</li>
 <li>...といっても難しいことは何もなくて, <code>plenv install-cpanm</code>というコマンドを打ち込むだけです.</li>
 </ul>
-</div><div class="step" data-y="3072" data-x="4096"><h2>plenvとcpanm</h2>
+</div><div class="step" data-y="3072" data-x="5120"><h2>plenvとcpanm</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>$ cpanm Acme::FizzBuzz
 </code></pre>
@@ -358,7 +370,7 @@ hello, world!
 <li><code>Acme</code>というのは, CPANにおいて｢ジョーク｣なモジュールの為に用意された名前空間です.</li>
 <li>ルーニー･テューンズのロードランナーの中に出てくる, コヨーテに怪しい商品を売るAcme社から来ている... らしい.</li>
 </ul>
-</div><div class="step" data-y="3072" data-x="5120"><h2>モジュールを使う</h2>
+</div><div class="step" data-y="3072" data-x="6144"><h2>モジュールを使う</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>use Acme::FizzBuzz;
 </code></pre>
@@ -369,7 +381,7 @@ hello, world!
 <li>100までのFizzBuzzの結果が画面上に現れるはずです.</li>
 </ul></li>
 </ul>
-</div><div class="step" data-y="3072" data-x="6144"><h2>Perlとモジュール</h2>
+</div><div class="step" data-y="3840" data-x="0"><h2>Perlとモジュール</h2>
 
 <ul>
 <li>...このように(?), CPANのモジュールは貴方が必要とするであろう様々な機能を提供してくれます.
@@ -378,7 +390,7 @@ hello, world!
 <li>Perl入学式の中でも, いくつかのモジュールを利用していきます.</li>
 </ul></li>
 </ul>
-</div><div class="step" data-y="3840" data-x="0"><h2>今後の予定</h2>
+</div><div class="step" data-y="3840" data-x="1024"><h2>今後の予定</h2>
 
 <ul>
 <li>4月から来年2月まで, 偶数月に開催します(4月, 6月, 8月, 10月, 12月, 2月).
@@ -388,7 +400,7 @@ hello, world!
 <li>開催日の告知は, それ以前にできるよう心がけます.</li>
 </ul></li>
 </ul>
-</div><div class="step" data-y="3840" data-x="1024"><h2>今後の予定</h2>
+</div><div class="step" data-y="3840" data-x="2048"><h2>今後の予定</h2>
 
 <ul>
 <li>#2から#6までの予定は次のようになっています.
@@ -401,14 +413,14 @@ hello, world!
 </ul></li>
 <li>あくまで予定ですので, 変更が入る可能性があります.</li>
 </ul>
-</div><div class="step" data-y="3840" data-x="2048"><h2>今後の予定</h2>
+</div><div class="step" data-y="3840" data-x="3072"><h2>今後の予定</h2>
 
 <ul>
 <li>講義と実践(コーディング)を繰り返すスタイルで進めていきますので, 毎回ノートパソコンの持参をお願いします.</li>
 <li>質問等は解説中でも遠慮せずに行なって頂ければと思います.</li>
 <li>twitterで<code>#Perl入学式</code>というハッシュタグを付けて質問をすれば, スタッフ･サポーターが極力迅速に答えます.</li>
 </ul>
-</div><div class="step" data-y="3840" data-x="3072"><h2>今後の予定</h2>
+</div><div class="step" data-y="3840" data-x="4096"><h2>今後の予定</h2>
 
 <ul>
 <li>#2以降は, 毎回復習用の宿題を出す予定です.
@@ -417,7 +429,7 @@ hello, world!
 <li>時間が不足しそうな場合, 回答を書いたファイルを配布する, という形式になるかもしれません.</li>
 </ul></li>
 </ul>
-</div><div class="step" data-y="3840" data-x="4096"><h2>今後の予定</h2>
+</div><div class="step" data-y="3840" data-x="5120"><h2>今後の予定</h2>
 
 <ul>
 <li>Webサービス開発では, PerlのWAF(ウェブアプリケーションフレームワーク)を使って何かしらのプロダクトを開発しつつ, Perlを学んでいく形になります.</li>
@@ -426,14 +438,14 @@ hello, world!
 <li>今年がどうなるかは, 現時点では未定です.</li>
 </ul></li>
 </ul>
-</div><div class="step" data-y="3840" data-x="5120"><h2>今後の予定</h2>
+</div><div class="step" data-y="3840" data-x="6144"><h2>今後の予定</h2>
 
 <ul>
 <li>Perl入学式を通して, プログラミングの面白さ, Perlの面白さを実感して頂ければ, それに勝る喜びはありません.</li>
 <li>これから1年間, どうぞ宜しくお願い致します.</li>
 </ul>
 </div>
-<!--  <div id="overview" class="step" data-x="3072" data-y="1920" data-scale="15"></div> -->
+<!--  <div id="overview" class="step" data-x="3072" data-y="2304" data-scale="15"></div> -->
 </div>
 
 <div class="hint">
@@ -444,8 +456,8 @@ if ("ontouchstart" in document.documentElement) {
   document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
 }
 </script>
-<script src="impress/js/impress.js"></script>
-<script src="gcp/prettify.js"></script>
-<script src="js/app.js"></script>
+<script src="/impress/js/impress.js"></script>
+<script src="/gcp/prettify.js"></script>
+<script src="/js/app.js"></script>
 </body>
 </html>
