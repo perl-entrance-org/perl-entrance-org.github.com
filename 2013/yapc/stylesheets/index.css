@@ -1,0 +1,52 @@
+#keyvisual {
+  background: url("../images/bg.png") repeat 0 0;
+  text-align: center;
+  padding-top: 65px;
+  margin-bottom: -6px; }
+
+#insidelinks {
+  background-color: #98cd42;
+  height: 40px; }
+  #insidelinks ul {
+    width: 1024px;
+    margin: 0 auto; }
+    #insidelinks ul li {
+      height: 30px;
+      overflow: hidden;
+      padding-left: 20px;
+      background: url("../images/common.png") no-repeat 0 -130px;
+      padding-top: 10px;
+      margin-right: 20px;
+      float: left; }
+      #insidelinks ul li a {
+        color: white;
+        text-decoration: none; }
+
+#mainbody {
+  background-color: #f6f6f6; }
+  #mainbody .wrap {
+    width: 1024px;
+    margin: 0 auto;
+    overflow: auto; }
+    #mainbody .wrap .leftbody {
+      width: 700px;
+      margin-bottom: 60px;
+      float: left; }
+      #mainbody .wrap .leftbody #s01 img#classPhoto {
+        float: left;
+        margin: 0 20px 20px 0; }
+      #mainbody .wrap .leftbody #s01 #toPerlEntranceOfficial {
+        margin: 25px 0; }
+      #mainbody .wrap .leftbody #s01 #toYAPCOfficial {
+        margin: 25px 0; }
+      #mainbody .wrap .leftbody h1 {
+        margin-top: 60px;
+        margin-bottom: 50px; }
+      #mainbody .wrap .leftbody p {
+        font-size: 16px;
+        line-height: 1.6; }
+    #mainbody .wrap .rightbody {
+      width: 250px;
+      float: right; }
+      #mainbody .wrap .rightbody #twitterwidget {
+        margin-top: 60px; }
