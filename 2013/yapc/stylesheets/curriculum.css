@@ -1,0 +1,24 @@
+article {
+  background-color: #f8f8f8;
+  padding-bottom: 60px; }
+  article > h1 {
+    height: 130px;
+    background: url("../images/bg.png") repeat 0 0;
+    font-size: 0px;
+    color: white;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 -5px 10px inset;
+    -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 -5px 10px inset;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 -5px 10px inset; }
+    article > h1 .bg {
+      height: 100%; }
+  article#index > h1 .bg {
+    background: url("../curriculum/images/index_title.png") no-repeat center top; }
+  article#basic > h1 .bg {
+    background: url("../curriculum/images/basic_title.png") no-repeat center top; }
+  article#advance > h1 .bg {
+    background: url("../curriculum/images/advance_title.png") no-repeat center top; }
+  article section {
+    width: 1024px;
+    margin: 60px auto 0; }
+    article section h1 {
+      margin-bottom: 30px; }

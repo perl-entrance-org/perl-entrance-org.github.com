@@ -6,6 +6,7 @@ body {
   background-color: #333333; }
 
 header {
+  min-width: 1024px;
   background-color: #333333;
   color: white;
   height: 60px;

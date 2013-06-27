@@ -1,0 +1,2 @@
+impress().init();
+prettyPrint();
