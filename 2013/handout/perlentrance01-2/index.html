@@ -197,9 +197,9 @@ $ brew install plenv
 </ul>
 </div><div class="step" data-y="1536" data-x="4096"><h2>plenvの導入(git)</h2>
 
-<pre class="lang-perl prettyprint linenums"><code>$ git clone git://github.com/tokuhirom/plenv.git ~/.plenv
-# もし, gitのインストールがまだの場合は導入してから実行しましょう.
-$ sudo apt-get install git # gitのインストール(for Ubuntu)
+<pre class="lang-perl prettyprint linenums"><code>$ sudo apt-get install git # gitのインストール(Ubuntu)
+$ git clone git://github.com/tokuhirom/plenv.git ~/.plenv
+$ git clone git://github.com/tokuhirom/Perl-Build.git ~/.plenv/plugins/perl-build
 </code></pre>
 
 <ul>
@@ -219,7 +219,10 @@ $ echo 'eval "$(plenv init -)"' &gt;&gt; ~/.bash_profile
 <ul>
 <li><code>~/.bash_profile</code>はお使いのシェルに応じて適宜変更して下さい.</li>
 </ul></li>
-<li>Ubuntuをお使いの方で, シェルを<code>bash</code>から変更していない方は<code>~/.bash_profile</code>のままで問題ありません.</li>
+<li>Ubuntuをお使いの方で, シェルを<code>bash</code>から変更していない方は<code>~/.bash_profile</code>のままで問題ありません.
+<ul>
+<li>Ubuntuで<code>~/.bash_profile</code>に書き込んでも動作しない場合, <code>~/.bashrc</code>に書き込むと動く... という場合があります.</li>
+</ul></li>
 </ul>
 </div><div class="step" data-y="1536" data-x="6144"><h2>plenvの導入</h2>
 
@@ -246,20 +249,20 @@ $ which plenv
 </ul>
 </div><div class="step" data-y="2304" data-x="1024"><h2>plenvでのperlの導入</h2>
 
-<pre class="lang-perl prettyprint linenums"><code>$ plenv list
+<pre class="lang-perl prettyprint linenums"><code>$ plenv versions
   5.16.3
 * system
 </code></pre>
 
 <ul>
-<li>現在導入済みのperlの一覧を表示する<code>plenv list</code>コマンドで, <code>perl-5.16.3</code>の導入が成功したか確認してみましょう.</li>
+<li>現在導入済みのperlの一覧を表示する<code>plenv versions</code>コマンドで, <code>perl-5.16.3</code>の導入が成功したか確認してみましょう.</li>
 <li><code>system</code>はデフォルトで入っているperlです.</li>
 <li>先頭に<code>*</code>が付いているものが, 現在有効になっているperlです.</li>
 </ul>
 </div><div class="step" data-y="2304" data-x="2048"><h2>plenvでのperlの導入</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>$ plenv global 5.16.3
-$ plenv list
+$ plenv versions
 * 5.16.3
   system
 </code></pre>
@@ -349,7 +352,8 @@ hello, world!
 </ul>
 </div><div class="step" data-y="3072" data-x="4096"><h2>plenvとcpanm</h2>
 
-<pre class="lang-perl prettyprint linenums"><code>$ plenv install-cpanm
+<pre class="lang-perl prettyprint linenums"><code>$ sudo apt-get install curl # curlのインストール(Ubuntu)
+$ plenv install-cpanm
 </code></pre>
 
 <ul>
@@ -443,6 +447,11 @@ hello, world!
 <ul>
 <li>Perl入学式を通して, プログラミングの面白さ, Perlの面白さを実感して頂ければ, それに勝る喜びはありません.</li>
 <li>これから1年間, どうぞ宜しくお願い致します.</li>
+</ul>
+</div><div class="step" data-y="4608" data-x="0"><h2>更新履歴</h2>
+
+<ul>
+<li>2013/7/22: plenvのバージョンアップに対応</li>
 </ul>
 </div>
 <!--  <div id="overview" class="step" data-x="3072" data-y="2304" data-scale="15"></div> -->
