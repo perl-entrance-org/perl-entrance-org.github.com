@@ -1,0 +1,522 @@
+Content-Type: text/html;charset=UTF-8
+Status: 500 Internal Server Error
+Date: Mon, 22 Jul 2013 14:49:36 GMT
+Content-Length: 17418
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Server error</title>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <script src="/mojo/jquery/jquery.js"></script>
+    <script src="/mojo/prettify/run_prettify.js"></script>
+    <link href="/mojo/prettify/prettify-mojo.css" media="screen" rel="stylesheet" />
+    <style>/*<![CDATA[*/
+
+      a img { border: 0 }
+      body {
+        background-color: #f5f6f8;
+        color: #445555;
+        font: 0.9em 'Helvetica Neue', Helvetica, sans-serif;
+        font-weight: normal;
+        line-height: 1.5em;
+        margin: 0;
+      }
+      pre {
+        font: 0.8em Consolas, Menlo, Monaco, Courier, monospace;
+        margin: 0;
+        white-space: pre-wrap;
+      }
+      table {
+        border-collapse: collapse;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: 100%;
+      }
+      td { padding: 0.5em }
+      .box {
+        background-color: #fff;
+        -moz-box-shadow: 0px 0px 2px #ccc;
+        -webkit-box-shadow: 0px 0px 2px #ccc;
+        box-shadow: 0px 0px 2px #ccc;
+        overflow: hidden;
+        padding: 1em;
+      }
+      .code {
+        background-color: #1a1a1a;
+        background: url(/mojo/pinstripe.gif);
+        color: #eee;
+        text-shadow: #333 0 1px 0;
+      }
+      .important { background-color: rgba(47, 48, 50, .75) }
+      .infobox { color: #333 }
+      .infobox tr:nth-child(odd) .value { background-color: #ddeeff }
+      .infobox tr:nth-child(even) .value { background-color: #eef9ff }
+      .key { text-align: right }
+      .spaced {
+        margin-left: 5em;
+        margin-right: 5em;
+      }
+      .striped { border-top: solid #cce4ff 1px }
+      .tap {
+        font: 0.5em Verdana, sans-serif;
+        text-align: center;
+      }
+      .value {
+        padding-left: 1em;
+        width: 100%;
+      }
+      #footer {
+        padding-top: 1em;
+        text-align: center;
+      }
+      #nothing { padding-top: 60px }
+      #showcase > pre {
+        font: 1.5em 'Helvetica Neue', Helvetica, sans-serif;
+        font-weight: 300;
+        margin: 0;
+        text-shadow: #333 0 1px 0;
+      }
+      #showcase td {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      #showcase .key { padding-right: 0 }
+      #more, #trace {
+        -moz-border-radius-bottomleft: 5px;
+        border-bottom-left-radius: 5px;
+        -moz-border-radius-bottomright: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      #more .tap, #trace .tap { text-shadow: #ddd 0 1px 0 }
+      #request {
+        -moz-border-radius-topleft: 5px;
+        border-top-left-radius: 5px;
+        -moz-border-radius-topright: 5px;
+        border-top-right-radius: 5px;
+        margin-top: 1em;
+      }
+      #wrapperlicious {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+/*]]>*/</style>  </head>
+  <body>
+    <script src="/mojo/jquery/jquery.js"></script>
+<div id="mojobar">
+  <style scoped="scoped">/*<![CDATA[*/
+
+    #mojobar {
+      background-color: #1a1a1a;
+      background: -webkit-gradient(
+        linear,
+        0% 0%,
+        0% 100%,
+        color-stop(0%, #2a2a2a),
+        color-stop(100%, #000)
+      );
+      background: -moz-linear-gradient(
+        top,
+        #2a2a2a 0%,
+        #000 100%
+      );
+      background: linear-gradient(top, #2a2a2a 0%, #000 100%);
+      -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6);
+      -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6);
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6);
+      height: 46px;
+      overflow: hidden;
+      position: absolute;
+      text-align: right;
+      vertical-align: middle;
+      width: 100%;
+      z-index: 1000;
+    }
+    #mojobar-logo {
+      float: left;
+      margin-left: 5em;
+      padding-top: 3px;
+    }
+    #mojobar-links {
+      display:table-cell;
+      float: right;
+      height: 60px;
+      margin-right: 5em;
+      margin-top: 1em;
+    }
+    #mojobar-links a {
+      color: #ccc;
+      font: 1em 'Helvetica Neue', Helvetica, sans-serif;
+      font-weight: 300;
+      margin-left: 0.5em;
+      padding-bottom: 1em;
+      padding-top: 1em;
+      text-decoration: none;
+      -webkit-transition: all 200ms ease-in-out;
+      -moz-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
+      transition: all 200ms ease-in-out;
+    }
+    #mojobar-links a:hover { color: #fff }
+
+/*]]>*/</style>  <div id="mojobar-logo">
+    <a href="http://mojolicio.us">
+      <img alt="Mojolicious logo" src="/mojo/logo-white.png" />
+</a>  </div>
+  <div id="mojobar-links">
+    <a href="http://mojolicio.us/perldoc">Documentation</a>
+    <a href="http://mojocasts.com">Screencasts</a>
+    <a href="https://github.com/kraih/mojo/wiki">Wiki</a>
+    <a href="https://github.com/kraih/mojo">GitHub</a>
+    <a href="http://metacpan.org/release/Mojolicious/">CPAN</a>
+    <a href="http://groups.google.com/group/mojolicious">MailingList</a>
+    <a href="http://blog.kraih.com">Blog</a>
+    <a href="http://twitter.com/kraih">Twitter</a>
+  </div>
+</div>
+<script>//<![CDATA[
+
+  $(window).load(function () {
+    if (window.location.hash) {
+      var tweak = $(window.location.hash).offset().top - 50;
+      $('html, body').animate({scrollTop:tweak}, 1);
+    }
+    var mojobar = $('#mojobar');
+    var start   = mojobar.offset().top;
+    var fixed;
+    $(window).scroll(function () {
+      if (!fixed && (mojobar.offset().top - $(window).scrollTop() < 0)) {
+        mojobar.css('top', 0);
+        mojobar.css('position', 'fixed');
+        fixed = true;
+      } else if (fixed && $(window).scrollTop() <= start) {
+        mojobar.css('position', 'absolute');
+        mojobar.css('top', start + 'px');
+        fixed = false;
+      }
+    });
+  });
+  $(document).ready(function() {
+    $(".mojoscroll").click(function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      var parts  = this.href.split("#");
+      var hash   = "#" + parts[1];
+      var target = $(hash);
+      var top    = target.offset().top - 50;
+      var old    = target.attr('id');
+      target.attr('id', '');
+      location.hash = hash;
+      target.attr('id', old);
+      $('html, body').animate({scrollTop:top}, 1);
+    });
+  });
+
+//]]></script>
+    <div id="wrapperlicious">
+      <div id="nothing" class="box spaced"></div>
+      <div id="showcase" class="box code spaced">
+        <pre>Can&#39;t read cgi: ãã®ãããªãã¡ã¤ã«ããã£ã¬ã¯ããªã¯ããã¾ãã at app.pl line 88.
+</pre>
+        <div id="context">
+          <table>
+                      <tr>
+          <td class="key">95</td>
+          <td class="value"><pre class="prettyprint">    # Icky backwards compatibility wrapper. :-(</pre></td>
+</tr>
+                      <tr>
+          <td class="key">96</td>
+          <td class="value"><pre class="prettyprint">    local @CARP_NOT = $cgc ? $cgc-&gt;() : caller();</pre></td>
+</tr>
+                      <tr>
+          <td class="key">97</td>
+          <td class="value"><pre class="prettyprint">    shortmess_heavy(@_);</pre></td>
+</tr>
+                      <tr>
+          <td class="key">98</td>
+          <td class="value"><pre class="prettyprint">}</pre></td>
+</tr>
+                      <tr>
+          <td class="key">99</td>
+          <td class="value"><pre class="prettyprint"></pre></td>
+</tr>
+                      <tr class="important">
+          <td class="key">100</td>
+          <td class="value"><pre class="prettyprint">sub croak   { die shortmess @_ }</pre></td>
+</tr>
+                      <tr>
+          <td class="key">101</td>
+          <td class="value"><pre class="prettyprint">sub confess { die longmess @_ }</pre></td>
+</tr>
+                      <tr>
+          <td class="key">102</td>
+          <td class="value"><pre class="prettyprint">sub carp    { warn shortmess @_ }</pre></td>
+</tr>
+                      <tr>
+          <td class="key">103</td>
+          <td class="value"><pre class="prettyprint">sub cluck   { warn longmess @_ }</pre></td>
+</tr>
+                      <tr>
+          <td class="key">104</td>
+          <td class="value"><pre class="prettyprint"></pre></td>
+</tr>
+                      <tr>
+          <td class="key">105</td>
+          <td class="value"><pre class="prettyprint">BEGIN {</pre></td>
+</tr>
+          </table>
+        </div>
+      </div>
+      <div id="trace" class="box spaced">
+          <div class="infobox" id="frames">
+            <table>
+                <tr>
+                  <td class="striped value">
+                    <pre>/home/owner/.plenv/versions/5.16.3/lib/perl5/5.16.3/Carp.pm:100</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="striped value">
+                    <pre>/home/owner/.plenv/versions/5.16.3/lib/perl5/site_perl/5.16.3/Path/Class/File.pm:87</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="striped value">
+                    <pre>app.pl:88</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="striped value">
+                    <pre>/home/owner/.plenv/versions/5.16.3/lib/perl5/site_perl/5.16.3/Mojolicious.pm:156</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="striped value">
+                    <pre>/home/owner/.plenv/versions/5.16.3/lib/perl5/site_perl/5.16.3/Mojolicious/Plugins.pm:20</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="striped value">
+                    <pre>/home/owner/.plenv/versions/5.16.3/lib/perl5/site_perl/5.16.3/Mojolicious/Plugins.pm:23</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="striped value">
+                    <pre>/home/owner/.plenv/versions/5.16.3/lib/perl5/site_perl/5.16.3/Mojolicious/Routes.pm:87</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="striped value">
+                    <pre>/home/owner/.plenv/versions/5.16.3/lib/perl5/site_perl/5.16.3/Mojolicious/Routes.pm:100</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="striped value">
+                    <pre>/home/owner/.plenv/versions/5.16.3/lib/perl5/site_perl/5.16.3/Mojolicious/Routes.pm:210</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="striped value">
+                    <pre>/home/owner/.plenv/versions/5.16.3/lib/perl5/site_perl/5.16.3/Mojolicious/Routes.pm:62</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="striped value">
+                    <pre>/home/owner/.plenv/versions/5.16.3/lib/perl5/site_perl/5.16.3/Mojolicious.pm:136</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="striped value">
+                    <pre>/home/owner/.plenv/versions/5.16.3/lib/perl5/site_perl/5.16.3/Mojolicious.pm:157</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="striped value">
+                    <pre>/home/owner/.plenv/versions/5.16.3/lib/perl5/site_perl/5.16.3/Mojolicious/Plugins.pm:20</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="striped value">
+                    <pre>/home/owner/.plenv/versions/5.16.3/lib/perl5/site_perl/5.16.3/Mojolicious.pm:191</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="striped value">
+                    <pre>/home/owner/.plenv/versions/5.16.3/lib/perl5/site_perl/5.16.3/Mojolicious.pm:191</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="striped value">
+                    <pre>/home/owner/.plenv/versions/5.16.3/lib/perl5/site_perl/5.16.3/Mojolicious/Plugins.pm:20</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="striped value">
+                    <pre>/home/owner/.plenv/versions/5.16.3/lib/perl5/site_perl/5.16.3/Mojolicious/Plugins.pm:23</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="striped value">
+                    <pre>/home/owner/.plenv/versions/5.16.3/lib/perl5/site_perl/5.16.3/Mojolicious.pm:161</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="striped value">
+                    <pre>/home/owner/.plenv/versions/5.16.3/lib/perl5/site_perl/5.16.3/Mojo/Server.pm:14</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="striped value">
+                    <pre>/home/owner/.plenv/versions/5.16.3/lib/perl5/site_perl/5.16.3/Mojo/EventEmitter.pm:13</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="striped value">
+                    <pre>/home/owner/.plenv/versions/5.16.3/lib/perl5/site_perl/5.16.3/Mojo/Server/CGI.pm:21</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="striped value">
+                    <pre>/home/owner/.plenv/versions/5.16.3/lib/perl5/site_perl/5.16.3/Mojolicious/Command/cgi.pm:19</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="striped value">
+                    <pre>/home/owner/.plenv/versions/5.16.3/lib/perl5/site_perl/5.16.3/Mojolicious/Commands.pm:78</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="striped value">
+                    <pre>/home/owner/.plenv/versions/5.16.3/lib/perl5/site_perl/5.16.3/Mojolicious.pm:183</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="striped value">
+                    <pre>app.pl:98</pre>
+                  </td>
+                </tr>
+            </table>
+          </div>
+          <div class="tap">tap for more</div>
+          <script>//<![CDATA[
+
+            $('#trace').click(function() {
+              $('#frames').slideToggle('slow');
+            });
+            $('#frames').toggle();
+
+//]]></script>      </div>
+      <div id="request" class="box infobox spaced">
+        <table>
+                  <tr>
+          <td class="key">Method:</td>
+          <td class="striped value"><pre>GET</pre></td>
+        </tr>
+
+                  <tr>
+          <td class="key">URL:</td>
+          <td class="striped value"><pre></pre></td>
+        </tr>
+
+                  <tr>
+          <td class="key">Base URL:</td>
+          <td class="striped value"><pre>http:</pre></td>
+        </tr>
+
+                  <tr>
+          <td class="key">Parameters:</td>
+          <td class="striped value"><pre>{}
+</pre></td>
+        </tr>
+
+                  <tr>
+          <td class="key">Stash:</td>
+          <td class="striped value"><pre>{
+  &#39;cb&#39; =&gt; sub { &quot;DUMMY&quot; }
+}
+</pre></td>
+        </tr>
+
+                  <tr>
+          <td class="key">Session:</td>
+          <td class="striped value"><pre>{}
+</pre></td>
+        </tr>
+
+                  <tr>
+          <td class="key">Version:</td>
+          <td class="striped value"><pre>1.1</pre></td>
+        </tr>
+
+        </table>
+      </div>
+      <div id="more" class="box infobox spaced">
+        <div id="infos">
+          <table>
+                    <tr>
+          <td class="key">Perl:</td>
+          <td class="striped value"><pre>v5.16.3 (linux)</pre></td>
+        </tr>
+
+                    <tr>
+          <td class="key">Mojolicious:</td>
+          <td class="striped value"><pre>4.19 (Top Hat)</pre></td>
+        </tr>
+
+                    <tr>
+          <td class="key">Home:</td>
+          <td class="striped value"><pre>/home/owner/Dropbox/dev/perl/others/perl-entrance-org.github.com/2013/handout/perlentrance03</pre></td>
+        </tr>
+
+                    <tr>
+          <td class="key">Include:</td>
+          <td class="striped value"><pre>[
+  &#39;/home/owner/.plenv/versions/5.16.3/lib/perl5/site_perl/5.16.3/i686-linux&#39;,
+  &#39;/home/owner/.plenv/versions/5.16.3/lib/perl5/site_perl/5.16.3&#39;,
+  &#39;/home/owner/.plenv/versions/5.16.3/lib/perl5/5.16.3/i686-linux&#39;,
+  &#39;/home/owner/.plenv/versions/5.16.3/lib/perl5/5.16.3&#39;,
+  &#39;.&#39;
+]
+</pre></td>
+        </tr>
+
+                    <tr>
+          <td class="key">PID:</td>
+          <td class="striped value"><pre>1170</pre></td>
+        </tr>
+
+                    <tr>
+          <td class="key">Name:</td>
+          <td class="striped value"><pre>app.pl</pre></td>
+        </tr>
+
+                    <tr>
+          <td class="key">Executable:</td>
+          <td class="striped value"><pre>/home/owner/.plenv/versions/5.16.3/bin/perl5.16.3</pre></td>
+        </tr>
+
+                    <tr>
+          <td class="key">Time:</td>
+          <td class="striped value"><pre>Mon Jul 22 23:49:36 2013</pre></td>
+        </tr>
+
+          </table>
+        </div>
+        <div class="tap">tap for more</div>
+      </div>
+    </div>
+    <div id="footer">
+      <a href="http://mojolicio.us">
+        <img alt="Mojolicious logo" src="/mojo/logo-black.png" />
+</a>    </div>
+    <script>//<![CDATA[
+
+      $('#more').click(function() {
+        $('#infos').slideToggle('slow');
+      });
+      $('#infos').toggle();
+
+//]]></script>  </body>
+</html>

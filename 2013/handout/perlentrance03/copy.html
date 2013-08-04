@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1024" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title></title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+  <link href="impress/css/impress-demo.css" media="screen" rel="stylesheet" />
+  <link href="gcp/prettify.css" media="screen" rel="stylesheet" />
+  <link href="css/app.css" media="screen" rel="stylesheet" />
+</head>
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+    <div id="title" class="step" data-y="0" data-x="0">
+        <h1>Perl入学式 #3</h1>
+    </div>
+
+    <div class="step" data-y="0" data-x="1024">
+        <h2>今日の流れ</h2>
+        <ul>
+            <li>前回の復習</li>
+            <li>テスト</li>
+            <li>配列の操作</li>
+            <li>ハッシュ</li>
+            <li>正規表現</li>
+        </ul>
+    </div>
+
+    <div class="step" data-y="0" data-x="2048">
+        <h2>前回の復習</h2>
+        <ul>
+            <li>変数</li>
+            <li>標準入力</li>
+            <li>演算子</li>
+            <li>if, else文</li>
+            <li>for文</li>
+            <li>配列</li>
+        </ul>
+    </div>
+
+    <div class="step" data-y="0" data-x="3072">
+        盛りだくさんですね！<br>
+        しっかり覚えていますか？
+    </div>
+
+    <div class="step" data-y="0" data-x="4096">
+        <h2>復習問題</h2>
+    </div>
+
+    <div class="step" data-y="0" data-x="5120">
+        <a href="https://github.com/perl-entrance-org/perl-entrance-org.github.com/blob/master/2013/handout/perlentrance02/practice.md">
+            practice.md</a> の `sum.pl` と `even_or_odd.pl` をやってみましょう
+    </div>
+
+    <div class="step" data-y="0" data-x="5120">
+        <h2>ここからが今日の内容</h2>
+    </div>
+
+    <div class="step" data-y="0" data-x="6144">
+        <h2></h2>
+    </div>
+
+    <div class="step" data-y="768" data-x="0">
+        そもそも、配列ってどんな時に使うと思いますか？<br>
+        そして使いたくなると思いますか？<br>
+    </div>
+
+    <div class="step" data-y="768" data-x="1024">
+        <h2>配列の用途</h2>
+        <ul>
+            <li>要素間の順序関係を表現したい場合 (e.g. 待ち行列)</li>
+            <li>要素の単純な集まりとして表現したい場合 (e.g. 集合)</li>
+        </ul>
+        <br>
+        <b>そしてそれらを画一的に操作したい (for 文とかで)</b>
+    </div>
+
+    <div class="step" data-y="768" data-x="2048">
+        <h2>配列を自在に操るためには</h2>
+        配列の要素を自由に
+        <ul>
+            <li>追加</li>
+            <li>取り出し</li>
+            <li>挿入</li>
+            <li>削除</li>
+        </ul>
+        できる必要がある
+    </div>
+
+    <div class="step" data-y="768" data-x="3072">
+        <h2>要素の追加</h2>
+        <ul>
+            <li>push</li>
+            <li>unshift</li>
+        </ul>
+    </div>
+
+    <div class="step" data-y="768" data-x="4096">
+        <h2>要素の取り出し</h2>
+        <ul>
+            <li>pop</li>
+            <li>shift</li>
+        </ul>
+    </div>
+
+    <div class="step" data-y="768" data-x="5120">
+        <h2>要素の挿入・削除</h2>
+        <ul>
+            <li>splice</li>
+        </ul>
+    </div>
+
+    <div class="step" data-y="768" data-x="6144">
+        <h2>覚えるべき対応関係</h2>
+        <ul>
+            <li>push / pop</li>
+            <li>unshift / shift</li>
+            <li>splice</li>
+        </ul>
+    </div>
+
+    <div class="step" data-y="1536" data-x="0">
+        <h2>push と pop</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>my $hoge = 4;
+</code></pre>
+
+        <ul>
+        <li><code>perl</code>では, C言語と異なりべき乗の計算を簡単に行うことができる</li>
+        </ul>
+    </div>
+
+    <div class="step" data-y="1536" data-x="1024">
+        <h2>unshift と shift</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>my $foo = 'hoge';
+my $bar = 123;
+my $baz = $foo . $bar; # hoge123
+print $foo . $baz . "\n"; # hogehoge123
+</code></pre>
+
+        <ul>
+        <li><code>.</code>で, 文字列や変数を結合することができます.</li>
+        </ul>
+    </div>
+
+    <div class="step" data-y="1536" data-x="2048">
+        <h2>splice</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>my $hoge = 2 + 4 * 3;   # 14
+my $fuga = (2 + 4) * 3; # 18
+</code></pre>
+
+        <ul>
+        <li>演算の順序は, <code>()</code>を付けることで変更することができます.
+        <ul>
+        <li>通常の数学と同じく, Perlも足し算･引き算より掛け算･割り算の優先順位が高いですが, 2行目は<code>()</code>を付けることで足し算を先に計算させています.</li>
+        </ul></li>
+        </ul>
+    </div>
+
+    <div class="step" data-y="1536" data-x="3072">
+        <h2>練習問題</h2>
+    </div>
+
+    <div class="step" data-y="1536" data-x="4096">
+        <h2>の前に...</h2>
+    </div>
+
+    <div class="step" data-y="1536" data-x="5120">
+        <h2>今回はテストをします</h2>
+    </div>
+
+    <div class="step" data-y="1536" data-x="6144">
+        <h2>テスト？？？</h2>
+    </div>
+
+    <div class="step" data-y="2304" data-x="0">
+        <h2>テスト (ユニットテスト)</h2>
+        TODO, 説明
+    </div>
+
+    <div class="step" data-y="2304" data-x="1024">
+        <h2>テスト</h2>
+        とりあえず、答えが合ってるか合ってないかを<br>
+        チェックできる便利なやつだと思って下さい！
+    </div>
+
+    <div class="step" data-y="2304" data-x="2048">
+        <h2>要求される知識</h2>
+
+        <ul>
+        <li>関数</li>
+        <li>モジュール</li>
+        <li>Test モジュールの使い方</li>
+        </ul>
+
+        ...ですが、これらは近い将来勉強することになるので、今日のところはおまじない的に理解してください！
+    </div>
+
+    <div class="step" data-y="2304" data-x="3072">
+        <h2>練習問題</h2>
+        まず、foobar を git clone してください
+    </div>
+
+    <div class="step" data-y="2304" data-x="4096">
+        <h2>練習問題</h2>
+        tree を見せる
+        こんな感じのディレクトリ構成になっています。<br>
+        今回はlib/PerlEntrance.pm を編集します。
+    </div>
+
+    <div class="step" data-y="2304" data-x="5120">
+        <h2>練習問題</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>#練習問題1-1 hogehoge
+sub foobar {
+    return @array;
+}
+</code></pre>
+        それぞれ、こんな感じで問題に対応した関数 (sub) が用意されているので、その中身を書いていきます。
+        (最後に正解かどうかをチェックしたい変数を return してください)
+    </div>
+
+    <div class="step" data-y="2304" data-x="6144">
+        <h2>練習問題</h2>
+        tree を見せる
+        t/ というディレクトリの下にテストが入っています。
+        perl t/1.t
+        という風に、チェックしたい練習問題の番号のテストを実行するとテストが走ります。
+    </div>
+
+    <div class="step" data-y="3072" data-x="0">
+        <h2>練習問題</h2>
+        <ul>
+            <li><code>@names = ('Bob', 'Chris')</code> の先頭に<code>'Alice'</code>を追加しましょう</li>
+            <li><code>@names = ('Bob', 'Chris')</code> の末尾に<code>'Damian'</code>を追加しましょう</li>
+            <li><code>@names = ('Bob', 'Chris')</code> から<code>'Bob'</code>を取り出しましょう</li>
+            <li><code>@names = ('Bob', 'Chris')</code> から<code>'Chris'</code>を取り出しましょう</li>
+        </ul>
+    </div>
+
+    <div class="step" data-y="3072" data-x="1024">
+        <h2>練習問題 (時間があったら)</h2>
+        <ul>
+            <li><code>@names = ('Alice', 'Bob', 'Chris')</code> から<code>'Bob'</code>を削除しましょう</li>
+            <li><code>@names = ('Alice', 'Bob', 'Damian')</code> の<code>'Bob'</code> と<code>'Damian'</code> の間に<code>'Chris'</code>を挿入しましょう</li>
+        </ul>
+    </div>
+
+    <div class="step" data-y="3072" data-x="2048">
+        <h2>ハッシュ (Hash)</h2>
+    </div>
+
+    <div class="step" data-y="3072" data-x="3072">
+        <h2>ハッシュとは</h2>
+<ul>
+<li>配列<code>@array</code>に<code>&lt;STDIN&gt;</code>を使って3つの文字列を格納し, これを文字列としてソートしたものを出力する<code>sort.pl</code>を書いてみよう</li>
+</ul>
+</div><div class="step" data-y="3072" data-x="4096"><h2>for ループ</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>my @array = ( 1, "hoge", 3 );
+for my $var ( @array ) {
+  print "$var\n";
+}
+</code></pre>
+
+<ul>
+<li>配列の中身を走査するのに, <code>for</code>文がある
+<ul>
+<li><code>foreach</code>と書いてもよい. Perlの内部では, 同じように処理される</li>
+</ul></li>
+<li>この場合, 変数<code>$var</code>に<code>$array[0]</code>, <code>$array[1]</code> ... という値が順番に代入され, 処理が行われる</li>
+</ul>
+</div><div class="step" data-y="3072" data-x="5120"><h2>for ループ ( C言語風 )</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>my @array = ( 1, "hoge", 3 );
+for ( my $i = 0; $i &lt;= $#array; $i++ ) {
+  print "$array[$i]\n";
+}
+</code></pre>
+
+<ul>
+<li><code>$#array</code>は, <code>@array</code>の最大の添字を表す. この場合, <code>@array</code>には3個の要素が格納されているので, 最大の添字は2となる.
+<ul>
+<li>よほどの事がないかぎり, この方式の<code>for</code>は使いません</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="3072" data-x="6144"><h2>for ループ</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>for my $i (1..10) {
+    print "$i回目のhello!\n";
+}
+</code></pre>
+
+<ul>
+<li>｢ある処理を10回繰り返したい｣という場合, 範囲演算子を使ってこのように書くこともできる.
+<ul>
+<li>結構便利なので覚えておこう!</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="3840" data-x="0"><h2>練習問題</h2>
+
+<ul>
+<li>変数<code>@array</code>に1 - 100の数値を格納し, その配列の中身を<code>for</code>文を使って出力する<code>for.pl</code>を作成しよう</li>
+</ul>
+</div><div class="step" data-y="3840" data-x="1024"><h2>最終問題</h2>
+
+<ul>
+<li><code>FizzBuzz</code>問題にチャレンジ!!</li>
+<li>数字が<code>3</code>で割り切れるなら<code>Fizz</code>, <code>5</code>なら<code>Buzz</code>, <code>3</code>でも<code>5</code>でも割り切れるなら<code>FizzBuzz</code>, それ以外ならばその数字自身を出力する<code>fizzbuzz.pl</code>を作成しよう</li>
+</ul>
+</div><div class="step" data-y="3840" data-x="2048"><h2>復習問題</h2>
+
+<ul>
+<li><p><a href="https://github.com/perl-entrance-org/workshop-2013-02/blob/master/practice.md">https://github.com/perl-entrance-org/workshop-2013-02/blob/master/practice.md</a></p>
+
+<ul>
+<li>今回の内容を復習することができる問題集です</li>
+<li>ご不明な点があれば, 気軽にスタッフまでお尋ねください</li>
+</ul></li>
+</ul>
+</div>
+<!--  <div id="overview" class="step" data-x="3072" data-y="1920" data-scale="15"></div> -->
+</div>
+
+<div class="hint">
+  <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) {
+  document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+<script src="impress/js/impress.js"></script>
+<script src="gcp/prettify.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
