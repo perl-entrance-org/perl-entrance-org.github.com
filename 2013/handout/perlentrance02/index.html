@@ -30,7 +30,7 @@
 <li>if, else文</li>
 <li>for文, 配列</li>
 </ul>
-</div><div class="step" data-y="0" data-x="2048"><h2>前回の復習</h2>
+</div><div class="step" data-y="0" data-x="2048"><h1>前回の復習</h1>
 </div><div class="step" data-y="0" data-x="3072"><h2>plenv</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>$ plenv versions
@@ -39,7 +39,10 @@
 </code></pre>
 
 <ul>
-<li><code>plenv versions</code>（plenvのバージョンが古い方は<code>plenv list</code>）とすることで, <code>5.16.3</code>が選択されているか確認しよう</li>
+<li><code>plenv versions</code>とすることで, <code>5.16.3</code>が選択されているか確認しよう
+<ul>
+<li>plenvのバージョンが古い方は<code>plenv list</code>で確認できます</li>
+</ul></li>
 </ul>
 </div><div class="step" data-y="0" data-x="4096"><h2>Hello, World!</h2>
 
@@ -200,10 +203,28 @@ if ( $hoge == 1 ) {
 </code></pre>
 
 <ul>
-<li><code>==</code> は"右辺と左辺が等しければ真"であることを意味する. ここでは<code>$hoge</code>が<code>1</code>であるときに限り真となり, <code>OK</code>という文字が表示される</li>
-<li><code>$hoge</code>が1でなければ, 偽として扱われ<code>else</code>に処理が移り<code>NG</code>という文字が表示される</li>
+<li><code>==</code> は"右辺と左辺が等しければ真"であることを意味する
+<ul>
+<li>真 = 条件が正しい, 偽 = 条件が正しくない</li>
+</ul></li>
+<li>ここでは<code>$hoge</code>が<code>1</code>と等しい場合に限り真となり, <code>OK</code>という文字が表示される</li>
+<li><code>$hoge</code>が1でなければ, 偽となるため<code>else</code>に処理が移り<code>NG</code>という文字が表示される</li>
 </ul>
-</div><div class="step" data-y="1536" data-x="5120"><h2>数値の比較</h2>
+</div><div class="step" data-y="1536" data-x="5120"><h2>制御構文(if)</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>my $hoge = 1;
+if ( $hoge == 1 ) {
+  print "OK\n"; # 条件が｢真｣の場合
+}
+</code></pre>
+
+<ul>
+<li><code>else</code>の部分は省略することもできる
+<ul>
+<li>この場合, 条件が偽の場合(<code>$hoge</code>が<code>1</code>ではない場合)は, 何の処理も行われない</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="1536" data-x="6144"><h2>数値の比較</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>== # 右辺と左辺が等しいならば真
 != # 右辺と左辺が等しくないならば真
@@ -216,7 +237,7 @@ if ( $hoge == 1 ) {
 <ul>
 <li>数字同士を比較するときは, このような比較演算子を使う</li>
 </ul>
-</div><div class="step" data-y="1536" data-x="6144"><h2>文字列の比較</h2>
+</div><div class="step" data-y="2304" data-x="0"><h2>文字列の比較</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>eq  ==  equal
 ne  !=  not equal
@@ -233,7 +254,7 @@ le  &lt;=  less equal
 <li>文字列の大小とは, 辞書順に並べた時に前にくるものが小さく, 後ろにくるものが大きいということ</li>
 </ul></li>
 </ul>
-</div><div class="step" data-y="2304" data-x="0"><h2>文字列比較</h2>
+</div><div class="step" data-y="2304" data-x="1024"><h2>文字列比較</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>my $hoge = 'hello';
 if ( $hoge eq 'hello' ) {
@@ -244,9 +265,12 @@ if ( $hoge eq 'hello' ) {
 </code></pre>
 
 <ul>
-<li>今回は文字列を比較しているので, <code>==</code>ではなく<code>eq</code>を用いている</li>
+<li>今回は文字列を比較しているので, <code>==</code>ではなく<code>eq</code>を用いている
+<ul>
+<li><code>use warnings;</code>が宣言されている状態で, 文字列に対して<code>==</code>を適用すると警告が発生する</li>
+</ul></li>
 </ul>
-</div><div class="step" data-y="2304" data-x="1024"><h2>練習問題</h2>
+</div><div class="step" data-y="2304" data-x="2048"><h2>練習問題</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>#!/usr/bin/env perl
 use strict;
@@ -258,7 +282,7 @@ my $answer = 'perl'; # 好きな文字をいれる
 <li>簡単な文字当てゲーム <code>question_word.pl</code>を作成しよう</li>
 <li>端末から文字列を一つ入力し, その文字列が<code>$answer</code>と一致したら<code>OK</code>, 外れたら<code>NG</code>と表示する</li>
 </ul>
-</div><div class="step" data-y="2304" data-x="2048"><h2>複数の制御構文</h2>
+</div><div class="step" data-y="2304" data-x="3072"><h2>複数の制御構文</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>my $hoge = 1;
 if ( $hoge == 1 ) {
@@ -275,7 +299,7 @@ if ( $hoge == 1 ) {
 <ul>
 <li><code>elsif</code>を使うことで, 分岐条件をさらに増やすことができる.</li>
 </ul>
-</div><div class="step" data-y="2304" data-x="3072"><h2>関係演算子</h2>
+</div><div class="step" data-y="2304" data-x="4096"><h2>関係演算子</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>&amp;&amp; -&gt; かつ
 || -&gt; または
@@ -288,7 +312,7 @@ if ( $hoge == 1 ) {
 <li><code>||</code>演算子は｢または｣なので, 条件のどちらか1つでも真となるならば真となる</li>
 </ul></li>
 </ul>
-</div><div class="step" data-y="2304" data-x="4096"><h2>関係演算子</h2>
+</div><div class="step" data-y="2304" data-x="5120"><h2>関係演算子</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>my $hoge = 64;
 if ( $hoge &gt; 0 &amp;&amp; $hoge % 2 == 0 ) {
@@ -300,10 +324,10 @@ if ( $hoge &gt; 0 || $hoge % 2 == 1 ) {
 </code></pre>
 
 <ul>
-<li>5行目では, <code>64</code>が0より大きい<code>かつ</code>2で割った余りが0`ならば真となる</li>
-<li>8行目では, <code>64</code>が0より大きい<code>または</code>2で割った余りが1`ならば真となる</li>
+<li>2行目は, ｢64は0より大きい(真)｣かつ｢64を2で割った余りは0(真)｣なので, 真となる</li>
+<li>5行目は, ｢64は0より大きい(真)｣または｢64を2で割った余りは1(偽)｣なので, 真となる</li>
 </ul>
-</div><div class="step" data-y="2304" data-x="5120"><h2>練習問題</h2>
+</div><div class="step" data-y="2304" data-x="6144"><h2>練習問題</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>#!/usr/bin/env perl
 use strict;
@@ -318,7 +342,7 @@ my $answer = 1; # 好きな値をいれる
 <li>オプション: 入力した値が, <code>$answer</code>から-5〜+5の範囲内(<code>$answer</code>が10なら, 5〜15)の場合, <code>near</code>と表示するようにしてみよう</li>
 </ul></li>
 </ul>
-</div><div class="step" data-y="2304" data-x="6144"><h2>配列</h2>
+</div><div class="step" data-y="3072" data-x="0"><h2>配列</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>my @array = ( 1, "hoge", 3 );
 print "@array\n";    # 1 hoge 3
@@ -335,7 +359,7 @@ print "$array[2]\n"; # 3
 <li>添字は1ではなく0からスタートして, 1ずつ増えていく</li>
 </ul></li>
 </ul>
-</div><div class="step" data-y="3072" data-x="0"><h2>配列</h2>
+</div><div class="step" data-y="3072" data-x="1024"><h2>配列</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>my @array = ( 1, "hoge", 3 );
 my $sum = $array[0] + $array[2];
@@ -345,7 +369,7 @@ print "$sum\n" # =&gt; 4
 <ul>
 <li>配列の要素は普通のスカラ変数と同じように扱えるので, 代入や計算ができる</li>
 </ul>
-</div><div class="step" data-y="3072" data-x="1024"><h2>範囲演算子</h2>
+</div><div class="step" data-y="3072" data-x="2048"><h2>範囲演算子</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>my @array1 = ( 1, 2 );
 my @array2 = ( 1 .. 5 );
@@ -357,30 +381,34 @@ my @array3 = ( @array1, 3 ); # (1, 2, 3)
 <li>連続する数字であれば, 範囲演算子<code>..</code>を使って<code>1 .. 5</code>と書くことで<code>1以上10以下</code>の値を配列に代入する</li>
 <li>3行目のように, 数値や文字列だけでなく, 配列も組み合わせることができる</li>
 </ul>
-</div><div class="step" data-y="3072" data-x="2048"><h2>reverseとsort</h2>
+</div><div class="step" data-y="3072" data-x="3072"><h2>reverse</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>my @array1 = ( 5, 4, 3, 2, 1 );
 my @array2 = reverse ( 1 .. 5 ); # OK
 my @array3 = ( 5 .. 1 ); # NG
-my @array4 = sort @array1; # (1, 2, 3, 4, 5)
 </code></pre>
 
 <ul>
 <li><code>@array1</code>のように, 連番を逆の順番で配列に格納したい場合は<code>reverse</code>を使うとよい
 <ul>
-<li>範囲演算子<code>..</code>は, 必ず右側の値が左側の値より大きくなければならないので, <code>@array2</code>のように書くと<code>@array2</code>には空の要素が格納されるので注意</li>
-</ul></li>
-<li><code>sort</code>を使うと, 配列の要素をソートしてくれる.
-<ul>
-<li>文字列をソートしたい場合, <code>sort { $a cmp $b }</code>を使おう</li>
+<li>範囲演算子<code>..</code>は, 必ず右側の値が左側の値より大きくなければならないので, <code>@array2 = ( 5 .. 1 );</code>のように書くと<code>@array2</code>には空の要素が格納されるので注意</li>
 </ul></li>
 </ul>
-</div><div class="step" data-y="3072" data-x="3072"><h1>練習問題</h1>
+</div><div class="step" data-y="3072" data-x="4096"><h2>sort</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>my @array1 = ( 5, 4, 3, 2, 1 );
+my @sorted = sort @array1; # (1, 2, 3, 4, 5)
+</code></pre>
 
 <ul>
-<li>配列<code>@array</code>に<code>&lt;STDIN&gt;</code>を使って3つの文字列を格納し, これを文字列としてソートしたものを出力する<code>sort.pl</code>を書いてみよう</li>
+<li><code>sort</code>を使うと, 配列の要素をソートしてくれる
+<ul>
+<li><code>sort { $a &lt;=&gt; $b }</code>と書くと, 数値としてソート</li>
+<li><code>sort { $a cmp $b }</code>, あるいは<code>sort</code>のみを書くと, 文字列としてソート</li>
+</ul></li>
+<li>変数<code>$a</code>と<code>$b</code>はsortで使う為に予約されているので, sort以外で使ってはいけない</li>
 </ul>
-</div><div class="step" data-y="3072" data-x="4096"><h2>for ループ</h2>
+</div><div class="step" data-y="3072" data-x="5120"><h2>for ループ</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>my @array = ( 1, "hoge", 3 );
 for my $var ( @array ) {
@@ -395,7 +423,7 @@ for my $var ( @array ) {
 </ul></li>
 <li>この場合, 変数<code>$var</code>に<code>$array[0]</code>, <code>$array[1]</code> ... という値が順番に代入され, 処理が行われる</li>
 </ul>
-</div><div class="step" data-y="3072" data-x="5120"><h2>for ループ ( C言語風 )</h2>
+</div><div class="step" data-y="3072" data-x="6144"><h2>for ループ ( C言語風 )</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>my @array = ( 1, "hoge", 3 );
 for ( my $i = 0; $i &lt;= $#array; $i++ ) {
@@ -404,12 +432,11 @@ for ( my $i = 0; $i &lt;= $#array; $i++ ) {
 </code></pre>
 
 <ul>
-<li><code>$#array</code>は, <code>@array</code>の最大の添字を表す. この場合, <code>@array</code>には3個の要素が格納されているので, 最大の添字は2となる.
-<ul>
-<li>よほどの事がないかぎり, この方式の<code>for</code>は使いません</li>
-</ul></li>
+<li><code>$#array</code>は, <code>@array</code>の最大の添字を表す
+-この場合, <code>@array</code>には3個の要素が格納されているので, 最大の添字は2となる</li>
+<li>よほどの事がないかぎり, この方式の<code>for</code>は使いません!</li>
 </ul>
-</div><div class="step" data-y="3072" data-x="6144"><h2>for ループ</h2>
+</div><div class="step" data-y="3840" data-x="0"><h2>for ループ</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>for my $i (1..10) {
     print "$i回目のhello!\n";
@@ -422,18 +449,23 @@ for ( my $i = 0; $i &lt;= $#array; $i++ ) {
 <li>結構便利なので覚えておこう!</li>
 </ul></li>
 </ul>
-</div><div class="step" data-y="3840" data-x="0"><h2>練習問題</h2>
+</div><div class="step" data-y="3840" data-x="1024"><h2>練習問題</h2>
 
 <ul>
-<li>変数<code>@array</code>に1 - 100の数値を格納し, その配列の中身を<code>for</code>文を使って出力する<code>for.pl</code>を作成しよう</li>
+<li>配列<code>@array</code>に<code>&lt;STDIN&gt;</code>を使って3つの文字列を格納し, これを｢文字列として｣ソートしたものを出力する<code>sort.pl</code>を書いてみよう
+<ul>
+<li>ヒント: <code>@array</code>に文字列を3個入力する処理は, for文を使ってシンプルに書いてみよう</li>
+</ul></li>
 </ul>
-</div><div class="step" data-y="3840" data-x="1024"><h2>最終問題</h2>
+</div><div class="step" data-y="3840" data-x="2048"><h2>最終問題</h2>
 
 <ul>
-<li><code>FizzBuzz</code>問題にチャレンジ!!</li>
-<li>数字が<code>3</code>で割り切れるなら<code>Fizz</code>, <code>5</code>なら<code>Buzz</code>, <code>3</code>でも<code>5</code>でも割り切れるなら<code>FizzBuzz</code>, それ以外ならばその数字自身を出力する<code>fizzbuzz.pl</code>を作成しよう</li>
+<li><code>FizzBuzz</code>問題にチャレンジ!!
+<ul>
+<li>1から100までの数字について, その数字が<code>3</code>で割り切れるなら<code>Fizz</code>, <code>5</code>で割り切れるなら<code>Buzz</code>, <code>3</code>でも<code>5</code>でも割り切れるなら<code>FizzBuzz</code>, それ以外ならばその数字自身を出力する<code>fizzbuzz.pl</code>を作成しよう</li>
+</ul></li>
 </ul>
-</div><div class="step" data-y="3840" data-x="2048"><h2>復習問題</h2>
+</div><div class="step" data-y="3840" data-x="3072"><h2>復習問題</h2>
 
 <ul>
 <li><p><a href="https://github.com/perl-entrance-org/workshop-2013-02/blob/master/practice.md">https://github.com/perl-entrance-org/workshop-2013-02/blob/master/practice.md</a></p>
@@ -442,6 +474,11 @@ for ( my $i = 0; $i &lt;= $#array; $i++ ) {
 <li>今回の内容を復習することができる問題集です</li>
 <li>ご不明な点があれば, 気軽にスタッフまでお尋ねください</li>
 </ul></li>
+</ul>
+</div><div class="step" data-y="3840" data-x="4096"><h2>更新履歴</h2>
+
+<ul>
+<li>2013/7/22: 加筆修正.</li>
 </ul>
 </div>
 <!--  <div id="overview" class="step" data-x="3072" data-y="1920" data-scale="15"></div> -->
