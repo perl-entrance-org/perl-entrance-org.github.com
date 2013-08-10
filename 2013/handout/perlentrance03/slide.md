@@ -153,9 +153,9 @@ split は指定したパターンに従って文字列を分割します
 ## join
 join は 分割された文字列をくっつけて1つの文字列にします。(split の逆の働きですね！)
 
-    my @words = qw( I Love Ruby. ); # <= qw ショートカットだ！
+    my @words = qw( I Love Perl. ); # <= qw ショートカットだ！
     my $poem  = join '_', @words;
-    print $poem;  # <= 'I_Love_Ruby.'
+    print $poem;  # <= 'I_Love_Perl.'
 
 join の受け取る第1引数は糊のようなものです。リストの要素をくっつけるときに、その間にはさみます。  
 (今回の場合だと、 '\_' という風に指定しているので、リストの各要素をアンダースコアでくっつけます)  
