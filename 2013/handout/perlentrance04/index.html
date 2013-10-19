@@ -345,7 +345,7 @@ output(\@hoge, \@foo);
 </ul>
 </div><div class="step" data-y="2304" data-x="6144"><h2>中身の書き換え</h2>
 
-<pre class="lang-perl prettyprint linenums"><code>my %hash = { papix =&gt; 'dame' };
+<pre class="lang-perl prettyprint linenums"><code>my %hash = ( papix =&gt; 'dame' );
 print $hash{papix}; # =&gt; dame
 fix(\%hash);
 print $hash{papix}; # =&gt; perfect
