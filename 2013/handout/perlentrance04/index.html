@@ -730,28 +730,16 @@ if ($str =~ /dead\./) {
 <li>この場合. <code>$str =~ /dead./</code>は, <code>john is dead!</code>などでもマッチしてしまう(<code>.</code>は任意の1文字とマッチ, なので).</li>
 <li><code>\.</code>のようにすれば <code>.</code>そのものとのマッチができます.</li>
 </ul>
-</div><div class="step" data-y="5376" data-x="2048"><h2>アンカー(1)</h2>
+</div><div class="step" data-y="5376" data-x="2048"><h2>アンカー</h2>
 
 <ul>
-<li>アンカーは, 行頭や行末など, 文字列の特定の位置とマッチします.</li>
+<li>アンカーは, 行頭や行末など, 文字列の特定の位置とマッチします.
+<ul>
 <li><code>^</code> ... 行頭</li>
-<li><code>\A</code> ... 最初の文字列
-<ul>
-<li><code>^</code>と<code>\A</code>はよく似ていますが, 複数の行がある文字列に正規表現を行った場合, 挙動が異なります.</li>
-<li><code>^</code>は改行の直後(新しい行の行頭)にもマッチしますが, <code>\A</code>は文字列そのものの先頭にしかマッチしません.</li>
-</ul></li>
-</ul>
-</div><div class="step" data-y="5376" data-x="3072"><h2>アンカー(2)</h2>
-
-<ul>
 <li><code>$</code> ... 行末</li>
-<li><code>\z</code> ... 最後の文字列
-<ul>
-<li><code>$</code>は改行の直前にもマッチしますが, <code>\z</code>は文字列そのものの最後にしかマッチしません.</li>
-<li><code>^</code>と<code>\A</code>の関係と似ています.</li>
 </ul></li>
 </ul>
-</div><div class="step" data-y="5376" data-x="4096"><h2>アンカー 使い方</h2>
+</div><div class="step" data-y="5376" data-x="3072"><h2>アンカー 使い方</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>my $str = 'john is great';
 # 行頭に'john'がある場合のみマッチ
@@ -759,7 +747,7 @@ if ($str =~ /^john/) {
     print "match!\n";
 }   
 </code></pre>
-</div><div class="step" data-y="5376" data-x="5120"><h2>区切り記号の変更(1)</h2>
+</div><div class="step" data-y="5376" data-x="4096"><h2>区切り記号の変更(1)</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>my $str = '/usr/local/bin/perl';
 if ($str =~ m|bin/perl|) {
@@ -772,7 +760,7 @@ if ($str =~ m|bin/perl|) {
 <li>そこで, <code>m//</code>のように, 先頭に<code>m</code>を付けると, 任意の記号のペアを区切り記号として利用することができます.</li>
 <li>この場合, <code>|</code>を区切り記号にしています. よって, <code>/</code>をエスケープする必要はありません.</li>
 </ul>
-</div><div class="step" data-y="5376" data-x="6144"><h2>区切り記号の変更(2)</h2>
+</div><div class="step" data-y="5376" data-x="5120"><h2>区切り記号の変更(2)</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>my $str = '/usr/local/bin/perl';
 $str =~ s|/usr/local/bin/|/usr/bin/|;
@@ -781,8 +769,8 @@ $str =~ s|/usr/local/bin/|/usr/bin/|;
 <ul>
 <li>置換の場合, このようにできます.</li>
 </ul>
-</div><div class="step" data-y="5376" data-x="7168"><h1>正規表現のオプション</h1>
-</div><div class="step" data-y="5376" data-x="8192"><h2>繰り返してマッチ(g)</h2>
+</div><div class="step" data-y="5376" data-x="6144"><h1>正規表現のオプション</h1>
+</div><div class="step" data-y="5376" data-x="7168"><h2>繰り返してマッチ(g)</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>my $str = 'Hello, hoge! Hello, fuga!';
 my @name = ($str =~ /Hello, (\w+?)!/g);
@@ -793,7 +781,7 @@ my @name = ($str =~ /Hello, (\w+?)!/g);
 <li><code>g</code>は, 正規表現のマッチングを繰り返し行います.</li>
 <li>また, 正規表現に<code>()</code>が含まれる場合, マッチした文字列のうち<code>()</code>の中に含まれる文字列をリストとして返します.</li>
 </ul>
-</div><div class="step" data-y="6144" data-x="0"><h2>繰り返してマッチ(g)</h2>
+</div><div class="step" data-y="5376" data-x="8192"><h2>繰り返してマッチ(g)</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>my $str = 'Hello, hoge! Hello, fuga!';
 my $str =~ s/Hello/Good morning/g;
@@ -802,7 +790,7 @@ my $str =~ s/Hello/Good morning/g;
 <ul>
 <li>置換の部分で説明したように, <code>s///g</code>とすると, 置換の処理を繰り返し行なってくれます.</li>
 </ul>
-</div><div class="step" data-y="6144" data-x="1024"><h2>大文字/小文字を区別しない(i)</h2>
+</div><div class="step" data-y="6144" data-x="0"><h2>大文字/小文字を区別しない(i)</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>my $str = 'John and Beth';
 if ($str =~ /john/i) {
@@ -814,7 +802,7 @@ if ($str =~ /john/i) {
 <li><code>i</code>は, 正規表現中のアルファベットの大文字･小文字を区別せずにマッチングを行います.</li>
 <li>よって, <code>/john/i</code>は, <code>john</code>はもちろん, <code>John</code>や<code>JOHN</code>, <code>jOhN</code>などにもマッチします.</li>
 </ul>
-</div><div class="step" data-y="6144" data-x="2048"><h1>練習問題</h1>
+</div><div class="step" data-y="6144" data-x="1024"><h1>練習問題</h1>
 
 <pre class="lang-perl prettyprint linenums"><code>while (chomp($input = &lt;STDIN&gt;)) {
     ...
@@ -825,7 +813,7 @@ if ($str =~ /john/i) {
 <li>上記のコードは, 標準入力から入力された文字列を, ひたすら<code>$input</code>に代入するコードである.</li>
 <li>このコードの<code>...</code>の部分を, 次の条件を満たすように書き換えてみよう.</li>
 </ul>
-</div><div class="step" data-y="6144" data-x="3072"><h1>練習問題</h1>
+</div><div class="step" data-y="6144" data-x="2048"><h1>練習問題</h1>
 
 <ul>
 <li>文字列が<code>0</code>の場合, ループを抜ける(<code>last</code>を使って...).</li>
@@ -833,7 +821,7 @@ if ($str =~ /john/i) {
 <li>文字列に大文字小文字問わず, <code>python</code>の文字列が含まれる場合, ｢Find Python!｣と表示する.</li>
 <li>文字列に<code>perl</code>ないし<code>ruby</code>ないし<code>python</code>が含まれる場合, ｢Love Programming!｣と表示する. </li>
 </ul>
-</div><div class="step" data-y="6144" data-x="4096"><h1>練習問題</h1>
+</div><div class="step" data-y="6144" data-x="3072"><h1>練習問題</h1>
 
 <ul>
 <li>文字列の先頭に<code>papix</code>がある場合, ｢Find papix!｣と表示する.</li>
