@@ -87,7 +87,7 @@ Server available at http://127.0.0.1:3000.
 <ul>
 <li>ブラウザに, URLとして｢localhost:3000｣と入力した際, ｢Welcome to the Mojolicious real-time web framework!｣と表示されていればOKです!</li>
 </ul></li>
-<li>次に, <code>Hoge</code>のコードを見てみましょう</li>
+<!-- <li>次に, <code>Hoge</code>のコードを見てみましょう</li> -->
 </ul>
 </div><div class="step" data-y="768" data-x="0"><h2>コード(1)</h2>
 
@@ -103,9 +103,10 @@ get '/' =&gt; sub {
 };
 
 app-&gt;start;
+
+__DATA__
 </code></pre>
 
-<p><strong>DATA</strong></p>
 </div><div class="step" data-y="768" data-x="1024"><h2>コード(2)</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>@@ index.html.ep
