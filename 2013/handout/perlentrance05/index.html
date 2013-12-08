@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1024" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title></title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+  <link href="../static/impress/css/impress-demo.css" media="screen" rel="stylesheet" />
+  <link href="../static/gcp/prettify.css" media="screen" rel="stylesheet" />
+  <link href="../static/css/app.css" media="screen" rel="stylesheet" />
+</head>
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+  <div id="title" class="step" data-y="0" data-x="0"><h1>Perl入学式 #5</h1>
+</div><div class="step" data-y="0" data-x="1024"><h2>今日の内容</h2>
+
+<ul>
+<li>前回の復習</li>
+<li>Mojoliciousのインストール</li>
+<li>mapとgrep</li>
+<li>while</li>
+<li>next, last, redo</li>
+<li>後置if, 後置for</li>
+<li>前回の復習</li>
+<li>package / 名前空間</li>
+<li>モジュール</li>
+<li>テスト</li>
+<li>テストを使った開発</li>
+</ul>
+</div><div class="step" data-y="0" data-x="2048"><h1>前回の復習</h1>
+
+<ul>
+<li><a href="https://github.com/perl-entrance-org/workshop-2013-04/blob/master/practice.md">前回の復習問題</a>の｢calc.pl｣の一部のを解きながら, サブルーチンを復習しましょう.</li>
+</ul>
+</div><div class="step" data-y="0" data-x="3072"><h1>Mojoliciousのインストール</h1>
+</div><div class="step" data-y="0" data-x="4096"><h2>Mojoliciousのインストール</h2>
+
+<ul>
+<li>第6回の｢Webサービス開発｣で利用するWAF, Mojoliciousをインストールしてみましょう
+<ul>
+<li>予め, plenv等でシステム以外のPerlを用意しておいてください</li>
+<li>詳しくは, #1-Bの資料で解説しています</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="0" data-x="5120"><h2>Mojoliciousのインストール</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>$ cpanm Mojolicious
+</code></pre>
+
+<ul>
+<li>...で, 終わりです
+<ul>
+<li>多少時間がかかります. 暫く待ちましょう</li>
+<li><code>1 distribution installed</code>と表示されていれば成功です</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="0" data-x="6144"><h2>動作確認</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>$ mojo create lite_app Sample
+  [exist] /home/fukumoto/sandbox
+  [write] /home/fukumoto/sandbox/Hoge
+  [chmod] Hoge 744
+</code></pre>
+
+<ul>
+<li>Mojoliciousのテンプレート(雛形)を作ってみます
+<ul>
+<li><code>mojo</code>はMojoliciousが提供するコマンドです</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="0" data-x="7168"><h2>動作確認</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>$ morbo Hoge
+[Sun Dec  8 09:38:11 2013] [info] Listening at "http://*:3000".
+Server available at http://127.0.0.1:3000.
+</code></pre>
+
+<ul>
+<li><code>mojo create</code>コマンドが生成する<code>Hoge</code>を<code>morbo</code>コマンドで実行します
+<ul>
+<li>ブラウザに, URLとして｢localhost:3000｣と入力した際, ｢Welcome to the Mojolicious real-time web framework!｣と表示されていればOKです!</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="768" data-x="0"><h1>map と grep</h1>
+</div><div class="step" data-y="768" data-x="1024"><h2>map</h2>
+
+<ul>
+<li>配列内の値を, 一括で変換する関数です</li>
+</ul>
+</div><div class="step" data-y="768" data-x="2048"><h2>mapの例</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>my @array1 = ( 1 .. 5 );
+my @array2 = ();
+for my $val (@array1) {
+  push @array2, $val * 2;
+}
+print "@array2" # =&gt; 2 4 6 8 10
+</code></pre>
+
+<ul>
+<li><code>2, 4, 6, 8, 10</code> という配列を作成するならば, このような手順を踏む必要があります</li>
+</ul>
+</div><div class="step" data-y="768" data-x="3072"><h2>map を使う</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>my @array1 = ( 1 .. 5 );
+my @array2 = map { $_ * 2; } @array1;
+   @array2 = map $_ * 2, @array1;
+</code></pre>
+
+<ul>
+<li>上記のように, 一行で処理することができます</li>
+</ul>
+</div><div class="step" data-y="768" data-x="4096"><h2>map</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>map BLOCK LIST
+map { $_ * 2; } @array1;
+map EXPR, LIST
+map $_ * 2, @array1;
+</code></pre>
+
+<ul>
+<li><code>BLOCK</code> は <code>{}</code> で囲まれた式の集合</li>
+<li><code>}</code> の後には変換の元となる配列を置きます
+<ul>
+<li><code>BLOCK</code> 内における <code>$_</code> は <code>LIST</code> における一つ一つの要素を指します</li>
+</ul></li>
+<li>返り値は変換後の配列です</li>
+</ul>
+</div><div class="step" data-y="768" data-x="5120"><h2>grep</h2>
+
+<ul>
+<li>配列内から条件が真となる値を抽出する関数です</li>
+</ul>
+</div><div class="step" data-y="768" data-x="6144"><h2>grepの例</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>my @array1 = ( 1 .. 10 );
+my @array2 = ();
+for my $val (@array1) {
+  if ($val % 2 == 0) {
+    push @array2, $val; # =&gt; 2, 4, 6, 8, 10
+  }
+}
+</code></pre>
+
+<ul>
+<li><code>@array1</code>のうち, 2で割り切れる数を抽出しています</li>
+</ul>
+</div><div class="step" data-y="768" data-x="7168"><h2>grep を使う</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>my @array1 = ( 1 .. 10 );
+my @array2 = grep { $_ % 2 == 0; } @array1;
+   @array2 = grep $_ % 2 == 0, @array1;
+</code></pre>
+
+<ul>
+<li>上記のように一行で処理することができます</li>
+</ul>
+</div><div class="step" data-y="1536" data-x="0"><h2>grep</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>grep BLOCK LIST
+grep { $_ * 2; } @array1;
+grep EXPR, LIST
+grep $_ * 2, @array1;
+</code></pre>
+
+<ul>
+<li>構文は <code>map</code> と同様です</li>
+</ul>
+</div><div class="step" data-y="1536" data-x="1024"><h2>練習問題</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>my @files = qw/papix.pl moznion.pm macopy.py boolfool.vim/;
+</code></pre>
+
+<p>上記の配列を引数にして, 拡張子を全て <code>.pl</code> にする <code>map_pl</code> 関数と, 末尾(拡張子)が <code>pl</code>, <code>pm</code> であるものを抜き出す <code>grep_pl_and_pm</code> を作成してください</p>
+</div><div class="step" data-y="1536" data-x="2048"><h1>while</h1>
+
+<p><code>for</code> 文で繰り返し処理について学びましたが, <code>while</code> というものもあります</p>
+</div><div class="step" data-y="1536" data-x="3072"><h2>whileの例</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>while(my $input = &lt;STDIN&gt;) {
+    chomp $input;
+    print "$input\n";
+}
+</code></pre>
+
+<ul>
+<li><code>()</code> 内の処理(<em>EXPR</em>)が <code>真</code> である間, <code>{}</code> 内の処理(<em>BLOCK</em>) を繰り返す
+<ul>
+<li>今回の場合, 標準入力に <code>&lt;C-d&gt;</code>(<code>Ctrl</code>キーを押しながら<code>d</code>キー) が入力されるまで, 標準入力に入力された文字列を出力します</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="1536" data-x="4096"><h1>next, last, redo</h1>
+
+<ul>
+<li>今回は使用頻度の高い <code>next</code>, <code>last</code> に関して紹介します</li>
+</ul>
+</div><div class="step" data-y="1536" data-x="5120"><h2>next</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>my @languages = qw/c ruby papix perl python java c++/;
+for my $lang (@languages) {
+    if ($lang eq "perl") {
+        print "Find Perl\n";
+        last;
+    }
+}
+</code></pre>
+
+<ul>
+<li>試しに上記のコードを実行してみましょう</li>
+</ul>
+</div><div class="step" data-y="1536" data-x="6144"><h2>実行結果 (next)</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>c
+ruby
+papix
+Find Perl
+python
+java
+c++
+</code></pre>
+
+<ul>
+<li>"Find Perl" という文字列は出力されますが, <code>perl</code> という文字列は出力されません
+<ul>
+<li>これは <code>next</code> に到達すると, 残りの処理を行わず, 次のループ <code>($lang[4])</code> を開始するためです</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="1536" data-x="7168"><h2>last</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>my @languages = qw/c ruby papix perl python java c++/;
+for my $lang (@languages) {
+    if ($lang eq "perl") {
+        print "Find Perl\n";
+        last;
+    }
+    print "$lang\n";
+}
+</code></pre>
+
+<ul>
+<li>試しに上記のコードを実行してみましょう
+<ul>
+<li><code>next</code> を <code>last</code> に書き換えるのみです</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="2304" data-x="0"><h2>実行結果 (last)</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>c
+ruby
+papix
+Find Perl
+</code></pre>
+
+<ul>
+<li><code>$lang[3]</code> の <code>perl</code> という文字列が一致して <code>if</code> 文内の <code>last</code> に到達した時点で <code>for</code> ループを抜けます. そのため <code>python</code>, <code>java</code>, <code>c++</code> という文字列が表示されません</li>
+</ul>
+</div><div class="step" data-y="2304" data-x="1024"><h1>後置if/for</h1>
+</div><div class="step" data-y="2304" data-x="2048"><h2>後置if/for</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>if ($lang eq "perl") {
+  print "Find Perl\n";
+}
+for my $foo (1 .. 100) {
+  print $foo, "\n";
+}
+</code></pre>
+
+<ul>
+<li>これらのコードには別の書き方があります</li>
+</ul>
+</div><div class="step" data-y="2304" data-x="3072"><h2>後置 if</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>print "Find Perl\n" if $lang eq "perl";
+</code></pre>
+
+<ul>
+<li>このようにワンライナーで書くことができます
+<ul>
+<li><code>;</code> の位置に注意してください</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="2304" data-x="4096"><h2>後置 if</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>print "FizzBuzz\n" if $var % 15;
+print "Fizz\n" elsif $var % 3;
+print "Buzz\n" elsif $var % 15;
+</code></pre>
+
+<ul>
+<li>こういったコードを書くことはできません
+<ul>
+<li>1行目は問題ありませんが, 2, 3行目で <code>syntax error</code> となります</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="2304" data-x="5120"><h2>後置for</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>print $_ for (1 .. 100);
+</code></pre>
+
+<ul>
+<li>リスト内の要素は, <code>$_</code> に格納されます</li>
+</ul>
+</div><div class="step" data-y="2304" data-x="6144"><h2>後置for</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>print $val for my $val (1 .. 100);
+</code></pre>
+
+<ul>
+<li>こういったコードを書くことはできません</li>
+</ul>
+</div><div class="step" data-y="2304" data-x="7168"><h2>練習問題</h2>
+
+<p><em>* TODO *</em></p>
+</div><div class="step" data-y="3072" data-x="0"><h1>package / 名前空間</h1>
+</div><div class="step" data-y="3072" data-x="1024"><h2>packageとは?</h2>
+
+<ul>
+<li>ある処理を行う<code>output</code>サブルーチンがあるとします</li>
+<li>でも別の<code>output</code>サブルーチンを作りたくなったとします
+<ul>
+<li>処理が少し違うけれど使い方は一緒とか, 互換性を保ちたいとか...</li>
+</ul></li>
+<li>そこで｢XXXXの<code>output</code>｣, のように, サブルーチンのグループを作る機能です</li>
+</ul>
+</div><div class="step" data-y="3072" data-x="2048"><h2>packageの宣言</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>package Hoge {
+    sub output {
+        my $str = shift @_;
+        print "$str\n";
+    }
+}
+</code></pre>
+
+<ul>
+<li>それでは, packageを使っていきましょう</li>
+<li>渡した文字列に改行を付けて表示してくれる<code>output</code>という関数を<code>Hoge</code>というpackageの中に作ってみます</li>
+</ul>
+</div><div class="step" data-y="3072" data-x="3072"><h2>packageの宣言</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>package Hoge {
+    ...
+}
+</code></pre>
+
+<ul>
+<li>packageを定義する為には, <code>sub package名 { ... }</code>と書きます</li>
+</ul>
+</div><div class="step" data-y="3072" data-x="4096"><h2>packageの宣言</h2>
+
+<ul>
+<li><p>古いPerl(OSに入っているPerlなど)は以下のように書きます</p>
+
+<p>package Hoge;
+...</p></li>
+<li><p>この場合, packageの範囲は次のpackage宣言までです</p></li>
+</ul>
+</div><div class="step" data-y="3072" data-x="5120"><h2>サブルーチンを使う</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>package Hoge {
+    sub output {
+        my $str = shift @_;
+        print "$str\n";
+    }
+}
+output('hello, world!'); # packageが違うので使えない!!!!
+</code></pre>
+
+<ul>
+<li>packageの外は別のpackageなので, 中のサブルーチン<code>output</code>をそのまま使うことは出来ません.</li>
+<li>ちなみに何もpackageを宣言していない時は, <code>main</code>というpackageに属しています</li>
+</ul>
+</div><div class="step" data-y="3072" data-x="6144"><h2>サブルーチンを使う</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>package Hoge {
+    sub output {
+        my $str = shift @_;
+        print "$str\n";
+    }
+}
+Hoge::output("hello, world!"); # =&gt; hello, world![改行]
+</code></pre>
+
+<ul>
+<li>packageの中のサブルーチンを使いたい時は, <code>package名::サブルーチン名</code>で呼び出します</li>
+</ul>
+</div><div class="step" data-y="3072" data-x="7168"><h2>練習問題</h2>
+
+<ul>
+<li><code>PerlEntrance</code>というpackageの中に<code>tokyo</code>と<code>osaka</code>という名前の, 引数を持たないサブルーチンを作りましょう</li>
+<li>tokyoは<code>papix!!!</code>, osakaは<code>boolfool!!!</code>という文字列を返す機能を持たせましょう</li>
+</ul>
+</div><div class="step" data-y="3840" data-x="0"><h1>モジュール</h1>
+</div><div class="step" data-y="3840" data-x="1024"><h2>モジュールの話</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>use Acme::Nyaa;
+use Acme::FizzBuzz;
+</code></pre>
+
+<ul>
+<li>入学式の第1回や, Perl入学式 in YAPCで使いました</li>
+<li>このように処理をひとまとめにして別のところに置いて, <code>use モジュール名;</code>で呼び出すものをモジュールと呼びます</li>
+<li>モジュールに分けるとファイルが長くなって見通しが悪くなるのを防ぐことが出来ます
+<ul>
+<li>それでは, 自作モジュールを作っていきましょう</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="3840" data-x="2048"><h2>モジュールの置き場所</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>作業ディレクトリ
+ |- plactice.pl # モジュールを実行するスクリプト
+ |- lib
+    |- PerlEntrance.pm # モジュール本体     
+</code></pre>
+
+<ul>
+<li>このような構成でフォルダとファイルを作ります</li>
+<li>Perlのスクリプトの拡張子は<code>*.pl</code>ですが, モジュールの場合は<code>*.pm</code>にします</li>
+<li>PerlEntrance.pmの中に, 先ほどの練習問題で書いたコードから, 実行する部分を取り除いたものを書いておきます</li>
+<li>さらにPerlEntrance.pmの末尾に<code>1;</code>とだけ書かれた行を追加してください</li>
+</ul>
+</div><div class="step" data-y="3840" data-x="3072"><h2>モジュールを使う</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>#!/usr/bin/env perl
+use strict;
+use warnings;
+
+use PerlEntrance;
+
+print PerlEntrance::tokyo(); # =&gt; papix!!!
+print PerlEntrance::osaka(); # =&gt; boolfool!!!
+</code></pre>
+
+<ul>
+<li><code>practice.pl</code>をこのように書くと, PerlEntrance.pmに書いたサブルーチンを使えるようになります</li>
+<li>ただし, 実行時は<code>perl -Ilib practice.pl</code>のように起動してください</li>
+<li>package名とモジュール名(ファイル名)は, 同じ名前にすることが多いです</li>
+</ul>
+</div><div class="step" data-y="3840" data-x="4096"><h2>練習問題</h2>
+
+<ul>
+<li><code>PerlBeginners</code>というモジュール/packageを作ってその中に<code>perllevel</code>というサブルーチンを作りましょう</li>
+<li><code>perllevel</code>は1から10の整数の引数を取ります.</li>
+</ul>
+</div><div class="step" data-y="3840" data-x="5120"><h2>練習問題</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>use PerlBeginners;
+print PerlBeginners::perllevel(1);
+# =&gt;
+# レベル1: Perl 関係の書籍や資料を何も読んでいない。Perl がプログラミング言語だということは知っているが、それ以外のことは何も知らない。他人の書いたPerl プログラムを実行できるので、プログラムの一部を編集することでプログラムの動作の一部（出力される文字列の内容など）を変更できることを知っている。プログラムのほかの部分に変更を加えてもなぜうまくいかないのか理解していない。この言語に合うメンタルモデルを持っていないので、Perl の構文をCOBOL とC++ のような他の言語のものとは区別できていない。
+</code></pre>
+
+<ul>
+<li>引数をレベルと解釈して, 上記のように使います.</li>
+<li>Perlレベルは以下のブログに掲載されているので何らかの形でモジュール内に保持しましょう.
+<ul>
+<li><a href="http://d.hatena.ne.jp/naoya/20050809/">Perlプログラマのレベル10 - Perlプログラミング救命病棟より</a></li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="3840" data-x="6144"><h1>テスト</h1>
+</div><div class="step" data-y="3840" data-x="7168"><h2>さらりとテストを書く</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>use Test::More;
+use PerlEntrance;
+
+is PerlEntrance::tokyo(), 'moznion!!!';
+
+done_testing();
+</code></pre>
+
+<ul>
+<li><code>practice.pl</code>が置いてあるディレクトリに. <code>plactice.t</code>という名前で以下の様な内容でコードを書きます</li>
+<li>そのディレクトリで<code>prove -Ilib practice.t</code>と実行してみましょう
+<ul>
+<li>どうなりましたか？</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="4608" data-x="0"><h2>Test::More</h2>
+
+<ul>
+<li>今回のテストではTest::Moreというモジュールを使います</li>
+<li>上のテストでは<code>is</code>というTest::Moreのサブルーチンを使いました
+<ul>
+<li><code>is &lt;テストしたいサブルーチン&gt; &lt;返ってくるのが期待される値&gt;</code>のように使います</li>
+<li><code>papix!!!</code>と返ってくるのが正解ですが, 今回はあえて失敗させるために別の文字列を使っています</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="4608" data-x="1024"><h2>prove</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>practice.t .. 1/?
+#   Failed test at practice.t line 5.
+#          got: 'papix!!!'
+#     expected: 'moznion!!!'
+# Looks like you failed 1 test of 1.
+practice.t .. Dubious, test returned 1 (wstat 256, 0x100)
+Failed 1/1 subtests
+</code></pre>
+
+<ul>
+<li>Test::Moreを使ったテストコードを<code>prove</code>というコマンドで分かりやすくテストの状況を表示できます
+<ul>
+<li><code>papix!!!</code>という文字が返ってきたが, 正しくは<code>moznion!!!</code>なので, テストが失敗した, という意味です</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="4608" data-x="2048"><h2>コードの修正</h2>
+
+<ul>
+<li>｢エッ!? テストを直すんじゃないの!?｣と思うかもしれません
+<ul>
+<li>テストとコード, どちらが正しいかでどちらを直すかを決めますが, 今回はテストが正しいという方針で進めます</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="4608" data-x="3072"><h2>練習問題</h2>
+
+<ul>
+<li>テストコードは直さずに, コードを直してテストを通るようにしてください
+<ul>
+<li><code>All tests successful.</code>と出たらテストは通っています!</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="4608" data-x="4096"><h1>テストを使った開発</h1>
+</div><div class="step" data-y="4608" data-x="5120"><h2>テストを使った開発</h2>
+
+<ul>
+<li>テストコードから書くこともあれば, コードを書いて手で動作を確認した後に, その手動の確認をテストコードに落とすこともあります
+<ul>
+<li>自分がわかりやすい方法, 楽な方法でテストは書いていきましょう. 無理して書くものではありません</li>
+</ul></li>
+<li>例えばブラウザがないと確認が難しい検証項目をテストコードに落とすのは難しいです. そういうのは手動でやっていくなど使い分けが重要です
+<ul>
+<li>ただし, 人間はミスをするものだし, コストがかかるものです. 自動化できれば助かることは多いはずです.</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="4608" data-x="6144"><h2>最終問題</h2>
+
+<ul>
+<li>隣の人とペアを作ってぶつかり稽古(ペアプログラミング)をしましょう. 1台のPCで作業を行います</li>
+<li><p>以下の機能がある<code>YAPC</code>モジュールを実装してください</p>
+
+<ul>
+<li>来年のYAPC::Asiaは2014年8月28日から30日に開催予定です. 日付を教えてくれるモジュールを2人で作りましょう</li>
+<li><code>YAPC::year()</code>で年を4桁の整数で返します(テストをAの人が, コードをBの人が書きましょう)</li>
+<li><code>YAPC::month()</code>で月を2桁の整数で返します(テストをBの人が, コードをAの人が書きましょう)</li>
+<li><code>YAPC::day()</code>で日付を2桁の整数で返します(テストをAの人が, コードをBの人が書きましょう)</li>
+<li><code>YAPC::is_yet()</code>で開催前か開催後かを真か偽で返します(テストをBの人が, コードをAの人が書きましょう)</li>
+</ul></li>
+<li><p>最後の項目はテストもコードも結構難しいです! サポーターの人に｢どうすればXXXXが出来る?｣と聞きましょう</p></li>
+</ul>
+</div><div class="step" data-y="4608" data-x="7168"><h2>最終問題のヒント</h2>
+
+<ul>
+<li><code>prove -l</code>と<code>prove -Ilib</code>は実は同じです</li>
+<li><code>ok YAPC::is_yet();</code>でちゃんと真が返ってきているかをテストできます
+<ul>
+<li>偽を調べたい時は<code>ok !YAPC::is_yet();</code>と書きます</li>
+</ul></li>
+<li>日付をうまく操作するには<code>Time::Piece</code>というモジュールを使います</li>
+<li>もっとテストしたい方は時間を進めて本当に開催後に<code>is_yet()</code>が真になるか調べたいかと思います
+<ul>
+<li>テスト内の時間を操作するには<code>Test::MockTime</code>を使ってみてください</li>
+</ul></li>
+</ul>
+</div>
+<!--  <div id="overview" class="step" data-x="3584" data-y="2688" data-scale="15"></div> -->
+</div>
+
+<div class="hint">
+  <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) {
+  document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+<script src="../static/impress/js/impress.js"></script>
+<script src="../static/gcp/prettify.js"></script>
+<script src="../static/js/app.js"></script>
+</body>
+</html>
