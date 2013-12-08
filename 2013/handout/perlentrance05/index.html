@@ -26,7 +26,7 @@
 <li>Mojoliciousのインストール</li>
 <li>mapとgrep</li>
 <li>while</li>
-<li>next, last, redo</li>
+<li>next, last</li>
 <li>後置if, 後置for</li>
 <li>前回の復習</li>
 <li>package / 名前空間</li>
@@ -196,7 +196,7 @@ grep $_ * 2, @array1;
 <li>今回の場合, 標準入力に <code>&lt;C-d&gt;</code>(<code>Ctrl</code>キーを押しながら<code>d</code>キー) が入力されるまで, 標準入力に入力された文字列を出力します</li>
 </ul></li>
 </ul>
-</div><div class="step" data-y="1536" data-x="4096"><h1>next, last, redo</h1>
+</div><div class="step" data-y="1536" data-x="4096"><h1>next, last</h1>
 
 <ul>
 <li>今回は使用頻度の高い <code>next</code>, <code>last</code> に関して紹介します</li>
@@ -207,8 +207,9 @@ grep $_ * 2, @array1;
 for my $lang (@languages) {
     if ($lang eq "perl") {
         print "Find Perl\n";
-        last;
+        next;
     }
+    print "$lang\n";
 }
 </code></pre>
 
