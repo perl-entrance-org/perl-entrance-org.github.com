@@ -63,7 +63,7 @@
 </ul>
 </div><div class="step" data-y="0" data-x="6144"><h2>動作確認</h2>
 
-<pre class="lang-perl prettyprint linenums"><code>$ mojo create lite_app Sample
+<pre class="lang-perl prettyprint linenums"><code>$ mojo generate lite_app Sample
   [exist] /home/fukumoto/sandbox
   [write] /home/fukumoto/sandbox/Hoge
   [chmod] Hoge 744
@@ -87,7 +87,7 @@ Server available at http://127.0.0.1:3000.
 <ul>
 <li>ブラウザに, URLとして｢localhost:3000｣と入力した際, ｢Welcome to the Mojolicious real-time web framework!｣と表示されていればOKです!</li>
 </ul></li>
-<!-- <li>次に, <code>Hoge</code>のコードを見てみましょう</li> -->
+<li>次に, <code>Hoge</code>のコードを見てみましょう</li>
 </ul>
 </div><div class="step" data-y="768" data-x="0"><h2>コード(1)</h2>
 
@@ -106,7 +106,6 @@ app-&gt;start;
 
 __DATA__
 </code></pre>
-
 </div><div class="step" data-y="768" data-x="1024"><h2>コード(2)</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>@@ index.html.ep
@@ -214,9 +213,9 @@ my @array2 = grep { $_ % 2 == 0; } @array1;
 </div><div class="step" data-y="1536" data-x="4096"><h2>grep</h2>
 
 <pre class="lang-perl prettyprint linenums"><code>grep BLOCK LIST
-grep { $_ * 2; } @array1;
+grep { $_ % 2 == 0; } @array1;
 grep EXPR, LIST
-grep $_ * 2, @array1;
+grep $_ % 2 == 0, @array1;
 </code></pre>
 
 <ul>
@@ -227,7 +226,7 @@ grep $_ * 2, @array1;
 <pre class="lang-perl prettyprint linenums"><code>my @files = qw/papix.pl moznion.pm macopy.py boolfool.vim/;
 </code></pre>
 
-<p>上記の配列を引数にして, 拡張子を全て <code>.pl</code> にする <code>map_pl</code> 関数と, 末尾(拡張子)が <code>pl</code>, <code>pm</code> であるものを抜き出す <code>grep_pl_and_pm</code> を作成してください</p>
+<p>上記の配列を引数にして, 拡張子の後ろに <code>.bak</code> を付け足す <code>map_bak</code> 関数と, 末尾(拡張子)が <code>pl</code>, <code>pm</code> であるものを抜き出す <code>grep_pl_and_pm</code> を作成してください</p>
 </div><div class="step" data-y="1536" data-x="6144"><h1>while</h1>
 
 <p><code>for</code> 文で繰り返し処理について学びましたが, <code>while</code> というものもあります</p>
@@ -512,7 +511,7 @@ print PerlEntrance::osaka(); # =&gt; boolfool!!!
 <pre class="lang-perl prettyprint linenums"><code>use PerlBeginners;
 print PerlBeginners::perllevel(1);
 # =&gt;
-# レベル1: Perl 関係の書籍や資料を何も読んでいない。Perl がプログラミング言語だということは知っているが、それ以外のことは何も知らない。他人の書いたPerl プログラムを実行できるので、プログラムの一部を編集することでプログラムの動作の一部（出力される文字列の内容など）を変更できることを知っている。プログラムのほかの部分に変更を加えてもなぜうまくいかないのか理解していない。この言語に合うメンタルモデルを持っていないので、Perl の構文をCOBOL とC++ のような他の言語のものとは区別できていない。
+# レベル1: Perl 関係の書籍や資料を何も読んでいない。(中略)この言語に合うメンタルモデルを持っていないので、Perl の構文をCOBOL とC++ のような他の言語のものとは区別できていない。
 </code></pre>
 
 <ul>
@@ -600,18 +599,29 @@ Failed 1/1 subtests
 
 <ul>
 <li>隣の人とペアを作ってぶつかり稽古(ペアプログラミング)をしましょう. 1台のPCで作業を行います</li>
-<li><p>以下の機能がある<code>YAPC</code>モジュールを実装してください</p>
-
+<li>以下の機能がある<code>YAPC</code>モジュールを実装してください(初級編)
 <ul>
 <li>来年のYAPC::Asiaは2014年8月28日から30日に開催予定です. 日付を教えてくれるモジュールを2人で作りましょう</li>
 <li><code>YAPC::year()</code>で年を4桁の整数で返します(テストをAの人が, コードをBの人が書きましょう)</li>
 <li><code>YAPC::month()</code>で月を2桁の整数で返します(テストをBの人が, コードをAの人が書きましょう)</li>
 <li><code>YAPC::day()</code>で日付を2桁の整数で返します(テストをAの人が, コードをBの人が書きましょう)</li>
-<li><code>YAPC::is_yet()</code>で開催前か開催後かを真か偽で返します(テストをBの人が, コードをAの人が書きましょう)</li>
 </ul></li>
-<li><p>最後の項目はテストもコードも結構難しいです! サポーターの人に｢どうすればXXXXが出来る?｣と聞きましょう</p></li>
 </ul>
-</div><div class="step" data-y="5376" data-x="3072"><h2>最終問題のヒント</h2>
+</div><div class="step" data-y="5376" data-x="3072"><h2>最終問題</h2>
+
+<ul>
+<li>以下の機能がある<code>YAPC</code>モジュールを実装してください(上級編)
+<ul>
+<li><code>YAPC::is_yet(&lt;日付の文字列&gt;)</code>で, 開催前か開催後かを真か偽で返します(テストをBの人が, コードをAの人が書きましょう)</li>
+<li>｢8月28日以前｣ならば開催前(真), それ以降なら開催後(偽)として扱うことにします
+<ul>
+<li>日付のフォーマットは, ｢4桁の年/2桁の月/2桁の日｣という形にします</li>
+<li>例えば, 2014年1月1日は, ｢2014/01/01｣です.</li>
+</ul></li>
+</ul></li>
+<li>この上級編はテストもコードも結構難しいです! わからない所があれば, サポーターの人に｢どうすればXXXXが出来る?｣と聞きいてみましょう</li>
+</ul>
+</div><div class="step" data-y="5376" data-x="4096"><h2>最終問題のヒント</h2>
 
 <ul>
 <li><code>prove -l</code>と<code>prove -Ilib</code>は実は同じです</li>
@@ -619,16 +629,19 @@ Failed 1/1 subtests
 <ul>
 <li>偽を調べたい時は<code>ok !YAPC::is_yet();</code>と書きます</li>
 </ul></li>
-<li>日付をうまく操作するには<code>Time::Piece</code>というモジュールを使います</li>
-<li>もっとテストしたい方は時間を進めて本当に開催後に<code>is_yet()</code>が真になるか調べたいかと思います
+</ul>
+</div><div class="step" data-y="5376" data-x="5120"><h2>ワンランク上の実装へ...</h2>
+
 <ul>
+<li><code>YAPC::is_yet</code>は, 引数として日付の文字列を受け取るのではなく, ｢プログラムを実行した, 現在の時間｣を利用して実装することもできます
+<ul>
+<li>日付をうまく操作するには<code>Time::Piece</code>というモジュールを使います</li>
 <li>テスト内の時間を操作するには<code>Test::MockTime</code>を使ってみてください</li>
 </ul></li>
 </ul>
 </div>
 <!--  <div id="overview" class="step" data-x="3584" data-y="2688" data-scale="15"></div> -->
 </div>
-
 
 <div class="hint">
   <p>Use a spacebar or arrow keys to navigate</p>
