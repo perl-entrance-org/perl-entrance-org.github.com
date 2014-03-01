@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1024" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title></title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+  <link href="../static/impress/css/impress-demo.css" media="screen" rel="stylesheet" />
+  <link href="../static/gcp/prettify.css" media="screen" rel="stylesheet" />
+  <link href="../static/css/app.css" media="screen" rel="stylesheet" />
+</head>
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+  <div id="title" class="step" data-y="0" data-x="0"><h1>Perl入学式 #6</h1>
+</div><div class="step" data-y="0" data-x="1024"><h1>今日の内容</h1>
+
+<p>Mojolicious を使って Web アプリケーションを作ろう!</p>
+
+<ul>
+<li>Mojolicious の準備</li>
+<li>HTTP の基礎</li>
+<li>Mojolicious 入門</li>
+<li>簡易 BBS の作成</li>
+</ul>
+</div><div class="step" data-y="0" data-x="2048"><h1>Mojolicious の準備</h1>
+</div><div class="step" data-y="0" data-x="3072"><h2>Mojolicious のインストール</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>$ cpanm Mojolicious
+</code></pre>
+
+<ul>
+<li>Mojolicious とは?
+<ul>
+<li>Perl の Web アプリケーションフレームワーク (通称 WAF)</li>
+<li>Perl 5.10.1 以降で動作する (コアモジュール以外に依存モジュールがない)</li>
+<li>詳しくは: <a href="http://mojolicio.us/">mojolicious.us</a></li>
+<li>ドキュメントの日本語役: <a href="https://github.com/yuki-kimoto/mojolicious-guides-japanese/wiki">Mojoliciousドキュメント 日本語訳</a></li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="0" data-x="4096"><h2>Mojolicious のインストール</h2>
+
+<ul>
+<li>cpanm がインストールされていない場合, 次のようにして導入(準備)することができます
+<ul>
+<li><a href="http://latest.mojolicio.us/">http://latest.mojolicio.us/</a> から最新版をダウンロード</li>
+<li>ダウンロードしたzipファイルを解凍</li>
+</ul></li>
+<li>以後, 作業は基本的に解凍したディレクトリの中で行います
+<ul>
+<li>一番いいのは cpanm 等でインストールすることなので, 出来ていない方は後日チャレンジしてみよう!</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="0" data-x="5120"><h1>HTTP の基礎</h1>
+</div><div class="step" data-y="0" data-x="6144"><h2>HTTP の基礎</h2>
+
+<ul>
+<li>HTTP ... Hypertext Transfer Protocol
+<ul>
+<li>Web ブラウザと Web サーバの間でコンテンツの送受信を行うためのプロトコル</li>
+</ul></li>
+<li>基本的な考え方は, サーバに｢何を｣｢どうしたいか｣を伝える
+<ul>
+<li>｢何を｣が URL , ｢どうしたいか｣がメソッド</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="768" data-x="0"><h2>HTTP のメソッド</h2>
+
+<ul>
+<li>よく使うのは以下の2つ
+<ul>
+<li>GET
+<ul>
+<li>サーバからデータを取ってきたい時に使う</li>
+</ul></li>
+<li>POST
+<ul>
+<li>GET とは逆に, サーバにデータを送りたい時に使う</li>
+<li>フォームや, BBS への投稿など...</li>
+</ul></li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="768" data-x="1024"><h1>Mojolicious 入門</h1>
+</div><div class="step" data-y="768" data-x="2048"><h2>雛形を作る</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>$ mojo generate lite_app hello # cpanm でインストールした方
+$ perl -Ilib script/mojo generate lite_app hello # zipを解凍して準備した方
+</code></pre>
+
+<ul>
+<li>Mojolicious を使った Web アプリケーションの簡単な雛形を作成します
+<ul>
+<li>Mojolicious の場合, <code>lite_app</code> 以外にも大規模な Web アプリケーション用の <code>app</code> という雛形が用意されています</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="768" data-x="3072"><h2>Web アプリケーションの起動</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>$ morbo ./hello # cpanm でインストールした方
+$ perl -Ilib script/morbo ./hello # zipを解凍して準備した方
+</code></pre>
+
+<ul>
+<li>Web ブラウザで <code>localhost:3000</code> にアクセスしてみましょう!</li>
+</ul>
+</div><div class="step" data-y="768" data-x="4096"><h2>コード解説</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>#!/usr/bin/env perl
+use Mojolicious::Lite;
+</code></pre>
+
+<ul>
+<li><code>Mojolicious::Lite</code> は <code>Mojolicious</code> の Lite 版
+<ul>
+<li><code>Mojolicious::Lite</code> は 1 つのスクリプトで複数のページを作成</li>
+<li><code>Mojolicious</code> は 1 ページ = 1 スクリプト</li>
+</ul></li>
+<li>総ページ数の少ない(1〜2ページ程度), 簡単な Web アプリケーションであれば Lite で十分</li>
+</ul>
+</div><div class="step" data-y="768" data-x="5120"><h2>コード解説</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>#!/usr/bin/env perl
+use Mojolicious::Lite;
+</code></pre>
+
+<ul>
+<li><code>use Mojolicious::Lite;</code> とすることで, 自動的に <code>use warnings</code> と <code>use strict</code> が書かれているのと同じ(有効な)状態になる</li>
+</ul>
+</div><div class="step" data-y="768" data-x="6144"><h2>コード解説</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>get '/' =&gt; sub {
+  my $self = shift;
+  $self-&gt;render('index');
+};
+</code></pre>
+
+<ul>
+<li><code>get '/' =&gt; sub { ... };</code> は, get メソッドで <code>'/'</code> というURLにアクセスしたとき, sub 内の処理を行う</li>
+<li>2 行目は「お約束」のようなもの</li>
+<li>3 行目 はテンプレート <code>index</code> を使ってコンテンツを生成</li>
+</ul>
+</div><div class="step" data-y="1536" data-x="0"><h2>コード解説</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>app-&gt;start;
+</code></pre>
+
+<ul>
+<li>アプリケーションを実行します, という意味</li>
+<li>これも「お約束」のようなもの</li>
+</ul>
+</div><div class="step" data-y="1536" data-x="1024"><h2>コード解説</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>__DATA__
+
+@@ index.html.ep
+% layout 'default';
+% title 'Welcome';
+Welcome to the Mojolicious real-time web framework!
+</code></pre>
+
+<ul>
+<li><code>ep</code> は <code>embedded perl</code> の略称</li>
+<li><code>layout 'default';</code> は次項で説明するレイアウトファイルの指定</li>
+<li><code>title</code> は <code>default.html.ep</code> の <code>title</code> 変数, <code>Welcome to...</code> は <code>content</code> 変数に渡される</li>
+</ul>
+</div><div class="step" data-y="1536" data-x="2048"><h2>コード解説</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>@@ layouts/default.html.ep
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;&lt;title&gt;&lt;%= title %&gt;&lt;/title&gt;&lt;/head&gt;
+  &lt;body&gt;&lt;%= content %&gt;&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<ul>
+<li><code>localhost:3000</code> のソースと見比べてみましょう</li>
+<li><code>&lt;%= xxx %&gt;</code> がテンプレートの中で使用できる変数に相当する(詳しくは後述)</li>
+</ul>
+</div><div class="step" data-y="1536" data-x="3072"><h2>変数を渡す</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>get '/' =&gt; sub {
+  my $self = shift;
+  $self-&gt;stash(title =&gt; 'Hello');
+  $self-&gt;render('index');
+};
+% title 'Welcome'; # =&gt; 削除する
+</code></pre>
+
+<ul>
+<li><code>$self-&gt;stash</code> で, テンプレート内の変数に変数を渡せる</li>
+</ul>
+</div><div class="step" data-y="1536" data-x="4096"><h2>練習問題</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>@@ profile.html.ep
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;&lt;%= $name %&gt;のプロフィール&lt;/title&gt;&lt;/head&gt;
+&lt;body style='padding: 30px;'&gt;
+  私の名前は&lt;%= $name %&gt;です.&lt;br&gt;
+  趣味は&lt;%= $hobby %&gt;で, 好きなプログラミング言語は&lt;%= $language %&gt;です.
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<ul>
+<li>このようなテンプレートを用意し, stash で <code>name</code>, <code>hobby</code>, <code>language</code> 変数に値を代入し, 自己紹介ページを作成しよう
+<ul>
+<li><code>render</code> で profile テンプレートを指定しましょう</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="1536" data-x="5120"><h2>テンプレートの中の特殊記号</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>% if ($num1 == 1 ) { # %
+%=  print 'hoge';    # %=
+    &lt;% if ($num2 == 1 ) { %&gt; # &lt;% ... %&gt;
+        &lt;%= $hoge %&gt;         # &lt;%= ... %&gt;
+    &lt;% } %&gt;
+% }
+</code></pre>
+
+<ul>
+<li><code>%</code>のように, テンプレートの中で特別な意味を持つ記号がある</li>
+</ul>
+</div><div class="step" data-y="1536" data-x="6144"><h2>テンプレートの中の特殊記号</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>% if ($num1 == 1 ) { # %
+    ...
+% }
+</code></pre>
+
+<ul>
+<li><code>%</code>が先頭にある行は, その後ろのPerlのコードを実行する</li>
+</ul>
+</div><div class="step" data-y="2304" data-x="0"><h2>テンプレートの中の特殊記号</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>%=  print 'hoge';    # %=
+</code></pre>
+
+<ul>
+<li><code>%=</code>が先頭にある行は, その後ろのPerlのコードを実行して, その結果をテンプレート内に直接埋め込む</li>
+</ul>
+</div><div class="step" data-y="2304" data-x="1024"><h2>テンプレートの中の特殊記号</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>&lt;% if ($num2 == 1 ) { %&gt; # &lt;% ... %&gt;
+    &lt;%= $hoge %&gt;         # &lt;%= ... %&gt;
+&lt;% } %&gt;
+</code></pre>
+
+<ul>
+<li><code>&lt;% ... %&gt;</code>, <code>&lt;%= ... %&gt;</code>は, それぞれ<code>%</code>, <code>%=</code>をHTMLタグやテキストの中で使えるようにしたもの</li>
+</ul>
+</div><div class="step" data-y="2304" data-x="2048"><h2>練習問題</h2>
+
+<ul>
+<li><code>fizzbuzz</code>テンプレートを用意して, 1から100までのfizzbuzzを表示してみましょう <br />
+<ul>
+<li>但し, fizzbuzzの処理は全て<code>fizzbuzz</code>テンプレートの中に書くようにしましょう</li>
+</ul></li>
+<li>fizzbuzz
+<ul>
+<li>3で割り切れる場合｢Fizz｣</li>
+<li>5で割り切れる場合｢Buzz｣</li>
+<li>3でも5でも割り切れる場合｢fizzbuzz｣</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="2304" data-x="3072"><h1>簡易 BBS の作成</h1>
+</div><div class="step" data-y="2304" data-x="4096"><h2>雛形を作る</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>$ mojo generate lite_app BBS
+</code></pre>
+</div><div class="step" data-y="2304" data-x="5120"><h2>PODRenderer</h2>
+
+<pre class="lang-perl prettyprint linenums"><code># Documentation browser under "/perldoc" # 削除
+plugin 'PODRenderer'; # 削除
+</code></pre>
+
+<ul>
+<li>PODRenderer は Mojolicious のプラグインで, perldoc を見れるようにするもの</li>
+<li>削除する前に、<a href="http://localhost:3000/perldoc">localhost:3000/perldoc</a> にアクセスしてみよう!</li>
+</ul>
+</div><div class="step" data-y="2304" data-x="6144"><h2>FORM 作成</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>Welcome to the Mojolicious real-time web framework! # 削除
+</code></pre>
+
+<ul>
+<li><code>index</code> テンプレートにある, もともとの文字列を削除する</li>
+</ul>
+</div><div class="step" data-y="3072" data-x="0"><h2>FORM 作成</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>%= form_for '/' =&gt; begin
+  %= text_field 'body'
+  %= submit_button '投稿する'
+% end
+</code></pre>
+
+<ul>
+<li>削除したところに, フォームを出力するコードを書く
+<ul>
+<li>form_for, text_field, submit_buttonなどは, Mojolicious のhelperという機能で定義されたPerlの関数(サブルーチン)</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="3072" data-x="1024"><h2>FORM 作成</h2>
+
+<ul>
+<li>ここまで出来たら, 保存してから, ブラウザをリロード (あるいは<a href="http://localhost:3000">http://localhost:3000</a>にアクセス) してみましょう</li>
+<li>フォームから投稿しても画面上は何も変わりません
+<ul>
+<li>次に, フォームから投稿された文字列を画面に表示するようにしてみよう</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="3072" data-x="2048"><h2>GET</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>  %= submit_button '投稿する'
+% end
+&lt;p&gt;&lt;%= $entry %&gt;&lt;/p&gt;
+</code></pre>
+
+<ul>
+<li>まずは <code>index</code> テンプレートを上記のように変更する</li>
+<li>`&lt;%= $entry %> は, テンプレート内の変数</li>
+</ul>
+</div><div class="step" data-y="3072" data-x="3072"><h2>GET</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>get '/' =&gt; sub {
+  my $self = shift;
+  my $entry = $self-&gt;param('body'); # 追加
+  $self-&gt;render('index');
+};
+</code></pre>
+
+<ul>
+<li>form の情報を取得するために, 上記のように 1 行追加する</li>
+<li><code>$self-&gt;param('body')</code> は フォームから投稿した <code>body</code> という名前の値を取得する</li>
+</ul>
+</div><div class="step" data-y="3072" data-x="4096"><h2>GET</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>get '/' =&gt; sub {
+  my $self = shift;
+  my $entry = $self-&gt;param('body');
+  $self-&gt;stash(body =&gt; $entry); # 追加
+  $self-&gt;render('index');
+};
+</code></pre>
+
+<ul>
+<li>取得した情報をテンプレートに渡すため, <code>$self-&gt;stash(body =&gt; $entry)</code> を挿入する</li>
+<li><code>body</code> に変数 <code>$entry</code> を渡したので, テンプレートで <code>$entry</code> が使用可能になる</li>
+</ul>
+</div><div class="step" data-y="3072" data-x="5120"><h2>GET</h2>
+
+<ul>
+<li>ここまで出来たら, 保存してからブラウザをリロード (あるいは<a href="http://localhost:3000">http://localhost:3000</a>にアクセス) してみよう</li>
+<li>フォームに文字を入力して, ｢投稿する｣ボタンをクリックしてみよう!</li>
+</ul>
+</div><div class="step" data-y="3072" data-x="6144"><h2>POST</h2>
+
+<ul>
+<li>先ほどのフォームは, HTTP でいうところのGETメソッドを利用してデータを送信していました</li>
+<li>GET でのリクエストは文字数の制限(おおよそ 2KB 程度)があるので、掲示板のような多くのデータを送信する必要がある場合は適当ではありません
+<ul>
+<li>このような場合, POST によるリクエストを行うとよいです</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="3840" data-x="0"><h2>POST</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>@@ post.html.ep # 新しいテンプレートを用意する
+% layout 'default';
+% title '出力'; # タイトルを変更
+%= form_for '/post' =&gt; method =&gt; 'POST' =&gt; begin # 投稿先などを変更
+  %= text_field 'body'
+  %= submit_button '投稿する'
+% end
+&lt;p&gt;&lt;%= $entry %&gt;&lt;/p&gt;
+</code></pre>
+
+<ul>
+<li><code>index.html.ep</code> の部分をコピーして, <code>post.html.ep</code> というテンプレートを作成する</li>
+<li><code>form\_for</code> に書いた <code>method =&gt; 'POST'</code> で, get ではなく post で送信するようになる</li>
+</ul>
+</div><div class="step" data-y="3840" data-x="1024"><h2>POST</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>@@ index.html.ep
+% layout 'default';
+% title '入力フォーム'; # タイトルを変更
+%= form_for '/post' =&gt; method =&gt; 'POST' =&gt; begin # 投稿先などを変更
+  %= text_field 'body'
+  %= submit_button '投稿する'
+% end
+</code></pre>
+
+<ul>
+<li><code>@@ index.html.ep</code> では, <code>$entry</code> を表示させないようにする</li>
+<li>その他, メソッドやタイトルも変更しておこう</li>
+</ul>
+</div><div class="step" data-y="3840" data-x="2048"><h2>POST</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>get '/' =&gt; sub {
+  my $self = shift;
+  $self-&gt;render('index');
+};
+
+post '/post' =&gt; sub {
+  my $self = shift;
+  my $entry = $self-&gt;param('body');
+  $self-&gt;stash(body =&gt; $entry);
+  $self-&gt;render('post');
+};
+</code></pre>
+
+<ul>
+<li>perl コードも変更しよう
+<ul>
+<li>細々とした違いに注意!</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="3840" data-x="3072"><h2>POST</h2>
+
+<ul>
+<li>ここまで出来たら, 保存してから, ブラウザをリロード (あるいは<a href="http://localhost:3000">http://localhost:3000</a>にアクセス) してみよう</li>
+<li>フォームに長い文字を入力して, ｢投稿する｣ボタンをクリックしてみよう!</li>
+</ul>
+</div><div class="step" data-y="3840" data-x="4096"><h2>記事を蓄える</h2>
+
+<ul>
+<li>記事を蓄えるための方法としては, いくつかの方法がある
+<ul>
+<li>DB (データベース) を利用</li>
+<li>外部ファイルに書き込み保存</li>
+</ul></li>
+<li>今回は時間の制約上, データを蓄える方法として, <strong>配列</strong>を用いる
+<ul>
+<li>言うまでもなく, 配列は Web アプリケーションが停止した時点で全てのデータが消えるので, 現実的ではない!</li>
+<li><code>MySQL</code>や<code>SQLite</code>などのデータベースを使うのがオススメです</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="3840" data-x="5120"><h2>記事を蓄える</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>@@ index.html.ep
+% layout 'default';
+% title '入力フォーム';
+%= form_for '/post' =&gt; method =&gt; 'POST' =&gt; begin
+  %= text_field 'body'
+  %= submit_button '投稿する'
+% end
+% for my $entry (@{$entries}) {
+    &lt;p&gt;&lt;%= $entry %&gt;&lt;/p&gt;
+% }
+</code></pre>
+
+<ul>
+<li>テンプレートに, 投稿済みの記事( <code>$entries</code> に格納されている )を表示するよう変更を加える</li>
+</ul>
+</div><div class="step" data-y="3840" data-x="6144"><h2>記事を蓄える</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>my @entries = (); # 空の配列を宣言
+get '/' =&gt; sub {
+  my $self = shift;
+  $self-&gt;stash(entries =&gt; \@entries); # 配列のリファレンスをテンプレートに渡す
+  $self-&gt;render('index');
+};
+
+post '/post' =&gt; sub {
+  my $self = shift;
+  my $entry = $self-&gt;param('body');
+  push @entries, $entry; # 配列に格納
+  $self-&gt;stash(body =&gt; $entry);
+  $self-&gt;render('post');
+};
+</code></pre>
+</div><div class="step" data-y="4608" data-x="0"><h2>記事を蓄える</h2>
+
+<ul>
+<li>ここまで出来たら, 保存してから, ブラウザをリロード (あるいは<a href="http://localhost:3000">http://localhost:3000</a>にアクセス) してみよう</li>
+<li>文字の投稿をいくつか繰り返した後に, <a href="http://localhost:3000">http://localhost:3000</a>にアクセスしてみよう!</li>
+</ul>
+</div><div class="step" data-y="4608" data-x="1024"><h2>リダイレクト</h2>
+
+<ul>
+<li>別のページへ遷移(移動)するための機能
+<ul>
+<li>今回の場合, <code>/post</code>で記事を投稿した後に記事を表示するページである<code>/</code>に戻るようにする</li>
+</ul></li>
+<li>Mojolicious ビルトインの <code>redirect\_to</code> を使用すればよい</li>
+</ul>
+</div><div class="step" data-y="4608" data-x="2048"><h2>redirect_to</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>post '/post' =&gt; sub {
+  my $self = shift;
+  my $entry = $self-&gt;param('body');
+  push @entries, $entry;
+  $self-&gt;stash(body =&gt; $entry);
+  $self-&gt;redirect_to('/'); # 追加
+};
+</code></pre>
+
+<ul>
+<li><code>redirect\_to</code> を利用して, <code>/</code>へのページ遷移を追加する
+<ul>
+<li><code>post</code>のテンプレートはもう必要ないので, 削除しても問題ない</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="4608" data-x="3072"><h2>最終問題</h2>
+
+<ul>
+<li>これまで作成してきた簡易 BBS を, 改造してみましょう!</li>
+<li>例えば...?
+<ul>
+<li>名前/メールアドレスを入力/表示できるようにする...</li>
+<li>メールアドレスが｢age｣であれば, 記事を<code>push</code>ではなく<code>unshift</code>する...</li>
+<li>テンプレートを整理して, 見た目を綺麗にする...
+<ul>
+<li>Twitter Bootstrapを使ってみる...</li>
+</ul></li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="4608" data-x="4096"><h2>まとめ</h2>
+
+<ul>
+<li>非常に簡単ではありますが, BBS (のような) Web サービスを開発してみました
+<ul>
+<li>時間の制約上, 紹介できなかった部分 (適切な記事の蓄え方など...) は紹介できませんでしたが, Perl を使った Web サービスの開発の基本的な流れは, このようになっています</li>
+<li>今日ここまで紹介してきた内容は, 基礎中の基礎です. ｢ Web サービスを作ろう!｣となると, やはりまだまだ挑戦しなければならない｢壁｣はいくつもあります</li>
+</ul></li>
+<li>その時困ったら, Perl入学式の資料や, スタッフを是非頼って下さい!</li>
+</ul>
+</div><div class="step" data-y="4608" data-x="5120"><h2>まとめ</h2>
+
+<p>1年間お疲れ様でした!</p>
+</div>
+<!--  <div id="overview" class="step" data-x="3072" data-y="2304" data-scale="15"></div> -->
+</div>
+
+<div class="hint">
+  <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) {
+  document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+<script src="../static/impress/js/impress.js"></script>
+<script src="../static/gcp/prettify.js"></script>
+<script src="../static/js/app.js"></script>
+</body>
+</html>
