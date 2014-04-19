@@ -53,7 +53,7 @@
         <h4>2014年05月17日(土)</h4>
         <p>
           時間: 13:00 - 17:00<br>
-          定員: 16人<br>
+          定員: 16人<span id="osaka-capacity-information"></span><br>
           会場: <a href="http://www.joeswebhosting.net/">Joe'sビジネスセンター</a><br>
           住所: <a href="http://www.google.co.jp/maps?q=%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%8C%97%E5%8C%BA%E6%A2%85%E7%94%B01%E4%B8%81%E7%9B%AE11%E7%95%AA4-923%E5%8F%B7">大阪府大阪市北区梅田1丁目11番4-923号 (大阪駅前第4ビル 9F)</a>
         </p>
@@ -65,7 +65,7 @@
         <h4>2014年04月26日(土)</h4>
         <p>
           時間: 13:00 - 17:00<br>
-          定員: 40人<br>
+          定員: 40人<span id="tokyo-capacity-information"></span><br>
           会場: <a href="http://www.gaiax.co.jp/jp/">株式会社GaiaX</a> 6Fセミナールーム<br>
           住所: <a href="https://www.google.co.jp/maps/preview#!q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E8%A5%BF%E4%BA%94%E5%8F%8D%E7%94%B01-21-8&data=!1m4!1m3!1d3226!2d139.7232751!3d35.6229826!4m15!2m14!1m13!1s0x60188afa9e46cd47%3A0x5a915c4b1661895!3m8!1m3!1d103734!2d139.740309!3d35.660028!3m2!1i1024!2i768!4f13.1!4m2!3d35.6229826!4d139.7232751">東京都品川区西五反田1-21-8 KSS五反田ビル 6F</a>
         </p>
@@ -77,7 +77,7 @@
         <h4>2014年05月10日(土)</h4>
         <p>
           時間: 13:00 - 17:00<br>
-          定員: 10人<br>
+          定員: 10人<span id="fukuoka-capacity-information"></span><br>
           会場: <a href="http://nulab-inc.com/ja/">株式会社ヌーラボ</a><br>
           住所: <a href="https://www.google.co.jp/maps/place/%EF%BC%AB%EF%BC%A4%EF%BC%A3%E7%A6%8F%E5%B2%A1%E3%83%93%E3%83%AB/@33.5943053,130.4037232,17z/data=!3m1!4b1!4m2!3m1!1s0x354191931a2bb0af:0xe756af1692cb1ced">福岡県福岡市博多区中洲5丁目5-13 KDC福岡ビル 7F</a>
         </p>
@@ -93,6 +93,39 @@
 
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="/js/bootstrap.js"></script>
+<script type="text/javascript">
+  var PerlEntrance = {
+    "zusaar_event_id": {
+      "osaka":   "5197004",
+      "tokyo":   "4977008",
+      "fukuoka": "5157005"
+    },
+    "zusaar_api_endpoint_url": "http://www.zusaar.com/api/event/"
+  };
+  $(document).ready(function(){
+    var endpoint_url = PerlEntrance.zusaar_api_endpoint_url;
+    $.each(["osaka", "tokyo", "fukuoka"], function(index, region){
+      if(typeof region !== "string" ) throw new Exception("error");
+      var $info_container = $("#"+region+"-capacity-information"),
+          get_url = PerlEntrance.zusaar_api_endpoint_url+"?event_id="+PerlEntrance.zusaar_event_id[region]+"&format=jsonp";
+      $.ajax({
+        url: get_url,
+        type: "GET",
+        dataType: "jsonp",
+        success: function(json) {
+          var event = json.event[0],
+              waiting = event["waiting"], // 補欠者
+              accepted = event["accepted"]; //, // 参加者
+              //limit = event["limit"]; // 定員 / TODO: HTMLに書いてあるけどここから取り出してもいい
+          if ( typeof waiting !== "undefined" && typeof accepted !== "undefined" ) {
+            //$info_container.html("(現在"+accepted+"名参加、"+waiting+"名補欠、定員"+limit+"名)");
+            $info_container.html("(現在"+accepted+"名参加、"+waiting+"名補欠)");
+          }
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>
 
