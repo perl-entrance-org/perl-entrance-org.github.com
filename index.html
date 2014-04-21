@@ -113,11 +113,13 @@
         dataType: "jsonp",
         success: function(json) {
           var event = json.event[0],
-              waiting = event["waiting"], // 補欠者
-              accepted = event["accepted"]; //, // 参加者
-              limit = event["limit"]; // 定員 / TODO: HTMLに書いてあるけどここから取り出してもいい
-          if ( typeof waiting !== "undefined" && typeof accepted !== "undefined" ) {
+              waiting  = event["waiting"],  // 補欠者
+              accepted = event["accepted"], // 参加者
+              limit    = event["limit"];    // 定員
+          if ( typeof waiting !== "undefined" && typeof accepted !== "undefined" && typeof limit !== "undefined" ) {
             $info_container.html(limit+"人 (現在"+accepted+"名参加、"+waiting+"名補欠)");
+          } else {
+            $info_container.html("(データ取得ができませんでした)");
           }
         }
       });
