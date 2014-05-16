@@ -26,7 +26,7 @@
             <li><a href="/2012/handout.html">資料 (2012年)</a></li>
             <li><a href="/2013/handout.html">資料 (2013年)</a></li>
             <li><a href="/2014/handout.html">資料 (2014年)</a></li>
-            <li><a href="https://twitter.com/Perl_Entrance">twitter</a></li>
+            <li><a href="https://twitter.com/Perl_Entrance">Twitter</a></li>
             <li><a href="https://github.com/perl-entrance-org">GitHub</a></li>
           </ul>
         </div>
@@ -84,7 +84,39 @@
         </p>
         <p align="center"><a class="btn btn-info" href="http://www.zusaar.com/event/5157005">View details</a></p>
       </div>
+
     </div>
+
+    <div class="row" align="center">
+      <h2>関連イベント</h2>
+    </div>
+
+    <div class="row">
+      <div class="span4">
+        <h2>五反田Perl #1</h2>
+        <h4>2014年06月07日(土)</h4>
+        <p>
+          時間: 13:00 - 18:00<br>
+          定員: <span id="gotanda-capacity-information"></span><br>
+          会場: <a href="http://www.gaiax.co.jp/jp/">株式会社GaiaX</a> 6Fセミナールーム<br>
+          住所: <a href="https://www.google.co.jp/maps/preview#!q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E8%A5%BF%E4%BA%94%E5%8F%8D%E7%94%B01-21-8&data=!1m4!1m3!1d3226!2d139.7232751!3d35.6229826!4m15!2m14!1m13!1s0x60188afa9e46cd47%3A0x5a915c4b1661895!3m8!1m3!1d103734!2d139.740309!3d35.660028!3m2!1i1024!2i768!4f13.1!4m2!3d35.6229826!4d139.7232751">東京都品川区西五反田1-21-8 KSS五反田ビル 6F</a>
+        </p>
+        <p align="center"><a class="btn btn-info" href="http://www.zusaar.com/event/5417006">View details</a></p>
+      </div>
+
+      <div class="span4">
+        <h2><a href="http://www.perl-beginners.org/">PerlBeginners</a> #13</h2>
+        <h4>2014年05月23日(金)</h4>
+        <p>
+          時間: 19:00 - 21:00<br>
+          定員: <span id="perlbeginners-capacity-information"></span><br>
+          会場: 文京シビックホール 会議室１<br>
+          住所: <a href="https://www.google.co.jp/maps/preview?q=35.7080343,139.7524753(%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%87%E4%BA%AC%E5%8C%BA%E6%98%A5%E6%97%A51-16-21)&z=17">東京都文京区春日1-16-21</a>
+        </p>
+        <p align="center"><a class="btn btn-info" href="http://atnd.org/events/49820">View details</a></p>
+      </div>
+    </div>
+
 
   <footer>
       <p class="pull-right">&copy; 2012-2014 <a href="http://twitter.com/Perl_Entrance">@Perl_Entrance</a></p>
@@ -99,13 +131,14 @@
     "zusaar_event_id": {
       "osaka":   "5197004",
       "tokyo":   "8387006",
-      "fukuoka": "5157005"
+      "fukuoka": "5157005",
+      "gotanda": "5417006"
     },
     "zusaar_api_endpoint_url": "http://www.zusaar.com/api/event/"
   };
   $(document).ready(function(){
     var endpoint_url = PerlEntrance.zusaar_api_endpoint_url;
-    $.each(["osaka", "tokyo", "fukuoka"], function(index, region){
+    $.each(["osaka", "tokyo", "fukuoka", "gotanda"], function(index, region){
       var $info_container = $("#"+region+"-capacity-information"),
           get_url = PerlEntrance.zusaar_api_endpoint_url+"?event_id="+PerlEntrance.zusaar_event_id[region]+"&format=jsonp";
       $.ajax({
