@@ -120,9 +120,20 @@
         </p>
         <p align="center"><a class="btn btn-info" href="http://atnd.org/events/49820">View details</a></p>
       </div>
-    </div>
 
+      <div class="span4">
+        <h2>天神Perl #9</h2>
+        <h4>2014年06月07日(土)<br></h4>
+        <p>
+          時間: 13:00 - 17:00<br>
+          定員: <span id="tenjinperl-capacity-information"></span><br>
+          会場: <a href="http://linefukuoka.co.jp/">LINE Fukuoka 株式会社 KDXオフィス</a><br>
+          住所: <a href="https://goo.gl/maps/3j5WT">福岡市博多区博多駅南1-3-11(KDX博多南ビル3階)</a>
+        </p>
+        <p align="center"><a class="btn btn-info" href="http://connpass.com/event/6466/">View details</a></p>
+      </div>
 
+    </div> <!-- end of div.row -->
   <footer>
       <p class="pull-right">&copy; 2012-2014 <a href="http://twitter.com/Perl_Entrance">@Perl_Entrance</a></p>
   </footer>
@@ -142,8 +153,12 @@
     "atndbeta_event_id": {
       "perlbeginners": "49820"
     },
+    "connpass_event_id": {
+      "tenjinperl": "6466"
+    },
     "zusaar_api_endpoint_url": "http://www.zusaar.com/api/event/",
-    "atndbeta_api_endpoint_url": "http://api.atnd.org/events/"
+    "atndbeta_api_endpoint_url": "http://api.atnd.org/events/",
+    "connpass_api_endpoint_url": "http://connpass.com/api/v1/event/"
   };
 
   // Zusaar
@@ -196,6 +211,33 @@
       });
     });
   });
+
+  // Connpass
+  $(document).ready(function(){
+    var endpoint_url = PerlEntrance.connpass_api_endpoint_url;
+    $.each(["tenjinperl"], function(index, region){
+      var $info_container = $("#"+region+"-capacity-information"),
+          get_url = endpoint_url+"?event_id="+PerlEntrance.connpass_event_id[region]+"&format=json";
+          console.log("get_url " + get_url);
+      $.ajax({
+        url: get_url,
+        type: "GET",
+        dataType: "jsonp",
+        success: function(json) {
+          var event = json.events[0],
+              waiting  = event["waiting"],  // 補欠者
+              accepted = event["accepted"], // 参加者
+              limit    = event["limit"];    // 定員
+          if ( typeof waiting !== "undefined" && typeof accepted !== "undefined" && typeof limit !== "undefined" ) {
+            $info_container.html(limit+"人 (現在"+accepted+"名参加、"+waiting+"名補欠)");
+          } else {
+            $info_container.html("(データ取得ができませんでした)");
+          }
+        }
+      });
+    });
+  });
+
 </script>
 </body>
 </html>
