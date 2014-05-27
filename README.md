@@ -1,4 +1,4 @@
-perl-entrance-org.github.com
-============================
+www.perl-entrance.org
+=====================
 
-Perl入学式の資料です.
+Perl入学式の公式サイトです。
