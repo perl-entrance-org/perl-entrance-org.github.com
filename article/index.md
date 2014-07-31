@@ -266,10 +266,11 @@ template: index
         type: "GET",
         dataType: "jsonp",
         success: function(json) {
-          var event = json.events[0],
+          var event = json.events[0].event,
               waiting  = event["waiting"],  // 補欠者
               accepted = event["accepted"], // 参加者
               limit    = event["limit"];    // 定員
+              console.debug('event:', event);
           if ( typeof waiting !== "undefined" && typeof accepted !== "undefined" && typeof limit !== "undefined" ) {
             $info_container.html(limit+"人 (現在"+accepted+"名参加、"+waiting+"名補欠)");
           } else {

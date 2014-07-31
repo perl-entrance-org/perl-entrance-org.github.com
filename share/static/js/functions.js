@@ -24,10 +24,8 @@ $(document).ready(function() {
 	});
 
 	// Carousel
-	$('#carousel').carousel({
-		interval: 4000
-	})
+	// $('#carousel').carousel({
+	// 	interval: 4000
+	// })
 
 });
-
-

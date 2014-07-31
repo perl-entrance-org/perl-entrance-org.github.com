@@ -11,8 +11,15 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<: '/static/images/icons/apple-touch-icon-114x114-precomposed.png' | uri_for :>">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<: '/static/images/icons/apple-touch-icon-72x72-precomposed.png' | uri_for :>">
     <link rel="apple-touch-icon-precomposed" href="<: '/static/images/icons/apple-touch-icon-precomposed.png' | uri_for :>">
-    <meta name="description" content=""/>
-    <meta name="author" content=""/>
+    <meta property="og:title" content="<: $blog.title :>">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Perl入学式の公式サイトです">
+    <meta property="og:url" content="<: '' | uri_for :>">
+    <meta property="og:image" content="<: '/static/images/logo.png' | uri_for :>">
+    <meta property="og:site_name" content="<: $blog.title :>">
+    <meta property="og:email" content="webmaster@perl-entrance.org">
+    <meta name="description" content="Perl入学式の公式サイトです"/>
+    <meta name="author" content="<: $blog.author :>"/>
     <meta name="copyright" content="Copyright (c) 2014 Perl Entrance"/>
     <link type="text/css" rel="stylesheet" href="<: '/static/css/style.css' | uri_for :>"/>
 </head>
