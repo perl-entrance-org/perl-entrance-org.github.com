@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1024" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Perl入学式#4</title>
+  <link href="impress/css/impress-demo.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="gcp/prettify.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/app.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+  <div data-scale="0.5" id="title" class="step" data-y="0" data-x="0"><h1><img src="images/perl-entrance_t.png" alt="Perl入学式" /></h1>
+
+<!-- data-scale="0.5" -->
+</div><div class="step" data-y="0" data-x="1024"><h1>Perl入学式 #4</h1>
+
+<p><a href="http://www.perl-entrance.org">http://www.perl-entrance.org</a></p>
+
+<ul>
+<li>日時
+<ul>
+<li>2012年4月15日（日） 13:00 - 18:00</li>
+</ul></li>
+<li>会場
+<ul>
+<li>株式会社Joe'sウェブホスティング</li>
+<li><a href="http://www.joeswebhosting.net">http://www.joeswebhosting.net</a></li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="0" data-x="2048"><h2>Perl入学式について</h2>
+
+<ul>
+<li>Perl入学式（<a href="http://www.perl-entrance.org">http://www.perl-entrance.org</a>）は、プログラミング未経験者からPerl初心者を対象としたワークショップです</li>
+<li>公式Twitter
+<ul>
+<li><a href="http://twitter.com/perl_entrance">@Perl_Entrance</a></li>
+</ul></li>
+<li>公式ハッシュタグ
+<ul>
+<li>#Perl入学式</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="0" data-x="3072"><h2>会場について</h2>
+
+<ul>
+<li>今回のPerl入学式は「Joe'sオープンソースJelly」の一環ということで、株式会社Joe'sウェブホスティング（<a href="http://www.joeswebhosting.net">http://www.joeswebhosting.net</a>）様より特別に会場をお借りしています</li>
+<li>この場をお借りしてお礼申し上げます</li>
+</ul>
+</div><div class="step" data-y="0" data-x="4096"><h2>ロゴについて</h2>
+
+<p><img src="images/perl-entrance_t_300.png" alt="Perl入学式" /></p>
+
+<ul>
+<li>横山陽平さん（<a href="http://yokoyamayohei.com/">http://yokoyamayohei.com/</a>）にデザインしていただきました</li>
+<li>この場をお借りしてお礼申し上げます</li>
+</ul>
+</div><div class="step" data-y="0" data-x="5120"><h2>IT勉強会スタンプラリー</h2>
+
+<p><img src="images/it-stamp.png" alt="IT勉強会スタンプラリー" /></p>
+
+<ul>
+<li>Perl入学式は、IT勉強会スタンプラリー（<a href="http://it-stamp.jp/">http://it-stamp.jp/</a>）に参加しています</li>
+<li>今回のPerl入学式は、スタンプラリーの対象となる勉強会です</li>
+<li>台紙は勉強会終了後にお渡しします</li>
+</ul>
+</div><div class="step" data-y="0" data-x="6144"><h2>喋ってる人</h2>
+
+<ul>
+<li>名前 ： 若林 信敬</li>
+<li>Twitter ： <a href="http://twitter.com/nqounet">@nqounet</a></li>
+<li>Facebook ： <a href="https://www.facebook.com/nobutaka.wakabayashi">nobutaka.wakabayashi</a></li>
+<li>仕事 ： フリーエンジニア（IT系）</li>
+<li>屋号 ： <a href="http://www.nishimiyahara.net">IT Office 西宮原</a></li>
+</ul>
+</div><div class="step" data-y="0" data-x="7168"><h2>今日やること（No.1/2）</h2>
+
+<ul>
+<li>前回までのおさらい（30分）</li>
+<li>perlbrewとcpanmをインストールしよう（10分）</li>
+<li>おさらい問題（10分）</li>
+<li>休憩（10分） 〜 14:00（〜14:40）</li>
+<li>Perlを便利にする「モジュール」を使おう（20分）</li>
+<li>cpanmで「モジュール」をインストールしよう（10分）</li>
+<li>ウェブページを取得しよう（40分）</li>
+<li>休憩（10分） 〜 15:20（〜15:35）</li>
+</ul>
+</div><div class="step" data-y="0" data-x="8192"><h2>今日やること（No.2/2）</h2>
+
+<ul>
+<li>ウェブページのタイトルを抽出しよう（50分）</li>
+<li>ハッシュを使おう（20分）</li>
+<li>休憩（10分） 〜 16:40（〜16:50）</li>
+<li>データの中身を確認する（10分）</li>
+<li>たくさん情報を持った変数を作ろう（40分）</li>
+<li>練習問題（30分）</li>
+</ul>
+</div><div data-scale="0.5" class="step" data-y="0" data-x="9216"><h1>前回までのおさらい</h1>
+
+<!-- data-scale="0.5" -->
+</div><div class="step" data-y="0" data-x="10240"><h2>おさらいする内容</h2>
+
+<ul>
+<li>お約束</li>
+<li>画面に出力する</li>
+<li>変数を使う</li>
+<li>画面から入力する</li>
+<li>条件分岐</li>
+<li>配列</li>
+<li>繰り返し</li>
+</ul>
+</div><div class="step" data-y="768" data-x="0"><h2>お約束</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>#!/usr/bin/env perl
+use utf8;
+use strict;
+use warnings;
+
+binmode STDIN,  ":utf8"; # 標準入力
+binmode STDOUT, ":utf8"; # 標準出力
+binmode STDERR, ":utf8"; # 標準エラー出力
+</code></pre>
+</div><div class="step" data-y="768" data-x="1024"><h2>画面に出力する</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>print "Hello World\n"; # Hello World[改行]
+# 命令文の最後は「;」セミコロンを入力
+# 「#」の後ろはコメントになる
+# 「\n」は[改行]
+print 'Hello World\n'; # Hello World\n
+# シングルクォートの場合は「\n」がそのまま表示
+print "はろーわーるど\n"; # 日本語もOK
+</code></pre>
+</div><div class="step" data-y="768" data-x="2048"><h2>変数を使う</h2>
+
+<h3>代入と演算</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my $string;             # 「my」は変数の宣言
+$string = '文字列';      # 「=」は右の値を左の変数に代入
+print $string . "\n";   # 「.」は文字列の足し算（連結）
+my $num  = 123;         # 変数の宣言と代入は同時でもOK
+my $num2 = '123';       # 文字列として代入
+my $sum = $num + $num2; # 「+」は数値の足し算
+print "$num + $num2 は $sum です。\n"; # 答えは246
+</code></pre>
+</div><div class="step" data-y="768" data-x="3072"><h2>画面から入力する</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>print "値を入力してください&gt;&gt;&gt;";
+my $input = &lt;STDIN&gt;;          # 入力待ち
+print "入力は $input です\n";   # [改行]を含む
+chomp($input);                # [改行]を取り除く
+print "入力は $input です\n";
+print "値2を入力してください&gt;&gt;&gt;";
+chomp( my $input2 = &lt;STDIN&gt; ); # 入力待ちと同時でもOK
+# print "入力は$input2です\n";   # エラー
+print "入力2は${input2}です\n";  # 変数名:$input2
+print "入力1は${input}2です\n";  # 変数名:$input
+</code></pre>
+</div><div class="step" data-y="768" data-x="4096"><h2>条件分岐</h2>
+
+<h3>数値として比較（基本）</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>print "値を入力してください&gt;&gt;&gt;";
+chomp( my $in = &lt;STDIN&gt; );
+if ( $in == 0 ) {
+  # $in == 0 が「真」の場合
+  print "入力値${in}は0です\n";
+}
+else {
+  # $in == 0 が「偽」の場合
+  print "入力値${in}は0ではありません\n";
+}
+</code></pre>
+</div><div class="step" data-y="768" data-x="5120"><h2>条件分岐</h2>
+
+<h3>数値として比較（関係演算子一覧）</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my $x = 123;
+my $y = 123;
+if ( $x == $y ) { print "$x と $y は同じ\n";    }
+if ( $x != $y ) { print "$x と $y は違う\n";    }
+if ( $x &gt;  $y ) { print "$x は $y より大きい\n"; }
+if ( $x &lt;  $y ) { print "$x は $y より小さい\n"; }
+if ( $x &gt;= $y ) { print "$x は $y 以上\n";      }
+if ( $x &lt;= $y ) { print "$x は $y 以下\n";      }
+</code></pre>
+</div><div class="step" data-y="768" data-x="6144"><h2>条件分岐</h2>
+
+<h3>数値として比較（特殊）</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my $result = $x &lt;=&gt; $y;  # $x &lt;=&gt; $y の結果を代入
+if ( $result == 0 ) {    # 条件１
+  print "$x と $y は同じ\n";
+}
+elsif ( $result &lt; 0 ) {  # 条件２
+  print "$x は $y より小さい\n";
+}
+else {                   # すべての条件に当てはまらない
+  print "$x は $y より大きい\n";
+}
+</code></pre>
+</div><div class="step" data-y="768" data-x="7168"><h2>条件分岐</h2>
+
+<h3>文字列として比較（基本）</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>print "値を入力してください&gt;&gt;&gt;";
+chomp( my $in = &lt;STDIN&gt; );
+if ( $in eq 'a' ) {
+  # $in eq 'a' が「真」の場合
+  print "入力値${in}は'a'です\n";
+}
+else {
+  # $in eq 'a' が「偽」の場合
+  print "入力値${in}は'a'ではありません\n";
+}
+</code></pre>
+</div><div class="step" data-y="768" data-x="8192"><h2>条件分岐</h2>
+
+<h3>文字列として比較（関係演算子一覧）</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my $x = 'xyz';
+my $y = 'xyz';
+if ( $x eq $y ) { print "$x と $y は同じ\n";    }
+if ( $x ne $y ) { print "$x と $y は違う\n";    }
+if ( $x gt $y ) { print "$x は $y より大きい\n"; }
+if ( $x lt $y ) { print "$x は $y より小さい\n"; }
+if ( $x ge $y ) { print "$x は $y 以上\n";      }
+if ( $x le $y ) { print "$x は $y 以下\n";      }
+</code></pre>
+</div><div class="step" data-y="768" data-x="9216"><h2>条件分岐</h2>
+
+<h3>文字列として比較（特殊）</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my $result = $x cmp $y;   # $x cmp $y の結果を代入
+if ( $result == 0 ) {     # 条件１
+  print "$x と $y は同じ\n";
+}
+elsif ( $result &lt; 0 ) {   # 条件２
+  print "$x は $y より小さい\n";
+}
+else {                    # すべての条件に当てはまらない
+  print "$x は $y より大きい\n";
+}
+</code></pre>
+</div><div class="step" data-y="768" data-x="10240"><h2>条件分岐</h2>
+
+<h3>論理演算子一覧</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my $x = 1;
+my $y = 2;
+if ( $x == 1 &amp;&amp; $y == 2 ) {
+  print "$x は 1 かつ $y は 2 です\n";
+}
+if ( $x == 2 || $y == 2 ) {
+  print "$x は 2 または $y は 2 です\n";
+}
+if ( ! $y == 1 ) {
+  print "$y は 1 ではありません\n";
+}
+</code></pre>
+</div><div class="step" data-y="1536" data-x="0"><h2>配列</h2>
+
+<h3>配列の基本</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my @array = ('a', 'b', 'c'); # 配列の宣言と代入
+print "$array[0]\n";  # a[改行] : 最初の要素
+print "$array[1]\n";  # b[改行] : 2つめの要素
+print "$array[-1]\n"; # c[改行] : 最後の要素
+print "@{array}\n";  # a b c[改行] : 中身を表示
+print '@{array}\n';  # @{array}\n : 展開されない
+my $array = @array;  # スカラ変数と同じ名前でもOK
+print "$array\n";    # 3[改行] : 配列の要素数
+</code></pre>
+
+<ul>
+<li>添字は「<code>[]</code>（ブラケット）」を用いる</li>
+</ul>
+</div><div class="step" data-y="1536" data-x="1024"><h2>配列</h2>
+
+<h3>配列の操作（No.1/2）</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my @empty_array = ();
+my @defined_only;
+my @array = ('a', 'b', 'c');
+push    @array, '最後';    # 最後の要素に加える
+unshift @array, '最初';    # 最初の要素に加える
+print "@array\n";         # 最初 a b c 最後[改行]
+my $pop   = pop   @array; # 最後の要素を取り出す
+my $shift = shift @array; # 最初の要素を取り出す
+print "@array\n";         # a b c[改行]
+print "$pop\n";           # 最後[改行]
+print "$shift\n";         # 最初[改行]
+</code></pre>
+</div><div class="step" data-y="1536" data-x="2048"><h2>配列</h2>
+
+<h3>配列の操作（No.2/2）</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my @array = ('a', 'b', 'c');
+my @array2 = reverse(@array);  # 要素を逆並びにする
+print "@array2\n";             # c b a[改行]
+my @array3 = sort(@array2);    # 要素を順序良く並べる
+print "@array3\n";             # a b c[改行]
+my $str = join(":", @array);   # 要素を連結する
+print "$str\n";                # a:b:c[改行]
+my @array4 = split(/:/, $str); # 文字列を分割する
+print "@array4\n";             # a b c[改行]
+</code></pre>
+</div><div class="step" data-y="1536" data-x="3072"><h2>繰り返し</h2>
+
+<h3>for文</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>for my $i (1 .. 10) { # 1 から 10 まで
+  print "$i\n"; # 1[改行]2[改行]3[改行]...
+}
+my @array = ('a', 'b', 'c'); # 配列を定義
+for my $item ( @array ) {    # 配列の要素
+  print $item . "\n"; # a[改行]b[改行]
+  if ($item eq 'b') { # $itemが「b」という文字列の場合
+  last;             # ループを抜ける（終了する）
+  }
+}
+</code></pre>
+</div><div class="step" data-y="1536" data-x="4096"><h2>繰り返し</h2>
+
+<h3>while文</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my $perl = '嫌い';
+my $like = '好き';
+while ( $perl ne $like ) {
+  # 条件が真（$perl と $like が違う）の場合はループ内へ
+  print "Perlは${like}ですか？[y/N]&gt;&gt;&gt;";
+  chomp(my $in = &lt;STDIN&gt;);
+  if ( $in eq 'y' || $in eq 'Y' ) {
+    $perl = $like;
+  }
+}
+# 条件が偽の場合はループの外へ
+print "Perlは${perl}ですよね〜。\n";
+</code></pre>
+</div><div data-scale="0.5" class="step" data-y="1536" data-x="5120"><h1>perlbrewとcpanmをインストールしよう</h1>
+
+<!-- data-scale="0.5" -->
+</div><div class="step" data-y="1536" data-x="6144"><h2>インストールしてありますよね？</h2>
+</div><div class="step" data-y="1536" data-x="7168"><h2>開発環境の構築</h2>
+
+<h3>ModernなPerlの開発環境の構築方法</h3>
+
+<ul>
+<li><a href="http://www.perl-entrance.org/p/modernperl20123.html">http://www.perl-entrance.org/p/modernperl20123.html</a></li>
+<li><a href="http://www.perl-entrance.org">http://www.perl-entrance.org</a> → 「ModernなPerlの開発環境の構築方法」</li>
+<li>Perl入学式ではperlbrew＋cpanmの環境を前提にしています</li>
+</ul>
+</div><div class="step" data-y="1536" data-x="8192"><h2>ModernなPerlの開発環境の構築方法</h2>
+
+<ul>
+<li>下準備</li>
+<li>perlbrewをインストール</li>
+<li>Perlをインストール</li>
+<li>cpanmをインストール</li>
+<li>perlbrewを使い際の注意事項</li>
+</ul>
+</div><div data-scale="0.5" class="step break" data-y="1536" data-x="9216"><h1>おさらい問題</h1>
+
+<!-- class="break" -->
+<!-- data-scale="0.5" -->
+</div><div class="step" data-y="1536" data-x="10240"><h2>おさらい問題</h2>
+
+<h3>標準入力（STDIN）から値を5つ受け取って「受け取った値の全て」と「数値としての最大値」を表示するプログラムを作ってみよう</h3>
+
+<h2>回答方法</h2>
+
+<ol>
+<li>for文と配列を使って書いて実行してみよう</li>
+<li>（余裕があれば）「数値としての最小値」も表示してみよう</li>
+<li>（余裕があれば）数値として0が入力された場合にエラーを出すようにしよう</li>
+<li>（それでも時間があれば）ハッシュタグ「#Perl入学式」でツイートしてみよう</li>
+</ol>
+</div><div class="step break" data-y="2304" data-x="0"><h1>休憩</h1>
+
+<h1>〜14:40</h1>
+
+<!-- class="break" -->
+</div><div data-scale="0.5" class="step" data-y="2304" data-x="1024"><h1>Perlを便利にする「モジュール」を使おう</h1>
+
+<!-- data-scale="0.5" -->
+</div><div class="step" data-y="2304" data-x="2048"><h2>最大値と最小値を求める</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>use List::Util qw(max min);
+my @array = (2, 99, 87, 32, -11);
+my $max = max(@array);
+print $max . "\n"; # 99[改行]
+my $min = min(@array);
+print $min . "\n"; # -11[改行]
+</code></pre>
+
+<ul>
+<li>「<code>List::Util</code>」という配列関係の便利な関数が使えるモジュールを利用</li>
+<li>詳しい説明：<a href="http://search.cpan.org/dist/Scalar-List-Utils/lib/List/Util.pm">http://search.cpan.org/dist/Scalar-List-Utils/lib/List/Util.pm</a></li>
+</ul>
+
+<h4>おさらい問題を<code>max</code>や<code>min</code>を使って書きなおしてみよう！</h4>
+</div><div class="step" data-y="2304" data-x="3072"><h2>モジュールとは</h2>
+
+<ul>
+<li>Perlを便利にする機能（部品）のこと</li>
+<li>「ライブラリ」と言ってもよいでしょう</li>
+<li>最初からいくつかのモジュールはインストールされている（標準モジュール）</li>
+<li>モジュールはCPAN(シーパン：Comprehensive Perl Archive Network)という仕組みで管理されている</li>
+</ul>
+</div><div class="step" data-y="2304" data-x="4096"><h2>CPANとは</h2>
+
+<h3>Wikipediaより</h3>
+
+<blockquote>
+  <p>CPAN（シーパン、Comprehensive Perl Archive Network）とは、Perlのライブラリ・モジュールやその他のPerlで書かれたソフトウェアを集めた巨大なアーカイブで、世界中のサーバにその内容がミラーリングされている。再利用性・汎用性の高いモジュールが登録されており、Perlプログラマができるだけ車輪の再発明をせずに済むための支援環境となっている。登録モジュールの検索システムも提供されているため、Perlプログラマは望む機能を持ったモジュールを容易に入手することができる。</p>
+</blockquote>
+</div><div class="step" data-y="2304" data-x="5120"><h2>CPANとは</h2>
+
+<h3>SEARCH CPAN（ウェブサイト）</h3>
+
+<ul>
+<li><a href="http://search.cpan.org">http://search.cpan.org</a></li>
+<li>Perlで何か作る前に調べる
+<ul>
+<li>既に誰かが作っているかもしれない</li>
+</ul></li>
+<li>大きなモジュール（システム）から小さなモジュール（関数）まで揃っている</li>
+</ul>
+</div><div class="step" data-y="2304" data-x="6144"><h2>CPANとは</h2>
+
+<h3>ウェブ制作に使えるモジュール</h3>
+
+<ul>
+<li>CGI
+<ul>
+<li><a href="http://search.cpan.org/dist/CGI-Simple/">CGI::Simple</a></li>
+</ul></li>
+<li>Web Application
+<ul>
+<li><a href="http://search.cpan.org/dist/Mojolicious/">Mojolicious</a></li>
+<li><a href="http://search.cpan.org/dist/Catalyst-Runtime/">Catalyst</a></li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="2304" data-x="7168"><h2>CPANとは</h2>
+
+<h3>ソーシャル関係に使えるモジュール</h3>
+
+<ul>
+<li>Twitterのボットを作りたい場合
+<ul>
+<li><a href="http://search.cpan.org/dist/Net-Twitter-Lite/">Net::Twitter::Lite</a></li>
+</ul></li>
+<li>Facebookで何かしたい場合
+<ul>
+<li><a href="http://search.cpan.org/dist/Facebook-Graph/">Facebook::Graph</a></li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="2304" data-x="8192"><h2>CPANとは</h2>
+
+<h3>その他インターネット関係のモジュール</h3>
+
+<ul>
+<li>電子メールを送信したい場合
+<ul>
+<li><a href="http://search.cpan.org/dist/Email-Sender/">Email::Sender</a></li>
+</ul></li>
+<li>ウェブページを解析したい場合
+<ul>
+<li><a href="http://search.cpan.org/dist/Web-Scraper/">Web::Scraper</a></li>
+<li><a href="http://search.cpan.org/dist/Web-Query/">Web::Query</a></li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="2304" data-x="9216"><h2>CPANとは</h2>
+
+<h3>セキュリティ関係のモジュール</h3>
+
+<ul>
+<li>パスワードを適正に発行したい場合
+<ul>
+<li><a href="http://search.cpan.org/dist/App-Genpass/">App::Genpass</a></li>
+<li><a href="http://search.cpan.org/dist/Data-SimplePassword/">Data::SimplePassword</a></li>
+</ul></li>
+<li>パスワードを安全に保存したい場合
+<ul>
+<li><a href="http://search.cpan.org/dist/Crypt-SaltedHash/">Crypt::SaltedHash</a></li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="2304" data-x="10240"><h2>CPANとは</h2>
+
+<h3>日付・時間操作を便利にするモジュール</h3>
+
+<ul>
+<li>日付や時間を簡単に扱いたい場合
+<ul>
+<li><a href="http://search.cpan.org/dist/Time-Piece/">Time::Piece</a></li>
+</ul></li>
+<li>細かい時間を計測したい場合
+<ul>
+<li><a href="http://search.cpan.org/dist/Time-HiRes/">Time::HiRes</a></li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="3072" data-x="0"><h2>CPANとは</h2>
+
+<h3>地味に便利なモジュール</h3>
+
+<ul>
+<li>簡単にprintデバッグしたい場合
+<ul>
+<li><a href="http://search.cpan.org/dist/Data-Dumper-Concise/">Data::Dumper::Concise</a></li>
+</ul></li>
+<li>エラーを簡単にトラップしたい場合
+<ul>
+<li><a href="http://search.cpan.org/dist/Try-Tiny/">Try::Tiny</a></li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="3072" data-x="1024"><h2>CPANとは</h2>
+
+<h3>コマンドラインを便利にするモジュール</h3>
+
+<ul>
+<li>オプションを簡単に処理したい場合
+<ul>
+<li><a href="http://search.cpan.org/dist/Getopt-Long/">Getopt::Long</a></li>
+<li><a href="http://search.cpan.org/dist/App-Options/">App::Options</a></li>
+</ul></li>
+<li>システムコマンドを簡単に使いたい場合
+<ul>
+<li><a href="http://search.cpan.org/dist/IO-CaptureOutput/">IO::CaptureOutput</a></li>
+<li><a href="http://search.cpan.org/dist/Capture-Tiny/">Capture::Tiny</a></li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="3072" data-x="2048"><h2>CPANとは</h2>
+
+<h3>データの読み書きに使えるモジュール</h3>
+
+<ul>
+<li>ファイルを簡単に使いたい場合
+<ul>
+<li><a href="http://search.cpan.org/dist/Path-Class/">Path::Class</a></li>
+</ul></li>
+<li>データベースを簡単に使いたい場合
+<ul>
+<li><a href="http://search.cpan.org/dist/DBI/">DBI</a></li>
+<li><a href="http://search.cpan.org/dist/DBIx-Simple/">DBIx::Simple</a></li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="3072" data-x="3072"><h2>CPANとは</h2>
+
+<h3>CPANを活用するのに便利な本</h3>
+
+<ul>
+<li><a href="http://amzn.to/HaUNiS">http://amzn.to/HaUNiS</a></li>
+<li>オススメです</li>
+</ul>
+
+<p><img src="images/cpanbook.png" alt="CPANモジュールガイド" /></p>
+</div><div class="step" data-y="3072" data-x="4096"><h2>CPANとは</h2>
+
+<h3>cpan（コマンド）</h3>
+
+<ul>
+<li>CPANを簡単に使うコマンドラインツール</li>
+<li>コマンドラインから検索やインストールが可能</li>
+</ul>
+</div><div class="step" data-y="3072" data-x="5120"><h2>CPANとは</h2>
+
+<h3>CPANについてのまとめ</h3>
+
+<ul>
+<li>Perlを使いこなす ≒ CPANを使いこなす</li>
+<li>モジュールは毎日増えている → <a href="http://search.cpan.org/recent">http://search.cpan.org/recent</a></li>
+</ul>
+</div><div data-scale="0.5" class="step" data-y="3072" data-x="6144"><h1>cpanmで「モジュール」をインストールしよう</h1>
+
+<!-- data-scale="0.5" -->
+</div><div class="step" data-y="3072" data-x="7168"><h2>cpanmとは</h2>
+
+<ul>
+<li>cpanコマンドのうち、モジュールのインストール機能に特化したコマンド</li>
+<li>Perlで動いているソフトウェア（モジュール）</li>
+<li>モジュール名は<a href="http://search.cpan.org/dist/App-cpanminus/">App::cpanminus</a></li>
+<li>検索などはウェブサイトで行える</li>
+<li>Perl入学式ではcpanmを推奨</li>
+</ul>
+</div><div class="step" data-y="3072" data-x="8192"><h2>cpanmの使い方</h2>
+
+<h3>cpanmでモジュールをインストール</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>$ cpanm LWP::UserAgent
+$ cpanm Data::Dumper::Concise
+</code></pre>
+
+<h3>インストールに失敗したら</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>$ cpanm --notest --force LWP::UserAgent
+$ cpanm --notest --force Data::Dumper::Concise
+</code></pre>
+
+<ul>
+<li>行頭の<code>$</code>はターミナルであることを表しています。コマンドの一部ではありません</li>
+</ul>
+</div><div data-scale="0.5" class="step" data-y="3072" data-x="9216"><h1>ウェブページを取得しよう</h1>
+
+<!-- data-scale="0.5" -->
+</div><div class="step" data-y="3072" data-x="10240"><h2>ウェブページを取得する</h2>
+
+<h3>サンプルコード</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>use LWP::UserAgent;
+use URI;
+my $ua = LWP::UserAgent-&gt;new;
+$ua-&gt;agent('perl-entrance/0.04');
+my $url = URI-&gt;new('http://ja.wikipedia.org/wiki/Perl');
+my $res = $ua-&gt;get($url);
+die $res-&gt;status_line unless $res-&gt;is_success;
+my $html = $res-&gt;decoded_content;
+print "$html\n";
+</code></pre>
+
+<h4>書いて実行してみよう！（お約束も忘れずに）</h4>
+
+<h4>暇な人は「#Perl入学式」でツイートしよう！</h4>
+</div><div class="step" data-y="3840" data-x="0"><h2>コードの解説</h2>
+
+<h3>何をしているのかだけを簡単に</h3>
+
+<ul>
+<li><code>perl-entrance/0.04</code>というユーザーエージェント名で<a href="http://ja.wikipedia.org/wiki/Perl">http://ja.wikipedia.org/wiki/Perl</a>にアクセス（getリクエスト）します。</li>
+<li>そのリクエストが成功していなかったら、エラーを表示して異常終了（<code>die</code>）します。</li>
+<li>取得したHTMLを標準出力（STDOUT）に表示します。</li>
+</ul>
+</div><div class="step" data-y="3840" data-x="1024"><h2>より詳細な解説（No.1/4）</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>use LWP::UserAgent;
+# 「LWP::UserAgent」というモジュールを使用
+use URI;
+# 「URI」というモジュールを使用
+</code></pre>
+
+<ul>
+<li>「モジュール名」というモジュールを使用するには「<code>use モジュール名</code>」とする</li>
+<li>各モジュールはマニュアルがある</li>
+<li>コマンドラインで「<code>$ perldoc モジュール名</code>」</li>
+<li><a href="http://search.cpan.org">CPANのウェブサイト</a>でも見ることができる</li>
+</ul>
+</div><div class="step" data-y="3840" data-x="2048"><h2>より詳細な解説（No.2/4）</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>my $ua = LWP::UserAgent-&gt;new;
+# $uaという変数を定義し、
+# LWP::UserAgentのオブジェクトを作成
+$ua-&gt;agent('perl-entrance/0.04');
+# $uaの「ユーザーエージェント」の名称を変更
+</code></pre>
+
+<ul>
+<li>この場合の「<code>new</code>」は一般的にコンストラクタと呼ばれるメソッドです</li>
+<li>コンストラクタとは、オブジェクトを作成するクラスメソッドです</li>
+<li>平たく言うと「<code>new</code>」することによってオブジェクトが作られます</li>
+</ul>
+</div><div class="step" data-y="3840" data-x="3072"><h2>より詳細な解説（No.3/4）</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>my $url = URI-&gt;new('http://ja.wikipedia.org/wiki/Perl');
+# $urlという変数を定義し、URIのオブジェクトを作成。
+my $res = $ua-&gt;get($url);
+# $resという変数を定義
+# $uaが$urlにアクセス（getリクエスト）し、
+# その結果（レスポンス）を$resで受け取る
+die $res-&gt;status_line unless $res-&gt;is_success;
+# getリクエストが成功していなかったら（unlessはifの逆）
+# エラー出力にステータスを表示して異常終了（die）
+</code></pre>
+
+<ul>
+<li>この場合「<code>$res-&gt;is_success</code>」が「偽」の場合「<code>die</code>」します</li>
+</ul>
+</div><div class="step" data-y="3840" data-x="4096"><h2>より詳細な解説（No.4/4）</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>my $html = $res-&gt;decoded_content;
+# $htmlという変数を定義
+# レスポンスの中身をPerlの内部形式にdecodeする
+print "$html\n";
+# レスポンスの中身を標準出力に出力
+</code></pre>
+
+<ul>
+<li>「<code>$res-&gt;decoded_content</code>」では、返り値がPerlの内部形式（文字列）で得られる</li>
+</ul>
+</div><div class="step break" data-y="3840" data-x="5120"><h1>休憩</h1>
+
+<h1>〜15:35</h1>
+
+<!-- class="break" -->
+</div><div data-scale="0.5" class="step" data-y="3840" data-x="6144"><h1>ウェブページのタイトルを抽出しよう</h1>
+
+<!-- data-scale="0.5" -->
+</div><div class="step" data-y="3840" data-x="7168"><h2>ウェブページのタイトルを抽出する</h2>
+
+<h3>サンプルコード</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my $title;
+if ( $html =~ /&lt;title&gt;(.*?)&lt;\/title&gt;/ms ) {
+  $title = $1;
+}
+else {
+  print "titleタグがありません。\n";
+}
+print "$title\n";
+</code></pre>
+
+<h4>先ほどの続きで書いて実行してみよう！</h4>
+
+<h4>暇な人は（略</h4>
+</div><div class="step" data-y="3840" data-x="8192"><h2>サンプルコードの解説</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>my $title;
+if ( $html =~ /&lt;title&gt;(.*?)&lt;\/title&gt;/ms ) {
+  # このif文の中身は「マッチング」と言います
+  $title = $1;
+  # マッチングの際にカッコを用いると、
+  # その部分にマッチした文字列を利用できます
+  # $titleに先ほどの「.*?」にマッチした文字列を代入します
+}
+# （以下略）
+</code></pre>
+
+<ul>
+<li>「<code>~</code>」は「チルダ（Tilda）」と言います</li>
+</ul>
+</div><div class="step" data-y="3840" data-x="9216"><h2>マッチング</h2>
+
+<h3>簡単なマッチング</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my $str = 'yes';
+if ( $str =~ /y/ ) {
+  print "$str には「y」が含まれています\n";
+}
+else {
+  print "$str には「y」が含まれていません\n";
+}
+</code></pre>
+
+<h4>書いて実行してみよう！</h4>
+</div><div class="step" data-y="3840" data-x="10240"><h2>マッチング</h2>
+
+<h3>パターンマッチング（正規表現）</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my $str = 'Yes';
+if ( $str =~ /[yY]/ ) { # [...]の中身のいずれか1文字にマッチ
+  print "$str には「y」または「Y」が含まれています\n";
+}
+if ( $str =~ /y/i ) { # iオプションは大文字小文字を無視してマッチ
+  print "$str には「y」または「Y」が含まれています\n";
+}
+</code></pre>
+
+<h4>書いて実行してみよう！</h4>
+</div><div class="step" data-y="4608" data-x="0"><h2>マッチング</h2>
+
+<h3>パターンマッチング（正規表現）の解説</h3>
+
+<ul>
+<li>さらっと俯瞰する（クイックスタート）
+<ul>
+<li><a href="http://perldoc.jp/pod/perlrequick">http://perldoc.jp/pod/perlrequick</a></li>
+</ul></li>
+<li>チュートリアル
+<ul>
+<li><a href="http://perldoc.jp/pod/perlretut">http://perldoc.jp/pod/perlretut</a></li>
+</ul></li>
+<li>詳細な解説
+<ul>
+<li><a href="http://perldoc.jp/pod/perlre">http://perldoc.jp/pod/perlre</a></li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="4608" data-x="1024"><h2>マッチング</h2>
+
+<h3>「.*?」とは何だったのか？</h3>
+
+<ul>
+<li>「<code>.</code>」は、「<code>\n</code>」以外の任意の1文字にマッチ</li>
+<li>「<code>*</code>」は、直前の文字の0回以上の繰り返しにマッチ</li>
+<li>「<code>?</code>」は、直前の文字、または、空文字列にマッチ</li>
+</ul>
+</div><div class="step" data-y="4608" data-x="2048"><h2>マッチング</h2>
+
+<h3>マッチングのルール</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my $str = "&lt;title&gt;1&lt;title&gt;2&lt;/title&gt;3&lt;/title&gt;";
+$str =~ /&lt;title&gt;(.)&lt;\/title&gt;/;
+print "1番目のマッチ：$1\n";      # 2
+$str =~ /&lt;title&gt;(.*)&lt;\/title&gt;/;
+print "2番目のマッチ：$1\n";      # 1&lt;title&gt;2&lt;/title&gt;3
+$str =~ /&lt;title&gt;(.*?)&lt;\/title&gt;/;
+print "3番目のマッチ：$1\n";      # 1&lt;title&gt;2
+</code></pre>
+
+<ul>
+<li>ルール１：なるべく早くマッチする</li>
+<li>ルール２：なるべく長くマッチする（最長マッチ）</li>
+</ul>
+
+<h4>書いて実行してみよう！</h4>
+</div><div class="step" data-y="4608" data-x="3072"><h2>マッチング</h2>
+
+<h3>「.*?」とは何だったのか？</h3>
+
+<ul>
+<li>組み合わせて別の意味がある</li>
+<li>「<code>*?</code>」は、なるべく短くマッチする（最短マッチ）</li>
+<li>「<code>.*?</code>」とは「\n以外の任意の文字になるべく短くマッチ」したい場合に使用する</li>
+</ul>
+</div><div class="step" data-y="4608" data-x="4096"><h2>マッチング</h2>
+
+<h3>\（バックスラッシュ）</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>$str =~ /&lt;title&gt;(.)&lt;\/title&gt;/;
+</code></pre>
+
+<ul>
+<li>この場合の「<code>\</code>（バックスラッシュ）」はエスケープ文字</li>
+<li>次に続く文字をエスケープ（特殊な意味を消し去る）する</li>
+<li>「<code>\/</code>」はスラッシュをエスケープしている</li>
+</ul>
+</div><div class="step" data-y="4608" data-x="5120"><h2>マッチング</h2>
+
+<h3>デリミタ（delimiter）について</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>$str =~ m!&lt;title&gt;(.)&lt;/title&gt;!;
+$str =~ m|&lt;title&gt;(.)&lt;/title&gt;|;
+$str =~ m"&lt;title&gt;(.)&lt;/title&gt;";
+$str =~ m{&lt;title&gt;(.)&lt;/title&gt;};
+</code></pre>
+
+<ul>
+<li>マッチングのデリミタ（区切り文字のこと、今の場合は「<code>/</code>」）は、「<code>m</code>」を用いると他の文字に変更できる</li>
+</ul>
+</div><div class="step" data-y="4608" data-x="6144"><h2>脱線</h2>
+
+<h3>デリミタ（delimiter）について</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my $delimiter = 'デリミタ';
+my $str = "通常は\"のようにエスケープします。\n";
+$str .= qq|qqを使うとエスケープ"なし"で大丈夫。\n|;
+        # ダブルクォート同等
+$str .= qq{変数（${delimiter}）も展開されます。\n};
+$str .= q!qだけの場合は、変数（${delimiter}）や\nも展開されません。!;
+        # シングルクォート同等
+$str .= q|ただし、デリミタの文字（\|）を使う場合はエスケープが必要です。|;
+print "$str\n";
+</code></pre>
+
+<ul>
+<li>クォーテーションもデリミタを変更できます</li>
+</ul>
+
+<h4>書いて実行してみよう！</h4>
+</div><div class="step" data-y="4608" data-x="7168"><h2>脱線</h2>
+
+<h3>デリミタ（delimiter）について</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my $str = "&lt;div class=\"apple\"&gt;iPhone&lt;/div&gt;\n";
+
+my $str = qq{&lt;div class="apple"&gt;iPhone&lt;/div&gt;\n};
+</code></pre>
+
+<ul>
+<li>どちらが好みですか？</li>
+</ul>
+</div><div class="step" data-y="4608" data-x="8192"><h2>さらに脱線</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>$str .= 'str';
+# ↓と同じ意味
+$str  = $str . 'str';
+</code></pre>
+
+<ul>
+<li>「+=」「-=」「*=」「/=」などもあります</li>
+<li>詳細な解説
+<ul>
+<li><a href="http://perldoc.perl.org/perlop.html">http://perldoc.perl.org/perlop.html</a></li>
+</ul></li>
+<li>詳細な解説（日本語版）
+<ul>
+<li><a href="http://perldoc.jp/pod/perlop">http://perldoc.jp/pod/perlop</a></li>
+</ul></li>
+</ul>
+</div><div data-scale="0.5" class="step" data-y="4608" data-x="9216"><h1>ハッシュを使おう</h1>
+
+<!-- data-scale="0.5" -->
+</div><div class="step" data-y="4608" data-x="10240"><h2>ハッシュとは</h2>
+
+<ul>
+<li>ハッシュ（hash）とは、配列の一種で、数値の代わりに文字列（キー）を使って値を参照するもの</li>
+<li>キーから値を連想するようになっているので「連想配列」とも呼ばれている</li>
+</ul>
+</div><div class="step" data-y="5376" data-x="0"><h2>ハッシュとは</h2>
+
+<h3>代入と出力（スカラー）</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my %nqounet; # 最初に「%」をつける
+$nqounet{'name'} = 'Nobutaka Wakabayashi';
+$nqounet{'born'} = '石川県';
+print "$nqounet{'name'}\n";
+print "$nqounet{'born'}\n";
+</code></pre>
+
+<ul>
+<li>ハッシュの添字は「<code>{}</code>（ブレース、中括弧）」を用いる</li>
+<li>添字付きのハッシュはスカラー変数と同じように使用できる</li>
+</ul>
+
+<h4>右側を自分の情報に変えて書いて実行してみよう！</h4>
+</div><div class="step" data-y="5376" data-x="1024"><h2>ハッシュとは</h2>
+
+<h3>代入と出力（リスト）</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my %hash1 = ('one', 'two', 'three', 'four');
+my %hash2 = ('1', '2', '3', '4');
+print "%hash1\n"; # %hash1[改行]
+print %hash1; # threefouronetwo
+print "\n";
+print %hash2; # 1234
+print "\n";
+</code></pre>
+
+<ul>
+<li>ハッシュは配列の一種</li>
+<li>違う所：クォート内では展開されない、順不同、など</li>
+</ul>
+
+<!-- ハッシュをスカラコンテキストで評価すると、内部の状態が表示される（2/8とか） -->
+
+<h4>書いて実行してみよう！</h4>
+</div><div class="step" data-y="5376" data-x="2048"><h2>ハッシュとは</h2>
+
+<h3>代入と出力（よりハッシュらしく）</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my %hash  = (
+  'key1' =&gt; 'value1', # '=&gt;'はファットカンマ
+  key2   =&gt; 'value2', # ほぼ「,（カンマ）」と同じ意味
+  # 左側の値を文字列として解釈するので、クォートしなくてもよい
+);
+print "$hash{key1}\n";   # value1[改行]
+print "$hash{'key2'}\n"; # value2[改行]
+</code></pre>
+
+<ul>
+<li>キーを添字にして値を参照できる</li>
+<li>添字はクォートしなくても解釈してくれる</li>
+</ul>
+
+<h4>書いて実行してみよう！</h4>
+</div><div class="step" data-y="5376" data-x="3072"><h2>ハッシュとは</h2>
+
+<h3>配列の不便そうなところ（無理矢理）</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my @nqounet = (
+  'nqounet',
+  '38',
+  'Perl',
+);
+print "twitter : $nqounet[0]\n";
+print "age : $nqounet[1]\n";
+print "lang : $nqounet[2]\n";
+</code></pre>
+
+<ul>
+<li>配列の値の順序が何を意味しているのかを把握しておく必要がある</li>
+</ul>
+</div><div class="step" data-y="5376" data-x="4096"><h2>ハッシュとは</h2>
+
+<h3>ハッシュの便利そうなところ（無理矢理）</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my %nqounet = (
+  twitter =&gt; 'nqounet',
+  age     =&gt; '38',
+  lang    =&gt; 'Perl',
+);
+for my $key ('twitter', 'age', 'lang') {
+  print "$key : $nqounet{$key}\n";
+}
+</code></pre>
+
+<ul>
+<li>キーと値はペアになっているため、好きな値を出すのが簡単</li>
+<li>値の意味（何の値か）がソースコードを見て理解しやすい</li>
+</ul>
+</div><div class="step" data-y="5376" data-x="5120"><h2>ハッシュとは</h2>
+
+<h3>中身を確認する方法</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my %nqounet = (
+  twitter =&gt; 'nqounet',
+  age     =&gt; '38',
+  lang    =&gt; 'Perl',
+);
+while ( my ($key, $value) = each %nqounet ) {
+  # 「each」はハッシュのキーと値をペアで返す
+  # whileを組み合わせて、すべての中身が確認できる
+  print "$key : $value\n";
+}
+</code></pre>
+
+<ul>
+<li>「<code>each</code>」はハッシュのキーと値をペアで返す</li>
+</ul>
+
+<h4>書いて実行してみよう！</h4>
+</div><div class="step break" data-y="5376" data-x="6144"><h1>休憩</h1>
+
+<h1>〜16:50</h1>
+
+<!-- class="break" -->
+</div><div data-scale="0.5" class="step" data-y="5376" data-x="7168"><h1>データの中身を確認する</h1>
+
+<!-- data-scale="0.5" -->
+</div><div class="step" data-y="5376" data-x="8192"><h2>データの中身を確認する</h2>
+
+<ul>
+<li>配列とかハッシュはデータを見るのが面倒
+<ul>
+<li>配列はforを使ったループ</li>
+<li>ハッシュはforとkeys、または、whileとeachを組み合わせてループ</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="5376" data-x="9216"><h2>簡単に見る方法はないのか？</h2>
+</div><div class="step" data-y="5376" data-x="10240"><h2>もちろん、あります！</h2>
+</div><div class="step" data-y="6144" data-x="0"><h2>変数の中身を確認する</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>use Data::Dumper::Concise; # Dumperという関数を生成
+
+my %nqounet = (
+  twitter =&gt; 'nqounet',
+  age     =&gt; '38',
+  lang    =&gt; 'Perl',
+);
+print Dumper( \%nqounet );
+# 変数の前に「\（バックスラッシュ）」をつける（解説は後ほど）
+</code></pre>
+
+<h4>書いて実行してみよう！</h4>
+</div><div data-scale="0.5" class="step" data-y="6144" data-x="1024"><h1>たくさん情報を持った変数を作ろう</h1>
+
+<!-- data-scale="0.5" -->
+</div><div class="step" data-y="6144" data-x="2048"><h2>たくさんの情報を持ちたい</h2>
+
+<h3>やりたいこと</h3>
+
+<ul>
+<li>メールアドレスやウェブサイトを変数に持ちたい
+<ul>
+<li>名前</li>
+<li>メールアドレス（2個）</li>
+<li>ウェブサイト（3個）</li>
+</ul></li>
+</ul>
+</div><div class="step" data-y="6144" data-x="3072"><h2>たくさんの情報を持ちたい</h2>
+
+<h3>配列を代入してみる</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>use Data::Dumper::Concise;
+my @mails = (
+  'nobu at nishimiyahara.net',
+  'coworking at shin-osaka.in',
+);
+my @webs = (
+  'http://nqou.net',
+  'http://www.nishimiyahara.net',
+  'http://www.shin-osaka.in',
+);
+my %nqounet = (
+  name =&gt; 'nqounet',
+  mail =&gt; @mails,
+  web  =&gt; @webs,
+);
+print Dumper \%nqounet;
+</code></pre>
+
+<h4>書いて実行してみよう！</h4>
+</div><div class="step" data-y="6144" data-x="4096"><h2>たくさんの情報を持ちたい</h2>
+
+<h3>中身を確認する</h3>
+
+<pre class="lang-perl prettyprint linenums"><code># 結果
+{
+  "coworking at shin-osaka.in" =&gt; "web",
+  "http://nqou.net" =&gt; "http://www.nishimiyahara.net",
+  "http://www.shin-osaka.in" =&gt; undef,
+  mail =&gt; "nobu at nishimiyahara.net",
+  name =&gt; "nqounet"
+}
+</code></pre>
+
+<ul>
+<li>エラーメッセージ ： Odd number of elements in hash assignment at ファイル名 行数</li>
+</ul>
+</div><div class="step" data-y="6144" data-x="5120"><h2>たくさんの情報を持ちたい</h2>
+
+<h3>ハッシュは配列の一種</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my @nqounet = ( # 「%」 を 「@」 に変更してみる
+  name =&gt; 'nqounet',
+  mail =&gt; @mails,
+  web  =&gt; @webs,
+);
+print Dumper \@nqounet; # 「%」 を 「@」 に変更してみる
+# 配列の場合も変数の前に「\（バックスラッシュ）」をつける（解説は後ほど）
+</code></pre>
+
+<ul>
+<li>ペアになっていないことを確認するため、配列として表示してみる</li>
+</ul>
+
+<h4>変更して実行してみよう！</h4>
+</div><div class="step" data-y="6144" data-x="6144"><h2>たくさんの情報を持ちたい</h2>
+
+<h3>中身を確認する</h3>
+
+<pre class="lang-perl prettyprint linenums"><code># 結果
+[
+  "name",
+  "nqounet",
+  "mail",
+  "nobu at nishimiyahara.net",
+  "coworking at shin-osaka.in",
+  "web",
+  "http://nqou.net",
+  "http://www.nishimiyahara.net",
+  "http://www.shin-osaka.in"
+]
+</code></pre>
+
+<ul>
+<li>配列はフラットに展開されていて、期待した階層構造になっていない</li>
+</ul>
+</div><div class="step" data-y="6144" data-x="7168"><h2>たくさんの情報を持ちたい</h2>
+
+<h3>階層構造を作る</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my %nqounet = ( # 「@」 を 「%」 に戻す
+  name =&gt; 'nqounet',
+  mail =&gt; \@mails, # 変数の前に「\」をつける
+  web  =&gt; \@webs,  # 変数の前に「\」をつける
+);
+print Dumper \%nqounet; # 「@」 を 「%」 に戻す
+</code></pre>
+
+<h4>変更して実行してみよう！</h4>
+</div><div class="step" data-y="6144" data-x="8192"><h2>たくさんの情報を持ちたい</h2>
+
+<pre class="lang-perl prettyprint linenums"><code># 結果
+{
+  mail =&gt; [
+    "nobu at nishimiyahara.net",
+    "coworking at shin-osaka.in"
+  ],
+  name =&gt; "nqounet",
+  web =&gt; [
+    "http://nqou.net",
+    "http://www.nishimiyahara.net",
+    "http://www.shin-osaka.in"
+  ]
+}
+</code></pre>
+</div><div class="step" data-y="6144" data-x="9216"><h2>たくさんの情報を持ちたい</h2>
+
+<h3>Dumperを使わずに表示してみる</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>for my $key ( keys %nqounet ) {
+  print "$key : $nqounet{$key}\n";
+}
+# 結果（0x...の部分は違う場合もあります）
+web : ARRAY(0x7fe5108275e8)
+name : nqounet
+mail : ARRAY(0x7fe510827648)
+</code></pre>
+
+<h4>書いて実行してみよう！</h4>
+</div><div class="step" data-y="6144" data-x="10240"><h2>リファレンス</h2>
+
+<ul>
+<li>「<code>$nqounet{mail}</code>」や「<code>$nqounet{web}</code>」の値は「リファレンス」と呼びます</li>
+<li>リファレンスを作成するには、変数（スカラー、配列、ハッシュ）の前に「<code>\</code>（バックスラッシュ）」をつけます</li>
+<li>リファレンスは「スカラー値」です</li>
+<li>単純にprintすると「スカラー値」として値を表示します</li>
+</ul>
+</div><div class="step" data-y="6912" data-x="0"><h2>様々なリファレンス</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>my $scalar = 'string';
+my @array  = ('a', 'b', 'c');
+my %hash   = (key1 =&gt; 'value1', key2 =&gt; 'value2');
+my $scalar_ref = \$scalar; # スカラーのリファレンス
+my $array_ref  = \@array;  # 配列のリファレンス
+my $hash_ref   = \%hash;   # ハッシュのリファレンス
+my $scalar_ref_direct = \'Perl';
+my $array_ref_direct  = +['d', 'e', 'f'];
+                        # 「+」は省略可能
+my $hash_ref_direct   = +{ key =&gt; 'value' };
+                        # 「+」は省略可能
+</code></pre>
+
+<h4>書いてprintしてみよう！</h4>
+</div><div class="step" data-y="6912" data-x="1024"><h2>デリファレンス</h2>
+
+<h3>リファレンスをちゃんと表示する</h3>
+
+<pre class="lang-perl prettyprint linenums"><code># 「$nqounet{mail}」は配列のリファレンス
+for my $mail ( @{$nqounet{mail}} ){
+        # リファレンスを「@{...}」で囲う
+    print "$mail\n";
+}
+</code></pre>
+
+<ul>
+<li>リファレンスを「元の形式に戻す」ことを「デリファレンス」といいます</li>
+</ul>
+</div><div class="step" data-y="6912" data-x="2048"><h2>様々なデリファレンス</h2>
+
+<h3>スカラー</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my $scalar     = 'string';
+my $scalar_ref = \$scalar; # スカラーのリファレンス
+print ${$scalar_ref};
+</code></pre>
+
+<ul>
+<li>スカラーのリファレンスをデリファレンスするには、リファレンスを「<strong>${...}</strong>」で囲います</li>
+</ul>
+
+<h4>書いて実行してみよう！</h4>
+</div><div class="step" data-y="6912" data-x="3072"><h2>様々なデリファレンス</h2>
+
+<h3>配列</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my @array     = ('a', 'b', 'c');
+my $array_ref = \@array;        # 配列のリファレンス
+print join("\n", @{$array_ref}); # 配列全体をデリファレンス
+print $array_ref-&gt;[0];  # 配列のリファレンスの最初の要素
+print $array_ref-&gt;[1];  # 配列のリファレンスの2つめの要素
+print $array_ref-&gt;[-1]; # 配列のリファレンスの最後の要素
+</code></pre>
+
+<ul>
+<li>配列のリファレンスをデリファレンスするには、リファレンスを「<strong>@{...}</strong>」で囲います</li>
+<li>配列のリファレンス内の一つの要素をデリファレンスする場合は「<strong>-></strong>（矢印演算子）」を使う</li>
+</ul>
+
+<h4>書いて実行してみよう！</h4>
+</div><div class="step" data-y="6912" data-x="4096"><h2>様々なデリファレンス</h2>
+
+<h3>ハッシュ</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my %hash = ( key1 =&gt; 'value1', key2 =&gt; 'value2' );
+my $hash_ref = \%hash;
+      # ハッシュのリファレンス
+for my $key ( keys %{$hash_ref} ) {
+      # ハッシュ全体をデリファレンス
+  print "$key : $hash_ref-&gt;{$key}\n";
+      # ハッシュの要素を表示する
+}
+</code></pre>
+
+<ul>
+<li>ハッシュのリファレンスをデリファレンスするには、リファレンスを「<strong>%{...}</strong>」で囲います</li>
+<li>ハッシュのリファレンス内の一つの要素をデリファレンスする場合は「<strong>-></strong>（矢印演算子）」を使う</li>
+</ul>
+
+<h4>書いて実行してみよう！</h4>
+</div><div class="step" data-y="6912" data-x="5120"><h2>Perlの変数について整理</h2>
+
+<ul>
+<li>「$str」のような「スカラー変数」は、スカラー値を1つ持つことができる</li>
+<li>「@str」のような「配列」は、複数のスカラー値を持つことができる</li>
+<li>「%str」のような「ハッシュ（連想配列）」は、配列の一種で、スカラー値に名前（キー）をつけて持つことができる</li>
+</ul>
+</div><div class="step" data-y="6912" data-x="6144"><h2>リファレンスについて整理</h2>
+
+<ul>
+<li>リファレンスを作成するには、変数（スカラー、配列、ハッシュ）の前に「\（バックスラッシュ）」をつける</li>
+<li>配列のリファレンスは「<strong>+[...]</strong>（ブラケット）」を使用する（「+」は省略可能）</li>
+<li>ハッシュのリファレンスは「<strong>+{...}</strong>（ブレース）」を使用する（「+」は省略可能）</li>
+<li>リファレンスを使用するには、デリファレンスが必要です</li>
+<li>デリファレンスするには、リファレンスを <strong>${...}</strong>、<strong>@{...}</strong>、<strong>%{...}</strong>で囲う、または、「<strong>-></strong>（矢印演算子）」を使用する</li>
+</ul>
+</div><div class="step" data-y="6912" data-x="7168"><h2>リファレンスは「スカラー値」</h2>
+
+<ul>
+<li>大事なので何度も言います</li>
+<li>リファレンスは「スカラー値」です</li>
+<li>つまり、スカラー値を持つことができる変数はリファレンスを持つことができる</li>
+<li>配列のリファレンスを持つ配列のリファレンスや、ハッシュのリファレンスを持つ配列のリファレンスのハッシュのリファレンスのハッシュのリファ（略</li>
+</ul>
+</div><div class="step" data-y="6912" data-x="8192"><h2>複雑なデータ構造</h2>
+
+<h3>変数（ハッシュ）を定義</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my @mails = (
+    'nobu at nishimiyahara.net',
+    'coworking at shin-osaka.in',
+);
+my @webs = (
+    'http://nqou.net',
+    'http://www.nishimiyahara.net',
+    'http://www.shin-osaka.in',
+);
+my %nqounet = (
+    name =&gt; 'nqounet',
+    mail =&gt; \@mails,
+    web  =&gt; \@webs,
+);
+</code></pre>
+
+<h4>書いて実行してみよう！</h4>
+</div><div class="step" data-y="6912" data-x="9216"><h2>複雑なデータ構造</h2>
+
+<h3>Dumperを使わずにピンポイントで表示</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>print $nqounet{web}-&gt;[2]; # http://www.shin-osaka.in
+# %nqounetの「web」というキーの値が配列のリファレンス
+# その配列のリファレンスをデリファレンスした3番目の値
+
+print $nqounet{mail}-&gt;[0]; # nobu at nishimiyahara.net
+# %nqounetの「mail」というキーの値が配列のリファレンス
+# その配列のリファレンスをデリファレンスした最初の値
+</code></pre>
+
+<h4>書いて実行してみよう！</h4>
+</div><div class="step" data-y="6912" data-x="10240"><h2>もっと複雑なデータ構造</h2>
+
+<h3>Dumperを使わずにピンポイントで表示</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>my %papix = (
+  name =&gt; 'papix',
+  mail =&gt; [],                   # 空の配列のリファレンス
+  web  =&gt; ['http://papix.net'], # 配列のリファレンス
+);
+my $perl_entrance = { # ハッシュのリファレンス
+  old_type =&gt; \%nqounet,
+  new_type =&gt; \%papix,
+};
+print $perl_entrance-&gt;{new_type}-&gt;{web}-&gt;[0];
+    # http://papix.net
+</code></pre>
+
+<h4>続けて書いて実行してみよう！</h4>
+</div><div class="step" data-y="7680" data-x="0"><h2>省略の美学</h2>
+
+<h3>「->（矢印演算子）」は部分的に省略可能</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>print $nqounet{web}-&gt;[2];
+print $nqounet{web}[2];
+# ブレースとブラケットの間の矢印は省略できる
+
+print $perl_entrance-&gt;{new_type}-&gt;{web}-&gt;[0];
+print $perl_entrance-&gt;{new_type}{web}[0];
+# ブレース同士、ブラケット同士も同じ
+print $perl_entrance{new_type}{web}[0]; # エラー
+# %perl_entranceというハッシュの「new_type」をキーとする値を参照している
+</code></pre>
+
+<h4>書いて実行してみよう！</h4>
+</div><div class="step" data-y="7680" data-x="1024"><h2>変数（スカラー変数）のおさらい</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>my $str = 'これは文字列です';    
+my $num = 123;
+print "文字列（ $str ）と数値（ $num ）\n";
+</code></pre>
+</div><div class="step" data-y="7680" data-x="2048"><h2>配列の使い方のおさらい</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>my @array = ('a', 'b', 'c');
+print "$array[0]\n";
+print "@{array}\n";
+for my $item ( @array ) {
+    print "$item\n";
+}
+</code></pre>
+</div><div class="step" data-y="7680" data-x="3072"><h2>ハッシュの使い方のおさらい</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>my %hash  = (
+    key1 =&gt; 'value1',
+    key2 =&gt; 'value2',
+);
+print "key1 : $hash{key1}\n";
+for my $key ( keys %hash ) {
+    print "$key : $hash{$key}\n";
+}
+</code></pre>
+</div><div class="step" data-y="7680" data-x="4096"><h2>配列のリファレンス</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>my $array_ref = +['a', 'b', 'c']; # 「+」は省略可能
+print "$array_ref-&gt;[0]\n";
+print "@{$array_ref}\n";
+for my $item ( @{$array_ref} ) {
+    print "$item\n";
+}
+</code></pre>
+</div><div class="step" data-y="7680" data-x="5120"><h2>ハッシュのリファレンス</h2>
+
+<pre class="lang-perl prettyprint linenums"><code>my $hash_ref  = +{ # 「+」は省略可能
+    key1 =&gt; 'value1',
+    key2 =&gt; 'value2',
+};
+print "key1 : $hash_ref-&gt;{key1}\n";
+for my $key ( keys %{$hash_ref} ) {
+    print "$key : $hash_ref-&gt;{$key}\n";
+}
+</code></pre>
+</div><div data-scale="0.5" class="step break" data-y="7680" data-x="6144"><h1>練習問題</h1>
+
+<!-- class="break" -->
+<!-- data-scale="0.5" -->
+</div><div class="step" data-y="7680" data-x="7168"><h2>練習問題</h2>
+
+<h3>Dumperすると、以下のようになるような変数を作成してください</h3>
+
+<pre class="lang-perl prettyprint linenums"><code>{
+  luigi =&gt; {
+    color =&gt; "green",
+    initial =&gt; "L"
+  },
+  mario =&gt; {
+    color =&gt; "red",
+    initial =&gt; "M"
+  }
+}
+</code></pre>
+</div>
+<!--  <div id="overview" class="step" data-x="5120" data-y="3840" data-scale="15"></div> -->
+</div>
+
+<div class="hint">
+  <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+  document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+<script src="impress/js/impress.js" type="text/javascript"></script>
+<script src="gcp/prettify.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>
