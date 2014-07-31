@@ -11,8 +11,15 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://perl-entrance.org/static/images/icons/apple-touch-icon-114x114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://perl-entrance.org/static/images/icons/apple-touch-icon-72x72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="http://perl-entrance.org/static/images/icons/apple-touch-icon-precomposed.png">
-    <meta name="description" content=""/>
-    <meta name="author" content=""/>
+    <meta property="og:title" content="Perl入学式 | Perl Entrance">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Perl入学式の公式サイトです">
+    <meta property="og:url" content="http://perl-entrance.org/">
+    <meta property="og:image" content="http://perl-entrance.org/static/images/logo.png">
+    <meta property="og:site_name" content="Perl入学式 | Perl Entrance">
+    <meta property="og:email" content="webmaster@perl-entrance.org">
+    <meta name="description" content="Perl入学式の公式サイトです"/>
+    <meta name="author" content="Perl Entrance"/>
     <meta name="copyright" content="Copyright (c) 2014 Perl Entrance"/>
     <link type="text/css" rel="stylesheet" href="http://perl-entrance.org/static/css/style.css"/>
 </head>
@@ -386,13 +393,12 @@
     $.each(["perlbeginners"], function(index, region){
       var $info_container = $("#"+region+"-capacity-information"),
           get_url = endpoint_url+"?event_id="+PerlEntrance.atndbeta_event_id[region]+"&format=jsonp";
-          console.log("get_url " + get_url);
       $.ajax({
         url: get_url,
         type: "GET",
         dataType: "jsonp",
         success: function(json) {
-          var event = json.events[0],
+          var event = json.events[0].event,
               waiting  = event["waiting"],  // 補欠者
               accepted = event["accepted"], // 参加者
               limit    = event["limit"];    // 定員
@@ -412,7 +418,6 @@
     $.each(["tenjinperl"], function(index, region){
       var $info_container = $("#"+region+"-capacity-information"),
           get_url = endpoint_url+"?event_id="+PerlEntrance.connpass_event_id[region]+"&format=json";
-          console.log("get_url " + get_url);
       $.ajax({
         url: get_url,
         type: "GET",
