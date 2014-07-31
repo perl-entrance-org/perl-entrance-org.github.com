@@ -260,7 +260,6 @@ template: index
     $.each(["perlbeginners"], function(index, region){
       var $info_container = $("#"+region+"-capacity-information"),
           get_url = endpoint_url+"?event_id="+PerlEntrance.atndbeta_event_id[region]+"&format=jsonp";
-          console.log("get_url " + get_url);
       $.ajax({
         url: get_url,
         type: "GET",
@@ -270,7 +269,6 @@ template: index
               waiting  = event["waiting"],  // 補欠者
               accepted = event["accepted"], // 参加者
               limit    = event["limit"];    // 定員
-              console.debug('event:', event);
           if ( typeof waiting !== "undefined" && typeof accepted !== "undefined" && typeof limit !== "undefined" ) {
             $info_container.html(limit+"人 (現在"+accepted+"名参加、"+waiting+"名補欠)");
           } else {
@@ -287,7 +285,6 @@ template: index
     $.each(["tenjinperl"], function(index, region){
       var $info_container = $("#"+region+"-capacity-information"),
           get_url = endpoint_url+"?event_id="+PerlEntrance.connpass_event_id[region]+"&format=json";
-          console.log("get_url " + get_url);
       $.ajax({
         url: get_url,
         type: "GET",
