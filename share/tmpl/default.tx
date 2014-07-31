@@ -1,0 +1,9 @@
+: cascade base
+
+: around title -> {
+<: $article.title :> - <: $blog.title :>
+: }
+
+: around content -> {
+<: $article.html_body() | mark_raw :>
+: }

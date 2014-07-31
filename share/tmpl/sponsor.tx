@@ -1,0 +1,52 @@
+<section id="homepage-sponsor">
+<div class="row">
+<h2>スポンサー</h2>
+<div class="large-12 columns"></div>
+</div>
+<div class="row">
+<div class="block columns">
+<h4>XL</h4>
+<ul>
+<li class="x-large"><a href="" target="_blank" class="th radius"><img src="http://placehold.it/150x150" alt="" /></a></li>
+</ul>
+</div>
+<div class="block columns">
+<h4>L</h4>
+<ul>
+<li class="large"><a href="" target="_blank" class="th radius"><img src="http://placehold.it/150x150" alt="" /></a></li>
+<li class="large"><a href="" target="_blank" class="th radius"><img src="http://placehold.it/150x150" alt="" /></a></li>
+<li class="large"><a href="" target="_blank" class="th radius"><img src="http://placehold.it/150x150" alt="" /></a></li>
+<li class="large"><a href="" target="_blank" class="th radius"><img src="http://placehold.it/150x150" alt="" /></a></li>
+</ul>
+</div>
+<div class="block columns">
+<h4>M</h4>
+<ul>
+<li class="medium"><a href="" target="_blank" class="th radius"><img src="http://placehold.it/150x150" alt="" /></a></li>
+<li class="medium"><a href="" target="_blank" class="th radius"><img src="http://placehold.it/150x150" alt="" /></a></li>
+<li class="medium"><a href="" target="_blank" class="th radius"><img src="http://placehold.it/150x150" alt="" /></a></li>
+<li class="medium"><a href="" target="_blank" class="th radius"><img src="http://placehold.it/150x150" alt="" /></a></li>
+</ul>
+</div>
+<div class="block columns">
+<h4>S</h4>
+<ul>
+<li class="small"><a href="" target="_blank" class="th radius"><img src="http://placehold.it/150x150" alt="" /></a></li>
+<li class="small"><a href="" target="_blank" class="th radius"><img src="http://placehold.it/150x150" alt="" /></a></li>
+<li class="small"><a href="" target="_blank" class="th radius"><img src="http://placehold.it/150x150" alt="" /></a></li>
+<li class="small"><a href="" target="_blank" class="th radius"><img src="http://placehold.it/150x150" alt="" /></a></li>
+</ul>
+</div>
+<div class="block columns">
+<h4>XS</h4>
+<ul>
+<li class="x-small"><a href="" target="_blank" class="th radius"><img src="http://placehold.it/150x150" alt="" /></a></li>
+<li class="x-small"><a href="" target="_blank" class="th radius"><img src="http://placehold.it/150x150" alt="" /></a></li>
+<li class="x-small"><a href="" target="_blank" class="th radius"><img src="http://placehold.it/150x150" alt="" /></a></li>
+<li class="x-small"><a href="" target="_blank" class="th radius"><img src="http://placehold.it/150x150" alt="" /></a></li>
+</ul>
+</div>
+</div>
+<div class="row headspace-20">
+</div>
+</section>

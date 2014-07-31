@@ -1,0 +1,49 @@
+: cascade base
+: around content -> {
+
+<section id="homepage-hero">
+<div class="row innerblock">
+<div class="small-6 large-6 columns column-left">
+<h1><img src="<: '/static/images/logo_white.png' | uri_for :>" alt="Perl入学式 | Perl Entrance"></h1>
+</div>
+<div class="small-6 large-7 columns column-right">
+<ul class="example-orbit" data-orbit data-options="slide_number: false; bullets: false;">
+<li>
+    <img src="<: '/static/images/slide/slide-01.jpg' | uri_for :>" alt="slide 1" />
+	<div class="orbit-caption">Perl入学式 講義の風景</div>
+</li>
+<li>
+    <img src="<: '/static/images/slide/slide-02.jpg' | uri_for :>" alt="slide 1" />
+	<div class="orbit-caption">座学と, それぞれのPCを利用した演習を繰り返していくスタイルです.</div>
+</li>
+<li>
+    <img src="<: '/static/images/slide/slide-03.jpg' | uri_for :>" alt="slide 1" />
+	<div class="orbit-caption">｢講師と受講者｣だけでなく, ｢受講者同士｣のコミュニケーションも大切にしています.</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+
+<: $article.html_body() | mark_raw :>
+
+:# include 'sponsor.tx';
+
+<section id="homepage-twitter">
+<div class="row">
+    <div class="small-6 large-6 columns">
+        <div class="flex-video">
+            <a class="twitter-timeline" href="https://twitter.com/Perl_Entrance" data-widget-id="490776177955442688">@Perl_Entrance からのツイート</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+    </div>
+    <div class="small-6 large-6 columns">
+        <div class="flex-video">
+            <a class="twitter-timeline" href="https://twitter.com/hashtag/Perl%E5%85%A5%E5%AD%A6%E5%BC%8F" data-widget-id="490776027191185408">#Perl入学式件のツイート</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+    </div>
+</div>
+</section>
+
+: }
