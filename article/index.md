@@ -55,7 +55,7 @@ template: index
     </div>
     <div class="row">
         <div class="medium-4 large-4 columns ">
-            <h4><i class="icon-leaf"></i> Perl入学式 in 大阪 #2</h4>
+            <h4><i class="icon-leaf"></i> Perl入学式 in 大阪 #3</h4>
             <p class="date">2014年09月06日(土) <!-- <span>次回の告知をお待ちください.</span>--></p>
             <table class="detail">
                 <tr>
