@@ -68,7 +68,7 @@ template: index
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td><a href="" target="_blank">ニュー共栄ビル 地下会議室 </a></td>
+                    <td>ニュー共栄ビル 地下会議室</td>
                 </tr>
                 <tr>
                     <th>住所</th>
