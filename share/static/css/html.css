@@ -101,7 +101,7 @@ ul.off-canvas-list {
 	left: 10px;
 	width: 40px;
 	height: 40px;
-	background: url(../images/logo.png) no-repeat center center;
+	background: url(/static/images/logo.png) no-repeat center center;
 	-webkit-background-size: 40px 40px;
 	   -moz-background-size: 40px 40px;
 		    background-size: 40px 40px;
@@ -160,7 +160,7 @@ ul.off-canvas-list li a i {
 ----------------------------------------------------------*/
 
 header {
-	background: url(../images/blackboard.png) no-repeat center bottom;
+	background: url(/static/images/blackboard.png) no-repeat center bottom;
 	margin-bottom: 30px;
 	padding: 15px 0 60px 0;
 }
@@ -189,7 +189,7 @@ header h5 {
 	position: relative;
 	color: #fff;
 	height: 100%;
-	background: url(../images/blackboard.png) no-repeat center bottom;
+	background: url(/static/images/blackboard.png) no-repeat center bottom;
 	padding-bottom: 20px;
 	z-index: 1;
 }
@@ -434,7 +434,7 @@ header h5 {
 
 #footer {
 	color: #000;
-	background: url(../images/ftr_base.gif) repeat 0 0;
+	background: url(/static/images/ftr_base.gif) repeat 0 0;
 	border-top: 1px solid #479a4e;
 	margin-top: 50px;
 	padding: 45px 0;
@@ -470,8 +470,8 @@ header h5 {
 	opacity: 0.3;
 }
 
-#footer ul.home-social li a.twitter { background: url(../images/btn_twitter.png) no-repeat 0 0; }
-#footer ul.home-social li a.facebook { background: url(../images/btn_facebook.png) no-repeat 0 0; }
+#footer ul.home-social li a.twitter { background: url(/static/images/btn_twitter.png) no-repeat 0 0; }
+#footer ul.home-social li a.facebook { background: url(/static/images/btn_facebook.png) no-repeat 0 0; }
 
 
 #footer address {
