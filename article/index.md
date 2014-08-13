@@ -101,8 +101,8 @@ template: index
             <p><a href="http://www.zusaar.com/event/6457005" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
         <div class="medium-4 large-4 columns ">
-            <h4><i class="icon-leaf"></i> Perl入学式 in 福岡 #2</h4>
-            <p class="date">2014年07月05日(土) <span>次回の告知をお待ちください.</span></p>
+            <h4><i class="icon-leaf"></i> Perl入学式 in 福岡 #3</h4>
+            <p class="date">2014年09月13日(土) <!-- <span>次回の告知をお待ちください.</span> --></p>
             <table class="detail">
                 <tr>
                     <th>時間</th>
@@ -121,7 +121,7 @@ template: index
                     <td><a href="https://www.google.co.jp/maps/preview?q=%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E5%8D%971-3-11+KDX%E5%8D%9A%E5%A4%9A%E5%8D%97%E3%83%93%E3%83%AB3F&zoom=17" target="_blank">福岡市博多区博多駅南1-3-11(KDX博多南ビル3階)</a></td>
                 </tr>
             </table>
-            <p><a href="http://www.zusaar.com/event/14467013" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p><a href="http://www.zusaar.com/event/6527003" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
     </div>
     <div class="row headspace-20">
@@ -215,7 +215,7 @@ template: index
     "zusaar_event_id": {
       "osaka":   "14537003",
       "tokyo":   "6457005",
-      "fukuoka": "14467013",
+      "fukuoka": "6527003",
       "gotanda": "5417006"
     },
     "atndbeta_event_id": {
