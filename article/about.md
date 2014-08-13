@@ -1,4 +1,5 @@
 template: default
+title: About
 ---
 
 <header>
