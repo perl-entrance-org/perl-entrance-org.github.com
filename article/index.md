@@ -40,6 +40,11 @@ template: index
 </p>
 
 <p>さあ, 私達と一緒にプログラミングの楽しさを体感しましょう!</p>
+
+<center>
+    <a href="<: '/about.html' | uri_for :>" class="button">もっと詳しく!</a>
+</center>
+
             </center>
         </div>
     </div>
