@@ -42,7 +42,7 @@ template: index
 <p>さあ, 私達と一緒にプログラミングの楽しさを体感しましょう!</p>
 
 <center>
-    <a href="<: '/about.html' | uri_for :>" class="button">もっと詳しく!</a>
+    <a href="<: '/about.html' | uri_for :>" class="button">Perl入学式について, もっと詳しく知りたい!</a>
 </center>
 
             </center>
