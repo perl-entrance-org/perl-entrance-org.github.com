@@ -10,6 +10,10 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
+                <dt>2014.08.20</dt>
+                <dd><a href="<: '/yapc2014.html' | uri_for :>">｢Perl入学式 in YAPC::Asia｣, 定員を30名に増員しました!!! そして...!</a></dd>
+            </dl>
+            <dl class="article">
                 <dt>2014.07.31</dt>
                 <dd><a href="<: '/yapc2014.html' | uri_for :>">今年もやります, ｢Perl入学式 in YAPC::Asia｣ !!!</a></dd>
             </dl>
