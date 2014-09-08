@@ -34,16 +34,19 @@
     </ul>
     <ul class="off-canvas-list">
         <li><a href="<: '/about.html' | uri_for :>"><i class=" icon-world"></i> Perl入学式とは</a></li>
-        <li><a href="<: '/calendar.html' | uri_for :>"><i class=" icon-calender"></i> Perl入学式カレンダー</a></li>
-        <li><a href="http://lingr.com/room/perlentrance_chats" class="" target="_blank"><i class=" icon-messages"></i> Lingr ｢Perl入学式 歓談所｣</a></li>
-        <li><a href="https://twitter.com/Perl_Entrance" class="" target="_blank"><i class=" icon-social-twitter"></i> Twitter</a></li>
-        <li><a href="https://github.com/perl-entrance-org" class="" target="_blank"><i class="icon-social-github"></i> GitHub</a></li>
+        <li><a href="http://perl-entrance.blog.jp/"><i class=" icon-news"></i> Perl入学式公式ブログ</a></li>
     </ul>
     <ul class="off-canvas-list">
         <li><label> 講義資料</label></li>
         <li><a href="<: '/handout.html#handout-2014' | uri_for :>"><i class="icon-document-text"></i> 資料 (2014年)</a></li>
         <li><a href="<: '/handout.html#handout-2013' | uri_for :>"><i class="icon-document-text"></i> 資料 (2013年)</a></li>
         <li><a href="<: '/handout.html#handout-2012' | uri_for :>"><i class="icon-document-text"></i> 資料 (2012年)</a></li>
+    </ul>
+    <ul class="off-canvas-list">
+        <li><a href="<: '/calendar.html' | uri_for :>"><i class=" icon-calender"></i> Perl入学式カレンダー</a></li>
+        <li><a href="http://lingr.com/room/perlentrance_chats" class="" target="_blank"><i class=" icon-messages"></i> Lingr ｢Perl入学式 歓談所｣</a></li>
+        <li><a href="https://github.com/perl-entrance-org" class="" target="_blank"><i class="icon-social-github"></i> GitHub</a></li>
+        <li><a href="https://twitter.com/Perl_Entrance" class="" target="_blank"><i class=" icon-social-twitter"></i> Twitter</a></li>
     </ul>
 </aside>
 
