@@ -65,7 +65,7 @@ template: index
     <div class="row">
         <div class="medium-4 large-4 columns ">
             <h4><i class="icon-leaf"></i> #Perl入学式 in大阪 第3回 配列操作/ハッシュ/リファレンス編</h4>
-            <p class="date">2014年09月06日(土) <!-- <span>次回の告知をお待ちください.</span>--></p>
+            <p class="date">2014年09月06日(土) <span>次回の告知をお待ちください.</span></p>
             <table class="detail">
                 <tr>
                     <th>時間</th>
@@ -111,7 +111,7 @@ template: index
         </div>
         <div class="medium-4 large-4 columns ">
             <h4><i class="icon-leaf"></i> Perl入学式 in 福岡 #3</h4>
-            <p class="date">2014年09月13日(土) <!-- <span>次回の告知をお待ちください.</span> --></p>
+            <p class="date">2014年09月13日(土) <span>次回の告知をお待ちください.</span></p>
             <table class="detail">
                 <tr>
                     <th>時間</th>
@@ -191,12 +191,12 @@ template: index
             <p><a href="http://atnd.org/events/51971" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
         <div class="medium-4 large-4 columns ">
-            <h4><i class="icon-leaf"></i> 天神Perl #10</h4>
-            <p class="date">2014年08月09日(土) <span>次回の告知をお待ちください.</span></p>
+            <h4><i class="icon-leaf"></i> 天神Perl #11</h4>
+            <p class="date">2014年09月27日(土) <!--<span>次回の告知をお待ちください.</span>--></p>
             <table class="detail">
                 <tr>
                     <th>時間</th>
-                    <td>12:30 - 17:30</td>
+                    <td>13:30 - 17:00</td>
                 </tr>
                 <tr>
                     <th>定員</th>
@@ -211,7 +211,7 @@ template: index
                     <td><a href="https://www.google.co.jp/maps/preview?q=%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E5%8D%971-3-11+KDX%E5%8D%9A%E5%A4%9A%E5%8D%97%E3%83%93%E3%83%AB3F&zoom=17" target="_blank">福岡市博多区博多駅南1-3-11(KDX博多南ビル3階)</a></td>
                 </tr>
             </table>
-            <p><a href="http://tenjinperl.connpass.com/event/7379/" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p><a href="http://tenjinperl.connpass.com/event/8717/" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
     </div>
     <div class="row headspace-20">
@@ -231,7 +231,7 @@ template: index
       "perlbeginners": "51971"
     },
     "connpass_event_id": {
-      "tenjinperl": "7379"
+      "tenjinperl": "8717"
     },
     "zusaar_api_endpoint_url": "http://www.zusaar.com/api/event/",
     "atndbeta_api_endpoint_url": "http://api.atnd.org/events/",
