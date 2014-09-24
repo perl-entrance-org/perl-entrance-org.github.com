@@ -1,12 +1,14 @@
 template: default
-title: Perl入学式 活動履歴 (2014年度)
+title: Perl入学式活動履歴(2014年度)
 ---
 
-<style type="text/css">
-img.profile {
-witdh: 110px;
-}
-</style>
+<header>
+    <div class="row">
+        <div class="large-12 columns">
+            <h1>Perl Entrance 活動履歴 (2014年度)</h1>
+        </div>
+    </div>
+</header>
 
 : my $supporters = {
 :     papix => {
@@ -22,13 +24,6 @@ witdh: 110px;
 : };
 : my $smss = ['twitter', 'github'];
 
-<header>
-    <div class="row">
-        <div class="large-12 columns">
-            <h1>Perl Entrance 活動履歴 (2014年度)</h1>
-        </div>
-    </div>
-</header>
 <section id="main-content">
     <div class="row">
         <div class="large-10 medium-10 columns push-2">
