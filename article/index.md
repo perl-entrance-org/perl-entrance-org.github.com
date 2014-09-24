@@ -87,8 +87,8 @@ template: index
             <p><a href="http://www.zusaar.com/event/14537003" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
         <div class="medium-4 large-4 columns ">
-            <h4><i class="icon-leaf"></i> Perl入学式 in 東京 #3</h4>
-            <p class="date">2014年09月23日(火/祝日) <!-- <span>次回の告知をお待ちください.</span> --></p>
+            <h4><i class="icon-leaf"></i> Perl入学式 in 東京 #3 補講</h4>
+            <p class="date">2014年10月13日(月/祝日) <!-- <span>次回の告知をお待ちください.</span> --></p>
             <table class="detail">
                 <tr>
                     <th>時間</th>
@@ -107,7 +107,7 @@ template: index
                     <td><a href="https://www.google.com/maps/preview?ll=35.622983,139.723275&z=16&t=m&hl=ja&gl=US&mapclient=embed&q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E8%A5%BF%E4%BA%94%E5%8F%8D%E7%94%B0%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%91%E2%88%92%EF%BC%98+%E6%97%A5%E6%9C%AC&source=newuser-ws" target="_blank">東京都品川区西五反田1-21-8 KSS五反田ビル 6F</a></td>
                 </tr>
             </table>
-            <p><a href="http://www.zusaar.com/event/10637003" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p><a href="http://www.zusaar.com/event/13607003" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
         <div class="medium-4 large-4 columns ">
             <h4><i class="icon-leaf"></i> Perl入学式 in 福岡 #3</h4>
@@ -169,7 +169,7 @@ template: index
         </div>
         <div class="medium-4 large-4 columns ">
             <h4><i class="icon-leaf"></i> <a href="http://www.perl-beginners.org/" target="_blank">PerlBeginners</a> #14</h4>
-            <p class="date">2014年07月25日(金) <span>次回の告知をお待ちください.</span></p>
+            <p class="date">2014年10月07日(金) <!-- <span>次回の告知をお待ちください.</span> --></p>
             <table class="detail">
                 <tr>
                     <th>時間</th>
@@ -181,14 +181,14 @@ template: index
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td>渋谷区立神宮前穏田区民館 集会場</td>
+                    <td>渋谷区勤労福祉会館 第2洋室</td>
                 </tr>
                 <tr>
                     <th>住所</th>
-                    <td><a href="https://www.google.co.jp/maps/place/%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%AE%AE%E5%89%8D%EF%BC%96%E4%B8%81%E7%9B%AE%EF%BC%93%EF%BC%91%E2%88%92%EF%BC%95/@35.6681905,139.7047087,17z/data=!3m1!4b1!4m2!3m1!1s0x60188ca458610017:0xde56cb287a1de868" target="_blank">東京都渋谷区神宮前6-31-5</a></td>
+                    <td><a href="https://www.google.co.jp/maps/preview?q=35.6625549,139.6996371(%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%8D%971-19-8)&z=17" target="_blank">東京都渋谷区神南1-19-8</a></td>
                 </tr>
             </table>
-            <p><a href="http://atnd.org/events/51971" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p><a href="http://atnd.org/events/56091" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
         <div class="medium-4 large-4 columns ">
             <h4><i class="icon-leaf"></i> 天神Perl #11</h4>
@@ -223,12 +223,12 @@ template: index
   var PerlEntrance = {
     "zusaar_event_id": {
       "osaka":   "14537003",
-      "tokyo":   "10637003",
+      "tokyo":   "13607003",
       "fukuoka": "6527003",
       "gotanda": "5417006"
     },
     "atndbeta_event_id": {
-      "perlbeginners": "51971"
+      "perlbeginners": "56091"
     },
     "connpass_event_id": {
       "tenjinperl": "8717"
