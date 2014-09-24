@@ -19,7 +19,8 @@ title: Handout
                     <h4 class="subheader">#3</h4>
                     <p>
 <a href="https://github.com/perl-entrance-org/workshop-2014-03/blob/master/slide.md">資料(markdown)</a>
- / <a href="https://github.com/perl-entrance-org/workshop-2014-03/tree/master/code/osaka">練習問題の解答例</a>
+ / <a href="https://github.com/perl-entrance-org/workshop-2014-03/tree/master/code/osaka">練習問題の解答例 (in 大阪)</a>
+ / <a href="https://github.com/perl-entrance-org/workshop-2014-03/tree/master/code/tokyo1">練習問題の解答例 (in 東京)</a>
  / <a href="https://github.com/perl-entrance-org/workshop-2014-03/blob/master/practice.md">復習問題(markdown)</a>
                     </p>
 
