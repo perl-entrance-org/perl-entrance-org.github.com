@@ -1,11 +1,11 @@
 template: default
-title: Perl入学式活動履歴(2014年度)
+title: Perl入学式 活動履歴 (2014年度)
 ---
 
 <header>
     <div class="row">
         <div class="large-12 columns">
-            <h1>Perl Entrance 活動履歴 (2014年度)</h1>
+            <h1>Perl入学式 活動履歴 (2014年度)</h1>
         </div>
     </div>
 </header>
