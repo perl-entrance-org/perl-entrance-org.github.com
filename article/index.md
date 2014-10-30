@@ -64,7 +64,7 @@ template: index
     </div>
     <div class="row">
         <div class="medium-4 large-4 columns ">
-            <h4><i class="icon-leaf"></i> #Perl入学式 in大阪 第4回 サブルーチン(関数)/正規表現編</h4>
+            <h4><i class="icon-leaf"></i> Perl入学式 in大阪 第4回</h4>
             <p class="date">2014年11月15日(土) <!-- <span>次回の告知をお待ちください.</span> --></p>
             <table class="detail">
                 <tr>
@@ -87,8 +87,8 @@ template: index
             <p><a href="http://www.zusaar.com/event/12647003" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
         <div class="medium-4 large-4 columns ">
-            <h4><i class="icon-leaf"></i> Perl入学式 in 東京 第3回 補講</h4>
-            <p class="date">2014年10月13日(月/祝日) <span>次回の告知をお待ちください.</span></p>
+            <h4><i class="icon-leaf"></i> Perl入学式 in 東京 第4回</h4>
+            <p class="date">2014年11月29日(日) <!-- <span>次回の告知をお待ちください.</span> --></p>
             <table class="detail">
                 <tr>
                     <th>時間</th>
@@ -100,18 +100,19 @@ template: index
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td><a href="http://www.gaiax.co.jp/corporate/access/" target="_blank">株式会社GaiaX 6Fセミナールーム</a></td>
+                    <td><a href="http://www.mobilefactory.jp/access.html" target="_blank">株式会社モバイルファクトリー 8F セミナールーム</a></td>
                 </tr>
                 <tr>
                     <th>住所</th>
-                    <td><a href="https://www.google.com/maps/preview?ll=35.622983,139.723275&z=16&t=m&hl=ja&gl=US&mapclient=embed&q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E8%A5%BF%E4%BA%94%E5%8F%8D%E7%94%B0%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%91%E2%88%92%EF%BC%98+%E6%97%A5%E6%9C%AC&source=newuser-ws" target="_blank">東京都品川区西五反田1-21-8 KSS五反田ビル 6F</a></td>
+                    <td><a href="https://www.google.co.jp/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E6%9D%B1%E4%BA%94%E5%8F%8D%E7%94%B01-24-2+%E6%9D%B1%E4%BA%94%E5%8F%8D%E7%94%B01%E4%B8%81%E7%9B%AE%E3%83%93%E3%83%AB8%E9%9A%8E" target="_blank">東京都品川区東五反田1-24-2 東五反田1丁目ビル 8F</a></td>
                 </tr>
             </table>
-            <p><a href="http://www.zusaar.com/event/13607003" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p><a href="http://www.zusaar.com/event/12707003" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p><a href="http://www.zusaar.com/event/12707004" class="button radius expand" target="_blank">補講の詳細はこちら!</a></p>
         </div>
         <div class="medium-4 large-4 columns ">
-            <h4><i class="icon-leaf"></i> Perl入学式 in 福岡 第3回</h4>
-            <p class="date">2014年09月13日(土) <span>次回の告知をお待ちください.</span></p>
+            <h4><i class="icon-leaf"></i> Perl入学式 in 福岡 第4回</h4>
+            <p class="date">2014年11月22日(土) <!-- <span>次回の告知をお待ちください.</span> --></p>
             <table class="detail">
                 <tr>
                     <th>時間</th>
@@ -130,7 +131,7 @@ template: index
                     <td><a href="https://www.google.co.jp/maps/preview?q=%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E5%8D%971-3-11+KDX%E5%8D%9A%E5%A4%9A%E5%8D%97%E3%83%93%E3%83%AB3F&zoom=17" target="_blank">福岡市博多区博多駅南1-3-11(KDX博多南ビル3階)</a></td>
                 </tr>
             </table>
-            <p><a href="http://www.zusaar.com/event/6527003" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p><a href="http://www.zusaar.com/event/14757006" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
     </div>
     <div class="row headspace-20">
@@ -223,8 +224,8 @@ template: index
   var PerlEntrance = {
     "zusaar_event_id": {
       "osaka":   "12647003",
-      "tokyo":   "13607003",
-      "fukuoka": "6527003",
+      "tokyo":   "12707003",
+      "fukuoka": "14757006",
       "gotanda": "5417006"
     },
     "atndbeta_event_id": {
