@@ -10,16 +10,16 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
+                <dt>2014.11.21</dt>
+                <dd><a target="_blank" href="http://perl-entrance.blog.jp/archives/1014056217.html">公式ブログ「#Perl入学式 in大阪 第4回 レポート」</a></dd>
+            </dl>
+            <dl class="article">
                 <dt>2014.08.28</dt>
                 <dd><a href="<: '/yapc2014.html' | uri_for :>">当日参加枠と入場について</a> (Perl入学式 in YAPC::Asia)</dd>
             </dl>
             <dl class="article">
                 <dt>2014.08.20</dt>
                 <dd><a href="<: '/yapc2014.html' | uri_for :>">｢Perl入学式 in YAPC::Asia｣, 定員を30名に増員しました!!! そして...!</a></dd>
-            </dl>
-            <dl class="article">
-                <dt>2014.07.31</dt>
-                <dd><a href="<: '/yapc2014.html' | uri_for :>">今年もやります, ｢Perl入学式 in YAPC::Asia｣ !!!</a></dd>
             </dl>
         </div>
     </div>
