@@ -16,6 +16,13 @@ title: Handout
             <div class="row">
                 <div class="columns">
                     <h2 id="handout-2014">2014年度 <small>Perl Entrance 2014</small></h2>
+                    <h4 class="subheader">#4</h4>
+                    <p>
+<a href="https://github.com/perl-entrance-org/workshop-2014-04/blob/master/slide.md">資料(markdown)</a>
+ / <a href="https://github.com/perl-entrance-org/workshop-2014-04/tree/master/code">練習問題の解答例 (in 大阪)</a>
+ / <a href="https://github.com/perl-entrance-org/workshop-2014-04/blob/master/practice.md">復習問題(markdown)</a>
+                    </p>
+
                     <h4 class="subheader">#3</h4>
                     <p>
 <a href="https://github.com/perl-entrance-org/workshop-2014-03/blob/master/slide.md">資料(markdown)</a>
