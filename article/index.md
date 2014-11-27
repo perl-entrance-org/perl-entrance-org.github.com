@@ -92,7 +92,7 @@ template: index
         <div class="medium-4 large-4 columns ">
             <h4><i class="icon-leaf"></i> Perl入学式 in 東京 第4回</h4>
             <p class="date">
-                2014年11月29日(日)
+                2014年11月29日(土)
                 <!-- <span>次回の告知をお待ちください.</span> -->
             </p>
             <table class="detail">
