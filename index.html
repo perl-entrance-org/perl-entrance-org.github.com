@@ -377,7 +377,7 @@
                 </tr>
                 <tr>
                     <th>定員</th>
-                    <td>10人</span></td>
+                    <td><span id="naniwaperl-capacity-information"></span></td>
                 </tr>
                 <tr>
                     <th>会場</th>
@@ -415,9 +415,13 @@
     "connpass_event_id": {
       "tenjinperl": "8717"
     },
+    "doorkeeper_event_id": {
+      "naniwaperl": "17870"
+    },
     "zusaar_api_endpoint_url": "http://www.zusaar.com/api/event/",
     "atndbeta_api_endpoint_url": "http://api.atnd.org/events/",
-    "connpass_api_endpoint_url": "http://connpass.com/api/v1/event/"
+    "connpass_api_endpoint_url": "http://connpass.com/api/v1/event/",
+    "doorkeeper_api_endpoint_url": "http://api.doorkeeper.jp/events/"
   };
 
   // Zusaar
@@ -494,6 +498,32 @@
       });
     });
   });
+
+  // Doorkeeper
+  $(document).ready(function(){
+    var endpoint_url = PerlEntrance.doorkeeper_api_endpoint_url;
+    $.each(["naniwaperl"], function(index, region){
+      var $info_container = $("#"+region+"-capacity-information"),
+          get_url = endpoint_url+PerlEntrance.doorkeeper_event_id[region];
+      $.ajax({
+        url: get_url,
+        type: "GET",
+        dataType: "jsonp",
+        success: function(json) {
+          var event = json.event,
+              waiting  = event["waitlisted"],   // 補欠者
+              accepted = event["participants"], // 参加者
+              limit    = event["ticket_limit"]; // 定員
+          if ( typeof waiting !== "undefined" && typeof accepted !== "undefined" && typeof limit !== "undefined" ) {
+            $info_container.html(limit+"人 (現在"+accepted+"名参加、"+waiting+"名補欠)");
+          } else {
+            $info_container.html("(データ取得ができませんでした)");
+          }
+        }
+      });
+    });
+  });
+
 </script>
 
 
