@@ -229,7 +229,7 @@ template: index
         <div class="medium-3 large-3 columns ">
             <h4><i class="icon-leaf"></i> 第1回 なにわPerl</h4>
             <p class="date">
-                2014年12月12日(土)
+                2014年12月13日(土)
                 <!-- <span>次回の告知をお待ちください.</span> -->
             </p>
             <table class="detail">
