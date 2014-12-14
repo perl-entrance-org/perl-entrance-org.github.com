@@ -87,7 +87,7 @@ template: index
                     <td><a href="https://www.google.co.jp/maps/place/%E3%80%92530-0012+%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%8C%97%E5%8C%BA%E8%8A%9D%E7%94%B0%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%95%E2%88%92%EF%BC%96+%E3%83%8B%E3%83%A5%E3%83%BC%E5%85%B1%E6%A0%84%E3%83%93%E3%83%AB/@34.7065397,135.4958323,19z/data=!3m1!4b1!4m2!3m1!1s0x6000e68fc9ba69ad:0x9c86275a56b6c0d8" target="_blank">大阪府大阪市北区芝田2丁目5−6</a></td>
                 </tr>
             </table>
-            <p><a href="http://www.zusaar.com/event/12647003" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p><a href="http://www.zusaar.com/event/5887003" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
         <div class="medium-4 large-4 columns ">
             <h4><i class="icon-leaf"></i> Perl入学式 in 東京 第4回</h4>
