@@ -64,10 +64,10 @@ template: index
     </div>
     <div class="row">
         <div class="medium-4 large-4 columns ">
-            <h4><i class="icon-leaf"></i> Perl入学式 in大阪 第4回</h4>
+            <h4><i class="icon-leaf"></i> Perl入学式 in大阪 第5回</h4>
             <p class="date">
-                2014年11月15日(土)
-                <span>次回の告知をお待ちください.</span>
+                2015年1月17日(土)
+                <!-- <span>次回の告知をお待ちください.</span> -->
             </p>
             <table class="detail">
                 <tr>
@@ -230,7 +230,7 @@ template: index
             <h4><i class="icon-leaf"></i> 第1回 なにわPerl</h4>
             <p class="date">
                 2014年12月13日(土)
-                <!-- <span>次回の告知をお待ちください.</span> -->
+                <span>次回の告知をお待ちください.</span>
             </p>
             <table class="detail">
                 <tr>
@@ -243,7 +243,7 @@ template: index
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td>Joe'sビジネスセンター</td>
+                    <td><a href="http://www.joes-office.com/" target="_blank">Joe'sビジネスセンター</a></td>
                 </tr>
                 <tr>
                     <th>住所</th>
@@ -261,7 +261,7 @@ template: index
 <script type="text/javascript">
   var PerlEntrance = {
     "zusaar_event_id": {
-      "osaka":   "12647003",
+      "osaka":   "5887003",
       "tokyo":   "12707003",
       "fukuoka": "14757006",
       "gotanda": "5417006"
