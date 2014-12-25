@@ -22,9 +22,4 @@ $(document).ready(function() {
 			$('#pagetop').fadeOut();
 		}
 	});
-
-	// Carousel
- 	$('#carousel').carousel({
- 		interval: 4000
- 	})
 });

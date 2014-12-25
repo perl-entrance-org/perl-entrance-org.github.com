@@ -96,7 +96,7 @@ ul.off-canvas-list {
 
 .top-bar .title-area h1 a,
 .tab-bar a span.logo {
-	position: relative;
+  position: absolute;
 	top: 3px;
 	left: 10px;
 	width: 40px;
@@ -111,6 +111,7 @@ ul.off-canvas-list {
 	text-indent: -9999px;
 	text-decoration: none;
 	overflow: hidden;
+  z-index:1;
 }
 
 .top-bar .title-area h1 a:hover,
