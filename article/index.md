@@ -90,9 +90,9 @@ template: index
             <p><a href="http://www.zusaar.com/event/5887003" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
         <div class="medium-4 large-4 columns ">
-            <h4><i class="icon-leaf"></i> Perl入学式 in 東京 第4回</h4>
+            <h4><i class="icon-leaf"></i> Perl入学式 in 東京 第5回</h4>
             <p class="date">
-                2014年11月29日(土)
+                2015年1月25日(日)
                 <!-- <span>次回の告知をお待ちください.</span> -->
             </p>
             <table class="detail">
@@ -106,15 +106,15 @@ template: index
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td><a href="http://www.mobilefactory.jp/access.html" target="_blank">株式会社モバイルファクトリー 8F セミナールーム</a></td>
+                    <td><a href="http://www.gaiax.co.jp/corporate/access/" target="_blank">株式会社ガイアックス 6F セミナールーム </a></td>
                 </tr>
                 <tr>
                     <th>住所</th>
-                    <td><a href="https://www.google.co.jp/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E6%9D%B1%E4%BA%94%E5%8F%8D%E7%94%B01-24-2+%E6%9D%B1%E4%BA%94%E5%8F%8D%E7%94%B01%E4%B8%81%E7%9B%AE%E3%83%93%E3%83%AB8%E9%9A%8E" target="_blank">東京都品川区東五反田1-24-2 東五反田1丁目ビル 8F</a></td>
+                    <td><a href="http://www.google.co.jp/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E8%A5%BF%E4%BA%94%E5%8F%8D%E7%94%B01-21-8+KSS%E4%BA%94%E5%8F%8D%E7%94%B0%E3%83%93%E3%83%AB+6F" target="_blank">東京都品川区西五反田1-21-8 KSS五反田ビル 6F </a></td>
                 </tr>
             </table>
-            <p><a href="http://www.zusaar.com/event/12707003" class="button radius expand" target="_blank">詳細はこちら!</a></p>
-            <p><a href="http://www.zusaar.com/event/12707004" class="button radius expand" target="_blank">補講の詳細はこちら!</a></p>
+            <p><a href="http://www.zusaar.com/event/6817013" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p><a href="http://www.zusaar.com/event/6817014" class="button radius expand" target="_blank">補講の詳細はこちら!</a></p>
         </div>
         <div class="medium-4 large-4 columns ">
             <h4><i class="icon-leaf"></i> Perl入学式 in 福岡 第4回</h4>
@@ -181,7 +181,7 @@ template: index
             <h4><i class="icon-leaf"></i> <a href="http://www.perl-beginners.org/" target="_blank">PerlBeginners</a> #16</h4>
             <p class="date">
                 2014年12月22日(月)
-                <!-- <span>次回の告知をお待ちください.</span> -->
+                <span>次回の告知をお待ちください.</span>
             </p>
             <table class="detail">
                 <tr>
