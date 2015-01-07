@@ -117,10 +117,10 @@ template: index
             <p><a href="http://www.zusaar.com/event/6817014" class="button radius expand" target="_blank">補講の詳細はこちら!</a></p>
         </div>
         <div class="medium-4 large-4 columns ">
-            <h4><i class="icon-leaf"></i> Perl入学式 in 福岡 第4回</h4>
+            <h4><i class="icon-leaf"></i> Perl入学式 in 福岡 第5回</h4>
             <p class="date">
-                2014年11月22日(土)
-                <span>次回の告知をお待ちください.</span>
+                2015年1月24日(土)
+                <!-- <span>次回の告知をお待ちください.</span> -->
             </p>
             <table class="detail">
                 <tr>
@@ -140,7 +140,7 @@ template: index
                     <td><a href="https://www.google.co.jp/maps/preview?q=%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E5%8D%971-3-11+KDX%E5%8D%9A%E5%A4%9A%E5%8D%97%E3%83%93%E3%83%AB3F&zoom=17" target="_blank">福岡市博多区博多駅南1-3-11(KDX博多南ビル3階)</a></td>
                 </tr>
             </table>
-            <p><a href="http://www.zusaar.com/event/14757006" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p><a href="http://www.zusaar.com/event/6817003" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
     </div>
     <div class="row headspace-20">
