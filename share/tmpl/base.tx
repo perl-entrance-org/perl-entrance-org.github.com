@@ -44,7 +44,7 @@
     </ul>
     <ul class="off-canvas-list">
         <li><a href="<: '/calendar.html' | uri_for :>"><i class=" icon-calender"></i> Perl入学式カレンダー</a></li>
-        <li><a href="http://lingr.com/room/perlentrance_chats" class="" target="_blank"><i class=" icon-messages"></i> Lingr ｢Perl入学式 歓談所｣</a></li>
+        <li><a href="https://idobata.io/#/organization/perl-entrance/room/bbs" class="" target="_blank"><i class=" icon-messages"></i>Perl 入学式チャット(idobata bbs)</a></li>
         <li><a href="https://github.com/perl-entrance-org" class="" target="_blank"><i class="icon-social-github"></i> GitHub</a></li>
         <li><a href="https://twitter.com/Perl_Entrance" class="" target="_blank"><i class=" icon-social-twitter"></i> Twitter</a></li>
     </ul>
@@ -87,7 +87,7 @@
             </li>
             <li class="divider"></li>
             <li class="">
-                <a href="http://lingr.com/room/perlentrance_chats" class="" target="_blank"><i class=" icon-messages"></i> Lingr ｢Perl入学式 歓談所｣</a>
+                <a href="https://idobata.io/#/organization/perl-entrance/room/bbs" class="" target="_blank"><i class=" icon-messages"></i>Perl 入学式チャット(idobata bbs)</a>
             </li>
             <li class="divider"></li>
             <li class="">
