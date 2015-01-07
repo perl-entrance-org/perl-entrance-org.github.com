@@ -262,8 +262,8 @@ template: index
   var PerlEntrance = {
     "zusaar_event_id": {
       "osaka":   "5887003",
-      "tokyo":   "12707003",
-      "fukuoka": "14757006",
+      "tokyo":   "6817013",
+      "fukuoka": "6817003",
       "gotanda": "5417006"
     },
     "atndbeta_event_id": {
