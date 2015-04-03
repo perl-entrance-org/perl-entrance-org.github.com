@@ -11,7 +11,7 @@ template: index
         <div class="listed column">
             <dl class="article">
                 <dt>2015.1.21</dt>
-                <dd><a target="_blank" href="http://perl-entrance.blog.jp/archives/1018083249.html">公式ブログ「#Perl入学式 in大阪 第5回 レポート」</a></dd>
+                <dd><a target="_blank" href="http://perl-entrance.blog.jp/archives/1023362692.html">公式ブログ「2015年度もやりますっ! Perl入学式!!!」</a></dd>
             </dl>
         </div>
     </div>
@@ -50,45 +50,18 @@ template: index
 
 <section id="homepage-event">
     <div class="row">
-        <h2>2014年度のPerl入学式、終盤戦へ! </h2>
+        <h2>2015年度もやりますっ! Perl入学式!!!</h2>
         <div class="large-12 columns">
         </div>
     </div>
     <div class="row">
         <div class="medium-4 large-4 columns ">
-            <h4><i class="icon-leaf"></i> Perl入学式 in大阪 第6回</h4>
+            <h4><i class="icon-leaf"></i> Perl入学式 in 東京 第1回</h4>
             <p class="date">
-                2015年2月28日(土)
+                2015年5月16日(土)[予定]
                 <!-- <span>次回の告知をお待ちください.</span> -->
             </p>
-            <table class="detail">
-                <tr>
-                    <th>時間</th>
-                    <td>13:00 - 17:00</td>
-                </tr>
-                <tr>
-                    <th>定員</th>
-                    <td><span id="osaka-capacity-information"></span></td>
-                </tr>
-                <tr>
-                    <th>会場</th>
-                    <td>ニュー共栄ビル 地下会議室</td>
-                </tr>
-                <tr>
-                    <th>住所</th>
-                    <td><a href="https://www.google.co.jp/maps/place/%E3%80%92530-0012+%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%8C%97%E5%8C%BA%E8%8A%9D%E7%94%B0%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%95%E2%88%92%EF%BC%96+%E3%83%8B%E3%83%A5%E3%83%BC%E5%85%B1%E6%A0%84%E3%83%93%E3%83%AB/@34.7065397,135.4958323,19z/data=!3m1!4b1!4m2!3m1!1s0x6000e68fc9ba69ad:0x9c86275a56b6c0d8" target="_blank">大阪府大阪市北区芝田2丁目5−6</a></td>
-                </tr>
-            </table>
-            <p>本年度のカリキュラムはすべて終了しました！</p>
-            <!--p><a href="http://www.zusaar.com/event/12837005" class="button radius expand" target="_blank">詳細はこちら!</a></p-->
-        </div>
-        <div class="medium-4 large-4 columns ">
-            <h4><i class="icon-leaf"></i> Perl入学式 in 東京 第6回 補講</h4>
-            <p class="date">
-                2015年3月28日(土)
-                <!-- <span>次回の告知をお待ちください.</span> -->
-            </p>
-            <table class="detail">
+            <!--table class="detail">
                 <tr>
                     <th>時間</th>
                     <td>13:00 - 17:00</td>
@@ -105,41 +78,43 @@ template: index
                     <th>住所</th>
                     <td><a href="http://www.google.co.jp/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E8%A5%BF%E4%BA%94%E5%8F%8D%E7%94%B01-21-8+KSS%E4%BA%94%E5%8F%8D%E7%94%B0%E3%83%93%E3%83%AB+6F" target="_blank">東京都品川区西五反田1-21-8 KSS五反田ビル 6F </a></td>
                 </tr>
-            </table>
-            <p><a href="http://www.zusaar.com/event/14897011" class="button radius expand" target="_blank">詳細はこちら!</a></p>
-
-            <h4><i class="icon-leaf"></i>Perl入学式 〜修了式〜</h4>
+            </table-->
+            <!--p><a href="http://www.zusaar.com/event/14897011" class="button radius expand" target="_blank">詳細はこちら!</a></p-->
+        </div>
+        <div class="medium-4 large-4 columns ">
+            <h4><i class="icon-leaf"></i> Perl入学式 in大阪 第1回</h4>
             <p class="date">
-                2015年3月28日(土)
+                2015年5月30日(土)[予定]
+                <!-- <span>次回の告知をお待ちください.</span> -->
             </p>
-            <table class="detail">
+            <!--table class="detail">
                 <tr>
                     <th>時間</th>
-                    <td>18:00</td>
+                    <td>13:00 - 17:00</td>
                 </tr>
-                    <tr>
+                <tr>
                     <th>定員</th>
-                    <td><span id="tokyo-capacity-information">30人</span></td>
+                    <td><span id="osaka-capacity-information"></span></td>
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td><a href="http://www.gaiax.co.jp/corporate/access/" target="_blank">株式会社ガイアックス 6F セミナールーム </a></td>
+                    <td>ニュー共栄ビル 地下会議室</td>
                 </tr>
                 <tr>
                     <th>住所</th>
-                    <td><a href="http://www.google.co.jp/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E8%A5%BF%E4%BA%94%E5%8F%8D%E7%94%B01-21-8+KSS%E4%BA%94%E5%8F%8D%E7%94%B0%E3%83%93%E3%83%AB+6F" target="_blank">東京都品川区西五反田1-21-8 KSS五反田ビル 6F </a></td>
+                    <td><a href="https://www.google.co.jp/maps/place/%E3%80%92530-0012+%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%8C%97%E5%8C%BA%E8%8A%9D%E7%94%B0%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%95%E2%88%92%EF%BC%96+%E3%83%8B%E3%83%A5%E3%83%BC%E5%85%B1%E6%A0%84%E3%83%93%E3%83%AB/@34.7065397,135.4958323,19z/data=!3m1!4b1!4m2!3m1!1s0x6000e68fc9ba69ad:0x9c86275a56b6c0d8" target="_blank">大阪府大阪市北区芝田2丁目5−6</a></td>
                 </tr>
-            </table>
-            <p><a href="http://www.zusaar.com/event/10997009" class="button radius expand" target="_blank">詳細はこちら!</a></p>
-        
+            </table-->
+            <!--p>本年度のカリキュラムはすべて終了しました！</p-->
+            <!--p><a href="http://www.zusaar.com/event/12837005" class="button radius expand" target="_blank">詳細はこちら!</a></p-->
         </div>
         <div class="medium-4 large-4 columns ">
-            <h4><i class="icon-leaf"></i> Perl入学式 in 福岡 第6回</h4>
+            <h4><i class="icon-leaf"></i> Perl入学式 in 福岡 第1回</h4>
             <p class="date">
-                2015年3月6日(土)
+                未定
                 <!-- <span>次回の告知をお待ちください.</span> -->
             </p>
-            <table class="detail">
+            <!--table class="detail">
                 <tr>
                     <th>時間</th>
                     <td>13:00 - 17:00</td>
@@ -156,10 +131,21 @@ template: index
                     <th>住所</th>
                     <td><a href="https://www.google.co.jp/maps/preview?q=%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E5%8D%971-3-11+KDX%E5%8D%9A%E5%A4%9A%E5%8D%97%E3%83%93%E3%83%AB3F&zoom=17" target="_blank">福岡市博多区博多駅南1-3-11(KDX博多南ビル3階)</a></td>
                 </tr>
-            </table>
-            <p>本年度のカリキュラムはすべて終了しました！</p>
+            </table-->
+            <!--p>本年度のカリキュラムはすべて終了しました！</p-->
             <!--p><a href="http://www.zusaar.com/event/13847010" class="button radius expand" target="_blank">詳細はこちら!</a></p-->
         </div>
+
+        <div class="large-12 columns">
+        <center>
+        <p class="extra">近日中に募集開始予定です!</p>
+        </center>
+        </div>
+
+
+
+
+
     </div>
     <div class="row headspace-20">
     </div>
