@@ -58,7 +58,7 @@ template: index
         <div class="medium-4 large-4 columns ">
             <h4><i class="icon-leaf"></i> Perl入学式 in 東京 第1回</h4>
             <p class="date">
-                2015年5月16日(土)[予定]
+                2015年5月[予定]
                 <!-- <span>次回の告知をお待ちください.</span> -->
             </p>
             <!--table class="detail">
