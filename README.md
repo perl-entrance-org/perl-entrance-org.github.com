@@ -7,3 +7,8 @@ Perl入学式の公式サイトです。
 
 Rijiを使っています. `/article`以下に記事ファイルがありますので, 編集したら`$ riji publish`して, コミットしましょう.
 適当に記事見たい時は`$ riji-server`とかで立ち上がります.
+
+# SETUP
+
+carton install
+carton exec -- riji-server
