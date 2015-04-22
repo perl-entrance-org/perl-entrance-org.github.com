@@ -58,10 +58,10 @@ template: index
         <div class="medium-4 large-4 columns ">
             <h4><i class="icon-leaf"></i> Perl入学式 in 東京 第1回</h4>
             <p class="date">
-                2015年5月[予定]
+                2015年5月23日（土）
                 <!-- <span>次回の告知をお待ちください.</span> -->
             </p>
-            <!--table class="detail">
+            <table class="detail">
                 <tr>
                     <th>時間</th>
                     <td>13:00 - 17:00</td>
@@ -78,8 +78,8 @@ template: index
                     <th>住所</th>
                     <td><a href="http://www.google.co.jp/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E8%A5%BF%E4%BA%94%E5%8F%8D%E7%94%B01-21-8+KSS%E4%BA%94%E5%8F%8D%E7%94%B0%E3%83%93%E3%83%AB+6F" target="_blank">東京都品川区西五反田1-21-8 KSS五反田ビル 6F </a></td>
                 </tr>
-            </table-->
-            <!--p><a href="http://www.zusaar.com/event/14897011" class="button radius expand" target="_blank">詳細はこちら!</a></p-->
+            </table>
+            <p><a href="http://www.zusaar.com/event/9027007" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
         <div class="medium-4 large-4 columns ">
             <h4><i class="icon-leaf"></i> Perl入学式 in大阪 第1回</h4>
@@ -111,7 +111,7 @@ template: index
         <div class="medium-4 large-4 columns ">
             <h4><i class="icon-leaf"></i> Perl入学式 in 福岡 第1回</h4>
             <p class="date">
-                未定
+                2015年5月30日(土)[予定] 
                 <!-- <span>次回の告知をお待ちください.</span> -->
             </p>
             <!--table class="detail">
@@ -136,11 +136,11 @@ template: index
             <!--p><a href="http://www.zusaar.com/event/13847010" class="button radius expand" target="_blank">詳細はこちら!</a></p-->
         </div>
 
-        <div class="large-12 columns">
+        <!--div class="large-12 columns">
         <center>
         <p class="extra">近日中に募集開始予定です!</p>
         </center>
-        </div>
+        </div-->
 
 
 
@@ -266,7 +266,7 @@ template: index
   var PerlEntrance = {
     "zusaar_event_id": {
       "osaka":   "12837005",
-      "tokyo":   "6817014",
+      "tokyo":   "9027007",
       "fukuoka": "13847010",
       "gotanda": "5417006"
     },
