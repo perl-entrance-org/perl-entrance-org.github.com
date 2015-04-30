@@ -86,13 +86,13 @@ template: index
         <div class="medium-4 large-4 columns ">
             <h4><i class="icon-leaf"></i> Perl入学式 in大阪 第1回</h4>
             <p class="date">
-                2015年5月30日(土)[予定]
+                2015年5月30日(土)
                 <!-- <span>次回の告知をお待ちください.</span> -->
             </p>
-            <!--table class="detail">
+            <table class="detail">
                 <tr>
                     <th>時間</th>
-                    <td>13:00 - 17:00</td>
+                    <td>13:00 - 18:00</td>
                 </tr>
                 <tr>
                     <th>定員</th>
@@ -100,23 +100,23 @@ template: index
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td>ニュー共栄ビル 地下会議室</td>
+                    <td>アルファサード株式会社</td>
                 </tr>
                 <tr>
                     <th>住所</th>
-                    <td><a href="https://www.google.co.jp/maps/place/%E3%80%92530-0012+%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%8C%97%E5%8C%BA%E8%8A%9D%E7%94%B0%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%95%E2%88%92%EF%BC%96+%E3%83%8B%E3%83%A5%E3%83%BC%E5%85%B1%E6%A0%84%E3%83%93%E3%83%AB/@34.7065397,135.4958323,19z/data=!3m1!4b1!4m2!3m1!1s0x6000e68fc9ba69ad:0x9c86275a56b6c0d8" target="_blank">大阪府大阪市北区芝田2丁目5−6</a></td>
+                    <td><a href="http://www.google.co.jp/maps?q=%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%B7%A1%E8%B7%AF%E7%94%BA3-2-8+%E3%83%88%E3%83%BC%E3%82%A2%E7%B4%A1%E7%AC%AC2%E3%83%93%E3%83%AB702%E5%8F%B7" target="_blank">大阪市中央区淡路町3-2-8 トーア紡第2ビル702号</a></td>
                 </tr>
-            </table-->
+            </table>
             <!--p>本年度のカリキュラムはすべて終了しました！</p-->
-            <!--p><a href="http://www.zusaar.com/event/12837005" class="button radius expand" target="_blank">詳細はこちら!</a></p-->
+            <p><a href="http://www.zusaar.com/event/11937003" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
         <div class="medium-4 large-4 columns ">
             <h4><i class="icon-leaf"></i> Perl入学式 in 福岡 第1回</h4>
             <p class="date">
-                2015年5月30日(土)[予定] 
+                2015年5月30日(土)
                 <!-- <span>次回の告知をお待ちください.</span> -->
             </p>
-            <!--table class="detail">
+            <table class="detail">
                 <tr>
                     <th>時間</th>
                     <td>13:00 - 17:00</td>
@@ -133,9 +133,9 @@ template: index
                     <th>住所</th>
                     <td><a href="https://www.google.co.jp/maps/preview?q=%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E5%8D%971-3-11+KDX%E5%8D%9A%E5%A4%9A%E5%8D%97%E3%83%93%E3%83%AB3F&zoom=17" target="_blank">福岡市博多区博多駅南1-3-11(KDX博多南ビル3階)</a></td>
                 </tr>
-            </table-->
+            </table>
             <!--p>本年度のカリキュラムはすべて終了しました！</p-->
-            <!--p><a href="http://www.zusaar.com/event/13847010" class="button radius expand" target="_blank">詳細はこちら!</a></p-->
+            <p><a href="http://www.zusaar.com/event/15007004" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
 
         <!--div class="large-12 columns">
