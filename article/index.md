@@ -100,7 +100,7 @@ template: index
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td>アルファサード株式会社</td>
+                    <td><a href="http://alfasado.net/">アルファサード株式会社</a></td>
                 </tr>
                 <tr>
                     <th>住所</th>
@@ -127,7 +127,7 @@ template: index
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td>LINE Fukuoka 株式会社 KDXオフィス</td>
+                    <td><a href="http://linefukuoka.co.jp/">LINE Fukuoka 株式会社 KDXオフィス</a></td>
                 </tr>
                 <tr>
                     <th>住所</th>
