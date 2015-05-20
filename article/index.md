@@ -143,12 +143,37 @@ template: index
         <p class="extra">近日中に募集開始予定です!</p>
         </center>
         </div-->
-
-
-
-
-
     </div>
+
+    <div class="row">
+        <div class="medium-4 large-4 columns ">
+            <h4><i class="icon-leaf"></i> Perl入学式 in 東京 第1回 補講</h4>
+            <p class="date">
+                2015年5月30日（土）
+                <!-- <span>次回の告知をお待ちください.</span> -->
+            </p>
+            <table class="detail">
+                <tr>
+                    <th>時間</th>
+                    <td>13:00 - 17:00</td>
+                </tr>
+                    <tr>
+                    <th>定員</th>
+                    <td><span id="tokyo-hokou-capacity-information"></span></td>
+                </tr>
+                <tr>
+                    <th>会場</th>
+                    <td><a href="http://www.gaiax.co.jp/corporate/access/" target="_blank">株式会社ガイアックス 6F セミナールーム </a></td>
+                </tr>
+                <tr>
+                    <th>住所</th>
+                    <td><a href="http://www.google.co.jp/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E8%A5%BF%E4%BA%94%E5%8F%8D%E7%94%B01-21-8+KSS%E4%BA%94%E5%8F%8D%E7%94%B0%E3%83%93%E3%83%AB+6F" target="_blank">東京都品川区西五反田1-21-8 KSS五反田ビル 6F </a></td>
+                </tr>
+            </table>
+            <p><a href="http://www.zusaar.com/event/11037004" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+        </div>
+    </div>
+
     <div class="row headspace-20">
     </div>
 </section>
@@ -269,6 +294,7 @@ template: index
     "zusaar_event_id": {
       "osaka":   "11937003",
       "tokyo":   "9027007",
+      "tokyo-hokou": "11037004", // 本講と補講を併記する場合にはこれで
       "fukuoka": "15007004",
       "gotanda": "5417006"
     },
@@ -290,7 +316,7 @@ template: index
   // Zusaar
   $(document).ready(function(){
     var endpoint_url = PerlEntrance.zusaar_api_endpoint_url;
-    $.each(["osaka", "tokyo", "fukuoka", "gotanda"], function(index, region){
+    $.each(["osaka", "tokyo", "fukuoka", "gotanda", "tokyo-hokou"], function(index, region){
       var $info_container = $("#"+region+"-capacity-information"),
           get_url = endpoint_url+"?event_id="+PerlEntrance.zusaar_event_id[region]+"&format=jsonp";
       $.ajax({
