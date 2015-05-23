@@ -15,10 +15,17 @@ title: Handout
         <div class="large-10 medium-10 columns push-2">
             <div class="row">
                 <div class="columns">
-                    <h4 class="subheader">#6</h4>
+                    <h2 id="handout-2015">2015年度 <small>Perl Entrance 2015</small></h2>
+                    <h4 class="subheader">#1</h4>
                     <p>
-<a href="https://github.com/perl-entrance-org/workshop-2014-06/blob/master/slide.md">資料(markdown)</a>
+<a href="https://github.com/perl-entrance-org/workshop-2015-01/blob/master/slide1.md">第1部資料</a>
+ / <a href="https://github.com/perl-entrance-org/workshop-2015-01/blob/master/slide2.md">第2部資料</a>
                     </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="columns">
+                    <h2 id="handout-2014">2014年度 <small>Perl Entrance 2014</small></h2>
                     <h4 class="subheader">#5</h4>
                     <p>
 <a href="https://github.com/perl-entrance-org/workshop-2014-05/blob/master/slide.md">資料(markdown)</a>
@@ -144,6 +151,8 @@ title: Handout
         </div>
         <div class="large-2 medium-2 columns pull-10">
             <ul class="side-nav">
+                <li class="divider"></li>
+                <li><a href="#handout-2015">2015年度</a></li>
                 <li class="divider"></li>
                 <li><a href="#handout-2014">2014年度</a></li>
                 <li class="divider"></li>

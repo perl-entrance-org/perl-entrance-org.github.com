@@ -38,6 +38,7 @@
     </ul>
     <ul class="off-canvas-list">
         <li><label> 講義資料</label></li>
+        <li><a href="<: '/handout.html#handout-2015' | uri_for :>"><i class="icon-document-text"></i> 資料 (2015年)</a></li>
         <li><a href="<: '/handout.html#handout-2014' | uri_for :>"><i class="icon-document-text"></i> 資料 (2014年)</a></li>
         <li><a href="<: '/handout.html#handout-2013' | uri_for :>"><i class="icon-document-text"></i> 資料 (2013年)</a></li>
         <li><a href="<: '/handout.html#handout-2012' | uri_for :>"><i class="icon-document-text"></i> 資料 (2012年)</a></li>
