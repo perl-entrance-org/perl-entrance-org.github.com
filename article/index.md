@@ -182,7 +182,7 @@ template: index
     <div class="row">
         <div class="medium-3 large-3 columns ">
             <h4><i class="icon-leaf"></i> 五反田Perl #2</h4>
-            <p class="date">2014年06月07日(土)<!-- <span>次回の告知をお待ちください.</span> --></p>
+            <p class="date">2015年06月27日(土)<!-- <span>次回の告知をお待ちください.</span> --></p>
             <table class="detail">
                 <tr>
                     <th>時間</th>
