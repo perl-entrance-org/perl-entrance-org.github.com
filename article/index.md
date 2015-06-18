@@ -68,7 +68,7 @@ template: index
                 </tr>
                     <tr>
                     <th>定員</th>
-                    <td><span id="tokyo-hokou-capacity-information"></span></td>
+                    <td><span id="tokyo-capacity-information"></span></td>
                 </tr>
                 <tr>
                     <th>会場</th>
