@@ -155,7 +155,7 @@ template: index
                 </tr>
                 <tr>
                     <th>住所</th>
-                    <td><a href="http://www.google.co.jp/maps?q=%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%A4%A7%E5%90%8D2-4-22+%E6%96%B0%E6%97%A5%E6%9C%AC%E3%83%93%E3%83%AB3%E9%9A%8E" target="_blank">岡市中央区大名2-4-22 新日本ビル3階 </a></td>
+                    <td><a href="http://www.google.co.jp/maps?q=%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%A4%A7%E5%90%8D2-4-22+%E6%96%B0%E6%97%A5%E6%9C%AC%E3%83%93%E3%83%AB3%E9%9A%8E" target="_blank">福岡市中央区大名2-4-22 新日本ビル3階 </a></td>
                 </tr>
             </table>
             <!--p>本年度のカリキュラムはすべて終了しました！</p-->
