@@ -108,10 +108,10 @@ template: index
             <p><a href="http://www.zusaar.com/event/15067005" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
         <div class="medium-3 large-3 columns ">
-            <h4><i class="icon-leaf"></i> Perl入学式 in大阪 第1回</h4>
+            <h4><i class="icon-leaf"></i> Perl入学式 in大阪 第2回</h4>
             <p class="date">
-                2015年5月30日(土)
-                <span>次回の告知をお待ちください.</span>
+                2015年8月8日(土)
+                <!-- <span>次回の告知をお待ちください.</span> -->
             </p>
             <table class="detail">
                 <tr>
@@ -124,11 +124,11 @@ template: index
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td><a href="http://alfasado.net/">アルファサード株式会社</a></td>
+                    <td><a href="http://alfasado.net/">アルファサード株式会社 大阪オフィス(本社)</a></td>
                 </tr>
                 <tr>
                     <th>住所</th>
-                    <td><a href="http://www.google.co.jp/maps?q=%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%B7%A1%E8%B7%AF%E7%94%BA3-2-8+%E3%83%88%E3%83%BC%E3%82%A2%E7%B4%A1%E7%AC%AC2%E3%83%93%E3%83%AB702%E5%8F%B7" target="_blank">大阪市中央区淡路町3-2-8 トーア紡第2ビル702号</a></td>
+                    <td><a href="http://www.google.co.jp/maps?q=%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8C%97%E6%B5%9C1%E4%B8%81%E7%9B%AE1-21+%E7%AC%AC%E4%BA%8C%E4%B8%AD%E4%BA%95%E3%83%93%E3%83%AB4F" target="_blank">大阪市中央区北浜1丁目1-21 第二中井ビル4F</a></td>
                 </tr>
             </table>
             <!--p>本年度のカリキュラムはすべて終了しました！</p-->
