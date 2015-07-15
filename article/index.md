@@ -132,7 +132,7 @@ template: index
                 </tr>
             </table>
             <!--p>本年度のカリキュラムはすべて終了しました！</p-->
-            <p><a href="http://www.zusaar.com/event/11937003" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p><a href="http://www.zusaar.com/event/11997003" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
         <div class="medium-3 large-3 columns ">
             <h4><i class="icon-leaf"></i> Perl入学式 in 福岡 第2回</h4>
@@ -159,7 +159,7 @@ template: index
                 </tr>
             </table>
             <!--p>本年度のカリキュラムはすべて終了しました！</p-->
-            <p><a href="http://www.zusaar.com/event/15007004" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p><a href="http://www.zusaar.com/event/6987003" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
 
         <!--div class="large-12 columns">
@@ -287,10 +287,10 @@ template: index
 <script type="text/javascript">
   var PerlEntrance = {
     "zusaar_event_id": {
-      "osaka":   "11937003",
+      "osaka":   "11997003",
       "tokyo":   "15067004",
       "tokyo-hokou": "15067005", // 本講と補講を併記する場合にはこれで
-      "fukuoka": "15007004",
+      "fukuoka": "6987003",
       "gotanda": "15067003"
     },
     "atndbeta_event_id": {
