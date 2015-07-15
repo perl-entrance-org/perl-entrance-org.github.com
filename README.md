@@ -10,5 +10,5 @@ Rijiを使っています. `/article`以下に記事ファイルがあります�
 
 # SETUP
 
-carton install
+carton install --deployment
 carton exec -- riji-server
