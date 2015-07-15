@@ -376,9 +376,6 @@ DISTRIBUTIONS
       Git::Repository 1.312
       Git::Repository::Command 1.312
       Git::Repository::Plugin 1.312
-      Git::Repository::Plugin::Hello undef
-      Git::Repository::Plugin::Hello2 undef
-      MyGit::Hello undef
       Test::Git 1.312
     requirements:
       Carp 0
@@ -453,7 +450,6 @@ DISTRIBUTIONS
       HTTP::Body::UrlEncoded 1.22
       HTTP::Body::XForms 1.22
       HTTP::Body::XFormsMultipart 1.22
-      PAML undef
     requirements:
       Carp 0
       Digest::MD5 0
@@ -725,7 +721,7 @@ DISTRIBUTIONS
   Mouse-2.4.1
     pathname: G/GF/GFUJI/Mouse-2.4.1.tar.gz
     provides:
-      Mouse 2.004001
+      Mouse v2.4.1
       Mouse::Exporter undef
       Mouse::Meta::Attribute undef
       Mouse::Meta::Class undef
@@ -737,15 +733,17 @@ DISTRIBUTIONS
       Mouse::Meta::Module undef
       Mouse::Meta::Role undef
       Mouse::Meta::Role::Application undef
+      Mouse::Meta::Role::Application::RoleSummation undef
       Mouse::Meta::Role::Composite undef
       Mouse::Meta::Role::Method undef
       Mouse::Meta::TypeConstraint undef
       Mouse::Object undef
       Mouse::PurePerl undef
-      Mouse::Role 2.004001
-      Mouse::Spec 2.004001
+      Mouse::Role v2.4.1
+      Mouse::Spec v2.4.1
+      Mouse::Tiny v2.2.0
       Mouse::TypeRegistry undef
-      Mouse::Util 2.004001
+      Mouse::Util v2.4.1
       Mouse::Util::MetaRole undef
       Mouse::Util::TypeConstraints undef
       Squirrel undef
@@ -822,7 +820,6 @@ DISTRIBUTIONS
   Package-Stash-XS-0.28
     pathname: D/DO/DOY/Package-Stash-XS-0.28.tar.gz
     provides:
-      CompileTime undef
       Package::Stash::XS 0.28
     requirements:
       ExtUtils::MakeMaker 6.30
@@ -869,7 +866,7 @@ DISTRIBUTIONS
     pathname: D/DA/DAGOLDEN/Path-Tiny-0.065.tar.gz
     provides:
       Path::Tiny 0.065
-      flock undef
+      Path::Tiny::Error 0.065
     requirements:
       Carp 0
       Cwd 0
@@ -1023,7 +1020,7 @@ DISTRIBUTIONS
   Puncheur-v0.3.0
     pathname: S/SO/SONGMU/Puncheur-v0.3.0.tar.gz
     provides:
-      Puncheur 0.003000
+      Puncheur v0.3.0
       Puncheur::Dispatcher::Lite undef
       Puncheur::Dispatcher::PHPish undef
       Puncheur::Lite undef
@@ -1056,7 +1053,7 @@ DISTRIBUTIONS
   Riji-v0.9.2
     pathname: S/SO/SONGMU/Riji-v0.9.2.tar.gz
     provides:
-      Riji 0.009002
+      Riji v0.9.2
       Riji::CLI undef
       Riji::CLI::Help undef
       Riji::CLI::NewEntry undef
