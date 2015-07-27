@@ -19,6 +19,7 @@ title: Handout
                     <h4 class="subheader">#2</h4>
                     <p>
 <a href="https://github.com/perl-entrance-org/workshop-2015-02/blob/master/slide.md">資料</a>
+ / <a href="https://github.com/perl-entrance-org/workshop-2015-02/tree/master/answer">練習問題の解答例</a>
                     </p>
                     <h4 class="subheader">#1</h4>
                     <p>

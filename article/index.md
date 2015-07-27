@@ -59,7 +59,7 @@ template: index
             <h4><i class="icon-leaf"></i> Perl入学式 in 東京 第2回</h4>
             <p class="date">
                 2015年7月4日（土）
-                <!-- <span>次回の告知をお待ちください.</span> -->
+                <span>次回の告知をお待ちください.</span>
             </p>
             <table class="detail">
                 <tr>
@@ -85,7 +85,7 @@ template: index
             <h4><i class="icon-leaf"></i> Perl入学式 in 東京 第2回 補講</h4>
             <p class="date">
                 2015年7月25日（土）
-                <!-- <span>次回の告知をお待ちください.</span> -->
+                <span>次回の告知をお待ちください.</span>
             </p>
             <table class="detail">
                 <tr>
@@ -98,11 +98,11 @@ template: index
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td><a href="http://www.gaiax.co.jp/corporate/access/" target="_blank">株式会社ガイアックス 6F セミナールーム </a></td>
+                    <td><a href="http://www.mobilefactory.jp/" target="_blank">株式会社モバイルファクトリー セミナールーム</a></td>
                 </tr>
                 <tr>
                     <th>住所</th>
-                    <td><a href="http://www.google.co.jp/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E8%A5%BF%E4%BA%94%E5%8F%8D%E7%94%B01-21-8+KSS%E4%BA%94%E5%8F%8D%E7%94%B0%E3%83%93%E3%83%AB+6F" target="_blank">東京都品川区西五反田1-21-8 KSS五反田ビル 6F </a></td>
+                    <td><a href="https://www.google.co.jp/maps/place/%E3%80%92141-0022+%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E6%9D%B1%E4%BA%94%E5%8F%8D%E7%94%B0%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%94%E2%88%92%EF%BC%92+%E6%9D%B1%E4%BA%94%E5%8F%8D%E7%94%B0%EF%BC%91%E4%B8%81%E7%9B%AE%E3%83%93%E3%83%AB/@35.6259794,139.7273513,17z/data=!3m1!4b1!4m2!3m1!1s0x60188af98e811b31:0x906323dc027af55f" target="_blank">東京都品川区東五反田1-24-2 東五反田1丁目ビル 8階</a></td>
                 </tr>
             </table>
             <p><a href="http://www.zusaar.com/event/15067005" class="button radius expand" target="_blank">詳細はこちら!</a></p>
