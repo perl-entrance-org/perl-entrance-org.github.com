@@ -74,6 +74,10 @@
                 <li><a href="http://perl-entrance.blog.jp/" target="_blank"><i class=" icon-news"></i> Perl入学式公式ブログ</a></li>
             </li>
             <li class="divider"></li>
+            <li class="">
+                <li><a href="<: '/license.html' | uri_for :>"><i class=" icon-document-text"></i> ライセンス</a></li>
+            </li>
+            <li class="divider"></li>
             <li class="has-dropdown">
                 <a href="<: '/handout.html' | uri_for :>" class=""><i class="icon-document-text"></i> 講義資料</a>
                 <ul class="dropdown">
