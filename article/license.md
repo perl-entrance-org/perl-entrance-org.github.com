@@ -1,11 +1,11 @@
 template: default
-title: Lisence
+title: License
 ---
 
 <header>
     <div class="row">
         <div class="large-12 columns">
-            <h1>Lisence</h1>
+            <h1>License</h1>
             <h4>
                 Perl入学式が提供する各種資料のライセンスなどについて解説します.
             </h4>
