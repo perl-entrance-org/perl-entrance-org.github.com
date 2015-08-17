@@ -257,15 +257,15 @@ template: index
             <p><a href="http://tenjinperl.connpass.com/event/8717/" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
         <div class="medium-3 large-3 columns ">
-            <h4><i class="icon-leaf"></i> 第2回 <a href="http://naniwaperl.doorkeeper.jp/">なにわPerl</a></h4>
+            <h4><i class="icon-leaf"></i> 第3回 <a href="http://naniwaperl.doorkeeper.jp/">なにわPerl</a></h4>
             <p class="date">
-                2015年2月21日(土)
-                <span>次回の告知をお待ちください.</span>
+                2015年9月12日(土)
+                <!--span>次回の告知をお待ちください.</span-->
             </p>
             <table class="detail">
                 <tr>
                     <th>時間</th>
-                    <td>13:30 - 17:30</td>
+                    <td>14:00 - 16:00</td>
                 </tr>
                 <tr>
                     <th>定員</th>
@@ -273,14 +273,14 @@ template: index
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td><a href="http://www.joes-office.com/" target="_blank">Joe'sビジネスセンター</a></td>
+                    <td><a href="http://kc-i.jp/facilities/salon/" target="_blank">グランフロント大阪 北館7F ナレッジサロン内 プロジェクトルームAB</a></td>
                 </tr>
                 <tr>
                     <th>住所</th>
-                    <td><a href="https://www.google.co.jp/maps/place/%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%8C%97%E5%8C%BA%E6%A2%85%E7%94%B0%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%91%E2%88%92%EF%BC%94/@34.6998592,135.4988485,17z/data=!3m1!4b1!4m2!3m1!1s0x6000e6ed225bdf2f:0x9e78f15ad0609459" target="_blank">大阪府大阪市北区梅田1丁目11番4-923号（大阪駅前第4ビル9階）</a></td>
+                    <td><a href="http://kc-i.jp/access/" target="_blank">大阪府大阪市北区大深町3−1 グランフロント大阪 北館7F</a></td>
                 </tr>
             </table>
-            <p><a href="http://naniwaperl.doorkeeper.jp/events/20164" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p><a href="http://naniwaperl.doorkeeper.jp/events/30022" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
     </div>
     <div class="row headspace-20">
