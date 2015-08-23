@@ -115,7 +115,7 @@ template: index
             <h4><i class="icon-leaf"></i> Perl入学式 in大阪 第2回</h4>
             <p class="date">
                 2015年8月8日(土)
-                <!-- <span>次回の告知をお待ちください.</span> -->
+                <span>次回の告知をお待ちください.</span>
             </p>
             <table class="detail">
                 <tr>
@@ -142,7 +142,7 @@ template: index
             <h4><i class="icon-leaf"></i> Perl入学式 in 福岡 第2回</h4>
             <p class="date">
                 2015年8月1日(土)
-                <!-- <span>次回の告知をお待ちください.</span> -->
+                <span>次回の告知をお待ちください.</span>
             </p>
             <table class="detail">
                 <tr>
@@ -186,7 +186,10 @@ template: index
     <div class="row">
         <div class="medium-3 large-3 columns ">
             <h4><i class="icon-leaf"></i> 五反田Perl #2</h4>
-            <p class="date">2015年06月27日(土)<!-- <span>次回の告知をお待ちください.</span> --></p>
+            <p class="date">
+                2015年06月27日(土)
+                <span>次回の告知をお待ちください.</span>
+            </p>
             <table class="detail">
                 <tr>
                     <th>時間</th>
@@ -235,7 +238,10 @@ template: index
         </div>
         <div class="medium-3 large-3 columns ">
             <h4><i class="icon-leaf"></i> 天神Perl #11</h4>
-            <p class="date">2014年09月27日(土) <span>次回の告知をお待ちください.</span></p>
+            <p class="date">
+                2014年09月27日(土)
+                <span>次回の告知をお待ちください.</span>
+            </p>
             <table class="detail">
                 <tr>
                     <th>時間</th>
