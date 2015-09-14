@@ -54,7 +54,7 @@ template: index
 
 <section id="homepage-event">
     <div class="row">
-        <h2>暑い夏こそ, 熱いPerl入学式!!!</h2>
+        <h2>夏も過ぎ去って, 食欲の秋, 読書の秋, Perl入学式の秋!</h2>
         <div class="large-12 columns">
         </div>
     </div>
@@ -63,7 +63,7 @@ template: index
             <h4><i class="icon-leaf"></i> Perl入学式 in 東京 第3回</h4>
             <p class="date">
                 2015年9月12日（土）
-                <!-- <span>次回の告知をお待ちください.</span> -->
+                <span>次回の告知をお待ちください.</span>
             </p>
             <table class="detail">
                 <tr>
@@ -139,15 +139,15 @@ template: index
             <p><a href="http://www.zusaar.com/event/11997003" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
         <div class="medium-3 large-3 columns ">
-            <h4><i class="icon-leaf"></i> Perl入学式 in 福岡 第2回</h4>
+            <h4><i class="icon-leaf"></i> Perl入学式 in 福岡 第3回</h4>
             <p class="date">
-                2015年8月1日(土)
-                <span>次回の告知をお待ちください.</span>
+                2015年10月3日(土)
+                <!-- <span>次回の告知をお待ちください.</span> -->
             </p>
             <table class="detail">
                 <tr>
                     <th>時間</th>
-                    <td>11:00 - 16:00</td>
+                    <td>13:00 - 18:00</td>
                 </tr>
                 <tr>
                     <th>定員</th>
@@ -163,7 +163,7 @@ template: index
                 </tr>
             </table>
             <!--p>本年度のカリキュラムはすべて終了しました！</p-->
-            <p><a href="http://www.zusaar.com/event/6987003" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p><a href="http://www.zusaar.com/event/11197005" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
 
         <!--div class="large-12 columns">
@@ -266,7 +266,7 @@ template: index
             <h4><i class="icon-leaf"></i> 第3回 <a href="http://naniwaperl.doorkeeper.jp/">なにわPerl</a></h4>
             <p class="date">
                 2015年9月12日(土)
-                <!--span>次回の告知をお待ちください.</span-->
+                <span>次回の告知をお待ちください.</span>
             </p>
             <table class="detail">
                 <tr>
@@ -300,7 +300,7 @@ template: index
       "osaka":   "11997003",
       "tokyo":   "15177003",
       "tokyo-hokou": "15177004", // 本講と補講を併記する場合にはこれで
-      "fukuoka": "6987003",
+      "fukuoka": "11197005",
       "gotanda": "15067003"
     },
     "atndbeta_event_id": {
