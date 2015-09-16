@@ -10,6 +10,10 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
+                <dt>2015.7.30</dt>
+                <dd>Perl入学式in東京 第3回/第3回補講のZusaarを公開しました!</dd>
+                <dt>2015.7.29</dt>
+                <dd><a target="_blank" href="http://perl-entrance.blog.jp/archives/1035484568.html">Perl入学式の教科書を公開しました!</a></dd>
                 <dt>2015.5.22</dt>
                 <dd><a target="_blank" href="http://ascii.jp/elem/000/001/010/1010667/">校長が｢LOCAL Community Summit 2015｣に登壇した時の記事がASCII.jpに掲載されました!</a></dd>
             </dl>
@@ -50,15 +54,41 @@ template: index
 
 <section id="homepage-event">
     <div class="row">
-        <h2>2015年度もやりますっ! Perl入学式!!!</h2>
+        <h2>夏も過ぎ去って, 食欲の秋, 読書の秋, Perl入学式の秋!</h2>
         <div class="large-12 columns">
         </div>
     </div>
     <div class="row">
         <div class="medium-3 large-3 columns ">
-            <h4><i class="icon-leaf"></i> Perl入学式 in 東京 第2回</h4>
+            <h4><i class="icon-leaf"></i> Perl入学式 in 東京 第3回</h4>
             <p class="date">
-                2015年7月4日（土）
+                2015年9月12日（土）
+                <span>次回の告知をお待ちください.</span>
+            </p>
+            <table class="detail">
+                <tr>
+                    <th>時間</th>
+                    <td>13:00 - 17:00</td>
+                </tr>
+                    <tr>
+                    <th>定員</th>
+                    <td><span id="tokyo-capacity-information"></span></td>
+                </tr>
+                <tr>
+                    <th>会場</th>
+                    <td><a href="http://www.gaiax.co.jp/corporate/access/" target="_blank">株式会社ガイアックス 6F セミナールーム </a></td>
+                </tr>
+                <tr>
+                    <th>住所</th>
+                    <td><a href="http://www.google.co.jp/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E8%A5%BF%E4%BA%94%E5%8F%8D%E7%94%B01-21-8+KSS%E4%BA%94%E5%8F%8D%E7%94%B0%E3%83%93%E3%83%AB+6F" target="_blank">東京都品川区西五反田1-21-8 KSS五反田ビル 6F </a></td>
+                </tr>
+            </table>
+            <p><a href="http://www.zusaar.com/event/15177003" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+        </div>
+        <div class="medium-3 large-3 columns ">
+            <h4><i class="icon-leaf"></i> Perl入学式 in 東京 第3回 補講</h4>
+            <p class="date">
+                2015年9月26日（土）
                 <!-- <span>次回の告知をお待ちください.</span> -->
             </p>
             <table class="detail">
@@ -79,39 +109,13 @@ template: index
                     <td><a href="http://www.google.co.jp/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E8%A5%BF%E4%BA%94%E5%8F%8D%E7%94%B01-21-8+KSS%E4%BA%94%E5%8F%8D%E7%94%B0%E3%83%93%E3%83%AB+6F" target="_blank">東京都品川区西五反田1-21-8 KSS五反田ビル 6F </a></td>
                 </tr>
             </table>
-            <p><a href="http://www.zusaar.com/event/15067004" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p><a href="http://www.zusaar.com/event/15177004" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
         <div class="medium-3 large-3 columns ">
-            <h4><i class="icon-leaf"></i> Perl入学式 in 東京 第2回 補講</h4>
+            <h4><i class="icon-leaf"></i> Perl入学式 in大阪 第2回</h4>
             <p class="date">
-                2015年7月25日（土）
-                <!-- <span>次回の告知をお待ちください.</span> -->
-            </p>
-            <table class="detail">
-                <tr>
-                    <th>時間</th>
-                    <td>13:00 - 17:00</td>
-                </tr>
-                    <tr>
-                    <th>定員</th>
-                    <td><span id="tokyo-hokou-capacity-information"></span></td>
-                </tr>
-                <tr>
-                    <th>会場</th>
-                    <td><a href="http://www.gaiax.co.jp/corporate/access/" target="_blank">株式会社ガイアックス 6F セミナールーム </a></td>
-                </tr>
-                <tr>
-                    <th>住所</th>
-                    <td><a href="http://www.google.co.jp/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E8%A5%BF%E4%BA%94%E5%8F%8D%E7%94%B01-21-8+KSS%E4%BA%94%E5%8F%8D%E7%94%B0%E3%83%93%E3%83%AB+6F" target="_blank">東京都品川区西五反田1-21-8 KSS五反田ビル 6F </a></td>
-                </tr>
-            </table>
-            <p><a href="http://www.zusaar.com/event/15067005" class="button radius expand" target="_blank">詳細はこちら!</a></p>
-        </div>
-        <div class="medium-3 large-3 columns ">
-            <h4><i class="icon-leaf"></i> Perl入学式 in大阪 第1回</h4>
-            <p class="date">
-                2015年5月30日(土)
-                <!-- <span>次回の告知をお待ちください.</span> -->
+                2015年8月8日(土)
+                <span>次回の告知をお待ちください.</span>
             </p>
             <table class="detail">
                 <tr>
@@ -124,26 +128,26 @@ template: index
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td><a href="http://alfasado.net/">アルファサード株式会社</a></td>
+                    <td><a href="http://alfasado.net/">アルファサード株式会社 大阪オフィス(本社)</a></td>
                 </tr>
                 <tr>
                     <th>住所</th>
-                    <td><a href="http://www.google.co.jp/maps?q=%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%B7%A1%E8%B7%AF%E7%94%BA3-2-8+%E3%83%88%E3%83%BC%E3%82%A2%E7%B4%A1%E7%AC%AC2%E3%83%93%E3%83%AB702%E5%8F%B7" target="_blank">大阪市中央区淡路町3-2-8 トーア紡第2ビル702号</a></td>
+                    <td><a href="http://www.google.co.jp/maps?q=%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8C%97%E6%B5%9C1%E4%B8%81%E7%9B%AE1-21+%E7%AC%AC%E4%BA%8C%E4%B8%AD%E4%BA%95%E3%83%93%E3%83%AB4F" target="_blank">大阪市中央区北浜1丁目1-21 第二中井ビル4F</a></td>
                 </tr>
             </table>
             <!--p>本年度のカリキュラムはすべて終了しました！</p-->
-            <p><a href="http://www.zusaar.com/event/11937003" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p><a href="http://www.zusaar.com/event/11997003" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
         <div class="medium-3 large-3 columns ">
-            <h4><i class="icon-leaf"></i> Perl入学式 in 福岡 第1回</h4>
+            <h4><i class="icon-leaf"></i> Perl入学式 in 福岡 第3回</h4>
             <p class="date">
-                2015年5月30日(土)
+                2015年10月3日(土)
                 <!-- <span>次回の告知をお待ちください.</span> -->
             </p>
             <table class="detail">
                 <tr>
                     <th>時間</th>
-                    <td>13:00 - 17:00</td>
+                    <td>13:00 - 18:00</td>
                 </tr>
                 <tr>
                     <th>定員</th>
@@ -151,15 +155,15 @@ template: index
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td><a href="http://linefukuoka.co.jp/">LINE Fukuoka 株式会社 KDXオフィス</a></td>
+                    <td><a href="">OnRAMP</a></td>
                 </tr>
                 <tr>
                     <th>住所</th>
-                    <td><a href="https://www.google.co.jp/maps/preview?q=%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E5%8D%971-3-11+KDX%E5%8D%9A%E5%A4%9A%E5%8D%97%E3%83%93%E3%83%AB3F&zoom=17" target="_blank">福岡市博多区博多駅南1-3-11(KDX博多南ビル3階)</a></td>
+                    <td><a href="http://www.google.co.jp/maps?q=%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%A4%A7%E5%90%8D2-4-22+%E6%96%B0%E6%97%A5%E6%9C%AC%E3%83%93%E3%83%AB3%E9%9A%8E" target="_blank">福岡市中央区大名2-4-22 新日本ビル3階 </a></td>
                 </tr>
             </table>
             <!--p>本年度のカリキュラムはすべて終了しました！</p-->
-            <p><a href="http://www.zusaar.com/event/15007004" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p><a href="http://www.zusaar.com/event/11197005" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
 
         <!--div class="large-12 columns">
@@ -182,7 +186,10 @@ template: index
     <div class="row">
         <div class="medium-3 large-3 columns ">
             <h4><i class="icon-leaf"></i> 五反田Perl #2</h4>
-            <p class="date">2015年06月27日(土)<!-- <span>次回の告知をお待ちください.</span> --></p>
+            <p class="date">
+                2015年06月27日(土)
+                <span>次回の告知をお待ちください.</span>
+            </p>
             <table class="detail">
                 <tr>
                     <th>時間</th>
@@ -231,7 +238,10 @@ template: index
         </div>
         <div class="medium-3 large-3 columns ">
             <h4><i class="icon-leaf"></i> 天神Perl #11</h4>
-            <p class="date">2014年09月27日(土) <span>次回の告知をお待ちください.</span></p>
+            <p class="date">
+                2014年09月27日(土)
+                <span>次回の告知をお待ちください.</span>
+            </p>
             <table class="detail">
                 <tr>
                     <th>時間</th>
@@ -253,15 +263,15 @@ template: index
             <p><a href="http://tenjinperl.connpass.com/event/8717/" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
         <div class="medium-3 large-3 columns ">
-            <h4><i class="icon-leaf"></i> 第2回 <a href="http://naniwaperl.doorkeeper.jp/">なにわPerl</a></h4>
+            <h4><i class="icon-leaf"></i> 第3回 <a href="http://naniwaperl.doorkeeper.jp/">なにわPerl</a></h4>
             <p class="date">
-                2015年2月21日(土)
-                <!-- <span>次回の告知をお待ちください.</span> -->
+                2015年9月12日(土)
+                <span>次回の告知をお待ちください.</span>
             </p>
             <table class="detail">
                 <tr>
                     <th>時間</th>
-                    <td>13:30 - 17:30</td>
+                    <td>14:00 - 16:00</td>
                 </tr>
                 <tr>
                     <th>定員</th>
@@ -269,14 +279,14 @@ template: index
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td><a href="http://www.joes-office.com/" target="_blank">Joe'sビジネスセンター</a></td>
+                    <td><a href="http://kc-i.jp/facilities/salon/" target="_blank">グランフロント大阪 北館7F ナレッジサロン内 プロジェクトルームAB</a></td>
                 </tr>
                 <tr>
                     <th>住所</th>
-                    <td><a href="https://www.google.co.jp/maps/place/%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%8C%97%E5%8C%BA%E6%A2%85%E7%94%B0%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%91%E2%88%92%EF%BC%94/@34.6998592,135.4988485,17z/data=!3m1!4b1!4m2!3m1!1s0x6000e6ed225bdf2f:0x9e78f15ad0609459" target="_blank">大阪府大阪市北区梅田1丁目11番4-923号（大阪駅前第4ビル9階）</a></td>
+                    <td><a href="http://kc-i.jp/access/" target="_blank">大阪府大阪市北区大深町3−1 グランフロント大阪 北館7F</a></td>
                 </tr>
             </table>
-            <p><a href="http://naniwaperl.doorkeeper.jp/events/20164" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p><a href="http://naniwaperl.doorkeeper.jp/events/30022" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
     </div>
     <div class="row headspace-20">
@@ -287,10 +297,10 @@ template: index
 <script type="text/javascript">
   var PerlEntrance = {
     "zusaar_event_id": {
-      "osaka":   "11937003",
-      "tokyo":   "15067004",
-      "tokyo-hokou": "15067005", // 本講と補講を併記する場合にはこれで
-      "fukuoka": "15007004",
+      "osaka":   "11997003",
+      "tokyo":   "15177003",
+      "tokyo-hokou": "15177004", // 本講と補講を併記する場合にはこれで
+      "fukuoka": "11197005",
       "gotanda": "15067003"
     },
     "atndbeta_event_id": {

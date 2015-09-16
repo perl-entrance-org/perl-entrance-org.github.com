@@ -1,0 +1,12 @@
+desc 'start development server';
+task serve => sub {
+    sh q{carton install --deployment};
+    sh q{carton exec -- riji-server};
+};
+
+desc 'run riji publish';
+task publish => sub  {
+    sh q{carton exec -- riji publish};
+};
+
+task default => sub { sh q{daiku -T} };

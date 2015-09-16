@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="ja">
 <head>
     <meta charset="utf-8"/>
@@ -38,6 +39,8 @@
     </ul>
     <ul class="off-canvas-list">
         <li><label> 講義資料</label></li>
+        <li><a href="<: '/license.html' | uri_for :>"><i class=" icon-document-text"></i> ライセンス</a></li>
+        <li><a href="https://github.com/perl-entrance-org/Perl-Entrance-Textbook"><i class=" icon-document-text"></i> Perl Entrance Textbook</a></li>
         <li><a href="<: '/handout.html#handout-2015' | uri_for :>"><i class="icon-document-text"></i> 資料 (2015年)</a></li>
         <li><a href="<: '/handout.html#handout-2014' | uri_for :>"><i class="icon-document-text"></i> 資料 (2014年)</a></li>
         <li><a href="<: '/handout.html#handout-2013' | uri_for :>"><i class="icon-document-text"></i> 資料 (2013年)</a></li>
@@ -77,6 +80,8 @@
             <li class="has-dropdown">
                 <a href="<: '/handout.html' | uri_for :>" class=""><i class="icon-document-text"></i> 講義資料</a>
                 <ul class="dropdown">
+                    <li><a href="<: '/license.html' | uri_for :>"><i class=" icon-document-text"></i> ライセンス</a></li>
+                    <li><a href="https://github.com/perl-entrance-org/Perl-Entrance-Textbook"><i class=" icon-document-text"></i> Perl Entrance Textbook</a></li>
                     <li><a href="<: '/handout.html#handout-2015' | uri_for :>"><i class="icon-document-text"></i> 資料 (2015年)</a></li>
                     <li><a href="<: '/handout.html#handout-2014' | uri_for :>"><i class="icon-document-text"></i> 資料 (2014年)</a></li>
                     <li><a href="<: '/handout.html#handout-2013' | uri_for :>"><i class="icon-document-text"></i> 資料 (2013年)</a></li>
