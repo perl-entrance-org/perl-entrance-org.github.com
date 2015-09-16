@@ -44,7 +44,6 @@ title: Handout
                     <p>
 <a href="https://github.com/perl-entrance-org/workshop-2014-06/blob/master/slide.md">資料(markdown)</a>
                     </p>
-                    <h2 id="handout-2014">2014年度 <small>Perl Entrance 2014</small></h2>
                     <h4 class="subheader">#5</h4>
                     <p>
 <a href="https://github.com/perl-entrance-org/workshop-2014-05/blob/master/slide.md">資料(markdown)</a>
