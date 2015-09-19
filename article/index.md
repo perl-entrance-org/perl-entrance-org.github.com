@@ -10,6 +10,8 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
+                <dt>2015.9.19</dt>
+                <dd>Perl入学式in大阪 第3回/第3回補講のZusaarを公開しました!</dd>
                 <dt>2015.7.30</dt>
                 <dd>Perl入学式in東京 第3回/第3回補講のZusaarを公開しました!</dd>
                 <dt>2015.7.29</dt>
@@ -297,7 +299,7 @@ template: index
 <script type="text/javascript">
   var PerlEntrance = {
     "zusaar_event_id": {
-      "osaka":   "11997003",
+      "osaka":   "12097008",
       "tokyo":   "15177003",
       "tokyo-hokou": "15177004", // 本講と補講を併記する場合にはこれで
       "fukuoka": "11197005",
