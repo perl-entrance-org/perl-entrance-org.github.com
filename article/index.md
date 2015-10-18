@@ -10,12 +10,12 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
+                <dt>2015.10.18</dt>
+                <dd>Perl入学式in福岡 第3回のZusaarを公開しました!</dd>
+                <dt>2015.10.18</dt>
+                <dd>Perl入学式in大阪 第4回のDoorkeeperを公開しました!</dd>
                 <dt>2015.9.30</dt>
                 <dd>Perl入学式in東京 第4回のZusaarを公開しました!</dd>
-                <dt>2015.9.19</dt>
-                <dd>Perl入学式in大阪 第3回のZusaarを公開しました!</dd>
-                <dt>2015.7.30</dt>
-                <dd>Perl入学式in東京 第3回/第3回補講のZusaarを公開しました!</dd>
                 <dt>2015.7.29</dt>
                 <dd><a target="_blank" href="http://perl-entrance.blog.jp/archives/1035484568.html">Perl入学式の教科書を公開しました!</a></dd>
             </dl>
@@ -114,9 +114,9 @@ template: index
             <p><a href="http://www.zusaar.com/event/15177004" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
         <div class="medium-3 large-3 columns ">
-            <h4><i class="icon-leaf"></i> Perl入学式 in大阪 第3回</h4>
+            <h4><i class="icon-leaf"></i> Perl入学式 in大阪 第4回</h4>
             <p class="date">
-                2015年10月17日(土)
+                2015年11月28日(土)
                 <!-- <span>次回の告知をお待ちください.</span> -->
             </p>
             <table class="detail">
@@ -130,7 +130,7 @@ template: index
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td><a href="https://kc-i.jp/facilities/salon/">グランフロント大阪 北館7F ナレッジサロン内 プロジェクトルームH </a></td>
+                    <td><a href="https://kc-i.jp/facilities/salon/">グランフロント大阪 北館7F ナレッジサロン内 プロジェクトルームCD </a></td>
                 </tr>
                 <tr>
                     <th>住所</th>
@@ -143,13 +143,13 @@ template: index
         <div class="medium-3 large-3 columns ">
             <h4><i class="icon-leaf"></i> Perl入学式 in 福岡 第3回</h4>
             <p class="date">
-                2015年10月3日(土)
+                2015年11月14日(土)
                 <!-- <span>次回の告知をお待ちください.</span> -->
             </p>
             <table class="detail">
                 <tr>
                     <th>時間</th>
-                    <td>13:00 - 18:00</td>
+                    <td>13:00 - 17:00</td>
                 </tr>
                 <tr>
                     <th>定員</th>
@@ -299,7 +299,6 @@ template: index
 <script type="text/javascript">
   var PerlEntrance = {
     "zusaar_event_id": {
-      "osaka":   "12097008",
       "tokyo":   "7107004",
       "tokyo-hokou": "15177004", // 本講と補講を併記する場合にはこれで
       "fukuoka": "11197005",
@@ -312,7 +311,8 @@ template: index
       "tenjinperl": "8717"
     },
     "doorkeeper_event_id": {
-      "naniwaperl": "20164"
+      "naniwaperl": "20164",
+      "osaka": "33367"
     },
     "zusaar_api_endpoint_url": "http://www.zusaar.com/api/event/",
     "atndbeta_api_endpoint_url": "http://api.atnd.org/events/",
