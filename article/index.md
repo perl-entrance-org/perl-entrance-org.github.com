@@ -323,7 +323,7 @@ template: index
   // Zusaar
   $(document).ready(function(){
     var endpoint_url = PerlEntrance.zusaar_api_endpoint_url;
-    $.each(["osaka", "tokyo", "fukuoka", "gotanda", "tokyo-hokou"], function(index, region){
+    $.each(["tokyo", "fukuoka", "gotanda", "tokyo-hokou"], function(index, region){
       var $info_container = $("#"+region+"-capacity-information"),
           get_url = endpoint_url+"?event_id="+PerlEntrance.zusaar_event_id[region]+"&format=jsonp";
       $.ajax({
@@ -398,7 +398,7 @@ template: index
   // Doorkeeper
   $(document).ready(function(){
     var endpoint_url = PerlEntrance.doorkeeper_api_endpoint_url;
-    $.each(["naniwaperl"], function(index, region){
+    $.each(["osaka", "naniwaperl"], function(index, region){
       var $info_container = $("#"+region+"-capacity-information"),
           get_url = endpoint_url+PerlEntrance.doorkeeper_event_id[region];
       $.ajax({
