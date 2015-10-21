@@ -138,7 +138,7 @@ template: index
                 </tr>
             </table>
             <!--p>本年度のカリキュラムはすべて終了しました！</p-->
-            <p><a href="http://www.zusaar.com/event/12097008" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p><a href="https://perl-entrance-osaka.doorkeeper.jp/events/33367" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
         <div class="medium-3 large-3 columns ">
             <h4><i class="icon-leaf"></i> Perl入学式 in 福岡 第3回</h4>
@@ -323,7 +323,7 @@ template: index
   // Zusaar
   $(document).ready(function(){
     var endpoint_url = PerlEntrance.zusaar_api_endpoint_url;
-    $.each(["osaka", "tokyo", "fukuoka", "gotanda", "tokyo-hokou"], function(index, region){
+    $.each(["tokyo", "fukuoka", "gotanda", "tokyo-hokou"], function(index, region){
       var $info_container = $("#"+region+"-capacity-information"),
           get_url = endpoint_url+"?event_id="+PerlEntrance.zusaar_event_id[region]+"&format=jsonp";
       $.ajax({
@@ -398,7 +398,7 @@ template: index
   // Doorkeeper
   $(document).ready(function(){
     var endpoint_url = PerlEntrance.doorkeeper_api_endpoint_url;
-    $.each(["naniwaperl"], function(index, region){
+    $.each(["osaka", "naniwaperl"], function(index, region){
       var $info_container = $("#"+region+"-capacity-information"),
           get_url = endpoint_url+PerlEntrance.doorkeeper_event_id[region];
       $.ajax({
