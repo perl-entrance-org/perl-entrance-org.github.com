@@ -10,14 +10,12 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
+                <dt>2015.10.27</dt>
+                <dd>五反田Perl #3のZusaarを公開しました!</dd>
                 <dt>2015.10.18</dt>
                 <dd>Perl入学式in福岡 第3回のZusaarを公開しました!</dd>
                 <dt>2015.10.18</dt>
                 <dd>Perl入学式in大阪 第4回のDoorkeeperを公開しました!</dd>
-                <dt>2015.9.30</dt>
-                <dd>Perl入学式in東京 第4回のZusaarを公開しました!</dd>
-                <dt>2015.7.29</dt>
-                <dd><a target="_blank" href="http://perl-entrance.blog.jp/archives/1035484568.html">Perl入学式の教科書を公開しました!</a></dd>
             </dl>
         </div>
     </div>
@@ -65,7 +63,7 @@ template: index
             <h4><i class="icon-leaf"></i> Perl入学式 in 東京 第4回</h4>
             <p class="date">
                 2015年10月24日（土）
-                <!-- <span>次回の告知をお待ちください.</span> -->
+                <span>次回の告知をお待ちください.</span>
             </p>
             <table class="detail">
                 <tr>
@@ -187,10 +185,10 @@ template: index
     </div>
     <div class="row">
         <div class="medium-3 large-3 columns ">
-            <h4><i class="icon-leaf"></i> 五反田Perl #2</h4>
+            <h4><i class="icon-leaf"></i> 五反田Perl #3</h4>
             <p class="date">
-                2015年06月27日(土)
-                <span>次回の告知をお待ちください.</span>
+                2015年11月28日(土)
+                <!-- <span>次回の告知をお待ちください.</span> -->
             </p>
             <table class="detail">
                 <tr>
@@ -210,7 +208,7 @@ template: index
                     <td><a href="https://www.google.com/maps/preview?ll=35.622983,139.723275&z=16&t=m&hl=ja&gl=US&mapclient=embed&q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E8%A5%BF%E4%BA%94%E5%8F%8D%E7%94%B0%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%91%E2%88%92%EF%BC%98+%E6%97%A5%E6%9C%AC&source=newuser-ws" target="_blank">東京都品川区西五反田1-21-8 KSS五反田ビル 6F</a></td>
                 </tr>
             </table>
-            <p><a href="http://www.zusaar.com/event/15067003" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p><a href="http://www.zusaar.com/event/10047005" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
         <div class="medium-3 large-3 columns ">
             <h4><i class="icon-leaf"></i> <a href="http://www.perl-beginners.org/" target="_blank">PerlBeginners</a> #16</h4>
@@ -302,7 +300,7 @@ template: index
       "tokyo":   "7107004",
       "tokyo-hokou": "15177004", // 本講と補講を併記する場合にはこれで
       "fukuoka": "11197005",
-      "gotanda": "15067003"
+      "gotanda": "10047005"
     },
     "atndbeta_event_id": {
       "perlbeginners": "59344"
