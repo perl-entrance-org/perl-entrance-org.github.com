@@ -1,5 +1,5 @@
 template: default
-title: License
+title: ライセンス
 ---
 
 <header>

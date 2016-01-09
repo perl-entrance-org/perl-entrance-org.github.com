@@ -1,5 +1,5 @@
 template: default
-title: Handout
+title: 講義資料
 ---
 
 <header>

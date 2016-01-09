@@ -1,5 +1,5 @@
 template: default
-title: About
+title: Perl入学式とは
 ---
 
 <header>
