@@ -12,7 +12,7 @@
     <link rel="apple-touch-icon-precomposed" href="<: '/static/images/icons/apple-touch-icon-precomposed.png' | uri_for :>" />
     <meta property="og:title" content="<: $blog.title :>" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="Perl入学式の公式サイトです" />
+    <meta property="og:description" content="プログラミングの入門者、初心者向けの勉強会「Perl入学式」の公式サイトです" />
     <meta property="og:url" content="<: '' | uri_for :>" />
     <meta property="og:image" content="<: '/static/images/logo.png' | uri_for :>" />
     <meta property="og:site_name" content="<: $blog.title :>" />
