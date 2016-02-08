@@ -1,4 +1,9 @@
 : cascade base
+
+: around title -> {
+Perl入学式 プログラミング初心者のためのPerl入門講座
+: }
+
 : around content -> {
 
 <section id="homepage-hero">
