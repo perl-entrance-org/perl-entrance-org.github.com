@@ -20,6 +20,11 @@ title: 講義資料
                         Perl入学式が提供する全ての資料のライセンスについては, <a href="<: '/license.html' | uri_for :>">ライセンス</a>のページからご確認下さい.
                     </p>
                     <h2 id="handout-2015">2015年度 <small>Perl Entrance 2015</small></h2>
+                    <h4 class="subheader">#6</h4>
+                    <p>
+<a href="https://github.com/perl-entrance-org/workshop-2015-06/blob/master/slide.md">資料</a>
+ / 練習問題の解答例
+                    </p>
                     <h4 class="subheader">#5</h4>
                     <p>
 <a href="https://github.com/perl-entrance-org/workshop-2015-05/blob/master/slide.md">資料</a>
