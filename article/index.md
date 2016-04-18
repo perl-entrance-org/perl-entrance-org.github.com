@@ -11,7 +11,7 @@ template: index
         <div class="listed column">
             <dl class="article">
                 <dt>2016.04.11</dt>
-                <dd><a href="https://perl-entrance-tokyo.doorkeeper.jp/events/42912">Perl入学式 in 大阪 第1回 環境構築編</a>のDoorKeeperを公開しました!</dd>
+                <dd><a href="https://perl-entrance-tokyo.doorkeeper.jp/events/42912">Perl入学式 in 東京 第1回 環境構築編</a>のDoorKeeperを公開しました!</dd>
                 <dt>2016.02.04</dt>
                 <dd><a href="https://perl-entrance-osaka.doorkeeper.jp/events/38861">Perl入学式 in 大阪 第6回 モジュール/テスト編</a>のDoorKeeperを公開しました!</dd>
                 <dt>2016.01.08</dt>
