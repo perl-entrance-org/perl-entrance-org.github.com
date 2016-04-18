@@ -196,21 +196,21 @@
 
 <section id="homepage-event">
     <div class="row">
-        <h2>ゴール近し! Perl入学式はいよいよ佳境へ!</h2>
+        <h2>2016年度のPerl入学式開講!</h2>
         <div class="large-12 columns">
         </div>
     </div>
     <div class="row">
         <div class="medium-3 large-3 columns ">
-            <h4><i class="icon-leaf"></i> Perl入学式 in 東京 第6回</h4>
+            <h4><i class="icon-leaf"></i> Perl入学式 in 東京 第1回</h4>
             <p class="date">
-                2016年2月13日（土）
+                2016年5月14日（土）
                 <!-- <span>次回の告知をお待ちください.</span> -->
             </p>
             <table class="detail">
                 <tr>
                     <th>時間</th>
-                    <td>13:00 - 17:00</td>
+                    <td>10:00 - 18:00<br>（環境によって参加時間が異なります）</td>
                 </tr>
                     <tr>
                     <th>定員</th>
@@ -225,9 +225,9 @@
                     <td><a href="http://www.google.co.jp/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E8%A5%BF%E4%BA%94%E5%8F%8D%E7%94%B01-21-8+KSS%E4%BA%94%E5%8F%8D%E7%94%B0%E3%83%93%E3%83%AB+6F" target="_blank">東京都品川区西五反田1-21-8 KSS五反田ビル 6F </a></td>
                 </tr>
             </table>
-            <p><a href="http://www.zusaar.com/event/14267004" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p><a href="https://perl-entrance-tokyo.doorkeeper.jp/events/42912" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
-        <div class="medium-3 large-3 columns ">
+<!--        <div class="medium-3 large-3 columns ">
             <h4><i class="icon-leaf"></i> Perl入学式 in 東京 第4回 補講</h4>
             <p class="date">
                 2015年11月28日（土）
@@ -252,7 +252,7 @@
                 </tr>
             </table>
             <p><a href="http://www.zusaar.com/event/15297004" class="button radius expand" target="_blank">詳細はこちら!</a></p>
-        </div>
+        </div>-->
         <div class="medium-3 large-3 columns ">
             <h4><i class="icon-leaf"></i> Perl入学式 in大阪 第6回</h4>
             <p class="date">
@@ -355,7 +355,7 @@
             </table>
             <p><a href="http://www.zusaar.com/event/10047005" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
-        <div class="medium-3 large-3 columns ">
+<!--        <div class="medium-3 large-3 columns ">
             <h4><i class="icon-leaf"></i> <a href="http://www.perl-beginners.org/" target="_blank">PerlBeginners</a> #16</h4>
             <p class="date">
                 2014年12月22日(月)
@@ -380,7 +380,7 @@
                 </tr>
             </table>
             <p><a href="https://atnd.org/events/59344" class="button radius expand" target="_blank">詳細はこちら!</a></p>
-        </div>
+        </div>-->
         <div class="medium-3 large-3 columns ">
             <h4><i class="icon-leaf"></i> 天神Perl #11</h4>
             <p class="date">
@@ -447,8 +447,8 @@
 <script type="text/javascript">
   var PerlEntrance = {
     "zusaar_event_id": {
-      "tokyo":   "14267004",
-      "tokyo-hokou": "15297004", // 本講と補講を併記する場合にはこれで
+      //"tokyo":   "14267004",
+      //"tokyo-hokou": "15297004", // 本講と補講を併記する場合にはこれで
       "fukuoka": "11197005",
       "gotanda": "10047005"
     },
@@ -459,6 +459,7 @@
       "tenjinperl": "8717"
     },
     "doorkeeper_event_id": {
+      "tokyo": "42912",
       "naniwaperl": "20164",
       "osaka": "38861"
     },
@@ -471,7 +472,7 @@
   // Zusaar
   $(document).ready(function(){
     var endpoint_url = PerlEntrance.zusaar_api_endpoint_url;
-    $.each(["tokyo", "fukuoka", "gotanda", "tokyo-hokou"], function(index, region){
+    $.each(["fukuoka", "gotanda", "tokyo-hokou"], function(index, region){
       var $info_container = $("#"+region+"-capacity-information"),
           get_url = endpoint_url+"?event_id="+PerlEntrance.zusaar_event_id[region]+"&format=jsonp";
       $.ajax({
@@ -546,7 +547,7 @@
   // Doorkeeper
   $(document).ready(function(){
     var endpoint_url = PerlEntrance.doorkeeper_api_endpoint_url;
-    $.each(["osaka", "naniwaperl"], function(index, region){
+    $.each(["tokyo", "osaka", "naniwaperl"], function(index, region){
       var $info_container = $("#"+region+"-capacity-information"),
           get_url = endpoint_url+PerlEntrance.doorkeeper_event_id[region];
       $.ajax({
