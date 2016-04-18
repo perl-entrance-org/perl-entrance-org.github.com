@@ -59,8 +59,8 @@ template: index
         </div>
     </div>
     <div class="row">
-        <div class="medium-6 large-6 columns ">
-            <h4><i class="icon-leaf"></i> Perl入学式 in 東京 第1回</h4>
+        <div class="medium-4 large-4 columns ">
+            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-tokyo.doorkeeper.jp/">Perl入学式 in東京</a> 第1回</h4>
             <p class="date">
                 2016年5月14日（土）
                 <!-- <span>次回の告知をお待ちください.</span> -->
@@ -85,8 +85,14 @@ template: index
             </table>
             <p><a href="https://perl-entrance-tokyo.doorkeeper.jp/events/42912" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
-        <div class="medium-6 large-6 columns ">
-            <h4><i class="icon-leaf"></i> Perl入学式 in大阪 第1回</h4>
+        <div class="medium-4 large-4 columns ">
+            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-osaka.doorkeeper.jp/">Perl入学式 in大阪</a> 第1回</h4>
+            <p class="date">
+                近日募集開始予定!
+            </p>
+        </div>
+        <div class="medium-4 large-4 columns ">
+            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-okinawa.doorkeeper.jp/">Perl入学式 in沖縄</a> 第1回</h4>
             <p class="date">
                 近日募集開始予定!
             </p>
@@ -139,7 +145,7 @@ template: index
               accepted = event["accepted"], // 参加者
               limit    = event["limit"];    // 定員
           if ( typeof waiting !== "undefined" && typeof accepted !== "undefined" && typeof limit !== "undefined" ) {
-            $info_container.html(limit+"人 (現在"+accepted+"名参加、"+waiting+"名補欠)");
+            $info_container.html(limit+"人 (現在"+accepted+"名参加, "+waiting+"名補欠)");
           } else {
             $info_container.html("(データ取得ができませんでした)");
           }
@@ -164,7 +170,7 @@ template: index
               accepted = event["accepted"], // 参加者
               limit    = event["limit"];    // 定員
           if ( typeof waiting !== "undefined" && typeof accepted !== "undefined" && typeof limit !== "undefined" ) {
-            $info_container.html(limit+"人 (現在"+accepted+"名参加、"+waiting+"名補欠)");
+            $info_container.html(limit+"人 (現在"+accepted+"名参加, "+waiting+"名補欠)");
           } else {
             $info_container.html("(データ取得ができませんでした)");
           }
@@ -189,7 +195,7 @@ template: index
               accepted = event["accepted"], // 参加者
               limit    = event["limit"];    // 定員
           if ( typeof waiting !== "undefined" && typeof accepted !== "undefined" && typeof limit !== "undefined" ) {
-            $info_container.html(limit+"人 (現在"+accepted+"名参加、"+waiting+"名補欠)");
+            $info_container.html(limit+"人 (現在"+accepted+"名参加, "+waiting+"名補欠)");
           } else {
             $info_container.html("(データ取得ができませんでした)");
           }
@@ -214,7 +220,7 @@ template: index
               accepted = event["participants"], // 参加者
               limit    = event["ticket_limit"]; // 定員
           if ( typeof waiting !== "undefined" && typeof accepted !== "undefined" && typeof limit !== "undefined" ) {
-            $info_container.html(limit+"人 (現在"+accepted+"名参加、"+waiting+"名補欠)");
+            $info_container.html(limit+"人 (現在"+accepted+"名参加, "+waiting+"名補欠)");
           } else {
             $info_container.html("(データ取得ができませんでした)");
           }
