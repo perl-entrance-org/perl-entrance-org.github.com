@@ -135,6 +135,7 @@ template: index
     $.each(["fukuoka", "gotanda", "tokyo-hokou"], function(index, region){
       var $info_container = $("#"+region+"-capacity-information"),
           get_url = endpoint_url+"?event_id="+PerlEntrance.zusaar_event_id[region]+"&format=jsonp";
+      if ( !$info_container[0] ) return;
       $.ajax({
         url: get_url,
         type: "GET",
@@ -160,6 +161,7 @@ template: index
     $.each(["perlbeginners"], function(index, region){
       var $info_container = $("#"+region+"-capacity-information"),
           get_url = endpoint_url+"?event_id="+PerlEntrance.atndbeta_event_id[region]+"&format=jsonp";
+      if ( !$info_container[0] ) return;
       $.ajax({
         url: get_url,
         type: "GET",
@@ -185,6 +187,7 @@ template: index
     $.each(["tenjinperl"], function(index, region){
       var $info_container = $("#"+region+"-capacity-information"),
           get_url = endpoint_url+"?event_id="+PerlEntrance.connpass_event_id[region]+"&format=json";
+      if ( !$info_container[0] ) return;
       $.ajax({
         url: get_url,
         type: "GET",
@@ -210,6 +213,7 @@ template: index
     $.each(["tokyo", "osaka", "naniwaperl"], function(index, region){
       var $info_container = $("#"+region+"-capacity-information"),
           get_url = endpoint_url+PerlEntrance.doorkeeper_event_id[region];
+      if ( !$info_container[0] ) return;
       $.ajax({
         url: get_url,
         type: "GET",
