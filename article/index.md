@@ -10,12 +10,10 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
+                <dt>2016.04.20</dt>
+                <dd><a href="https://perl-entrance-tokyo.doorkeeper.jp/events/43624">Perl入学式 in沖縄 第1回 環境構築編</a>のDoorKeeperを公開しました!</dd>
                 <dt>2016.04.11</dt>
-                <dd><a href="https://perl-entrance-tokyo.doorkeeper.jp/events/42912">Perl入学式 in 東京 第1回 環境構築編</a>のDoorKeeperを公開しました!</dd>
-                <dt>2016.02.04</dt>
-                <dd><a href="https://perl-entrance-osaka.doorkeeper.jp/events/38861">Perl入学式 in 大阪 第6回 モジュール/テスト編</a>のDoorKeeperを公開しました!</dd>
-                <dt>2016.01.08</dt>
-                <dd><a href="http://www.zusaar.com/event/14267004">Perl入学式 in 東京 第6回 モジュール/テスト編</a>のZusaarを公開しました!</dd>
+                <dd><a href="https://perl-entrance-tokyo.doorkeeper.jp/events/42912">Perl入学式 in東京 第1回 環境構築編</a>のDoorKeeperを公開しました!</dd>
             </dl>
         </div>
     </div>
@@ -94,8 +92,28 @@ template: index
         <div class="medium-4 large-4 columns ">
             <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-okinawa.doorkeeper.jp/">Perl入学式 in沖縄</a> 第1回</h4>
             <p class="date">
-                近日募集開始予定!
+                2016年6月18日（土）
+                <!-- <span>次回の告知をお待ちください.</span> -->
             </p>
+            <table class="detail">
+                <tr>
+                    <th>時間</th>
+                    <td>10:00 - 18:00<br>（環境によって参加時間が異なります）</td>
+                </tr>
+                    <tr>
+                    <th>定員</th>
+                    <td><span id="okinawa-capacity-information"></span></td>
+                </tr>
+                <tr>
+                    <th>会場</th>
+                    <td>琉球大学 地域創生総合研究棟 5F</td>
+                </tr>
+                <tr>
+                    <th>住所</th>
+                    <td><a href="https://www.google.co.jp/maps/place/26%C2%B014'51.3%22N+127%C2%B045'55.0%22E/@26.2475893,127.7631009,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0" target="_blank">沖縄県中頭郡西原町字千原1番地</a></td>
+                </tr>
+            </table>
+            <p><a href="https://perl-entrance-okinawa.doorkeeper.jp/events/43624" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
     </div>
 
@@ -106,111 +124,18 @@ template: index
 <script src="http://code.jquery.com/jquery.js"></script>
 <script type="text/javascript">
   var PerlEntrance = {
-    "zusaar_event_id": {
-      //"tokyo":   "14267004",
-      //"tokyo-hokou": "15297004", // 本講と補講を併記する場合にはこれで
-      "fukuoka": "11197005",
-      "gotanda": "10047005"
-    },
-    "atndbeta_event_id": {
-      "perlbeginners": "59344"
-    },
-    "connpass_event_id": {
-      "tenjinperl": "8717"
-    },
     "doorkeeper_event_id": {
       "tokyo": "42912",
-      "naniwaperl": "20164",
-      "osaka": "38861"
+      "osaka": "",
+      "okinawa": "43624",
     },
-    "zusaar_api_endpoint_url": "http://www.zusaar.com/api/event/",
-    "atndbeta_api_endpoint_url": "http://api.atnd.org/events/",
-    "connpass_api_endpoint_url": "http://connpass.com/api/v1/event/",
     "doorkeeper_api_endpoint_url": "http://api.doorkeeper.jp/events/"
   };
-
-  // Zusaar
-  $(document).ready(function(){
-    var endpoint_url = PerlEntrance.zusaar_api_endpoint_url;
-    $.each(["fukuoka", "gotanda", "tokyo-hokou"], function(index, region){
-      var $info_container = $("#"+region+"-capacity-information"),
-          get_url = endpoint_url+"?event_id="+PerlEntrance.zusaar_event_id[region]+"&format=jsonp";
-      if ( !$info_container[0] ) return;
-      $.ajax({
-        url: get_url,
-        type: "GET",
-        dataType: "jsonp",
-        success: function(json) {
-          var event = json.event[0],
-              waiting  = event["waiting"],  // 補欠者
-              accepted = event["accepted"], // 参加者
-              limit    = event["limit"];    // 定員
-          if ( typeof waiting !== "undefined" && typeof accepted !== "undefined" && typeof limit !== "undefined" ) {
-            $info_container.html(limit+"人 (現在"+accepted+"名参加, "+waiting+"名補欠)");
-          } else {
-            $info_container.html("(データ取得ができませんでした)");
-          }
-        }
-      });
-    });
-  });
-
-  // ATND beta
-  $(document).ready(function(){
-    var endpoint_url = PerlEntrance.atndbeta_api_endpoint_url;
-    $.each(["perlbeginners"], function(index, region){
-      var $info_container = $("#"+region+"-capacity-information"),
-          get_url = endpoint_url+"?event_id="+PerlEntrance.atndbeta_event_id[region]+"&format=jsonp";
-      if ( !$info_container[0] ) return;
-      $.ajax({
-        url: get_url,
-        type: "GET",
-        dataType: "jsonp",
-        success: function(json) {
-          var event = json.events[0].event,
-              waiting  = event["waiting"],  // 補欠者
-              accepted = event["accepted"], // 参加者
-              limit    = event["limit"];    // 定員
-          if ( typeof waiting !== "undefined" && typeof accepted !== "undefined" && typeof limit !== "undefined" ) {
-            $info_container.html(limit+"人 (現在"+accepted+"名参加, "+waiting+"名補欠)");
-          } else {
-            $info_container.html("(データ取得ができませんでした)");
-          }
-        }
-      });
-    });
-  });
-
-  // Connpass
-  $(document).ready(function(){
-    var endpoint_url = PerlEntrance.connpass_api_endpoint_url;
-    $.each(["tenjinperl"], function(index, region){
-      var $info_container = $("#"+region+"-capacity-information"),
-          get_url = endpoint_url+"?event_id="+PerlEntrance.connpass_event_id[region]+"&format=json";
-      if ( !$info_container[0] ) return;
-      $.ajax({
-        url: get_url,
-        type: "GET",
-        dataType: "jsonp",
-        success: function(json) {
-          var event = json.events[0],
-              waiting  = event["waiting"],  // 補欠者
-              accepted = event["accepted"], // 参加者
-              limit    = event["limit"];    // 定員
-          if ( typeof waiting !== "undefined" && typeof accepted !== "undefined" && typeof limit !== "undefined" ) {
-            $info_container.html(limit+"人 (現在"+accepted+"名参加, "+waiting+"名補欠)");
-          } else {
-            $info_container.html("(データ取得ができませんでした)");
-          }
-        }
-      });
-    });
-  });
 
   // Doorkeeper
   $(document).ready(function(){
     var endpoint_url = PerlEntrance.doorkeeper_api_endpoint_url;
-    $.each(["tokyo", "osaka", "naniwaperl"], function(index, region){
+    $.each(["tokyo", "osaka", "okinawa"], function(index, region){
       var $info_container = $("#"+region+"-capacity-information"),
           get_url = endpoint_url+PerlEntrance.doorkeeper_event_id[region];
       if ( !$info_container[0] ) return;
