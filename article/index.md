@@ -12,6 +12,8 @@ template: index
                 <dl class="article">
                 <dt>2016.05.16</dt>
                 <dd><a href="https://perl-entrance-tokyo.doorkeeper.jp/events/45105">Perl入学式 in東京 第2回 基礎構文編</a>のDoorKeeperを公開しました!</dd>
+                <dt>2016.05.08</dt>
+                <dd>ブログ記事 <a href="http://perl-entrance.blog.jp/archives/1056893284.html">2016年度のPerl入学式についての概要</a> を公開しました!</dd>
                 <dt>2016.04.28</dt>
                 <dd><a href="https://perl-entrance-osaka.doorkeeper.jp/events/44121">Perl入学式 in大阪 第1回 環境構築編</a>のDoorKeeperを公開しました!</dd>
                 <dt>2016.04.20</dt>
