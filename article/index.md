@@ -15,7 +15,7 @@ template: index
                 <dt>2016.04.20</dt>
                 <dd><a href="https://perl-entrance-okinawa.doorkeeper.jp/events/43624">Perl入学式 in沖縄 第1回 環境構築編</a>のDoorKeeperを公開しました!</dd>
                 <dt>2016.04.11</dt>
-                <dd><a href="https://perl-entrance-tokyo.doorkeeper.jp/events/42912">Perl入学式 in東京 第1回 環境構築編</a>のDoorKeeperを公開しました!</dd>
+                <dd><a href="https://perl-entrance-tokyo.doorkeeper.jp/events/45105">Perl入学式 in東京 第2回 構文基礎編</a>のDoorKeeperを公開しました!</dd>
             </dl>
         </div>
     </div>
@@ -60,15 +60,15 @@ template: index
     </div>
     <div class="row">
         <div class="medium-4 large-4 columns ">
-            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-tokyo.doorkeeper.jp/">Perl入学式 in東京</a> 第1回</h4>
+            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-tokyo.doorkeeper.jp/">Perl入学式 in東京</a> 第2回</h4>
             <p class="date">
-                2016年5月14日（土）
+                2016年6月11日（土）
                 <!-- <span>次回の告知をお待ちください.</span> -->
             </p>
             <table class="detail">
                 <tr>
                     <th>時間</th>
-                    <td>10:00 - 18:00<br>（環境によって参加時間が異なります）</td>
+                    <td>13:00 - 18:00<br>（環境によって参加時間が異なります）</td>
                 </tr>
                     <tr>
                     <th>定員</th>
@@ -147,7 +147,7 @@ template: index
 <script type="text/javascript">
   var PerlEntrance = {
     "doorkeeper_event_id": {
-      "tokyo": "42912",
+      "tokyo": "45105",
       "osaka": "44121",
       "okinawa": "43624",
     },
