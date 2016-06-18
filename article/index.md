@@ -11,6 +11,8 @@ template: index
         <div class="listed column">
                 <dl class="article">
                 <dt>2016.06.12</dt>
+                <dd><a href="https://perl-entrance-osaka.doorkeeper.jp/events/47135">Perl入学式 in東京 第3回 〜配列/ハッシュ編〜</a>のDoorKeeperを公開しました!</dd>
+                <dt>2016.05.16</dt>
                 <dd><a href="https://perl-entrance-osaka.doorkeeper.jp/events/47094">Perl入学式 in大阪 第2回 基礎構文編</a>のDoorKeeperを公開しました!</dd>
                 <dt>2016.05.16</dt>
                 <dd><a href="https://perl-entrance-tokyo.doorkeeper.jp/events/45105">Perl入学式 in東京 第2回 基礎構文編</a>のDoorKeeperを公開しました!</dd>
@@ -66,15 +68,15 @@ template: index
     </div>
     <div class="row">
         <div class="medium-4 large-4 columns ">
-            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-tokyo.doorkeeper.jp/">Perl入学式 in東京</a> 第2回</h4>
+            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-tokyo.doorkeeper.jp/">Perl入学式 in東京</a> 第3回</h4>
             <p class="date">
-                2016年6月11日（土）
+                2016年7月9日（土）
                 <!-- <span>次回の告知をお待ちください.</span> -->
             </p>
             <table class="detail">
                 <tr>
                     <th>時間</th>
-                    <td>13:00 - 18:00<br>（環境によって参加時間が異なります）</td>
+                    <td>13:00 - 18:00<br></td>
                 </tr>
                     <tr>
                     <th>定員</th>
@@ -89,7 +91,7 @@ template: index
                     <td><a href="http://www.google.co.jp/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E8%A5%BF%E4%BA%94%E5%8F%8D%E7%94%B01-21-8+KSS%E4%BA%94%E5%8F%8D%E7%94%B0%E3%83%93%E3%83%AB+6F" target="_blank">東京都品川区西五反田1-21-8 KSS五反田ビル 6F </a></td>
                 </tr>
             </table>
-            <p><a href="https://perl-entrance-tokyo.doorkeeper.jp/events/45105" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p><a href="https://perl-entrance-tokyo.doorkeeper.jp/events/47135" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
         <div class="medium-4 large-4 columns ">
             <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-osaka.doorkeeper.jp/">Perl入学式 in大阪</a> 第2回</h4>
@@ -100,7 +102,7 @@ template: index
             <table class="detail">
                 <tr>
                     <th>時間</th>
-                    <td>13:00 - 17:30<br>（環境によって参加時間が異なります）</td>
+                    <td>13:00 - 17:30<br></td>
                 </tr>
                     <tr>
                     <th>定員</th>
@@ -153,7 +155,7 @@ template: index
 <script type="text/javascript">
   var PerlEntrance = {
     "doorkeeper_event_id": {
-      "tokyo": "45105",
+      "tokyo": "47135",
       "osaka": "47094",
       "okinawa": "43624",
     },
