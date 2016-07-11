@@ -81,7 +81,6 @@ Perl入学式のサポーター陣は、スタートアップメンバーだけ�
 <p>
 その他、わからないことなどあればいつでもサポーターに質問してください。<br>
 Twitter : <a href="https://twitter.com/Perl_Entrance">公式アカウント</a> / <a href="http://bit.ly/perlentrance-twitter-hashtag">ハッシュタグ</a><br>
-idobata : <a href="https://idobata.io/organizations/perl-entrance/rooms/bbs/join_request/5b474deb-feac-4cfd-8a37-9d1dd8026bff">Perl入学式 歓談所</a>
 </p>
 
 <p>
