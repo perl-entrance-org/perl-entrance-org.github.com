@@ -10,6 +10,8 @@ template: index
         </div>
         <div class="listed column">
                 <dl class="article">
+                <dt>2016.08.05</dt>
+                <dd><a href="https://perl-entrance-tokyo.doorkeeper.jp/events/50591">Perl入学式 in沖縄 第5回 〜Webアプリ編〜</a>のDoorKeeperを公開しました!</dd>
                 <dt>2016.08.01</dt>
                 <dd><a href="https://perl-entrance-okinawa.doorkeeper.jp/events/50325">Perl入学式 in沖縄 第2回 〜構文基礎編、配列/ハッシュ編〜</a>のDoorKeeperを公開しました!</dd>
                 <dt>2016.06.12</dt>
@@ -122,7 +124,7 @@ template: index
                     <th>時間</th>
                     <td>10:00 - 18:00<br>（環境によって参加時間が異なります）</td>
                 </tr>
-                    <tr>
+                <tr>
                     <th>定員</th>
                     <td><span id="okinawa-capacity-information"></span></td>
                 </tr>
@@ -137,6 +139,37 @@ template: index
             </table>
             <p><a href="https://perl-entrance-okinawa.doorkeeper.jp/events/43624" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
+
+<br>
+
+        <div class="medium-4 large-4 columns ">
+            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-tokyo.doorkeeper.jp/">Perl入学式 in東京</a> 第5回</h4>
+            <p class="date">
+                2016年9月3日（土）<br><strong>東京での直近の開催は8月20日の第4回です</strong>
+
+                <!--<span>次回の告知をお待ちください.</span>-->
+            </p>
+            <table class="detail">
+                <tr>
+                    <th>時間</th>
+                    <td>13:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <th>定員</th>
+                    <td><span id="tokyo-next-capacity-information"></span></td>
+                </tr>
+                <tr>
+                    <th>会場</th>
+                    <td><a href="http://www.gaiax.co.jp/corporate/access/" target="_blank">株式会社ガイアックス 6F セミナールーム </a></td>
+                </tr>
+                <tr>
+                    <th>住所</th>
+                    <td><a href="http://www.google.co.jp/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E8%A5%BF%E4%BA%94%E5%8F%8D%E7%94%B01-21-8+KSS%E4%BA%94%E5%8F%8D%E7%94%B0%E3%83%93%E3%83%AB+6F" target="_blank">東京都品川区西五反田1-21-8 KSS五反田ビル 6F </a></td>
+                </tr>
+            </table>
+            <p><a href="https://perl-entrance-tokyo.doorkeeper.jp/events/50591" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+        </div>
+
     </div>
 
     <div class="row headspace-20">
@@ -150,6 +183,7 @@ template: index
       "tokyo": "49460",
       "osaka": "47094",
       "okinawa": "50325",
+      "tokyo-next": "50591",
     },
     "doorkeeper_api_endpoint_url": "http://api.doorkeeper.jp/events/"
   };
@@ -157,7 +191,7 @@ template: index
   // Doorkeeper
   $(document).ready(function(){
     var endpoint_url = PerlEntrance.doorkeeper_api_endpoint_url;
-    $.each(["tokyo", "osaka", "okinawa"], function(index, region){
+    $.each(["tokyo", "osaka", "okinawa", "tokyo-next"], function(index, region){
       var $info_container = $("#"+region+"-capacity-information"),
           get_url = endpoint_url+PerlEntrance.doorkeeper_event_id[region];
       if ( !$info_container[0] ) return;
