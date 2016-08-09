@@ -10,7 +10,7 @@ template: index
         </div>
         <div class="listed column">
                 <dl class="article">
-                <dt>2016.08.9</dt>
+                <dt>2016.08.09</dt>
                 <dd><a href="https://perl-entrance-osaka.doorkeeper.jp/events/50716">Perl入学式 in大阪 第3回 〜配列/ハッシュ編〜</a>のDoorKeeperを公開しました!</dd>
                 <dt>2016.08.05</dt>
                 <dd><a href="https://perl-entrance-tokyo.doorkeeper.jp/events/50591">Perl入学式 in沖縄 第5回 〜Webアプリ編〜</a>のDoorKeeperを公開しました!</dd>
