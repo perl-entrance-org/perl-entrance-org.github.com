@@ -34,7 +34,7 @@
     </ul>
     <ul class="off-canvas-list">
         <li><a href="<: '/about.html' | uri_for :>"><i class="icon-world"></i> Perl入学式とは</a></li>
-        <li><a href="http://perl-entrance.blog.jp/" target="_blank"><i class="icon-news"></i> Perl入学式公式ブログ</a></li>
+        <li><a href="http://perl-entrance.blog.jp/" target="_blank"><i class="icon-news"></i> 公式ブログ</a></li>
     </ul>
     <ul class="off-canvas-list">
         <li><label> 講義資料</label></li>
@@ -47,8 +47,8 @@
         <li><a href="<: '/handout.html#handout-2012' | uri_for :>"><i class="icon-document-text"></i> 資料 (2012年)</a></li>
     </ul>
     <ul class="off-canvas-list">
-        <li><a href="<: '/calendar.html' | uri_for :>"><i class="icon-calender"></i> Perl入学式カレンダー</a></li>
-        <li><a href="https://docs.google.com/a/gaiax.com/forms/d/e/1FAIpQLScbWyg-cgcqilW7-BpKagRm2ldBhvwRBNr2N5eg3LHOK13FGw/viewform" class="" target="_blank"><i class=" icon-messages"></i>チャット招待フォーム(Slack)</a></li>
+        <li><a href="<: '/calendar.html' | uri_for :>"><i class="icon-calender"></i> カレンダー</a></li>
+        <li><a href="https://docs.google.com/a/gaiax.com/forms/d/e/1FAIpQLScbWyg-cgcqilW7-BpKagRm2ldBhvwRBNr2N5eg3LHOK13FGw/viewform" class="" target="_blank"><i class=" icon-messages"></i>チャット招待</a></li>
         <li><a href="https://github.com/perl-entrance-org" class="" target="_blank"><i class="icon-social-github"></i> GitHub</a></li>
         <li><a href="https://twitter.com/Perl_Entrance" class="" target="_blank"><i class="icon-social-twitter"></i> Twitter</a></li>
     </ul>
@@ -74,7 +74,7 @@
             </li>
             <li class="divider"></li>
             <li class="">
-                <li><a href="http://perl-entrance.blog.jp/" target="_blank"><i class="icon-news"></i> Perl入学式公式ブログ</a></li>
+                <li><a href="http://perl-entrance.blog.jp/" target="_blank"><i class="icon-news"></i> 公式ブログ</a></li>
             </li>
             <li class="divider"></li>
             <li class="has-dropdown">
@@ -91,11 +91,11 @@
             </li>
             <li class="divider"></li>
             <li class="">
-                <a href="<: '/calendar.html' | uri_for :>"><i class="icon-calender"></i> Perl入学式カレンダー</a>
+                <a href="<: '/calendar.html' | uri_for :>"><i class="icon-calender"></i> カレンダー</a>
             </li>
             <li class="divider"></li>
             <li class="">
-                <a href="https://docs.google.com/a/gaiax.com/forms/d/e/1FAIpQLScbWyg-cgcqilW7-BpKagRm2ldBhvwRBNr2N5eg3LHOK13FGw/viewform" class="" target="_blank"><i class=" icon-messages"></i>チャット招待フォーム(Slack)</a>
+                <a href="https://docs.google.com/a/gaiax.com/forms/d/e/1FAIpQLScbWyg-cgcqilW7-BpKagRm2ldBhvwRBNr2N5eg3LHOK13FGw/viewform" class="" target="_blank"><i class=" icon-messages"></i>チャット招待</a>
             </li>
             <li class="divider"></li>
             <li class="">
