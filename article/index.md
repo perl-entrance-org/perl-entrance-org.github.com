@@ -168,11 +168,16 @@ template: index
     "connpass_api_endpoint_url": "http://connpass.com/api/v1/event/",
     "doorkeeper_api_endpoint_url": "http://api.doorkeeper.jp/events/"
   };
+  function keys(hash) {
+    var keys = [];
+    for ( var key in hash ) keys.push(key);
+    return keys;
+  }
 
   // Zusaar
   $(document).ready(function(){
     var endpoint_url = PerlEntrance.zusaar_api_endpoint_url;
-    $.each([], function(index, region){
+    $.each(keys(PerlEntrance.zusaar_event_id), function(index, region){
       var $info_container = $("#"+region+"-capacity-information"),
           get_url = endpoint_url+"?event_id="+PerlEntrance.zusaar_event_id[region]+"&format=jsonp";
       if ( !$info_container[0] ) return;
@@ -198,7 +203,7 @@ template: index
   // ATND beta
   $(document).ready(function(){
     var endpoint_url = PerlEntrance.atndbeta_api_endpoint_url;
-    $.each([], function(index, region){
+    $.each(keys(PerlEntrance.atndbeta_event_id), function(index, region){
       var $info_container = $("#"+region+"-capacity-information"),
           get_url = endpoint_url+"?event_id="+PerlEntrance.atndbeta_event_id[region]+"&format=jsonp";
       if ( !$info_container[0] ) return;
@@ -224,7 +229,7 @@ template: index
   // Connpass
   $(document).ready(function(){
     var endpoint_url = PerlEntrance.connpass_api_endpoint_url;
-    $.each(["osaka"], function(index, region){
+    $.each(keys(PerlEntrance.connpass_event_id), function(index, region){
       var $info_container = $("#"+region+"-capacity-information"),
           get_url = endpoint_url+"?event_id="+PerlEntrance.connpass_event_id[region]+"&format=json";
       if ( !$info_container[0] ) return;
@@ -250,7 +255,7 @@ template: index
   // Doorkeeper
   $(document).ready(function(){
     var endpoint_url = PerlEntrance.doorkeeper_api_endpoint_url;
-    $.each(["tokyo", "okinawa"], function(index, region){
+    $.each(keys(PerlEntrance.doorkeeper_event_id), function(index, region){
       var $info_container = $("#"+region+"-capacity-information"),
           get_url = endpoint_url+PerlEntrance.doorkeeper_event_id[region];
       if ( !$info_container[0] ) return;
