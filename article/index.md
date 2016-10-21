@@ -151,18 +151,106 @@ template: index
 <script src="http://code.jquery.com/jquery.js"></script>
 <script type="text/javascript">
   var PerlEntrance = {
+    "zusaar_event_id": {
+    },
+    "atndbeta_event_id": {
+    },
+    "connpass_event_id": {
+      "osaka": "40957"
+    },
     "doorkeeper_event_id": {
       "tokyo": "50591",
-      "osaka": "50716",
-      "okinawa": "50325",
+      //"osaka": "50716",
+      "okinawa": "50325"
     },
+    "zusaar_api_endpoint_url": "http://www.zusaar.com/api/event/",
+    "atndbeta_api_endpoint_url": "http://api.atnd.org/events/",
+    "connpass_api_endpoint_url": "http://connpass.com/api/v1/event/",
     "doorkeeper_api_endpoint_url": "http://api.doorkeeper.jp/events/"
   };
+
+  // Zusaar
+  $(document).ready(function(){
+    var endpoint_url = PerlEntrance.zusaar_api_endpoint_url;
+    $.each([], function(index, region){
+      var $info_container = $("#"+region+"-capacity-information"),
+          get_url = endpoint_url+"?event_id="+PerlEntrance.zusaar_event_id[region]+"&format=jsonp";
+      if ( !$info_container[0] ) return;
+      $.ajax({
+        url: get_url,
+        type: "GET",
+        dataType: "jsonp",
+        success: function(json) {
+          var event = json.event[0],
+              waiting  = event["waiting"],  // 補欠者
+              accepted = event["accepted"], // 参加者
+              limit    = event["limit"];    // 定員
+          if ( typeof waiting !== "undefined" && typeof accepted !== "undefined" && typeof limit !== "undefined" ) {
+            $info_container.html(limit+"人 (現在"+accepted+"名参加, "+waiting+"名補欠)");
+          } else {
+            $info_container.html("(データ取得ができませんでした)");
+          }
+        }
+      });
+    });
+  });
+
+  // ATND beta
+  $(document).ready(function(){
+    var endpoint_url = PerlEntrance.atndbeta_api_endpoint_url;
+    $.each([], function(index, region){
+      var $info_container = $("#"+region+"-capacity-information"),
+          get_url = endpoint_url+"?event_id="+PerlEntrance.atndbeta_event_id[region]+"&format=jsonp";
+      if ( !$info_container[0] ) return;
+      $.ajax({
+        url: get_url,
+        type: "GET",
+        dataType: "jsonp",
+        success: function(json) {
+          var event = json.events[0].event,
+              waiting  = event["waiting"],  // 補欠者
+              accepted = event["accepted"], // 参加者
+              limit    = event["limit"];    // 定員
+          if ( typeof waiting !== "undefined" && typeof accepted !== "undefined" && typeof limit !== "undefined" ) {
+            $info_container.html(limit+"人 (現在"+accepted+"名参加, "+waiting+"名補欠)");
+          } else {
+            $info_container.html("(データ取得ができませんでした)");
+          }
+        }
+      });
+    });
+  });
+
+  // Connpass
+  $(document).ready(function(){
+    var endpoint_url = PerlEntrance.connpass_api_endpoint_url;
+    $.each(["osaka"], function(index, region){
+      var $info_container = $("#"+region+"-capacity-information"),
+          get_url = endpoint_url+"?event_id="+PerlEntrance.connpass_event_id[region]+"&format=json";
+      if ( !$info_container[0] ) return;
+      $.ajax({
+        url: get_url,
+        type: "GET",
+        dataType: "jsonp",
+        success: function(json) {
+          var event = json.events[0],
+              waiting  = event["waiting"],  // 補欠者
+              accepted = event["accepted"], // 参加者
+              limit    = event["limit"];    // 定員
+          if ( typeof waiting !== "undefined" && typeof accepted !== "undefined" && typeof limit !== "undefined" ) {
+            $info_container.html(limit+"人 (現在"+accepted+"名参加, "+waiting+"名補欠)");
+          } else {
+            $info_container.html("(データ取得ができませんでした)");
+          }
+        }
+      });
+    });
+  });
 
   // Doorkeeper
   $(document).ready(function(){
     var endpoint_url = PerlEntrance.doorkeeper_api_endpoint_url;
-    $.each(["tokyo", "osaka", "okinawa"], function(index, region){
+    $.each(["tokyo", "okinawa"], function(index, region){
       var $info_container = $("#"+region+"-capacity-information"),
           get_url = endpoint_url+PerlEntrance.doorkeeper_event_id[region];
       if ( !$info_container[0] ) return;
