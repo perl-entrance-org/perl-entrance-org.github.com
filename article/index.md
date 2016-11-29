@@ -63,15 +63,15 @@ template: index
     </div>
     <div class="row">
         <div class="medium-4 large-4 columns ">
-            <h4><i class="icon-leaf"></i> <a href="http://perl-entrance-tokyo.connpass.com/">Perl入学式 in東京</a> 第1回</h4>
+            <h4><i class="icon-leaf"></i> <a href="http://perl-entrance-tokyo.connpass.com/">Perl入学式 in東京</a> 第2回</h4>
             <p class="date">
-                2016年11月26日（土）
+                2016年12月17日（土）
                 <!--<span>次回の告知をお待ちください.</span>-->
             </p>
             <table class="detail">
                 <tr>
                     <th>時間</th>
-                    <td>13:00 - 19:00</td>
+                    <td>13:00 - 18:00</td>
                 </tr>
                 <tr>
                     <th>定員</th>
@@ -86,7 +86,7 @@ template: index
                     <td><a href="http://www.mobilefactory.jp/corporate/access" target="_blank">東京都品川区東五反田1-24-2 東五反田1丁目ビル8階</a></td>
                 </tr>
             </table>
-            <p><a href="http://perl-entrance-tokyo.connpass.com/event/43693/" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p><a href="http://perl-entrance-tokyo.connpass.com/event/45709/" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
 
         <div class="medium-4 large-4 columns ">
@@ -156,7 +156,7 @@ template: index
     },
     "connpass_event_id": {
       "osaka": "40957",
-      "tokyo": "43693"
+      "tokyo": "45709"
     },
     "doorkeeper_event_id": {
       "okinawa": "50325"
