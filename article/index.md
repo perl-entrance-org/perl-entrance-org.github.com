@@ -10,15 +10,14 @@ template: index
         </div>
         <div class="listed column">
                 <dl class="article">
+                <dt>2016.11.29</dt>
+                <dd><a href="http://perl-entrance-tokyo.connpass.com/event/45709/">Perl入学式 in東京 第2回 〜構文基礎編〜</a>のConnpassを公開しました!</dd>
                 <dt>2016.10.27</dt>
                 <dd><a href="http://perl-entrance-tokyo.connpass.com/event/43693/">Perl入学式 in東京 第1回 〜環境構築編〜</a>のConnpassを公開しました!</dd>
+                <dt>2016.10.27</dt>
                 <dd><a href="http://perl-entrance-osaka.connpass.com/event/40957/">Perl入学式 in大阪 第4回 〜サブルーチン/正規表現編〜</a>のConnpassを公開しました!</dd>
                 <dt>2016.08.09</dt>
                 <dd><a href="https://perl-entrance-osaka.doorkeeper.jp/events/50716">Perl入学式 in大阪 第3回 〜配列/ハッシュ編〜</a>のDoorKeeperを公開しました!</dd>
-                <dt>2016.08.05</dt>
-                <dd><a href="https://perl-entrance-tokyo.doorkeeper.jp/events/50591">Perl入学式 in東京 第5回 〜Webアプリ編〜</a>のDoorKeeperを公開しました!</dd>
-                <dt>2016.08.01</dt>
-                <dd><a href="https://perl-entrance-okinawa.doorkeeper.jp/events/50325">Perl入学式 in沖縄 第2回 〜構文基礎編、配列/ハッシュ編〜</a>のDoorKeeperを公開しました!</dd>
             </dl>
         </div>
     </div>
