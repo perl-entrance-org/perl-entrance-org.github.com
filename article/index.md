@@ -9,15 +9,9 @@ template: index
             </center>
         </div>
         <div class="listed column">
-                <dl class="article">
-                <dt>2016.11.29</dt>
-                <dd><a href="http://perl-entrance-tokyo.connpass.com/event/45709/">Perl入学式 in東京 第2回 〜構文基礎編〜</a>のConnpassを公開しました!</dd>
-                <dt>2016.10.27</dt>
-                <dd><a href="http://perl-entrance-tokyo.connpass.com/event/43693/">Perl入学式 in東京 第1回 〜環境構築編〜</a>のConnpassを公開しました!</dd>
-                <dt>2016.10.27</dt>
-                <dd><a href="http://perl-entrance-osaka.connpass.com/event/40957/">Perl入学式 in大阪 第4回 〜サブルーチン/正規表現編〜</a>のConnpassを公開しました!</dd>
-                <dt>2016.08.09</dt>
-                <dd><a href="https://perl-entrance-osaka.doorkeeper.jp/events/50716">Perl入学式 in大阪 第3回 〜配列/ハッシュ編〜</a>のDoorKeeperを公開しました!</dd>
+            <dl class="article">
+                <dt>2017.01.01</dt>
+                <dd>2017年もPerl入学式を宜しくお願い致します!</dd>
             </dl>
         </div>
     </div>
@@ -89,9 +83,9 @@ template: index
         </div>
 
         <div class="medium-4 large-4 columns ">
-            <h4><i class="icon-leaf"></i> <a href="http://perl-entrance-osaka.connpass.com/">Perl入学式 in大阪</a> 第4回</h4>
+            <h4><i class="icon-leaf"></i> <a href="http://perl-entrance-osaka.connpass.com/">Perl入学式 in大阪</a> 第5回</h4>
             <p class="date">
-                2016年11月26日（土）
+                2017年1月21日（土）
                 <!-- <span>次回の告知をお待ちください.</span> -->
             </p>
             <table class="detail">
@@ -112,18 +106,18 @@ template: index
                     <td><a href="https://www.google.co.jp/maps?q=%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%8C%97%E5%8C%BA%E8%8A%9D%E7%94%B02%E4%B8%81%E7%9B%AE5%E2%88%926" target="_blank">大阪府大阪市北区芝田2丁目5−6</a></td>
                 </tr>
             </table>
-            <p><a href="http://perl-entrance-osaka.connpass.com/event/40957/" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p><a href="http://perl-entrance-osaka.connpass.com/event/47105/" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
         <div class="medium-4 large-4 columns ">
-            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-okinawa.doorkeeper.jp/">Perl入学式 in沖縄</a> 第2回</h4>
+            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-okinawa.connpass.com/">Perl入学式 in沖縄</a> 第3回</h4>
             <p class="date">
-                2016年8月27日（土）
+                2016年2月4日（土）
                 <!--<span>次回の告知をお待ちください.</span>-->
             </p>
             <table class="detail">
                 <tr>
                     <th>時間</th>
-                    <td>10:00 - 18:00<br>（環境によって参加時間が異なります）</td>
+                    <td>13:00 - 18:00</td>
                 </tr>
                 <tr>
                     <th>定員</th>
@@ -138,7 +132,7 @@ template: index
                     <td><a href="https://www.google.co.jp/maps/place/26%C2%B014'51.3%22N+127%C2%B045'55.0%22E/@26.2475893,127.7631009,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0" target="_blank">沖縄県中頭郡西原町字千原1番地</a></td>
                 </tr>
             </table>
-            <p><a href="https://perl-entrance-okinawa.doorkeeper.jp/events/50325" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p><a href="https://perl-entrance-okinawa.connpass.com/event/47948/" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
     </div>
 
@@ -154,11 +148,11 @@ template: index
     "atndbeta_event_id": {
     },
     "connpass_event_id": {
-      "osaka": "40957",
-      "tokyo": "47124"
+      "osaka": "47105",
+      "tokyo": "47124",
+      "okinawa": "47948"
     },
     "doorkeeper_event_id": {
-      "okinawa": "50325"
     },
     "zusaar_api_endpoint_url": "http://www.zusaar.com/api/event/",
     "atndbeta_api_endpoint_url": "http://api.atnd.org/events/",
