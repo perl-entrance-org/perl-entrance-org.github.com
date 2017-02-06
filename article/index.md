@@ -147,6 +147,7 @@ template: index
     },
     "atndbeta_event_id": {
     },
+    // 自動で生成されます！ line: 221
     "connpass_event_id": {
     },
     "doorkeeper_event_id": {
@@ -218,7 +219,7 @@ template: index
   $(document).ready(function(){
     var endpoint_url = PerlEntrance.connpass_api_endpoint_url;
     $(".row .event-page a").each(function(i, v) {
-        var match = $(v).attr("href").match(/perl-entrance-([a-z]+?)\..*\/([0-9]+)\/?$/)
+        var match = $(v).attr("href").match(/perl-entrance-([a-z]+?)\.connpass\.com\/event\/([0-9]+)\/?$/)
         PerlEntrance["connpass_event_id"][match[1]] = match[2]
     })
     $.each(keys(PerlEntrance.connpass_event_id), function(index, region){
