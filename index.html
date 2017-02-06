@@ -223,7 +223,7 @@
                     <td><a href="http://www.mobilefactory.jp/corporate/access" target="_blank">東京都品川区東五反田1-24-2 東五反田1丁目ビル8階</a></td>
                 </tr>
             </table>
-            <p><a href="http://perl-entrance-tokyo.connpass.com/event/47124/" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p class="event-page"><a href="http://perl-entrance-tokyo.connpass.com/event/47124/" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
 
         <div class="medium-4 large-4 columns ">
@@ -250,12 +250,12 @@
                     <td><a href="https://www.google.co.jp/maps?q=%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%8C%97%E5%8C%BA%E8%8A%9D%E7%94%B02%E4%B8%81%E7%9B%AE5%E2%88%926" target="_blank">大阪府大阪市北区芝田2丁目5−6</a></td>
                 </tr>
             </table>
-            <p><a href="http://perl-entrance-osaka.connpass.com/event/47105/" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p class="event-page"><a href="http://perl-entrance-osaka.connpass.com/event/47105/" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
         <div class="medium-4 large-4 columns ">
-            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-okinawa.connpass.com/">Perl入学式 in沖縄</a> 第3回</h4>
+            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-okinawa.connpass.com/">Perl入学式 in沖縄</a> 第4回</h4>
             <p class="date">
-                2016年2月4日（土）
+                2016年2月25日（土）
                 <!--<span>次回の告知をお待ちください.</span>-->
             </p>
             <table class="detail">
@@ -269,14 +269,14 @@
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td>琉球大学 地域創生総合研究棟 5F</td>
+                    <td>Gwave 宜野湾ベイサイド情報センター 2F 研修室</td>
                 </tr>
                 <tr>
                     <th>住所</th>
-                    <td><a href="https://www.google.co.jp/maps/place/26%C2%B014'51.3%22N+127%C2%B045'55.0%22E/@26.2475893,127.7631009,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0" target="_blank">沖縄県中頭郡西原町字千原1番地</a></td>
+                    <td><a href="https://goo.gl/maps/fLi4FrJpX5x" target="_blank">〒901-2227 沖縄県宜野湾市宇地泊558-18, 宜野湾ベイサイド情報センター2F 研修室</a></td>
                 </tr>
             </table>
-            <p><a href="https://perl-entrance-okinawa.connpass.com/event/47948/" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p class="event-page"><a href="https://perl-entrance-okinawa.connpass.com/event/49648/" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
     </div>
 
@@ -296,10 +296,8 @@
     },
     "atndbeta_event_id": {
     },
+    // 自動で生成されます！ line: 221
     "connpass_event_id": {
-      "osaka": "47105",
-      "tokyo": "47124",
-      "okinawa": "47948"
     },
     "doorkeeper_event_id": {
     },
@@ -369,6 +367,11 @@
   // Connpass
   $(document).ready(function(){
     var endpoint_url = PerlEntrance.connpass_api_endpoint_url;
+    $(".row .event-page a").each(function(i, v) {
+        var matches = $(v).attr("href").match(/perl-entrance-([a-z]+?)\.connpass\.com\/event\/([0-9]+)\/?$/)
+        if (matches)
+            PerlEntrance["connpass_event_id"][matches[1]] = matches[2]
+    })
     $.each(keys(PerlEntrance.connpass_event_id), function(index, region){
       var $info_container = $("#"+region+"-capacity-information"),
           get_url = endpoint_url+"?event_id="+PerlEntrance.connpass_event_id[region]+"&format=json";
