@@ -56,9 +56,9 @@ template: index
     </div>
     <div class="row">
         <div class="medium-4 large-4 columns ">
-            <h4><i class="icon-leaf"></i> <a href="http://perl-entrance-tokyo.connpass.com/">Perl入学式 in東京</a> 第4回</h4>
+            <h4><i class="icon-leaf"></i> <a href="http://perl-entrance-tokyo.connpass.com/">Perl入学式 in東京</a> 第5回</h4>
             <p class="date">
-                2017年2月18日（土）
+                2017年3月11日（土）
                 <!--<span>次回の告知をお待ちください.</span>-->
             </p>
             <table class="detail">
@@ -72,14 +72,14 @@ template: index
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td><a href="http://www.gaiax.co.jp/" target="_blank">株式会社ガイアックス</a></td>
+                    <td><a href="http://www.gaiax.co.jp/" target="_blank">DNP五反田ビル</a></td>
                 </tr>
                 <tr>
                     <th>住所</th>
-                    <td><a href="http://www.mobilefactory.jp/corporate/access" target="_blank">東京都品川区西五反田1-21-8 KSS五反田ビル6階 セミナールーム1</a></td>
+                    <td><a href="http://www.mobilefactory.jp/corporate/access" target="_blank">東京都品川区西五反田3丁目5-20 DNP五反田ビル</a></td>
                 </tr>
             </table>
-            <p class="event-page"><a href="http://perl-entrance-tokyo.connpass.com/event/47584/" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+            <p class="event-page"><a href="http://perl-entrance-tokyo.connpass.com/event/49720/" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
 
         <div class="medium-4 large-4 columns ">
