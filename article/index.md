@@ -72,11 +72,11 @@ template: index
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td><a href="http://www.gaiax.co.jp/" target="_blank">DNP五反田ビル</a></td>
+                    <td><a href="http://www.dnp.co.jp/about/map/pdf/dnp_ope12_0607.pdf" target="_blank">DNP五反田ビル</a></td>
                 </tr>
                 <tr>
                     <th>住所</th>
-                    <td><a href="http://www.mobilefactory.jp/corporate/access" target="_blank">東京都品川区西五反田3丁目5-20 DNP五反田ビル</a></td>
+                    <td><a href="https://www.google.co.jp/maps/place/%E3%80%92141-0031+%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E8%A5%BF%E4%BA%94%E5%8F%8D%E7%94%B0%EF%BC%93%E4%B8%81%E7%9B%AE%EF%BC%95%E2%88%92%EF%BC%92%EF%BC%90+%EF%BC%A4%EF%BC%AE%EF%BC%B0%E4%BA%94%E5%8F%8D%E7%94%B0%E3%83%93%E3%83%AB/@35.6282857,139.7165794,17z/data=!3m1!4b1!4m5!3m4!1s0x60188ae2517bece1:0x9dab4589c8ce3502!8m2!3d35.6282947!4d139.7186636" target="_blank">東京都品川区西五反田3丁目5-20 DNP五反田ビル</a></td>
                 </tr>
             </table>
             <p class="event-page"><a href="http://perl-entrance-tokyo.connpass.com/event/49720/" class="button radius expand" target="_blank">詳細はこちら!</a></p>
