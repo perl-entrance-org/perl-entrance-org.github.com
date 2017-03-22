@@ -55,7 +55,7 @@ template: index
         </div>
     </div>
     <div class="row">
-        <div class="medium-4 large-4 columns ">
+        <div class="medium-4 large-6 columns ">
             <h4><i class="icon-leaf"></i> <a href="http://perl-entrance-tokyo.connpass.com/">Perl入学式 in東京</a> 第5回</h4>
             <p class="date">
                 2017年3月11日（土）
@@ -82,7 +82,7 @@ template: index
             <p class="event-page"><a href="http://perl-entrance-tokyo.connpass.com/event/49720/" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
 
-        <div class="medium-4 large-4 columns ">
+        <div class="medium-4 large-6 columns ">
             <h4><i class="icon-leaf"></i> <a href="http://perl-entrance-osaka.connpass.com/">Perl入学式 in大阪</a> 第5回</h4>
             <p class="date">
                 2017年1月21日（土）
@@ -108,7 +108,7 @@ template: index
             </table>
             <p class="event-page"><a href="http://perl-entrance-osaka.connpass.com/event/47105/" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
-        <div class="medium-4 large-4 columns ">
+        <div class="medium-4 large-6 columns ">
             <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-okinawa.connpass.com/">Perl入学式 in沖縄</a> 第4回</h4>
             <p class="date">
                 2016年2月25日（土）
@@ -133,6 +133,34 @@ template: index
                 </tr>
             </table>
             <p class="event-page"><a href="https://perl-entrance-okinawa.connpass.com/event/49648/" class="button radius expand" target="_blank">詳細はこちら!</a></p>
+        </div>
+        <div class="medium-4 large-6 columns ">
+            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-sapporo.connpass.com/">Perl入学式 in札幌</a> 第1回</h4>
+            <p class="date">
+                <!--2016年2月25日（土）-->
+                <span>次回の告知をお待ちください.</span>
+            </p>
+            <table class="detail">
+                <tr>
+                    <th>時間</th>
+                    <td>13:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <th>定員</th>
+                    <td><span id="sapporo-capacity-information"></span></td>
+                </tr>
+                <tr>
+                    <th>会場</th>
+                    <td>未定</td>
+                </tr>
+                <tr>
+                    <th>住所</th>
+                    <td>
+                        <!--<a href="http://www.mobilefactory.jp/corporate/access" target="_blank">東京都品川区西五反田3丁目5-20 DNP五反田ビル</a>-->
+                    </td>
+                </tr>
+            </table>
+            <p class="event-page"><a href="http://perl-entrance-sapporo.connpass.com/event//" class="button radius expand" target="_blank">詳細はこちら!</a></p>
         </div>
     </div>
 
