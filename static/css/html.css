@@ -361,24 +361,24 @@ header h5 {
 }
 
 #homepage-event .read-more {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 	vertical-align: bottom;
 }
 
 #homepage-event .event-page {
-    margin: 0;
+	margin: 0;
 }
 
 #homepage-event p.date {
 	font-size: 14px;
-    margin: 0;
+	margin: 0;
 }
 
 #homepage-event div.notice {
-    height: 18px;
-    margin: 0 0 4px 0;
-    text-align: left;
+	height: 18px;
+	margin: 0 0 4px 0;
+	text-align: left;
 	color: #999;
 	font-size: 11px;
 }
