@@ -127,7 +127,7 @@ template: index
         <div class="medium-6 large-6 columns next-event">
             <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-okinawa.connpass.com/">Perl入学式 in沖縄</a> 第1回</h4>
             <p class="date">
-                2016年4月22日（土）
+                2017年4月22日（土）
             </p>
             <div class="notice">
                 <!--次回の告知をお待ちください.-->
@@ -160,7 +160,7 @@ template: index
         <div class="medium-6 large-6 columns next-event">
             <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-sapporo.connpass.com/">Perl入学式 in札幌</a> 第1回</h4>
             <p class="date">
-                2016年4月15日（土）
+                2017年4月15日（土）
             </p>
             <div class="notice">
                 <a href = 'http://www.local.or.jp/about/students-transportation-expenses-support' target = '_blank'>LOCAL学生交通費支援制度</a>
