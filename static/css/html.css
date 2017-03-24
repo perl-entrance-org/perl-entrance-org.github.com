@@ -356,29 +356,13 @@ header h5 {
 	font-weight: bold;
 }
 
-#homepage-event .next-event {
-	height: 400px;
-}
-
-#homepage-event .read-more {
-	margin: 0;
-	padding: 0;
-	vertical-align: bottom;
-}
-
-#homepage-event .event-page {
-	margin: 0;
-}
-
 #homepage-event p.date {
 	font-size: 14px;
-	margin: 0;
+	margin-bottom: 15px;
 }
 
-#homepage-event div.notice {
-	height: 18px;
-	margin: 0 0 4px 0;
-	text-align: left;
+#homepage-event p.date span {
+	display: block;
 	color: #999;
 	font-size: 11px;
 }
@@ -395,11 +379,7 @@ header h5 {
 }
 
 #homepage-event table.detail th {
-	width: 20%;
-	height: 44px;
-}
-#homepage-event table.detail td {
-	line-height: 1.3em;
+	width: 25%;
 }
 
 @media screen and (min-width: 0px) and (max-width: 539px) {
