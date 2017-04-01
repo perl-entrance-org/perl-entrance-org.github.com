@@ -19,6 +19,28 @@ title: 講義資料
                     <p>
                         Perl入学式が提供する全ての資料のライセンスについては, <a href="<: '/license.html' | uri_for :>">ライセンス</a>のページからご確認下さい.
                     </p>
+                    <h2 id="handout-2017">2017年度 <small>Perl Entrance 2017</small></h2>
+                    <!-- <h4 class="subheader">#5</h4>
+                    <p>
+<a href="https://github.com/perl-entrance-org/workshop-2017/blob/master/5th/slide.md">資料</a>-->
+                    <!-- <h4 class="subheader">#4</h4>
+                    <p>
+<a href="https://github.com/perl-entrance-org/workshop-2017/blob/master/4th/slide.md">資料</a>
+                    </p>-->
+                    <!-- <h4 class="subheader">#3</h4>
+                    <p>
+<a href="https://github.com/perl-entrance-org/workshop-2017/blob/master/3rd/slide.md">資料</a>
+                    </p>-->
+                    <!-- <h4 class="subheader">#2</h4>
+                    <p>
+<a href="https://github.com/perl-entrance-org/workshop-2017/blob/master/2nd/slide.md">資料</a>
+                    </p>-->
+                    <h4 class="subheader">#1</h4>
+                    <p>
+<a href="https://github.com/perl-entrance-org/workshop-2017/blob/master/1st/part1.md">第1部資料</a>
+ / <a href="https://github.com/perl-entrance-org/workshop-2017/blob/master/1st/part2.md">第2部資料</a>
+  / <a href="https://github.com/perl-entrance-org/workshop-2017/blob/master/1st/part3.md">第3部資料</a>
+                    </p>
                     <h2 id="handout-2016">2016年度 <small>Perl Entrance 2016</small></h2>
                     <h4 class="subheader">#5</h4>
                     <p>
