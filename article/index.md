@@ -181,12 +181,12 @@ template: index
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td><a href="https://life-technology.co.jp/">株式会社LifeTech 札幌本社</a></td>
+                    <td><a href="http://hokkaido-incubation.jp/support_center/">北海道ビジネスサポートセンター</a></td>
                 </tr>
                 <tr>
                     <th>住所</th>
                     <td>
-                        <a href="https://www.google.co.jp/maps?q=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8C%974%E6%9D%A1%E8%A5%BF6-1+%E6%AF%8E%E6%97%A5%E6%9C%AD%E5%B9%8C%E4%BC%9A%E9%A4%A87F&zoom=17" target="_blank">北海道札幌市中央区北4条西6-1 毎日札幌会館7F</a>
+                        <a href="https://www.google.co.jp/maps?q=%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8C%97%EF%BC%91%E6%9D%A1%E8%A5%BF3%E4%B8%81%E7%9B%AE3-41(%E3%83%9E%E3%83%AB%E3%82%A4%E3%83%88%E6%99%82%E8%A8%88%E5%8F%B0%E5%89%8D%E3%83%93%E3%83%AB9%E9%9A%8E)&zoom=17" target="_blank">札幌市中央区北１条西3丁目3-41(マルイト時計台前ビル9階)</a>
                     </td>
                 </tr>
             </table>
