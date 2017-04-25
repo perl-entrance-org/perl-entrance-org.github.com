@@ -10,12 +10,12 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
+                <dt>2017.04.15</dt>
+                <dd>2017年度5月 Perl入学式第2会の開講情報を追加しました (東京,沖縄)</dd>
                 <dt>2017.03.29</dt>
                 <dd>2017年度5月 Perl入学式in大阪の開講情報を追加しました </dd>
                 <dt>2017.03.23</dt>
                 <dd>2017年度4月からのPerl入学式の開講情報を追加しました (札幌, 東京, 沖縄)</dd>
-                <dt>2017.01.01</dt>
-                <dd>2017年もPerl入学式を宜しくお願い致します!</dd>
             </dl>
         </div>
     </div>
@@ -60,9 +60,9 @@ template: index
     </div>
     <div class="row">
         <div class="medium-6 large-6 columns next-event">
-            <h4><i class="icon-leaf"></i> <a href="http://perl-entrance-tokyo.connpass.com/">Perl入学式 in東京</a> 第1回</h4>
+            <h4><i class="icon-leaf"></i> <a href="http://perl-entrance-tokyo.connpass.com/">Perl入学式 in東京</a> 第2回</h4>
             <p class="date">
-                2017年4月22日（土）
+                2017年5月20日（土）
             </p>
             <div class="notice">
                 <!--次回の告知をお待ちください.-->
@@ -70,7 +70,7 @@ template: index
             <table class="detail">
                 <tr>
                     <th>時間</th>
-                    <td>13:00 - 19:00</td>
+                    <td>13:00 - 18:00</td>
                 </tr>
                 <tr>
                     <th>定員</th>
@@ -87,7 +87,7 @@ template: index
             </table>
             <div class="read-more">
                 <p class="event-page">
-                    <a href="http://perl-entrance-tokyo.connpass.com/event/53584/" class="button radius expand" target="_blank">詳細はこちら!</a>
+                    <a href="https://perl-entrance-tokyo.connpass.com/event/54810/" class="button radius expand" target="_blank">詳細はこちら!</a>
                 </p>
             </div>
         </div>
@@ -127,9 +127,9 @@ template: index
     </div>
     <div class="row">
         <div class="medium-6 large-6 columns next-event">
-            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-okinawa.connpass.com/">Perl入学式 in沖縄</a> 第1回</h4>
+            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-okinawa.connpass.com/">Perl入学式 in沖縄</a> 第2回</h4>
             <p class="date">
-                2017年4月22日（土）
+                2017年5月27日（土）
             </p>
             <div class="notice">
                 <!--次回の告知をお待ちください.-->
@@ -137,7 +137,7 @@ template: index
             <table class="detail">
                 <tr>
                     <th>時間</th>
-                    <td>13:00 - 19:00</td>
+                    <td>13:00 - 18:00</td>
                 </tr>
                 <tr>
                     <th>定員</th>
@@ -154,7 +154,7 @@ template: index
             </table>
             <div class="read-more">
                 <p class="event-page">
-                    <a href="https://perl-entrance-okinawa.connpass.com/event/53680/" class="button radius expand" target="_blank">詳細はこちら!</a>
+                    <a href="https://perl-entrance-okinawa.connpass.com/event/54959/" class="button radius expand" target="_blank">詳細はこちら!</a>
                 </p>
             </div>
         </div>
