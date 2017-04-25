@@ -10,8 +10,8 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
-                <dt>2017.04.15</dt>
-                <dd>2017年度5月 Perl入学式第2会の開講情報を追加しました (東京,沖縄)</dd>
+                <dt>2017.04.25</dt>
+                <dd>2017年度5月 Perl入学式第2回の開講情報を追加しました (東京,沖縄)</dd>
                 <dt>2017.03.29</dt>
                 <dd>2017年度5月 Perl入学式in大阪の開講情報を追加しました </dd>
                 <dt>2017.03.23</dt>
