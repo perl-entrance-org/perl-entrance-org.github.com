@@ -160,9 +160,9 @@ template: index
         </div>
 
         <div class="medium-6 large-6 columns next-event">
-            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-sapporo.connpass.com/">Perl入学式 in札幌</a> 第1回</h4>
+            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-sapporo.connpass.com/">Perl入学式 in札幌</a> 第2回</h4>
             <p class="date">
-                2017年4月15日（土）
+                2017年6月3日（土）
             </p>
             <div class="notice">
                 <!--
@@ -173,7 +173,7 @@ template: index
             <table class="detail">
                 <tr>
                     <th>時間</th>
-                    <td>13:00 - 19:00</td>
+                    <td>13:00 - 18:00</td>
                 </tr>
                 <tr>
                     <th>定員</th>
@@ -192,7 +192,7 @@ template: index
             </table>
             <div class="read-more">
                 <p class="event-page">
-                    <a href="https://perl-entrance-sapporo.connpass.com/event/53585/" class="button radius expand" target="_blank">詳細はこちら!</a>
+                    <a href="https://perl-entrance-sapporo.connpass.com/event/56484/" class="button radius expand" target="_blank">詳細はこちら!</a>
                 </p>
             </div>
         </div>
