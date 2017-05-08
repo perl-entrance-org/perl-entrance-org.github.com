@@ -10,12 +10,12 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
+                <dt>2017.05.08</dt>
+                <dd>2017年度5月 Perl入学式in札幌,第2回の情報を追加しました.   in沖縄の会場を変更しました.<dd>
                 <dt>2017.04.25</dt>
                 <dd>2017年度5月 Perl入学式第2回の開講情報を追加しました (東京,沖縄)</dd>
                 <dt>2017.03.29</dt>
                 <dd>2017年度5月 Perl入学式in大阪の開講情報を追加しました </dd>
-                <dt>2017.03.23</dt>
-                <dd>2017年度4月からのPerl入学式の開講情報を追加しました (札幌, 東京, 沖縄)</dd>
             </dl>
         </div>
     </div>
@@ -145,7 +145,7 @@ template: index
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td>琉球大学 地域創生総合研究棟5階</td>
+                    <td>琉球大学 工学部1号館321教室</td>
                 </tr>
                 <tr>
                     <th>住所</th>
