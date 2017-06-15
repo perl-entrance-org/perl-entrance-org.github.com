@@ -10,12 +10,12 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
+                <dt>2017.06.15</dt>
+                <dd>2017年度7月 Perl入学式第2回の開講情報を追加しました (大阪)</dd>
                 <dt>2017.05.28</dt>
                 <dd>2017年度6月 Perl入学式第3回の開講情報を追加しました (東京,沖縄)</dd>
                 <dt>2017.05.08</dt>
                 <dd>2017年度5月 Perl入学式in札幌,第2回の情報を追加しました.   in沖縄の会場を変更しました.<dd>
-                <dt>2017.04.25</dt>
-                <dd>2017年度5月 Perl入学式第2回の開講情報を追加しました (東京,沖縄)</dd>
             </dl>
         </div>
     </div>
@@ -93,9 +93,9 @@ template: index
         </div>
 
         <div class="medium-6 large-6 columns next-event">
-            <h4><i class="icon-leaf"></i> <a href="http://perl-entrance-osaka.connpass.com/">Perl入学式 in大阪</a> 第1回</h4>
+            <h4><i class="icon-leaf"></i> <a href="http://perl-entrance-osaka.connpass.com/">Perl入学式 in大阪</a> 第2回</h4>
             <p class="date">
-                2017年5月27日（土）
+                2017年7月22日（土）
             </p>
             <div class="notice">
                 <!-- 次回の告知をお待ちください. -->
@@ -120,7 +120,7 @@ template: index
             </table>
             <div class="read-more">
                 <p class="event-page">
-                    <a href="http://perl-entrance-osaka.connpass.com/event/53693/" class="button radius expand" target="_blank">詳細はこちら!</a>
+                    <a href="http://perl-entrance-osaka.connpass.com/event/58624/" class="button radius expand" target="_blank">詳細はこちら!</a>
                 </p>
             </div>
         </div>
