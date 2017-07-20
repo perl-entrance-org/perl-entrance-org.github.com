@@ -130,7 +130,7 @@ template: index
     </div>
     <div class="row">
         <div class="medium-6 large-6 columns next-event">
-            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-okinawa.connpass.com/">Perl入学式 in沖縄</a> 第4回</h4>
+            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-okinawa.connpass.com/">Perl入学式 in沖縄</a> 第5回</h4>
             <p class="date">
                 2017年8月12日（土）
             </p>
