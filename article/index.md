@@ -54,7 +54,7 @@ template: index
 
 <section id="homepage-event">
     <div class="row">
-        <h2>2017年度のPerl入学式始動! 新たに札幌が仲間入り</h2>
+        <h2>2018年度のPerl入学式始動! </h2>
         <div class="large-12 columns">
         </div>
     </div>
