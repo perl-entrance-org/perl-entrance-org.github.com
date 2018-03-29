@@ -165,6 +165,7 @@ template: index
                 2017年10月14日（土）
             </p>
             <div class="notice">
+                次回の告知をお待ちください.
                 <!--
                 <a href = 'http://www.local.or.jp/about/students-transportation-expenses-support' target = '_blank'>LOCAL学生交通費支援制度</a>
                 がご利用いただけます.
