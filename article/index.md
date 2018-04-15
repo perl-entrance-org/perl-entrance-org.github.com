@@ -10,12 +10,12 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
+                <dt>2018.4.15</dt>
+                <dd>2018年度5月 Perl入学式第1回の開講情報を追加しました (福岡)</dd>
                 <dt>2018.3.29</dt>
                 <dd>2017年度4月 Perl入学式第1回の開講情報を追加しました (東京)</dd>
                 <dt>2018.3.27</dt>
                 <dd>2018年度5月 Perl入学式第1回の開講情報を追加しました (大阪)</dd>
-                <dt>2018.2.20</dt>
-                <dd>2017年度2月 Perl入学式第4回＆第5回の開講情報を追加しました (東京)</dd>
             </dl>
         </div>
     </div>
@@ -160,40 +160,37 @@ template: index
         </div>
 
         <div class="medium-6 large-6 columns next-event">
-            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-sapporo.connpass.com/">Perl入学式 in札幌</a> 第4回</h4>
+            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-fukuoka.connpass.com/">Perl入学式 in福岡</a> 第1回</h4>
             <p class="date">
-                2017年10月14日（土）
+                2018年5月19日（土）
             </p>
             <div class="notice">
-                次回の告知をお待ちください.
-                <!--
-                <a href = 'http://www.local.or.jp/about/students-transportation-expenses-support' target = '_blank'>LOCAL学生交通費支援制度</a>
-                がご利用いただけます.
-                -->
+                <!-- 次回の告知をお待ちください. -->
             </div>
             <table class="detail">
                 <tr>
                     <th>時間</th>
-                    <td>13:00 - 17:30</td>
+                    <td>13:00 - 19:00</td>
                 </tr>
                 <tr>
                     <th>定員</th>
-                    <td><span id="sapporo-capacity-information"></span></td>
+                    <td><span id="fukuoka-capacity-information"></span></td>
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td><a href="http://hokkaido-incubation.jp/support_center/">北海道ビジネスサポートセンター</a></td>
+                    <td><a href="https://fiilse.com/#company">株式会社フィールズ</a></td>
                 </tr>
                 <tr>
                     <th>住所</th>
                     <td>
-                        <a href="https://www.google.co.jp/maps?q=%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8C%97%EF%BC%91%E6%9D%A1%E8%A5%BF3%E4%B8%81%E7%9B%AE3-41(%E3%83%9E%E3%83%AB%E3%82%A4%E3%83%88%E6%99%82%E8%A8%88%E5%8F%B0%E5%89%8D%E3%83%93%E3%83%AB9%E9%9A%8E)&zoom=17" target="_blank">札幌市中央区北１条西3丁目3-41(マルイト時計台前ビル9階)</a>
+                        <a href="https://www.google.co.jp/maps/place/%E3%80%92810-0001+%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%A4%A9%E7%A5%9E%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%95%E2%88%92%EF%BC%92+6F/data=!4m2!3m1!1s0x354191923cc0b111:0xac1d6542880c5084?sa=X&ved=0ahUKEwiyr6f_mLraAhWGULwKHXEMDQoQ8gEIJzAA" target="_blank">福岡県福岡市中央区天神1-15-2
+第6明星ビル6F</a>
                     </td>
                 </tr>
             </table>
             <div class="read-more">
                 <p class="event-page">
-                    <a href="https://perl-entrance-sapporo.connpass.com/event/65516/" class="button radius expand" target="_blank">詳細はこちら!</a>
+                    <a href="https://perl-entrance-fukuoka.connpass.com/event/84255/" class="button radius expand" target="_blank">詳細はこちら!</a>
                 </p>
             </div>
         </div>
