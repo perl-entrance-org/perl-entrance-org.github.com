@@ -10,12 +10,12 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
+                <dt>2018.5.25</dt>
+                <dd>2018年度6月 Perl入学式第2回の開講情報を追加しました (沖縄)</dd>
                 <dt>2018.4.23</dt>
                 <dd>2017年度4月 Perl入学式第2回の開講情報を追加しました (東京)</dd>
                 <dt>2018.4.16</dt>
                 <dd>2018年度5月 Perl入学式第1回の開講情報を追加しました (沖縄)</dd>
-                <dt>2018.4.15</dt>
-                <dd>2018年度5月 Perl入学式第1回の開講情報を追加しました (福岡)</dd>
             </dl>
         </div>
     </div>
@@ -127,9 +127,9 @@ template: index
     </div>
     <div class="row">
         <div class="medium-6 large-6 columns next-event">
-            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-okinawa.connpass.com/">Perl入学式 in沖縄</a> 第1回</h4>
+            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-okinawa.connpass.com/">Perl入学式 in沖縄</a> 第2回</h4>
             <p class="date">
-                2018年5月19日（土）
+                2018年i6月23日（土）
             </p>
             <table class="detail">
                 <tr>
@@ -151,7 +151,7 @@ template: index
             </table>
             <div class="read-more">
                 <p class="event-page">
-                    <a href="https://perl-entrance-okinawa.connpass.com/event/83653/" class="button radius expand" target="_blank">詳細はこちら!</a>
+                    <a href="https://perl-entrance-okinawa.connpass.com/event/86372/" class="button radius expand" target="_blank">詳細はこちら!</a>
                 </p>
             </div>
         </div>
