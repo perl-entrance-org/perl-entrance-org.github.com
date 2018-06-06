@@ -193,6 +193,41 @@ template: index
         </div>
     </div>
 
+    <div class="row">
+        <div class="medium-6 large-6 columns next-event">
+            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-sapporo.connpass.com/">Perl入学式 札幌</a> 第1回</h4>
+            <p class="date">
+                2018年7月14日（土）
+            </p>
+            <table class="detail">
+                <tr>
+                    <th>時間</th>
+                    <td>13:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <th>定員</th>
+                    <td><span id="sapporo-capacity-information"></span></td>
+                </tr>
+                <tr>
+                    <th>会場</th>
+                    <td>札幌カフェ 5F</td>
+                </tr>
+                <tr>
+                    <th>住所</th>
+                    <td><a href="https://www.google.com/maps/place/%E6%97%A5%E6%9C%AC%E3%80%81%E3%80%92060-0808+%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E5%8C%97%E5%8C%BA%E5%8C%97%EF%BC%98%E6%9D%A1%E8%A5%BF%EF%BC%95%E4%B8%81%E7%9B%AE%EF%BC%92%E2%88%92%EF%BC%93/@43.070375,141.347724,16z/data=!4m5!3m4!1s0x5f0b290bab931abd:0x4b482f7e70bcb520!8m2!3d43.0703752!4d141.3477236?hl=ja" target="_blank">北海道札幌市北区北８条西５丁目２−３</a></td>
+                </tr>
+            </table>
+            <div class="read-more">
+                <p class="event-page">
+                    <a href="https://perl-entrance-sapporo.connpass.com/event/90548/" class="button radius expand" target="_blank">詳細はこちら!</a>
+                </p>
+            </div>
+        </div>
+
+
+
+    </div>
+
     <div class="row headspace-20">
     </div>
 </section>
