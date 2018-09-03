@@ -10,14 +10,14 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
+                <dt>2018.9.3</dt>
+                <dd>2018年度9月 Perl入学式第3回の開講情報を追加しました (福岡)</dd>
                 <dt>2018.8.18</dt>
                 <dd>2018年度8月 Perl入学式第3回の開講情報を追加しました (沖縄)</dd>
                 <dt>2018.8.4</dt>
                 <dd>2018年度9月 Perl入学式第3回の開講情報を追加しました (大阪)</dd>
                 <dt>2018.8.3</dt>
                 <dd>2018年度9月 Perl入学式第2回の開講情報を追加しました (札幌)</dd>
-                <dt>2018.7.31</dt>
-                <dd>2018年度8月 Perl入学式第3回の開講情報を追加しました (沖縄)</dd>
             </dl>
         </div>
     </div>
@@ -161,7 +161,7 @@ template: index
         <div class="medium-6 large-6 columns next-event">
             <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-fukuoka.connpass.com/">Perl入学式 in福岡</a> 第2回</h4>
             <p class="date">
-                2018年7月14日（土）
+                2018年9月29日（土）
             </p>
             <div class="notice">
                 <!-- 次回の告知をお待ちください. -->
@@ -177,18 +177,18 @@ template: index
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td><a href="http://www.i-hive.co.jp/">株式会社イーハイブ</a></td>
+                    <td><a href="https://fiilse.com/#company">株式会社フィールズ</a></td>
                 </tr>
                 <tr>
                     <th>住所</th>
                     <td>
-                        <a href="https://www.google.com/maps?ll=33.594978,130.400344&z=16&t=m&hl=ja&gl=US&mapclient=embed&q=%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%A4%A9%E7%A5%9E4-8-2+(%E5%A4%A9%E7%A5%9E%E3%83%93%E3%83%AB%E3%83%97%E3%83%A9%E3%82%B9%EF%BC%98F)" target="_blank">福岡県福岡市中央区天神4-8-2 (天神ビルプラス８F)</a>
+                        <a href="https://www.google.com/maps?ll=33.592315,130.402187&z=16&t=m&hl=ja&gl=US&mapclient=embed&q=%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%A4%A9%E7%A5%9E1-15-2(%E7%AC%AC6%E6%98%8E%E6%98%9F%E3%83%93%E3%83%AB6F)" target="_blank">福岡県福岡市中央区天神1-15-2(第6明星ビル6F)</a>
                     </td>
                 </tr>
             </table>
             <div class="read-more">
                 <p class="event-page">
-                    <a href="https://perl-entrance-fukuoka.connpass.com/event/90570/" class="button radius expand" target="_blank">詳細はこちら!</a>
+                    <a href="https://perl-entrance-fukuoka.connpass.com/event/99869/" class="button radius expand" target="_blank">詳細はこちら!</a>
                 </p>
             </div>
         </div>
