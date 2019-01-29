@@ -194,9 +194,9 @@ template: index
 
     <div class="row">
         <div class="medium-6 large-6 columns next-event">
-            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-sapporo.connpass.com/">Perl入学式 札幌</a> 第3回</h4>
+            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-sapporo.connpass.com/">Perl入学式 札幌</a> 第5回</h4>
             <p class="date">
-                2018年11月10日（土）
+                2019年2月23日（土）
             </p>
             <table class="detail">
                 <tr>
@@ -218,7 +218,7 @@ template: index
             </table>
             <div class="read-more">
                 <p class="event-page">
-                    <a href="https://perl-entrance-sapporo.connpass.com/event/103355/" class="button radius expand" target="_blank">詳細はこちら!</a>
+                    <a href="https://perl-entrance-sapporo.connpass.com/event/117625/" class="button radius expand" target="_blank">詳細はこちら!</a>
                 </p>
             </div>
         </div>
