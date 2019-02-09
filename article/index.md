@@ -11,13 +11,13 @@ template: index
         <div class="listed column">
             <dl class="article">
                 <dt>2019.2.9</dt>
+                <dd>2018年度3月 Perl入学式第5回の開講情報を追加しました (福岡)</dd>
+                <dt>2019.2.9</dt>
                 <dd>2018年度2月 Perl入学式第4回の開講情報を追加しました (東京)</dd>
                 <dt>2019.1.7</dt>
                 <dd>2018年度1月 Perl入学式第3回の開講情報を追加しました (東京)</dd>
                 <dt>2018.12.23</dt>
                 <dd>2018年度 2019年2月 Perl入学式第5回の開講情報を追加しました (大阪)</dd>
-                <dt>2018.12.22</dt>
-                <dd>2018年度1月 Perl入学式第4回(補講)の開講情報を追加しました (沖縄)</dd>
             </dl>
         </div>
     </div>
@@ -160,9 +160,9 @@ template: index
         </div>
 
         <div class="medium-6 large-6 columns next-event">
-            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-fukuoka.connpass.com/">Perl入学式 in福岡</a> 第2回</h4>
+            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-fukuoka.connpass.com/">Perl入学式 in福岡</a> 第5回</h4>
             <p class="date">
-                2018年9月29日（土）
+                2019年3月2日（土）
             </p>
             <div class="notice">
                 <!-- 次回の告知をお待ちください. -->
@@ -183,13 +183,13 @@ template: index
                 <tr>
                     <th>住所</th>
                     <td>
-                        <a href="https://www.google.com/maps?ll=33.592315,130.402187&z=16&t=m&hl=ja&gl=US&mapclient=embed&q=%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%A4%A9%E7%A5%9E1-15-2(%E7%AC%AC6%E6%98%8E%E6%98%9F%E3%83%93%E3%83%AB6F)" target="_blank">福岡県福岡市中央区天神1-15-2(第6明星ビル6F)</a>
+                        <a href="https://www.google.com/maps?ll=33.592315,130.402187&z=16&t=m&hl=ja&gl=US&mapclient=embed&q=%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%A4%A9%E7%A5%9E1-15-2(%E7%AC%AC6%E6%98%8E%E6%98%9F%E3%83%93%E3%83%AB6F)" target="_blank">福岡県福岡市中央区天神1-15-2(第6明星ビル7F)</a>
                     </td>
                 </tr>
             </table>
             <div class="read-more">
                 <p class="event-page">
-                    <a href="https://perl-entrance-fukuoka.connpass.com/event/99869/" class="button radius expand" target="_blank">詳細はこちら!</a>
+                    <a href="https://perl-entrance-fukuoka.connpass.com/event/118393/" class="button radius expand" target="_blank">詳細はこちら!</a>
                 </p>
             </div>
         </div>
