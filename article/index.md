@@ -66,10 +66,12 @@ template: index
             <p class="date">
                 2019年3月30日（土）
             </p>
-<!--            <div class="notice">
+<!-- 
+            <div class="notice">
                 次回の告知をお待ちください.
-            </div>-->
-            <table class="detail">
+            </div>
+ -->
+                <table class="detail">
                 <tr>
                     <th>時間</th>
                     <td>13:00 - 18:00</td>
@@ -99,9 +101,11 @@ template: index
             <p class="date">
                 2019年2月23日（土）
             </p>
+<!-- 
             <div class="notice">
-                <!-- 次回の告知をお待ちください. -->
+                次回の告知をお待ちください.
             </div>
+ -->
             <table class="detail">
                 <tr>
                     <th>時間</th>
@@ -134,6 +138,11 @@ template: index
             <p class="date">
                 2019年02月23日（土）
             </p>
+<!-- 
+            <div class="notice">
+                次回の告知をお待ちください.
+            </div>
+ -->
             <table class="detail">
                 <tr>
                     <th>時間</th>
@@ -164,9 +173,11 @@ template: index
             <p class="date">
                 2019年3月2日（土）
             </p>
+<!-- 
             <div class="notice">
-                <!-- 次回の告知をお待ちください. -->
+                次回の告知をお待ちください.
             </div>
+ -->
             <table class="detail">
                 <tr>
                     <th>時間</th>
@@ -201,6 +212,11 @@ template: index
             <p class="date">
                 2019年2月23日（土）
             </p>
+<!-- 
+            <div class="notice">
+                次回の告知をお待ちください.
+            </div>
+ -->
             <table class="detail">
                 <tr>
                     <th>時間</th>
