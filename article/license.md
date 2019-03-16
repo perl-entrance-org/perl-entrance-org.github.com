@@ -21,7 +21,7 @@ title: ライセンス
                     Perl入学式が提供する全ての資料は, <a href="https://creativecommons.org/licenses/by-nc-nd/2.1/jp/">クリエイティブ・コモンズ 表示 - 非営利 - 改変禁止 2.1 日本 ライセンス</a>の下で提供いたします.
                 </p>
                 <p>
-                    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.1/jp/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/2.1/jp/88x31.png" /></a>
+                    <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/2.1/jp/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/2.1/jp/88x31.png" /></a>
                 </p>
 
             <h3>表示</h3>
