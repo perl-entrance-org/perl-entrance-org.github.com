@@ -19,7 +19,14 @@ title: 講義資料
                     <p>
                         Perl入学式が提供する全ての資料のライセンスについては, <a href="<: '/license.html' | uri_for :>">ライセンス</a>のページからご確認下さい.
                     </p>
-
+                    <h2 id="handout-2019">2019年度 <small>Perl Entrance 2019</small></h2>
+                    <h4 class="subheader">#1</h4>
+                    <p>
+<a href="https://github.com/perl-entrance-org/workshop-2019/blob/master/1st/part1.md">第1部資料</a>
+ / <a href="https://github.com/perl-entrance-org/workshop-2019/blob/master/1st/part2.md">第2部資料</a>
+  / <a href="https://github.com/perl-entrance-org/workshop-2019/blob/master/1st/part3.md">第3部資料</a>
+   / <a href="https://github.com/perl-entrance-org/workshop-2019/blob/master/1st/part4.md">第4部資料</a>
+                    </p>
                     <h2 id="handout-2018">2018年度 <small>Perl Entrance 2018</small></h2>
                     <h4 class="subheader">#5</h4>
                     <p>
@@ -257,6 +264,8 @@ title: 講義資料
             <ul class="side-nav">
                 <li class="divider"></li>
                 <li><a href="#license">ライセンス</a></li>
+                <li class="divider"></li>
+                <li><a href="#handout-2019">2019年度</a></li>
                 <li class="divider"></li>
                 <li><a href="#handout-2018">2018年度</a></li>
                 <li class="divider"></li>
