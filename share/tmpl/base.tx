@@ -40,7 +40,6 @@
         <li><label> 講義資料</label></li>
         <li><a href="<: '/license.html' | uri_for :>"><i class="icon-document-text"></i> ライセンス</a></li>
         <li><a href="https://github.com/perl-entrance-org/Perl-Entrance-Textbook"><i class="icon-document-text"></i> Perl Entrance Textbook</a></li>
-        <li><a href="<: '/handout.html#handout-2019' | uri_for :>"><i class="icon-document-text"></i> 資料 (2019年)</a></li>
         <li><a href="<: '/handout.html#handout-2018' | uri_for :>"><i class="icon-document-text"></i> 資料 (2018年)</a></li>
         <li><a href="<: '/handout.html#handout-2017' | uri_for :>"><i class="icon-document-text"></i> 資料 (2017年)</a></li>
         <li><a href="<: '/handout.html#handout-2016' | uri_for :>"><i class="icon-document-text"></i> 資料 (2016年)</a></li>
@@ -85,7 +84,6 @@
                 <ul class="dropdown">
                     <li><a href="<: '/license.html' | uri_for :>"><i class="icon-document-text"></i> ライセンス</a></li>
                     <li><a href="https://github.com/perl-entrance-org/Perl-Entrance-Textbook"><i class="icon-document-text"></i> Perl Entrance Textbook</a></li>
-                    <li><a href="<: '/handout.html#handout-2019' | uri_for :>"><i class="icon-document-text"></i> 資料 (2019年)</a></li>
                     <li><a href="<: '/handout.html#handout-2018' | uri_for :>"><i class="icon-document-text"></i> 資料 (2018年)</a></li>
                     <li><a href="<: '/handout.html#handout-2017' | uri_for :>"><i class="icon-document-text"></i> 資料 (2017年)</a></li>
                     <li><a href="<: '/handout.html#handout-2016' | uri_for :>"><i class="icon-document-text"></i> 資料 (2016年)</a></li>
