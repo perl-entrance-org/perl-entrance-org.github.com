@@ -10,14 +10,14 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
+                <dt>2019.5.16</dt>
+                <dd>2019年度6月 Perl入学式第3回の開講情報を追加しました (東京)</dd>
                 <dt>2019.5.2</dt>
                 <dd>2019年度5月 Perl入学式第1回の開講情報を追加しました (千歳)</dd>
                 <dt>2019.5.2</dt>
                 <dd>2019年度5月 Perl入学式第2回の開講情報を追加しました (東京)</dd>
                 <dt>2019.3.31</dt>
                 <dd>2019年度5月 Perl入学式第1回の開講情報を追加しました (大阪)</dd>
-                <dt>2019.3.31</dt>
-                <dd>2019年度4月 Perl入学式第1回の開講情報を追加しました (東京)</dd>
             </dl>
         </div>
     </div>
@@ -35,18 +35,14 @@ template: index
                 <p>｢プログラミングに興味があるけど, ちょっと難しそう...｣と思っている貴方!</p>
                 <p>｢他の言語使いだけど, ちょっとPerlも使ってみよっかな?｣と思っている貴方!</p>
                 <p>｢仕事や研究でPerlを使い始めたけど, ちょっと自信ないな...｣と思っている貴方!</p>
-
                 <p>
                 ｢プログラミング未経験者｣から｢Perl初心者｣を対象としたワークショップ, ｢Perl入学式｣で一緒にPerlで学びましょう!<br>
                 プログラミングの｢プ｣の字も知らないあなたでも大丈夫. 経験豊富な講師とサポーターが, <strong>あなたの学びを全力でサポートします.</strong>
                 </p>
-
                 <p>さあ, 私達と一緒にプログラミングの楽しさを体感しましょう!</p>
-
                 <center>
                     <a href="<: '/about.html' | uri_for :>" class="button radius">Perl入学式について, もっと詳しく知りたい!</a>
                 </center>
-
             </center>
         </div>
     </div>
@@ -60,11 +56,12 @@ template: index
         <div class="large-12 columns">
         </div>
     </div>
+    <!-- 東京 -->
     <div class="row">
         <div class="medium-6 large-6 columns next-event">
-            <h4><i class="icon-leaf"></i> <a href="http://perl-entrance-tokyo.connpass.com/">Perl入学式 in東京</a> 第2回</h4>
+            <h4><i class="icon-leaf"></i> <a href="http://perl-entrance-tokyo.connpass.com/">Perl入学式 in東京</a> 第3回</h4>
             <p class="date">
-                2019年5月11日（土）
+                2019年6月15日（土）
             </p>
 <!--
             <div class="notice">
@@ -82,20 +79,20 @@ template: index
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td><a href="http://www.adish.co.jp/about/company_information" target="_blank">アディッシュ株式会社 KSS五反田ビル 6階セミナールーム</a></td>
+                    <td><a href="http://www.adish.co.jp/about/company_information" target="_blank">アディッシュ株式会社 ヒューリック五反田山手通ビル 6階セミナールーム</a></td>
                 </tr>
                 <tr>
                     <th>住所</th>
-                    <td><a href="https://www.google.co.jp/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E8%A5%BF%E4%BA%94%E5%8F%8D%E7%94%B01-21-8+KSS%E4%BA%94%E5%8F%8D%E7%94%B0%E3%83%93%E3%83%AB6%E9%9A%8E+%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%83%AB%E3%83%BC%E3%83%A01&zoom=17" target="_blank">東京都品川区西五反田1-21-8 KSS五反田ビル6階</a></td>
+                    <td><a href="https://www.google.co.jp/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E8%A5%BF%E4%BA%94%E5%8F%8D%E7%94%B01-21-8+KSS%E4%BA%94%E5%8F%8D%E7%94%B0%E3%83%93%E3%83%AB6%E9%9A%8E+%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%83%AB%E3%83%BC%E3%83%A01&zoom=17" target="_blank">東京都品川区西五反田1-21-8 ヒューリック五反田山手通ビル 6F</a></td>
                 </tr>
             </table>
             <div class="read-more">
                 <p class="event-page">
-                    <a href="https://perl-entrance-tokyo.connpass.com/event/128577/" class="button radius expand" target="_blank">詳細はこちら!</a>
+                    <a href="https://perl-entrance-tokyo.connpass.com/event/131682/" class="button radius expand" target="_blank">詳細はこちら!</a>
                 </p>
             </div>
         </div>
-
+        <!-- 大阪 -->
         <div class="medium-6 large-6 columns next-event">
             <h4><i class="icon-leaf"></i> <a href="http://perl-entrance-osaka.connpass.com/">Perl入学式 in大阪</a> 第1回</h4>
             <p class="date">
@@ -130,7 +127,9 @@ template: index
                 </p>
             </div>
         </div>
-
+    </div>
+    <div class="row">
+        <!-- 千歳 -->
         <div class="medium-6 large-6 columns next-event">
             <h4><i class="icon-leaf"></i> <a href="http://perl-entrance-chitose.connpass.com/">Perl入学式 in千歳</a> 第1回</h4>
             <p class="date">
@@ -165,11 +164,11 @@ template: index
                 </p>
             </div>
         </div>
-
+        <!-- 沖縄 -->
         <div class="medium-6 large-6 columns next-event">
-            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-okinawa.connpass.com/">Perl入学式 in沖縄</a> 第5回</h4>
+            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-okinawa.connpass.com/">第一回ピヨグラミング</a></h4>
             <p class="date">
-                2019年02月23日（土）
+                2019年05月19日（土）
             </p>
 <!--
             <div class="notice">
@@ -187,30 +186,31 @@ template: index
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td>琉球大学地域創生総合研究棟5階</td>
+                    <td>earthtrip</td>
                 </tr>
                 <tr>
                     <th>住所</th>
-                    <td><a href="https://www.google.com/maps?ll=26.247589,127.76529&z=16&t=m&hl=ja&gl=US&mapclient=embed&q=%E3%80%92903-0129+%E6%B2%96%E7%B8%84%E7%9C%8C%E4%B8%AD%E9%A0%AD%E9%83%A1%E8%A5%BF%E5%8E%9F%E7%94%BA%E5%8D%83%E5%8E%9F%EF%BC%91" target="_blank">沖縄県中頭郡西原町千原1番地</a></td>
+                    <td><a href="https://www.google.com/maps?ll=26.195407,127.66531&z=16&t=m&hl=ja&gl=US&mapclient=embed&q=%E5%AE%9D%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%93%E3%83%AB%EF%BC%91%E9%9A%8E+%E3%80%92901-0155+%E6%B2%96%E7%B8%84%E7%9C%8C%E9%82%A3%E8%A6%87%E5%B8%82%E9%87%91%E5%9F%8E%EF%BC%95%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%91%E2%88%92%EF%BC%94" target="_blank">沖縄県那覇市金城5-11-4 宝ステーションビル１階</a></td>
                 </tr>
             </table>
             <div class="read-more">
                 <p class="event-page">
-                    <a href="https://perl-entrance-okinawa.connpass.com/event/119173" class="button radius expand" target="_blank">詳細はこちら!</a>
+                    <a href="https://perl-entrance-okinawa.connpass.com/event/128535/" class="button radius expand" target="_blank">詳細はこちら!</a>
                 </p>
             </div>
         </div>
-
+    </div>
+    <div class="row" style="height: 100px;">
+        <!-- 博多 -->
         <div class="medium-6 large-6 columns next-event">
-            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-fukuoka.connpass.com/">Perl入学式 in福岡</a> 第5回</h4>
-            <p class="date">
-                2019年3月2日（土）
-            </p>
-<!--
+            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-fukuoka.connpass.com/">Perl入学式 in福岡</a></h4>
             <div class="notice">
                 次回の告知をお待ちください.
             </div>
- -->
+<!--
+            <p class="date">
+                2019年3月2日（土）
+            </p>
             <table class="detail">
                 <tr>
                     <th>時間</th>
@@ -236,18 +236,17 @@ template: index
                     <a href="https://perl-entrance-fukuoka.connpass.com/event/118393/" class="button radius expand" target="_blank">詳細はこちら!</a>
                 </p>
             </div>
+-->
         </div>
-
-        <div class="medium-6 large-6 columns next-event">
-            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-sapporo.connpass.com/">Perl入学式 札幌</a> 第5回</h4>
-            <p class="date">
-                2019年2月23日（土）
-            </p>
-<!--
+        <div>
+            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-sapporo.connpass.com/">Perl入学式 札幌</a></h4>
             <div class="notice">
                 次回の告知をお待ちください.
             </div>
- -->
+<!--
+            <p class="date">
+                2019年2月23日（土）
+            </p>
             <table class="detail">
                 <tr>
                     <th>時間</th>
@@ -272,10 +271,9 @@ template: index
                 </p>
             </div>
         </div>
+ -->
     </div>
-
-    <div class="row headspace-20">
-    </div>
+    <div class="row headspace-20"></div>
 </section>
 
 <script src="http://code.jquery.com/jquery.js"></script>
