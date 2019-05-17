@@ -10,7 +10,7 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
-                <dt>2019.5.16</dt>
+                <dt>2019.5.17</dt>
                 <dd>2019年度6月 Perl入学式第3回の開講情報を追加しました (東京)</dd>
                 <dt>2019.5.2</dt>
                 <dd>2019年度5月 Perl入学式第1回の開講情報を追加しました (千歳)</dd>
@@ -79,11 +79,11 @@ template: index
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td><a href="http://www.adish.co.jp/about/company_information" target="_blank">アディッシュ株式会社 ヒューリック五反田山手通ビル 6階セミナールーム</a></td>
+                    <td><a href="http://www.adish.co.jp/about/company_information" target="_blank">アディッシュ株式会社 ヒューリック五反田山手通ビル（旧名称：KSS五反田ビル） 6階セミナールーム</a></td>
                 </tr>
                 <tr>
                     <th>住所</th>
-                    <td><a href="https://www.google.co.jp/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E8%A5%BF%E4%BA%94%E5%8F%8D%E7%94%B01-21-8+KSS%E4%BA%94%E5%8F%8D%E7%94%B0%E3%83%93%E3%83%AB6%E9%9A%8E+%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%83%AB%E3%83%BC%E3%83%A01&zoom=17" target="_blank">東京都品川区西五反田1-21-8 ヒューリック五反田山手通ビル 6F</a></td>
+                    <td><a href="https://www.google.co.jp/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E8%A5%BF%E4%BA%94%E5%8F%8D%E7%94%B01-21-8+KSS%E4%BA%94%E5%8F%8D%E7%94%B0%E3%83%93%E3%83%AB6%E9%9A%8E+%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%83%AB%E3%83%BC%E3%83%A01&zoom=17" target="_blank">東京都品川区西五反田1-21-8 ヒューリック五反田山手通ビル（旧名称：KSS五反田ビル） 6F</a></td>
                 </tr>
             </table>
             <div class="read-more">
