@@ -10,14 +10,14 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
+                <dt>2019.6.2</dt>
+                <dd>2019年度6月 第二回ピヨグラミングの開講情報を追加しました (沖縄)</dd>
                 <dt>2019.5.26</dt>
                 <dd>2019年度6月 Perl入学式第2回の開講情報を追加しました (千歳)</dd>
                 <dt>2019.5.25</dt>
                 <dd>2019年度6月 Perl入学式第2回の開講情報を追加しました (大阪)</dd>
                 <dt>2019.5.17</dt>
                 <dd>2019年度6月 Perl入学式第3回の開講情報を追加しました (東京)</dd>
-                <dt>2019.5.17</dt>
-                <dd>2019年度5月 第一回ピヨグラミング (沖縄)</dd>
             </dl>
         </div>
     </div>
@@ -166,9 +166,9 @@ template: index
         </div>
         <!-- 沖縄 -->
         <div class="medium-6 large-6 columns next-event">
-            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-okinawa.connpass.com/">第一回ピヨグラミング</a></h4>
+            <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-okinawa.connpass.com/">第二回ピヨグラミング</a></h4>
             <p class="date">
-                2019年05月19日（土）
+                2019年06月16日（日）
             </p>
 <!--
             <div class="notice">
@@ -186,16 +186,16 @@ template: index
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td>earthtrip</td>
+                    <td><a href="https://www.synergy-room.com/">シナジールーム</a></td>
                 </tr>
                 <tr>
                     <th>住所</th>
-                    <td><a href="https://www.google.com/maps?ll=26.195407,127.66531&z=16&t=m&hl=ja&gl=US&mapclient=embed&q=%E5%AE%9D%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%93%E3%83%AB%EF%BC%91%E9%9A%8E+%E3%80%92901-0155+%E6%B2%96%E7%B8%84%E7%9C%8C%E9%82%A3%E8%A6%87%E5%B8%82%E9%87%91%E5%9F%8E%EF%BC%95%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%91%E2%88%92%EF%BC%94" target="_blank">沖縄県那覇市金城5-11-4 宝ステーションビル１階</a></td>
+                    <td><a href="https://www.google.com/maps?ll=26.245294,127.768906&z=16&t=m&hl=ja&gl=US&mapclient=embed&q=%E3%80%92901-2424+%E6%B2%96%E7%B8%84%E7%9C%8C%E4%B8%AD%E9%A0%AD%E9%83%A1%E4%B8%AD%E5%9F%8E%E6%9D%91%E5%8D%97%E4%B8%8A%E5%8E%9F%EF%BC%91%EF%BC%90%EF%BC%90%EF%BC%97" target="_blank">沖縄県中頭郡中城村南上原1007</a></td>
                 </tr>
             </table>
             <div class="read-more">
                 <p class="event-page">
-                    <a href="https://perl-entrance-okinawa.connpass.com/event/128535/" class="button radius expand" target="_blank">詳細はこちら!</a>
+                    <a href="https://perl-entrance-okinawa.connpass.com/event/133126/" class="button radius expand" target="_blank">詳細はこちら!</a>
                 </p>
             </div>
         </div>
