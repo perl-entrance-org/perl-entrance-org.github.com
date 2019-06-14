@@ -10,14 +10,12 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
+                <dt>2019.6.14</dt>
+                <dd>2019年度7月 Perl入学式第3回の開講情報を追加しました (大阪)</dd>
                 <dt>2019.6.11</dt>
                 <dd>2019年度6月 Perl入学式第3回の開講情報を追加しました (千歳)</dd>
                 <dt>2019.6.2</dt>
                 <dd>2019年度6月 第二回ピヨグラミングの開講情報を追加しました (沖縄)</dd>
-                <dt>2019.5.26</dt>
-                <dd>2019年度6月 Perl入学式第2回の開講情報を追加しました (千歳)</dd>
-                <dt>2019.5.25</dt>
-                <dd>2019年度6月 Perl入学式第2回の開講情報を追加しました (大阪)</dd>
             </dl>
         </div>
     </div>
@@ -94,9 +92,9 @@ template: index
         </div>
         <!-- 大阪 -->
         <div class="medium-6 large-6 columns next-event">
-            <h4><i class="icon-leaf"></i> <a href="http://perl-entrance-osaka.connpass.com/">Perl入学式 in大阪</a> 第2回</h4>
+            <h4><i class="icon-leaf"></i> <a href="http://perl-entrance-osaka.connpass.com/">Perl入学式 in大阪</a> 第3回</h4>
             <p class="date">
-                2019年6月8日（土）
+                2019年7月20日（土）
             </p>
 <!--
             <div class="notice">
@@ -123,7 +121,7 @@ template: index
             </table>
             <div class="read-more">
                 <p class="event-page">
-                    <a href="https://perl-entrance-osaka.connpass.com/event/130219/" class="button radius expand" target="_blank">詳細はこちら!</a>
+                    <a href="https://perl-entrance-osaka.connpass.com/event/132861/" class="button radius expand" target="_blank">詳細はこちら!</a>
                 </p>
             </div>
         </div>
