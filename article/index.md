@@ -59,9 +59,9 @@ template: index
     <!-- 東京 -->
     <div class="row">
         <div class="medium-6 large-6 columns next-event">
-            <h4><i class="icon-leaf"></i> <a href="http://perl-entrance-tokyo.connpass.com/">Perl入学式 in東京</a> 第3回</h4>
+            <h4><i class="icon-leaf"></i> <a href="http://perl-entrance-tokyo.connpass.com/">Perl入学式 in東京</a> 第4回</h4>
             <p class="date">
-                2019年6月15日（土）
+                2019年7月13日（土）
             </p>
 <!--
             <div class="notice">
@@ -88,7 +88,7 @@ template: index
             </table>
             <div class="read-more">
                 <p class="event-page">
-                    <a href="https://perl-entrance-tokyo.connpass.com/event/131682/" class="button radius expand" target="_blank">詳細はこちら!</a>
+                    <a href="https://perl-entrance-tokyo.connpass.com/event/136807/" class="button radius expand" target="_blank">詳細はこちら!</a>
                 </p>
             </div>
         </div>
