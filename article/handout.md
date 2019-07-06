@@ -20,6 +20,16 @@ title: 講義資料
                         Perl入学式が提供する全ての資料のライセンスについては, <a href="<: '/license.html' | uri_for :>">ライセンス</a>のページからご確認下さい.
                     </p>
                     <h2 id="handout-2019">2019年度 <small>Perl Entrance 2019</small></h2>
+                    <h4 class="subheader">#4</h4>
+                    <p>
+<a href="https://github.com/perl-entrance-org/workshop-2019/blob/master/4th/slide.md">資料</a>
+/ <a href="https://github.com/perl-entrance-org/workshop-2019/blob/master/4th/practice.md">復習問題</a>
+/ <a href="https://github.com/perl-entrance-org/workshop-2019/tree/master/4th/answer">復習問題の解答例</a>
+                    <h4 class="subheader">#3</h4>
+                    <p>
+<a href="https://github.com/perl-entrance-org/workshop-2019/blob/master/3rd/slide.md">資料</a>
+/ <a href="https://github.com/perl-entrance-org/workshop-2019/blob/master/3rd/practice.md">復習問題</a>
+/ <a href="https://github.com/perl-entrance-org/workshop-2019/tree/master/3rd/answer">復習問題の解答例</a>
                     <h4 class="subheader">#2</h4>
                     <p>
 <a href="https://github.com/perl-entrance-org/workshop-2019/blob/master/2nd/slide.md">資料</a>
