@@ -11,7 +11,7 @@ template: index
         <div class="listed column">
             <dl class="article">
                 <dt>2019.8.11</dt>
-                <dd>2019年度8月 Perl入学式第4回の開講情報を追加しました (東京)</dd>
+                <dd>2019年度8月 Perl入学式第5回の開講情報を追加しました (東京)</dd>
                 <dt>2019.7.27</dt>
                 <dd>2019年度9月 Perl入学式第4回の開講情報を追加しました (大阪)</dd>
                 <dd>2019年度8月 Perl入学式第5回の開講情報を追加しました (千歳)</dd>
