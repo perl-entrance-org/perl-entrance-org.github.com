@@ -57,7 +57,7 @@ template: index
         <div class="medium-6 large-6 columns next-event">
             <h4><i class="icon-leaf"></i> <a href="http://perl-entrance-tokyo.connpass.com/">Perl入学式 in東京</a> 秋開講 第1回</h4>
             <p class="date">
-                2019年11月29日（土）
+                2019年11月30日（土）
             </p>
 <!--
             <div class="notice">
