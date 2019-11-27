@@ -196,7 +196,6 @@ template: index
             </div>
         </div>
     </div>
-    <div class="row" style="height: 100px;">
         <!-- 博多 -->
         <div class="medium-6 large-6 columns next-event">
             <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-fukuoka.connpass.com/">Perl入学式 in福岡</a></h4>
