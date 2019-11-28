@@ -42,9 +42,6 @@ template: index
     </div>
     <div class="row headspace-20">
     </div>
-</section>
-
-<section id="homepage-event">
     <div class="row">
         <h2>2019年度のPerl入学式始動! </h2>
         <div class="large-12 columns">
