@@ -35,6 +35,7 @@ Perl入学式 プログラミング初心者のためのPerl入門講座
 :# include 'sponsor.tx';
 
 <section id="homepage-twitter">
+<h2 class="hidden">homepage-twitter</h2>
 <div class="row">
     <div class="small-6 large-6 columns">
          <a class="twitter-timeline" data-lang="ja" data-height="750" href="https://twitter.com/Perl_Entrance?ref_src=twsrc%5Etfw">Tweets by Perl_Entrance</a> <script async src="https://platform.twitter.com/widgets.js"></script>

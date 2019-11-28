@@ -2,6 +2,7 @@ template: index
 ---
 
 <section id="homepage-update">
+    <h2 class="hidden">update</h2>
     <div class="row">
         <div class="title column">
             <div class="center">
@@ -19,6 +20,7 @@ template: index
     </div>
 </section>
 <section id="homepage-event">
+    <h2 class="hidden">event</h2>
     <div class="row">
         <h2>Perl入学式とは? </h2>
         <div class="large-12 columns">

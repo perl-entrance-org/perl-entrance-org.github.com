@@ -70,6 +70,7 @@
         </li>
     </ul>
     <section class="top-bar-section">
+        <h2 class="hidden">top-bar-section</h2>
         <ul class="right">
             <li class="divider"></li>
             <li class="">
