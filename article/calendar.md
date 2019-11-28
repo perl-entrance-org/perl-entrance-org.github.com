@@ -5,7 +5,7 @@ title: Perl入学式カレンダー
 <header>
     <div class="row">
         <div class="large-12 columns">
-            <h1>Calendar</h1>
+            <h2>Calendar</h2>
             <h4>Perl入学式に関するイベントのカレンダーです.</h4>
         </div>
     </div>

@@ -5,7 +5,7 @@ title: 講義資料
 <header>
     <div class="row">
         <div class="large-12 columns">
-            <h1>Handout</h1>
+            <h2>Handout</h2>
             <h4>Perl入学式で利用する資料です.</h4>
         </div>
     </div>
