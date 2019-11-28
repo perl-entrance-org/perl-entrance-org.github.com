@@ -267,7 +267,7 @@ template: index
 </section>
 
 <script src="http://code.jquery.com/jquery.js"></script>
-<script type="text/javascript">
+<script>
   var PerlEntrance = {
     "zusaar_event_id": {
     },
