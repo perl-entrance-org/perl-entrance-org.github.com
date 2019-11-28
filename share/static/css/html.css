@@ -448,6 +448,7 @@ header h5 {
 	width: 100% !important;
 }
 
+div.center{margin : 0 auto; text-align: center;}
 
 /*----------------------------------------------------------
   - FOOTER

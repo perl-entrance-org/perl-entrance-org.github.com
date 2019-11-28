@@ -4,9 +4,9 @@ template: index
 <section id="homepage-update">
     <div class="row">
         <div class="title column">
-            <center>
+            <div class="center">
                 <h4>Latest Update</h4>
-            </center>
+            </div>
         </div>
         <div class="listed column">
             <dl class="article">
@@ -27,7 +27,7 @@ template: index
     </div>
     <div class="row">
         <div class="large-12 columns">
-            <center>
+            <div class="center">
                 <p>｢プログラミングに興味があるけど, ちょっと難しそう...｣と思っている貴方!</p>
                 <p>｢他の言語使いだけど, ちょっとPerlも使ってみよっかな?｣と思っている貴方!</p>
                 <p>｢仕事や研究でPerlを使い始めたけど, ちょっと自信ないな...｣と思っている貴方!</p>
@@ -36,10 +36,8 @@ template: index
                 プログラミングの｢プ｣の字も知らないあなたでも大丈夫. 経験豊富な講師とサポーターが, <strong>あなたの学びを全力でサポートします.</strong>
                 </p>
                 <p>さあ, 私達と一緒にプログラミングの楽しさを体感しましょう!</p>
-                <center>
                     <a href="<: '/about.html' | uri_for :>" class="button radius">Perl入学式について, もっと詳しく知りたい!</a>
-                </center>
-            </center>
+            </div>
         </div>
     </div>
     <div class="row headspace-20">
