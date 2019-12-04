@@ -10,8 +10,7 @@ title: Perl入学式カレンダー
         </div>
     </div>
 </header>
-<section id="main-content">
-    <h2 class="hidden">main-content</h2>
+<div id="main-content">
     <div class="row">
         <div class="large-12 medium-12 columns">
             <div class="center">
@@ -19,4 +18,4 @@ title: Perl入学式カレンダー
             </div>
         </div>
     </div>
-</section>
+</div>
