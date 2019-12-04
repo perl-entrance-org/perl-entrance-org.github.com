@@ -1,8 +1,7 @@
 template: index
 ---
 
-<section id="homepage-update">
-    <h2 class="hidden">update</h2>
+<div id="homepage-update">
     <div class="row">
         <div class="title column">
             <div class="center">
@@ -18,9 +17,8 @@ template: index
             </dl>
         </div>
     </div>
-</section>
-<section id="homepage-event">
-    <h2 class="hidden">event</h2>
+</div>
+<div id="homepage-event">
     <div class="row">
         <h2>Perl入学式とは? </h2>
         <div class="large-12 columns">
@@ -263,7 +261,7 @@ template: index
         </div>
     </div>
     <div class="row headspace-20"></div>
-</section>
+</div>
 <script src="http://code.jquery.com/jquery.js"></script>
 <script>
 var PerlEntrance = {

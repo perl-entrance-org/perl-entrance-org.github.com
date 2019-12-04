@@ -69,8 +69,7 @@
             <h1><a href="<: '/index.html' | uri_for :>">Perl入学式 | Perl Entrance</a></h1>
         </li>
     </ul>
-    <section class="top-bar-section">
-        <h2 class="hidden">top-bar-section</h2>
+    <div class="top-bar-section">
         <ul class="right">
             <li class="divider"></li>
             <li class="">
@@ -111,7 +110,7 @@
                 <a href="https://twitter.com/Perl_Entrance" class="" target="_blank"><i class="icon-social-twitter"></i> Twitter</a>
             </li>
         </ul>
-    </section>
+    </div>
 </nav>
 
 
