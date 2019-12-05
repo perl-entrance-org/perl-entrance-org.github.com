@@ -448,6 +448,15 @@ header h5 {
 	width: 100% !important;
 }
 
+div.center{margin : 0 auto; text-align: center;}
+
+h2.hidden{display:none;}
+
+iframe.calendar{
+	border-width: 0;
+	width: 800px;
+	height: 600px;
+}
 
 /*----------------------------------------------------------
   - FOOTER

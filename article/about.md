@@ -5,7 +5,7 @@ title: Perl入学式とは
 <header>
     <div class="row">
         <div class="large-12 columns">
-            <h1>About</h1>
+            <h2>About</h2>
             <h4>Perl入学式とはどのような勉強会なのか, ご紹介します.
             </h4>
         </div>

@@ -5,7 +5,7 @@ title: 講義資料
 <header>
     <div class="row">
         <div class="large-12 columns">
-            <h1>Handout</h1>
+            <h2>Handout</h2>
             <h4>Perl入学式で利用する資料です.</h4>
         </div>
     </div>
@@ -24,17 +24,19 @@ title: 講義資料
                     <p>
 <a href="https://github.com/perl-entrance-org/workshop-2019/blob/master/5th/slide.md">資料</a>
 / <a href="https://github.com/perl-entrance-org/workshop-2019/tree/master/5th/answer">練習問題・最終問題の解答例</a>
-
+                    </p>
                     <h4 class="subheader">#4</h4>
                     <p>
 <a href="https://github.com/perl-entrance-org/workshop-2019/blob/master/4th/slide.md">資料</a>
 / <a href="https://github.com/perl-entrance-org/workshop-2019/blob/master/4th/practice.md">復習問題</a>
 / <a href="https://github.com/perl-entrance-org/workshop-2019/tree/master/4th/answer">復習問題の解答例</a>
+                    </p>
                     <h4 class="subheader">#3</h4>
                     <p>
 <a href="https://github.com/perl-entrance-org/workshop-2019/blob/master/3rd/slide.md">資料</a>
 / <a href="https://github.com/perl-entrance-org/workshop-2019/blob/master/3rd/practice.md">復習問題</a>
 / <a href="https://github.com/perl-entrance-org/workshop-2019/tree/master/3rd/answer">復習問題の解答例</a>
+                    </p>
                     <h4 class="subheader">#2</h4>
                     <p>
 <a href="https://github.com/perl-entrance-org/workshop-2019/blob/master/2nd/slide.md">資料</a>
@@ -51,6 +53,7 @@ title: 講義資料
                     <h4 class="subheader">#5</h4>
                     <p>
 <a href="https://github.com/perl-entrance-org/workshop-2018/blob/master/5th/slide.md">資料</a>
+                    </p>
                     <h4 class="subheader">#4</h4>
                     <p>
 <a href="https://github.com/perl-entrance-org/workshop-2018/blob/master/4th/slide.md">資料</a>
@@ -73,6 +76,7 @@ title: 講義資料
                     <h4 class="subheader">#5</h4>
                     <p>
 <a href="https://github.com/perl-entrance-org/workshop-2017/blob/master/5th/slide.md">資料</a>
+                    </p>
                     <h4 class="subheader">#4</h4>
                     <p>
 <a href="https://github.com/perl-entrance-org/workshop-2017/blob/master/4th/slide.md">資料</a>
@@ -95,6 +99,7 @@ title: 講義資料
                     <h4 class="subheader">#5</h4>
                     <p>
 <a href="https://github.com/perl-entrance-org/workshop-2016/blob/master/5th/slide.md">資料</a>
+                    </p>
                     <h4 class="subheader">#4</h4>
                     <p>
 <a href="https://github.com/perl-entrance-org/workshop-2016/blob/master/4th/slide.md">資料</a>

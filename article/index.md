@@ -1,12 +1,12 @@
 template: index
 ---
 
-<section id="homepage-update">
+<div id="homepage-update">
     <div class="row">
         <div class="title column">
-            <center>
+            <div class="center">
                 <h4>Latest Update</h4>
-            </center>
+            </div>
         </div>
         <div class="listed column">
             <dl class="article">
@@ -17,9 +17,8 @@ template: index
             </dl>
         </div>
     </div>
-</section>
-
-<section id="homepage-event">
+</div>
+<div id="homepage-event">
     <div class="row">
         <h2>Perl入学式とは? </h2>
         <div class="large-12 columns">
@@ -27,44 +26,39 @@ template: index
     </div>
     <div class="row">
         <div class="large-12 columns">
-            <center>
+            <div class="center">
                 <p>｢プログラミングに興味があるけど, ちょっと難しそう...｣と思っている貴方!</p>
                 <p>｢他の言語使いだけど, ちょっとPerlも使ってみよっかな?｣と思っている貴方!</p>
                 <p>｢仕事や研究でPerlを使い始めたけど, ちょっと自信ないな...｣と思っている貴方!</p>
                 <p>
-                ｢プログラミング未経験者｣から｢Perl初心者｣を対象としたワークショップ, ｢Perl入学式｣で一緒にPerlで学びましょう!<br>
-                プログラミングの｢プ｣の字も知らないあなたでも大丈夫. 経験豊富な講師とサポーターが, <strong>あなたの学びを全力でサポートします.</strong>
+                    ｢プログラミング未経験者｣から｢Perl初心者｣を対象としたワークショップ, ｢Perl入学式｣で一緒にPerlで学びましょう!<br>
+                    プログラミングの｢プ｣の字も知らないあなたでも大丈夫. 経験豊富な講師とサポーターが, <strong>あなたの学びを全力でサポートします.</strong>
                 </p>
                 <p>さあ, 私達と一緒にプログラミングの楽しさを体感しましょう!</p>
-                <center>
-                    <a href="<: '/about.html' | uri_for :>" class="button radius">Perl入学式について, もっと詳しく知りたい!</a>
-                </center>
-            </center>
+                <a href="<: '/about.html' | uri_for :>" class="button radius">Perl入学式について, もっと詳しく知りたい!</a>
+            </div>
         </div>
     </div>
     <div class="row headspace-20">
     </div>
-</section>
-
-<section id="homepage-event">
     <div class="row">
         <h2>2019年度のPerl入学式始動! </h2>
         <div class="large-12 columns">
         </div>
     </div>
-    <!-- 東京 -->
     <div class="row">
+        <!-- 東京 -->
         <div class="medium-6 large-6 columns next-event">
             <h4><i class="icon-leaf"></i> <a href="http://perl-entrance-tokyo.connpass.com/">Perl入学式 in東京</a> 秋開講 第1回</h4>
             <p class="date">
                 2019年11月30日（土）
             </p>
-<!--
+            <!--
             <div class="notice">
                 次回の告知をお待ちください.
             </div>
  -->
-                <table class="detail">
+            <table class="detail">
                 <tr>
                     <th>時間</th>
                     <td>13:00 - 18:00</td>
@@ -94,7 +88,7 @@ template: index
             <p class="date">
                 2019年11月30日（土）
             </p>
-<!--
+            <!--
             <div class="notice">
                 次回の告知をお待ちください.
             </div>
@@ -104,7 +98,7 @@ template: index
                     <th>時間</th>
                     <td>13:00 - 17:30<br></td>
                 </tr>
-                    <tr>
+                <tr>
                     <th>定員</th>
                     <td><span id="osaka-capacity-information"></span></td>
                 </tr>
@@ -131,7 +125,7 @@ template: index
             <p class="date">
                 2019年8月31日（土）
             </p>
-<!--
+            <!--
             <div class="notice">
                 次回の告知をお待ちください.
             </div>
@@ -141,7 +135,7 @@ template: index
                     <th>時間</th>
                     <td>13:00 - 17:30<br></td>
                 </tr>
-                    <tr>
+                <tr>
                     <th>定員</th>
                     <td><span id="chitose-capacity-information"></span></td>
                 </tr>
@@ -166,7 +160,7 @@ template: index
             <p class="date">
                 2019年06月16日（日）
             </p>
-<!--
+            <!--
             <div class="notice">
                 次回の告知をお待ちください.
             </div>
@@ -196,14 +190,13 @@ template: index
             </div>
         </div>
     </div>
-    <div class="row" style="height: 100px;">
+    <div class="row">
         <!-- 博多 -->
         <div class="medium-6 large-6 columns next-event">
             <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-fukuoka.connpass.com/">Perl入学式 in福岡</a></h4>
             <div class="notice">
                 次回の告知をお待ちください.
             </div>
-<!--
             <p class="date">
                 2019年3月2日（土）
             </p>
@@ -232,14 +225,13 @@ template: index
                     <a href="https://perl-entrance-fukuoka.connpass.com/event/118393/" class="button radius expand" target="_blank">詳細はこちら!</a>
                 </p>
             </div>
--->
         </div>
-        <div>
+        <!-- 札幌 -->
+        <div class="medium-6 large-6 columns next-event">
             <h4><i class="icon-leaf"></i> <a href="https://perl-entrance-sapporo.connpass.com/">Perl入学式 札幌</a></h4>
             <div class="notice">
                 次回の告知をお待ちください.
             </div>
-<!--
             <p class="date">
                 2019年2月23日（土）
             </p>
@@ -267,141 +259,135 @@ template: index
                 </p>
             </div>
         </div>
- -->
     </div>
     <div class="row headspace-20"></div>
-</section>
-
+</div>
 <script src="http://code.jquery.com/jquery.js"></script>
-<script type="text/javascript">
-  var PerlEntrance = {
-    "zusaar_event_id": {
-    },
-    "atndbeta_event_id": {
-    },
+<script>
+var PerlEntrance = {
+    "zusaar_event_id": {},
+    "atndbeta_event_id": {},
     // 自動で生成されます！ line: 221
-    "connpass_event_id": {
-    },
-    "doorkeeper_event_id": {
-    },
+    "connpass_event_id": {},
+    "doorkeeper_event_id": {},
     "zusaar_api_endpoint_url": "http://www.zusaar.com/api/event/",
     "atndbeta_api_endpoint_url": "http://api.atnd.org/events/",
     "connpass_api_endpoint_url": "https://connpass.com/api/v1/event/",
     "doorkeeper_api_endpoint_url": "http://api.doorkeeper.jp/events/"
-  };
-  function keys(hash) {
+};
+
+function keys(hash) {
     var keys = [];
-    for ( var key in hash ) keys.push(key);
+    for (var key in hash) keys.push(key);
     return keys;
-  }
+}
 
-  // Zusaar
-  $(document).ready(function(){
+// Zusaar
+$(document).ready(function() {
     var endpoint_url = PerlEntrance.zusaar_api_endpoint_url;
-    $.each(keys(PerlEntrance.zusaar_event_id), function(index, region){
-      var $info_container = $("#"+region+"-capacity-information"),
-          get_url = endpoint_url+"?event_id="+PerlEntrance.zusaar_event_id[region]+"&format=jsonp";
-      if ( !$info_container[0] ) return;
-      $.ajax({
-        url: get_url,
-        type: "GET",
-        dataType: "jsonp",
-        success: function(json) {
-          var event = json.event[0],
-              waiting  = event["waiting"],  // 補欠者
-              accepted = event["accepted"], // 参加者
-              limit    = event["limit"];    // 定員
-          if ( typeof waiting !== "undefined" && typeof accepted !== "undefined" && typeof limit !== "undefined" ) {
-            $info_container.html(limit+"人 (現在"+accepted+"名参加, "+waiting+"名補欠)");
-          } else {
-            $info_container.html("(データ取得ができませんでした)");
-          }
-        }
-      });
+    $.each(keys(PerlEntrance.zusaar_event_id), function(index, region) {
+        var $info_container = $("#" + region + "-capacity-information"),
+            get_url = endpoint_url + "?event_id=" + PerlEntrance.zusaar_event_id[region] + "&format=jsonp";
+        if (!$info_container[0]) return;
+        $.ajax({
+            url: get_url,
+            type: "GET",
+            dataType: "jsonp",
+            success: function(json) {
+                var event = json.event[0],
+                    waiting = event["waiting"], // 補欠者
+                    accepted = event["accepted"], // 参加者
+                    limit = event["limit"]; // 定員
+                if (typeof waiting !== "undefined" && typeof accepted !== "undefined" && typeof limit !== "undefined") {
+                    $info_container.html(limit + "人 (現在" + accepted + "名参加, " + waiting + "名補欠)");
+                } else {
+                    $info_container.html("(データ取得ができませんでした)");
+                }
+            }
+        });
     });
-  });
+});
 
-  // ATND beta
-  $(document).ready(function(){
+// ATND beta
+$(document).ready(function() {
     var endpoint_url = PerlEntrance.atndbeta_api_endpoint_url;
-    $.each(keys(PerlEntrance.atndbeta_event_id), function(index, region){
-      var $info_container = $("#"+region+"-capacity-information"),
-          get_url = endpoint_url+"?event_id="+PerlEntrance.atndbeta_event_id[region]+"&format=jsonp";
-      if ( !$info_container[0] ) return;
-      $.ajax({
-        url: get_url,
-        type: "GET",
-        dataType: "jsonp",
-        success: function(json) {
-          var event = json.events[0].event,
-              waiting  = event["waiting"],  // 補欠者
-              accepted = event["accepted"], // 参加者
-              limit    = event["limit"];    // 定員
-          if ( typeof waiting !== "undefined" && typeof accepted !== "undefined" && typeof limit !== "undefined" ) {
-            $info_container.html(limit+"人 (現在"+accepted+"名参加, "+waiting+"名補欠)");
-          } else {
-            $info_container.html("(データ取得ができませんでした)");
-          }
-        }
-      });
+    $.each(keys(PerlEntrance.atndbeta_event_id), function(index, region) {
+        var $info_container = $("#" + region + "-capacity-information"),
+            get_url = endpoint_url + "?event_id=" + PerlEntrance.atndbeta_event_id[region] + "&format=jsonp";
+        if (!$info_container[0]) return;
+        $.ajax({
+            url: get_url,
+            type: "GET",
+            dataType: "jsonp",
+            success: function(json) {
+                var event = json.events[0].event,
+                    waiting = event["waiting"], // 補欠者
+                    accepted = event["accepted"], // 参加者
+                    limit = event["limit"]; // 定員
+                if (typeof waiting !== "undefined" && typeof accepted !== "undefined" && typeof limit !== "undefined") {
+                    $info_container.html(limit + "人 (現在" + accepted + "名参加, " + waiting + "名補欠)");
+                } else {
+                    $info_container.html("(データ取得ができませんでした)");
+                }
+            }
+        });
     });
-  });
+});
 
-  // Connpass
-  $(document).ready(function(){
+// Connpass
+$(document).ready(function() {
     var endpoint_url = PerlEntrance.connpass_api_endpoint_url;
     $(".row .event-page a").each(function(i, v) {
         var matches = $(v).attr("href").match(/perl-entrance-([a-z]+?)\.connpass\.com\/event\/([0-9]+)\/?$/)
         if (matches)
             PerlEntrance["connpass_event_id"][matches[1]] = matches[2]
     })
-    $.each(keys(PerlEntrance.connpass_event_id), function(index, region){
-      var $info_container = $("#"+region+"-capacity-information"),
-          get_url = endpoint_url+"?event_id="+PerlEntrance.connpass_event_id[region]+"&format=json";
-      if ( !$info_container[0] ) return;
-      $.ajax({
-        url: get_url,
-        type: "GET",
-        dataType: "jsonp",
-        success: function(json) {
-          var event = json.events[0],
-              waiting  = event["waiting"],  // 補欠者
-              accepted = event["accepted"], // 参加者
-              limit    = event["limit"];    // 定員
-          if ( typeof waiting !== "undefined" && typeof accepted !== "undefined" && typeof limit !== "undefined" ) {
-            $info_container.html(limit+"人 (現在"+accepted+"名参加, "+waiting+"名補欠)");
-          } else {
-            $info_container.html("(データ取得ができませんでした)");
-          }
-        }
-      });
+    $.each(keys(PerlEntrance.connpass_event_id), function(index, region) {
+        var $info_container = $("#" + region + "-capacity-information"),
+            get_url = endpoint_url + "?event_id=" + PerlEntrance.connpass_event_id[region] + "&format=json";
+        if (!$info_container[0]) return;
+        $.ajax({
+            url: get_url,
+            type: "GET",
+            dataType: "jsonp",
+            success: function(json) {
+                var event = json.events[0],
+                    waiting = event["waiting"], // 補欠者
+                    accepted = event["accepted"], // 参加者
+                    limit = event["limit"]; // 定員
+                if (typeof waiting !== "undefined" && typeof accepted !== "undefined" && typeof limit !== "undefined") {
+                    $info_container.html(limit + "人 (現在" + accepted + "名参加, " + waiting + "名補欠)");
+                } else {
+                    $info_container.html("(データ取得ができませんでした)");
+                }
+            }
+        });
     });
-  });
+});
 
-  // Doorkeeper
-  $(document).ready(function(){
+// Doorkeeper
+$(document).ready(function() {
     var endpoint_url = PerlEntrance.doorkeeper_api_endpoint_url;
-    $.each(keys(PerlEntrance.doorkeeper_event_id), function(index, region){
-      var $info_container = $("#"+region+"-capacity-information"),
-          get_url = endpoint_url+PerlEntrance.doorkeeper_event_id[region];
-      if ( !$info_container[0] ) return;
-      $.ajax({
-        url: get_url,
-        type: "GET",
-        dataType: "jsonp",
-        success: function(json) {
-          var event = json.event,
-              waiting  = event["waitlisted"],   // 補欠者
-              accepted = event["participants"], // 参加者
-              limit    = event["ticket_limit"]; // 定員
-          if ( typeof waiting !== "undefined" && typeof accepted !== "undefined" && typeof limit !== "undefined" ) {
-            $info_container.html(limit+"人 (現在"+accepted+"名参加, "+waiting+"名補欠)");
-          } else {
-            $info_container.html("(データ取得ができませんでした)");
-          }
-        }
-      });
+    $.each(keys(PerlEntrance.doorkeeper_event_id), function(index, region) {
+        var $info_container = $("#" + region + "-capacity-information"),
+            get_url = endpoint_url + PerlEntrance.doorkeeper_event_id[region];
+        if (!$info_container[0]) return;
+        $.ajax({
+            url: get_url,
+            type: "GET",
+            dataType: "jsonp",
+            success: function(json) {
+                var event = json.event,
+                    waiting = event["waitlisted"], // 補欠者
+                    accepted = event["participants"], // 参加者
+                    limit = event["ticket_limit"]; // 定員
+                if (typeof waiting !== "undefined" && typeof accepted !== "undefined" && typeof limit !== "undefined") {
+                    $info_container.html(limit + "人 (現在" + accepted + "名参加, " + waiting + "名補欠)");
+                } else {
+                    $info_container.html("(データ取得ができませんでした)");
+                }
+            }
+        });
     });
-  });
-
+});
 </script>
