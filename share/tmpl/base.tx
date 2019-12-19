@@ -21,6 +21,8 @@
     <meta name="copyright" content="(c) 2012-2018 Perl Entrance, Japan Perl Association" />
     <link type="text/css" rel="stylesheet" href="<: '/static/css/style.css' | uri_for :>" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="<: '/static/js/foundation.min.js' | uri_for :>"></script>
+    <script src="<: '/static/js/functions.js' | uri_for :>"></script>
 </head>
 <body>
 <a id="top"></a>
@@ -139,8 +141,6 @@
 </div><!--  / .off-canvas-wrap /  -->
 
 <!-- <script src="<: '/static/js/jquery.js' | uri_for :>"></script> -->
-<script src="<: '/static/js/foundation.min.js' | uri_for :>"></script>
-<script src="<: '/static/js/functions.js' | uri_for :>"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

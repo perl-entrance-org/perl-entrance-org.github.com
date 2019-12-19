@@ -1,6 +1,6 @@
-$(document).foundation();
-
 $(document).ready(function() {
+	// Load foundation
+	$(document).foundation();
 
 	// Smooth scroll
 	$('a[href^="#top"]').click(function() {
