@@ -264,7 +264,7 @@ template: index
     </div>
     <div class="row headspace-20"></div>
 </div>
-<script src="http://code.jquery.com/jquery.js"></script>
+<!-- <script src="http://code.jquery.com/jquery.js"></script> -->
 <script>
 var PerlEntrance = {
     "zusaar_event_id": {},

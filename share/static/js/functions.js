@@ -3,7 +3,7 @@ $(document).foundation();
 $(document).ready(function() {
 
 	// Smooth scroll
-	$('a[href^=#top]').click(function() {
+	$('a[href^="#top"]').click(function() {
 		var speed = 400;
 		var href= $(this).attr("href");
 		var target = $(href == "#top" || href == "" ? 'html' : href);
