@@ -267,12 +267,10 @@ template: index
 <!-- <script src="http://code.jquery.com/jquery.js"></script> -->
 <script>
 var PerlEntrance = {
-    "zusaar_event_id": {},
     "atndbeta_event_id": {},
     // 自動で生成されます！ line: 221
     "connpass_event_id": {},
     "doorkeeper_event_id": {},
-    "zusaar_api_endpoint_url": "http://www.zusaar.com/api/event/",
     "atndbeta_api_endpoint_url": "http://api.atnd.org/events/",
     "connpass_api_endpoint_url": "https://connpass.com/api/v1/event/",
     "doorkeeper_api_endpoint_url": "http://api.doorkeeper.jp/events/"
@@ -283,32 +281,6 @@ function keys(hash) {
     for (var key in hash) keys.push(key);
     return keys;
 }
-
-// Zusaar
-$(document).ready(function() {
-    var endpoint_url = PerlEntrance.zusaar_api_endpoint_url;
-    $.each(keys(PerlEntrance.zusaar_event_id), function(index, region) {
-        var $info_container = $("#" + region + "-capacity-information"),
-            get_url = endpoint_url + "?event_id=" + PerlEntrance.zusaar_event_id[region] + "&format=jsonp";
-        if (!$info_container[0]) return;
-        $.ajax({
-            url: get_url,
-            type: "GET",
-            dataType: "jsonp",
-            success: function(json) {
-                var event = json.event[0],
-                    waiting = event["waiting"], // 補欠者
-                    accepted = event["accepted"], // 参加者
-                    limit = event["limit"]; // 定員
-                if (typeof waiting !== "undefined" && typeof accepted !== "undefined" && typeof limit !== "undefined") {
-                    $info_container.html(limit + "人 (現在" + accepted + "名参加, " + waiting + "名補欠)");
-                } else {
-                    $info_container.html("(データ取得ができませんでした)");
-                }
-            }
-        });
-    });
-});
 
 // ATND beta
 $(document).ready(function() {
