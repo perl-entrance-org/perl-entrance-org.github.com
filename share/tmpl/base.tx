@@ -147,8 +147,16 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  // ローカルサーバの時は計測しない
-  if ( location.hostname !== 'localhost' ) {
+  function is_local() {
+    var h = location.hostname;
+    return(
+           h == 'localhost'
+        || h.match(/^127\.0\.0\./)
+        || h == '0.0.0.0'
+    );
+  }
+  // ローカルサーバではないときのみ計測する
+  if ( !is_local() ) {
     ga('create', 'UA-53612303-1', 'auto');
     ga('send', 'pageview');
   }
