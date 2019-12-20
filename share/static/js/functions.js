@@ -46,8 +46,8 @@ function keys(hash) {
 $(document).ready(function() {
 	"use strict";
 	var endpoint_url = PerlEntrance.connpass_api_endpoint_url;
-	$(".row .event-page a").each(function(i, v) {
-		var matches = $(v).attr("href").match(/perl-entrance-([a-z]+?)\.connpass\.com\/event\/([0-9]+)\/?$/);
+	$(".row .event-page a").each(function(i, a_element) {
+		var matches = $(a_element).attr("href").match(/perl-entrance-([a-z]+?)\.connpass\.com\/event\/([0-9]+)\/?$/);
 		if (matches) {
 			PerlEntrance["connpass_event_id"][matches[1]] = matches[2];
 		}
