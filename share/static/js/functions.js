@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	"use strict";
 	// Load foundation
 	$(document).foundation();
 
@@ -35,6 +36,7 @@ var PerlEntrance = {
 };
 
 function keys(hash) {
+	"use strict";
 	var keys = [];
 	for (var key in hash) keys.push(key);
 	return keys;
@@ -42,6 +44,7 @@ function keys(hash) {
 
 // Connpass
 $(document).ready(function() {
+	"use strict";
 	var endpoint_url = PerlEntrance.connpass_api_endpoint_url;
 	$(".row .event-page a").each(function(i, v) {
 		var matches = $(v).attr("href").match(/perl-entrance-([a-z]+?)\.connpass\.com\/event\/([0-9]+)\/?$/)
@@ -73,6 +76,7 @@ $(document).ready(function() {
 
 // ATND beta
 $(document).ready(function() {
+	"use strict";
 	var endpoint_url = PerlEntrance.atndbeta_api_endpoint_url;
 	$.each(keys(PerlEntrance.atndbeta_event_id), function(index, region) {
 		var $info_container = $("#" + region + "-capacity-information"),
@@ -99,6 +103,7 @@ $(document).ready(function() {
 
 // Doorkeeper
 $(document).ready(function() {
+	"use strict";
 	var endpoint_url = PerlEntrance.doorkeeper_api_endpoint_url;
 	$.each(keys(PerlEntrance.doorkeeper_event_id), function(index, region) {
 		var $info_container = $("#" + region + "-capacity-information"),
