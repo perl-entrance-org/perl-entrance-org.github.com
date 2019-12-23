@@ -28,7 +28,7 @@ $(document).ready(function() {
 // Event information
 var PerlEntrance = {
 	"atndbeta_event_id": {},
-	"connpass_event_id": {},
+	//"connpass_event_id": {}, // ページから自動生成されるので不要
 	"doorkeeper_event_id": {},
 	"atndbeta_api_endpoint_url": "http://api.atnd.org/events/",
 	"connpass_api_endpoint_url": "https://connpass.com/api/v1/event/",
@@ -46,10 +46,11 @@ function keys(hash) {
 $(document).ready(function() {
 	"use strict";
 	var endpoint_url = PerlEntrance.connpass_api_endpoint_url;
+	var event_id_of = {}; // { region1: id1, region2: id2, ... }
 	$(".row .event-page a").each(function(i, a_element) {
 		var matches = $(a_element).attr("href").match(/perl-entrance-([a-z]+?)\.connpass\.com\/event\/([0-9]+)\/?$/);
 		if (matches) {
-			PerlEntrance["connpass_event_id"][matches[1]] = matches[2];
+			event_id_of[matches[1]] = matches[2];
 		}
 	});
 
@@ -59,8 +60,8 @@ $(document).ready(function() {
 	};
 
 	// いったんイベント特定に必要な最小限の情報を持ったイベントオブジェクトをイベント分作成する
-	var events = $.map(keys(PerlEntrance.connpass_event_id), function(region, index) {
-		var event_id = PerlEntrance.connpass_event_id[region];
+	var events = $.map(keys(event_id_of), function(region, index) {
+		var event_id = event_id_of[region];
 		var url = endpoint_url + "?event_id=" + event_id + "&format=json";
 		return {
 			region: region,
