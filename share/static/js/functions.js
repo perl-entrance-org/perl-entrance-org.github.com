@@ -52,25 +52,42 @@ $(document).ready(function() {
 			PerlEntrance["connpass_event_id"][matches[1]] = matches[2];
 		}
 	});
-	$.each(keys(PerlEntrance.connpass_event_id), function(index, region) {
-		var $info_container = $("#" + region + "-capacity-information"),
-			get_url = endpoint_url + "?event_id=" + PerlEntrance.connpass_event_id[region] + "&format=json";
-		if (!$info_container[0]) return;
+
+	// 下記イベントオブジェクト用のメソッド
+	var get_info_container = function() {
+		return $("#" + this.region + "-capacity-information");
+	};
+
+	// いったんイベント特定に必要な最小限の情報を持ったイベントオブジェクトをイベント分作成する
+	var events = $.map(keys(PerlEntrance.connpass_event_id), function(region, index) {
+		var event_id = PerlEntrance.connpass_event_id[region];
+		var url = endpoint_url + "?event_id=" + event_id + "&format=json";
+		return {
+			region: region,
+			event_id: event_id,
+			url: url,
+			get_info_container: get_info_container
+		};
+	});
+
+	// イベントごとにイベントオブジェクトを Ajax 処理する
+	$.each(events, function(index, event) {
 		$.ajax({
-			url: get_url,
+			url: event.url,
 			type: "GET",
-			dataType: "jsonp",
-			success: function(json) {
-				var event = json.events[0],
-					waiting = event["waiting"], // 補欠者
-					accepted = event["accepted"], // 参加者
-					limit = event["limit"]; // 定員
-				if (typeof waiting !== "undefined" && typeof accepted !== "undefined" && typeof limit !== "undefined") {
-					$info_container.html(limit + "人 (現在" + accepted + "名参加, " + waiting + "名補欠)");
-				} else {
-					$info_container.html("(データ取得ができませんでした)");
-				}
+			dataType: "jsonp"
+		}).then(function(json) {
+			var api_res  = json.events[0];
+			var waiting  = api_res["waiting"]; // 補欠者
+			var accepted = api_res["accepted"]; // 参加者
+			var limit    = api_res["limit"]; // 定員
+			var message;
+			if ( [waiting, accepted, limit].every(function(x){return typeof x !== "undefined"}) ) {
+				message = limit + "人 (現在" + accepted + "名参加, " + waiting + "名補欠)";
+			} else {
+				message = "(データ取得ができませんでした)";
 			}
+			event.get_info_container().html(message);
 		});
 	});
 });
