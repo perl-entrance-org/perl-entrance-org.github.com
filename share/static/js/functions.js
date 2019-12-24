@@ -42,6 +42,16 @@ function keys(hash) {
 	return keys;
 }
 
+// Promise の then 用、次までに ms ミリ秒の待ちを入れる
+function wait(ms) {
+	"use strict";
+	return function() {
+		var d = $.Deferred();
+		setTimeout(function() { d.resolve() }, ms);
+		return d.promise();
+	};
+}
+
 // Connpass
 $(document).ready(function() {
 	"use strict";
@@ -58,39 +68,48 @@ $(document).ready(function() {
 	var get_info_container = function() {
 		return $("#" + this.region + "-capacity-information");
 	};
+	var ajax = function() {
+		return $.ajax(this.url, {dataType: "jsonp"});
+	};
+	var render = function(json) {
+		var r = json.events[0];
+		var message;
+		// waiting: 補欠者, accepted: 参加者, limit: 定員
+		if ( [r.waiting, r.accepted, r.limit].every(function(x){return typeof x !== "undefined"}) ) {
+			message = r.limit + "人 (現在" + r.accepted + "名参加, " + r.waiting + "名補欠)";
+		} else {
+			message = "(データ取得ができませんでした)";
+		}
+		this.get_info_container().html(message);
+	};
 
 	// いったんイベント特定に必要な最小限の情報を持ったイベントオブジェクトをイベント分作成する
 	var events = $.map(keys(event_id_of), function(region, index) {
 		var event_id = event_id_of[region];
 		var url = endpoint_url + "?event_id=" + event_id + "&format=json";
 		return {
+			// properties
 			region: region,
 			event_id: event_id,
 			url: url,
-			get_info_container: get_info_container
+			// methods
+			get_info_container: get_info_container,
+			ajax: ajax,
+			render: render
 		};
 	});
 
 	// イベントごとにイベントオブジェクトを Ajax 処理する
-	$.each(events, function(index, event) {
-		$.ajax({
-			url: event.url,
-			type: "GET",
-			dataType: "jsonp"
-		}).then(function(json) {
-			var api_res  = json.events[0];
-			var waiting  = api_res["waiting"]; // 補欠者
-			var accepted = api_res["accepted"]; // 参加者
-			var limit    = api_res["limit"]; // 定員
-			var message;
-			if ( [waiting, accepted, limit].every(function(x){return typeof x !== "undefined"}) ) {
-				message = limit + "人 (現在" + accepted + "名参加, " + waiting + "名補欠)";
-			} else {
-				message = "(データ取得ができませんでした)";
-			}
-			event.get_info_container().html(message);
-		});
-	});
+	// connpass 側の負荷を考慮して同時にリクエストせず、
+	// 1つのリクエストが終わった段階で次のリクエストを行う
+	// this の参照が異なるため、.then の引数に event.ajax などと書くことはできず、無名関数で囲う必要がある
+	events.reduce(function(promise, event) {
+		return(promise
+			.then(function(){return event.ajax()})
+			.then(function(json){return event.render(json)})
+			.then(wait(200)) // リクエストごとの待ち時間のミリ秒
+		);
+	}, $.Deferred().resolve().promise());
 });
 
 // ATND beta
