@@ -84,7 +84,7 @@ $(document).ready(function() {
 	};
 
 	// いったんイベント特定に必要な最小限の情報を持ったイベントオブジェクトをイベント分作成する
-	var events = $.map(keys(event_id_of), function(region, index) {
+	var events = keys(event_id_of).map(function(region, index) {
 		var event_id = event_id_of[region];
 		var url = endpoint_url + "?event_id=" + event_id + "&format=json";
 		return {
