@@ -73,14 +73,13 @@ $(document).ready(function() {
 	};
 	var render = function(json) {
 		var r = json.events[0];
-		var message;
+		var $container = this.get_info_container();
 		// waiting: 補欠者, accepted: 参加者, limit: 定員
 		if ( [r.waiting, r.accepted, r.limit].every(function(x){return typeof x !== "undefined"}) ) {
-			message = r.limit + "人 (現在" + r.accepted + "名参加, " + r.waiting + "名補欠)";
+			$container.html(r.limit + "人 (現在" + r.accepted + "名参加, " + r.waiting + "名補欠)");
 		} else {
-			message = "(データ取得ができませんでした)";
+			$container.html("(データ取得ができませんでした)");
 		}
-		this.get_info_container().html(message);
 	};
 
 	// いったんイベント特定に必要な最小限の情報を持ったイベントオブジェクトをイベント分作成する
