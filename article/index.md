@@ -51,11 +51,10 @@ template: index
             <p class="date">
                 延期<s>2020年03月07日（土）</s>
             </p>
-            <!--
             <div class="notice">
                 次回の告知をお待ちください.
             </div>
- -->
+            <!--
             <table class="detail">
                 <tr>
                     <th>時間</th>
@@ -79,6 +78,7 @@ template: index
                     <a href="https://perl-entrance-tokyo.connpass.com/event/164996/" class="button radius expand" target="_blank">第5回は延期となりました</a>
                 </p>
             </div>
+ -->
         </div>
         <!-- 大阪 -->
         <div class="medium-6 large-6 columns next-event">
@@ -86,11 +86,10 @@ template: index
             <p class="date">
                 2019年11月30日（土）
             </p>
-            <!--
             <div class="notice">
                 次回の告知をお待ちください.
             </div>
- -->
+            <!--
             <table class="detail">
                 <tr>
                     <th>時間</th>
@@ -115,6 +114,7 @@ template: index
                 </p>
             </div>
         </div>
+ -->
     </div>
     <div class="row">
         <!-- 千歳 -->
@@ -123,11 +123,10 @@ template: index
             <p class="date">
                 2019年8月31日（土）
             </p>
-            <!--
             <div class="notice">
                 次回の告知をお待ちください.
             </div>
- -->
+            <!--
             <table class="detail">
                 <tr>
                     <th>時間</th>
@@ -151,6 +150,7 @@ template: index
                     <a href="https://perl-entrance-chitose.connpass.com/event/138042/" class="button radius expand" target="_blank">詳細はこちら!</a>
                 </p>
             </div>
+ -->
         </div>
         <!-- 沖縄 -->
         <div class="medium-6 large-6 columns next-event">
@@ -158,11 +158,10 @@ template: index
             <p class="date">
                 2019年06月16日（日）
             </p>
-            <!--
             <div class="notice">
                 次回の告知をお待ちください.
             </div>
- -->
+            <!--
             <table class="detail">
                 <tr>
                     <th>時間</th>
@@ -187,6 +186,7 @@ template: index
                 </p>
             </div>
         </div>
+ -->
     </div>
     <div class="row">
         <!-- 博多 -->
@@ -195,6 +195,7 @@ template: index
             <div class="notice">
                 次回の告知をお待ちください.
             </div>
+            <!--
             <p class="date">
                 2019年3月2日（土）
             </p>
@@ -223,6 +224,7 @@ template: index
                     <a href="https://perl-entrance-fukuoka.connpass.com/event/118393/" class="button radius expand" target="_blank">詳細はこちら!</a>
                 </p>
             </div>
+ -->
         </div>
         <!-- 札幌 -->
         <div class="medium-6 large-6 columns next-event">
@@ -230,6 +232,7 @@ template: index
             <div class="notice">
                 次回の告知をお待ちください.
             </div>
+            <!--
             <p class="date">
                 2019年2月23日（土）
             </p>
@@ -257,6 +260,7 @@ template: index
                 </p>
             </div>
         </div>
+ -->
     </div>
     <div class="row headspace-20"></div>
 </div>
