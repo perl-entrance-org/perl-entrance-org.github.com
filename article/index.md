@@ -45,6 +45,37 @@ template: index
         </div>
     </div>
     <div class="row">
+        <!-- オンライン -->
+        <div class="medium-6 large-6 columns next-event">
+            <h4><i class="icon-leaf"></i> <a href="http://perl-entrance.connpass.com/">Perl入学式 オンライン</a> 第1回</h4>
+            <p class="date">
+                <s>2020年10月17日（土）</s>
+            </p>
+            <!--
+            <div class="notice">
+                次回の告知をお待ちください.
+            </div>
+ -->
+            <table class="detail">
+                <tr>
+                    <th>時間</th>
+                    <td><s>14:00 - 17:00</s></td>
+                </tr>
+                <tr>
+                    <th>定員</th>
+                    <td><span id="tokyo-capacity-information"></span></td>
+                </tr>
+                <tr>
+                    <th>会場</th>
+                    <td><a href="https://discord.com/" target="_blank">Discord というコミュニケーションツールを利用してオンラインで開催します</a></td>
+                </tr>
+            </table>
+            <div class="read-more">
+                <p class="event-page">
+                    <a href="https://perl-entrance.connpass.com/event/189331/" class="button radius expand" target="_blank">詳細はこちら!</a>
+                </p>
+            </div>
+        </div>
         <!-- 東京 -->
         <div class="medium-6 large-6 columns next-event">
             <h4><i class="icon-leaf"></i> <a href="http://perl-entrance-tokyo.connpass.com/">Perl入学式 in東京</a> 秋開講 第5回</h4>
