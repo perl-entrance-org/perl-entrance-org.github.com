@@ -63,7 +63,7 @@ template: index
                 </tr>
                 <tr>
                     <th>定員</th>
-                    <td><span id="tokyo-capacity-information"></span></td>
+                    <td><span id="online-capacity-information"></span></td>
                 </tr>
                 <tr>
                     <th>会場</th>
@@ -72,7 +72,7 @@ template: index
             </table>
             <div class="read-more">
                 <p class="event-page">
-                    <a href="https://perl-entrance.connpass.com/event/189331/" class="button radius expand" target="_blank">詳細はこちら!</a>
+                    <a href="https://perl-entrance.connpass.com/event/189331/" class="button radius expand" target="_blank" data-region="online">詳細はこちら!</a>
                 </p>
             </div>
         </div>
