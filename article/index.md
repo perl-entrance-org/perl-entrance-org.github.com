@@ -10,10 +10,8 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
-                <dt>2020.02.18</dt>
-                <dd>2020年03月 Perl入学式 秋開講 第5回が延期となりました(東京)</dd>
-                <dt>2020.02.16</dt>
-                <dd>2020年03月 Perl入学式 秋開講 第5回の開講情報を追加しました (東京)</dd>
+                <dt>2020.9.17</dt>
+                <dd>2020年度10月 Perl入学式オンライン 第1回の開講情報を追加しました</dd>
             </dl>
         </div>
     </div>
@@ -42,7 +40,7 @@ template: index
     <div class="row headspace-20">
     </div>
     <div class="row">
-        <h2>2019年度のPerl入学式始動! </h2>
+        <h2>2020年度のPerl入学式、オンラインで始動! </h2>
         <div class="large-12 columns">
         </div>
     </div>
