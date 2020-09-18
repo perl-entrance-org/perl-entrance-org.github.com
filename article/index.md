@@ -10,10 +10,8 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
-                <dt>2019.10.29</dt>
-                <dd>2019年度11月 Perl入学式 秋開講 第1回の開講情報を追加しました (東京)</dd>
-                <dt>2019.9.24</dt>
-                <dd>2019年度11月 Perl入学式第5回の開講情報を追加しました (大阪)</dd>
+                <dt>2020.9.17</dt>
+                <dd>2020年度10月 Perl入学式オンライン 第1回の開講情報を追加しました</dd>
             </dl>
         </div>
     </div>
@@ -48,10 +46,42 @@ template: index
 
 <section id="homepage-event">
     <div class="row">
-        <h2>2019年度のPerl入学式始動! </h2>
+        <h2>2020年度のPerl入学式、オンラインで始動! </h2>
         <div class="large-12 columns">
         </div>
     </div>
+    <!-- オンライン -->
+    <div class="row">
+        <div class="medium-6 large-6 columns next-event">
+            <h4><i class="icon-leaf"></i> <a href="http://perl-entrance.connpass.com/">Perl入学式オンライン</a> 第1回</h4>
+            <p class="date">
+                2020年10月17日（土）
+            </p>
+<!--
+            <div class="notice">
+                次回の告知をお待ちください.
+            </div>
+ -->
+                <table class="detail">
+                <tr>
+                    <th>時間</th>
+                    <td>14:00 - 17:00</td>
+                </tr>
+                <tr>
+                    <th>定員</th>
+                    <td><span id="capacity-information"></span></td>
+                </tr>
+                <tr>
+                    <th>会場</th>
+                    <td><a href="https://discord.com/" target="_blank">Discord というコミュニケーションツールを利用してオンラインで開催します</a></td>
+                </tr>
+            </table>
+            <div class="read-more">
+                <p class="event-page">
+                    <a href="https://perl-entrance.connpass.com/event/189331/" class="button radius expand" target="_blank">詳細はこちら!</a>
+                </p>
+            </div>
+        </div>
     <!-- 東京 -->
     <div class="row">
         <div class="medium-6 large-6 columns next-event">
@@ -59,11 +89,10 @@ template: index
             <p class="date">
                 2019年11月30日（土）
             </p>
-<!--
             <div class="notice">
                 次回の告知をお待ちください.
             </div>
- -->
+<!--
                 <table class="detail">
                 <tr>
                     <th>時間</th>
@@ -87,6 +116,7 @@ template: index
                     <a href="https://perl-entrance-tokyo.connpass.com/event/151697/" class="button radius expand" target="_blank">詳細はこちら!</a>
                 </p>
             </div>
+ -->
         </div>
         <!-- 大阪 -->
         <div class="medium-6 large-6 columns next-event">
@@ -94,11 +124,10 @@ template: index
             <p class="date">
                 2019年11月30日（土）
             </p>
-<!--
             <div class="notice">
                 次回の告知をお待ちください.
             </div>
- -->
+<!--
             <table class="detail">
                 <tr>
                     <th>時間</th>
@@ -123,6 +152,7 @@ template: index
                 </p>
             </div>
         </div>
+ -->
     </div>
     <div class="row">
         <!-- 千歳 -->
@@ -131,11 +161,10 @@ template: index
             <p class="date">
                 2019年8月31日（土）
             </p>
-<!--
             <div class="notice">
                 次回の告知をお待ちください.
             </div>
- -->
+<!--
             <table class="detail">
                 <tr>
                     <th>時間</th>
@@ -159,6 +188,7 @@ template: index
                     <a href="https://perl-entrance-chitose.connpass.com/event/138042/" class="button radius expand" target="_blank">詳細はこちら!</a>
                 </p>
             </div>
+ -->
         </div>
         <!-- 沖縄 -->
         <div class="medium-6 large-6 columns next-event">
@@ -166,11 +196,10 @@ template: index
             <p class="date">
                 2019年06月16日（日）
             </p>
-<!--
             <div class="notice">
                 次回の告知をお待ちください.
             </div>
- -->
+<!--
             <table class="detail">
                 <tr>
                     <th>時間</th>
@@ -195,6 +224,7 @@ template: index
                 </p>
             </div>
         </div>
+ -->
     </div>
     <div class="row" style="height: 100px;">
         <!-- 博多 -->
