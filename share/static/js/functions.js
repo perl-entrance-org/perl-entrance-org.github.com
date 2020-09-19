@@ -57,11 +57,25 @@ $(document).ready(function() {
 	"use strict";
 	var endpoint_url = PerlEntrance.connpass_api_endpoint_url;
 	var event_id_of = {}; // { region1: id1, region2: id2, ... }
-	$(".row .event-page a").each(function(i, a_element) {
+	var $event_a_elements = $(".row .event-page a");
+
+	// 古い perl-entrance-REGION グループの URL 処理
+	$event_a_elements.each(function(i, a_element) {
 		var matches = $(a_element).attr("href").match(/perl-entrance-([a-z]+?)\.connpass\.com\/event\/([0-9]+)\/?$/);
 		if (matches) {
 			event_id_of[matches[1]] = matches[2];
 		}
+	});
+
+	// 新しい perl-entrance グループの URL 処理
+	$event_a_elements.filter(
+		"a[href^='https://perl-entrance.connpass.com/event/']"
+	).each(function(){
+		var $this = $(this);
+		var region = $this.data("region");
+		var matches = $this.attr("href").match(/https:\/\/perl-entrance\.connpass\.com\/event\/(\d+)/);
+		var event_id = matches ? matches[1] : null;
+		if ( event_id ) event_id_of[region] = event_id;
 	});
 
 	// 下記イベントオブジェクト用のメソッド

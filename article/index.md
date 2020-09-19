@@ -68,7 +68,7 @@ template: index
             </table>
             <div class="read-more">
                 <p class="event-page">
-                    <a href="https://perl-entrance.connpass.com/event/189331/" class="button radius expand" target="_blank">詳細はこちら!</a>
+                    <a href="https://perl-entrance.connpass.com/event/189331/" class="button radius expand" target="_blank" data-region="online">詳細はこちら!</a>
                 </p>
             </div>
         </div>
