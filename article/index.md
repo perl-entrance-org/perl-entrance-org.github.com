@@ -65,6 +65,10 @@ template: index
                     <th>定員</th>
                     <td><span id="online-capacity-information"></span></td>
                 </tr>
+                <tr>
+                    <th>会場</th>
+                    <td>オンライン</td>
+                </tr>
             </table>
             <div class="read-more">
                 <p class="event-page">
