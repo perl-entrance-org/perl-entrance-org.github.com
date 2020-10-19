@@ -23,6 +23,7 @@ title: 講義資料
                     <h4 class="subheader">#1</h4>
                     <p>
 <a href="https://github.com/perl-entrance-org/workshop-basic-online/blob/master/1st/slide.md">資料</a>
+/ <a href="https://github.com/perl-entrance-org/workshop-basic-online/tree/master/1st/answer">練習問題の解答例</a>
                     </p>
                     <h2 id="handout-2019">2019年度 <small>Perl Entrance 2019</small></h2>
                     <h4 class="subheader">#5</h4>
