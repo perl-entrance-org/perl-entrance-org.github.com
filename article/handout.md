@@ -20,6 +20,13 @@ title: 講義資料
                         Perl入学式が提供する全ての資料のライセンスについては, <a href="<: '/license.html' | uri_for :>">ライセンス</a>のページからご確認下さい.
                     </p>
                     <h2 id="handout-2020">2020年度 <small>Perl Entrance 2020</small></h2>
+                    <h4 class="subheader"><a href="https://perl-entrance.connpass.com/event/196948/">#3</a></h4>
+                    <p>
+<a href="https://github.com/perl-entrance-org/workshop-basic-online/blob/master/3rd/slide.md">資料</a>
+（<a href="https://appslideshare.tugougaii.site/slide/Online2020?p=3&c=pre-left&cf=1">スライド</a>）
+/ <a href="https://www.youtube.com/watch?reload=9&v=kik-P5RN-Ts">講義動画</a>
+/ <a href="https://github.com/perl-entrance-org/workshop-basic-online/tree/master/3rd/answer">練習問題の解答例</a>
+                    </p>
                     <h4 class="subheader"><a href="https://perl-entrance.connpass.com/event/193430/">#2</a></h4>
                     <p>
 <a href="https://github.com/perl-entrance-org/workshop-basic-online/blob/master/2nd/slide.md">資料</a>
