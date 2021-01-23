@@ -83,4 +83,3 @@ template: index
     </div>
 </div>
 <div class="row headspace-20"></div>
-</div>
