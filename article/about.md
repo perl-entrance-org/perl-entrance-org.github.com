@@ -83,7 +83,7 @@ Perl入学式のサポーター陣は、スタートアップメンバーだけ�
 <p>
 その他、わからないことなどあればいつでもサポーターに質問してください。<br>
 Twitter : <a href="https://twitter.com/Perl_Entrance">公式アカウント</a> / <a href="http://bit.ly/perlentrance-twitter-hashtag">ハッシュタグ</a><br>
-Slack チャット : <a href="https://docs.google.com/forms/d/e/1FAIpQLScbWyg-cgcqilW7-BpKagRm2ldBhvwRBNr2N5eg3LHOK13FGw/viewform">招待フォーム</a><br>
+Discord : <a href="https://discord.gg/2QNqVyk">チャット招待</a><br>
 </p>
 
 <p>
