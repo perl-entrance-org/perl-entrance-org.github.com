@@ -90,7 +90,8 @@ $(document).ready(function() {
 		var $container = this.get_info_container();
 		// waiting: 補欠者, accepted: 参加者, limit: 定員
 		if ( [r.waiting, r.accepted, r.limit].every(function(x){return typeof x !== "undefined"}) ) {
-			$container.html(r.limit + "人 (現在" + r.accepted + "名参加, " + r.waiting + "名補欠)");
+			var description = (r.limit ? r.limit + "人" : "定員無し") + " (現在" + r.accepted + "名参加, " + r.waiting + "名補欠)";
+			$container.html(description);
 		} else {
 			$container.html("(データ取得ができませんでした)");
 		}
