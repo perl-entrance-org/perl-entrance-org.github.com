@@ -11,9 +11,9 @@ template: index
         <div class="listed column">
             <dl class="article">
                 <dt>2021.10.18</dt>
-                <dd>2020年度11月 Perl入学式オンライン 第4回の日程を追加しました</dd>
-                <dt>2021.8.10</dt>
-                <dd>2020年度9月 Perl入学式オンライン 第3回の日程を追加しました</dd>
+                <dd>2021年度11月 Perl入学式 in 東京 第1回の日程を追加しました</dd>
+                <dt>2021.10.18</dt>
+                <dd>2021年度11月 Perl入学式オンライン 第4回の日程を追加しました</dd>
             </dl>
         </div>
     </div>
