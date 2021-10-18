@@ -42,7 +42,7 @@ template: index
     <div class="row headspace-20">
     </div>
     <div class="row">
-        <h2>2021年度も引き続きオンライン開催します！</h2>
+        <h2>2021年度、オンラインと並行して秋から東京開催もスタート！</h2>
         <div class="large-12 columns">
         </div>
     </div>
