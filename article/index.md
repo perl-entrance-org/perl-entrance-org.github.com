@@ -96,7 +96,7 @@ template: index
             <table class="detail">
                 <tr>
                     <th>時間</th>
-                    <td>14:00 - 17:00</td>
+                    <td>13:00 - 17:00</td>
                 </tr>
                 <tr>
                     <th>定員</th>
