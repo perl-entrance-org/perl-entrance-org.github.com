@@ -53,9 +53,11 @@ template: index
             <p class="date">
                 2021年11月6日（土）
             </p>
+            <!--
             <div class="notice">
-                <!--次回の告知をお待ちください.-->
+                次回の告知をお待ちください
             </div>
+            -->
             <table class="detail">
                 <tr>
                     <th>時間</th>
@@ -68,6 +70,10 @@ template: index
                 <tr>
                     <th>会場</th>
                     <td>オンライン</td>
+                </tr>
+                <tr>
+                    <th>住所</th>
+                    <td>-</td>
                 </tr>
             </table>
             <div class="read-more">
@@ -84,7 +90,7 @@ template: index
             </p>
             <!--
             <div class="notice">
-                次回の告知をお待ちください.
+                次回の告知をお待ちください
             </div>
             -->
             <table class="detail">
