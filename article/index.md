@@ -10,10 +10,10 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
+                <dt>2021.11.26</dt>
+                <dd>2021年度12月 Perl入学式オンライン 第5回の日程を追加しました</dd>
                 <dt>2021.10.18</dt>
                 <dd>2021年度11月 Perl入学式 in 東京 第1回の日程を追加しました</dd>
-                <dt>2021.10.18</dt>
-                <dd>2021年度11月 Perl入学式オンライン 第4回の日程を追加しました</dd>
             </dl>
         </div>
     </div>
@@ -49,9 +49,9 @@ template: index
     <div class="row">
         <!-- オンライン -->
         <div class="medium-6 large-6 columns next-event">
-            <h4><i class="icon-leaf"></i> Perl入学式 オンライン 第4回</h4>
+            <h4><i class="icon-leaf"></i> Perl入学式 オンライン 第5回</h4>
             <p class="date">
-                2021年11月6日（土）
+                2021年12月4日（土）
             </p>
             <!--
             <div class="notice">
@@ -78,7 +78,7 @@ template: index
             </table>
             <div class="read-more">
                 <p class="event-page">
-                    <a href="https://perl-entrance.connpass.com/event/228071/" class="button radius expand" target="_blank" data-region="online">詳細はこちら!</a>
+                    <a href="https://perl-entrance.connpass.com/event/232086/" class="button radius expand" target="_blank" data-region="online">詳細はこちら!</a>
                 </p>
             </div>
         </div>
