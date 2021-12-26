@@ -3,6 +3,7 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8" />
+    <meta name="theme-color" content="#3B6C4A" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><: block title -> { :><: $blog.title :><: } -:></title>
     <link rel="icon" href="<: '/static/images/icons/favicon.ico' | uri_for :>" type="image/x-icon" />
