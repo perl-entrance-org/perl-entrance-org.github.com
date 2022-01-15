@@ -3,6 +3,7 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8" />
+    <meta name="theme-color" content="#3B6C4A" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><: block title -> { :><: $blog.title :><: } -:></title>
     <link rel="icon" href="<: '/static/images/icons/favicon.ico' | uri_for :>" type="image/x-icon" />
@@ -16,7 +17,7 @@
     <meta property="og:url" content="<: '' | uri_for :>" />
     <meta property="og:image" content="<: '/static/images/logo.png' | uri_for :>" />
     <meta property="og:site_name" content="<: $blog.title :>" />
-    <meta property="og:email" content="webmaster@perl-entrance.org" />
+    <meta property="og:email" content="perl-entrance@googlegroups.com" />
     <meta name="author" content="<: $blog.author :>" />
     <meta name="copyright" content="(c) 2012 Perl Entrance, Japan Perl Association" />
     <link type="text/css" rel="stylesheet" href="<: '/static/css/style.css' | uri_for :>" />
