@@ -39,6 +39,7 @@
     <ul class="off-canvas-list">
         <li><a href="<: '/about.html' | uri_for :>"><i class="icon-world"></i> Perl入学式とは</a></li>
         <li><a href="http://blog.perl-entrance.org/" target="_blank"><i class="icon-news"></i> 公式ブログ</a></li>
+        <li><a href="https://www.youtube.com/channel/UCD-vSGHhhcHMgjMJEoAX99Q/" target="_blank"><i class="icon-news"></i> YouTubeチャンネル</a></li>
     </ul>
     <ul class="off-canvas-list">
         <li><label> 講義資料</label></li>
@@ -82,6 +83,8 @@
             </li>
             <li class="divider"></li>
             <li><a href="http://blog.perl-entrance.org/" target="_blank"><i class="icon-news"></i> 公式ブログ</a></li>
+            <li class="divider"></li>
+            <li><a href="https://www.youtube.com/channel/UCD-vSGHhhcHMgjMJEoAX99Q/" target="_blank"><i class="icon-news"></i>YouTubeチャンネル</a></li>
             <li class="divider"></li>
             <li class="has-dropdown">
                 <a href="<: '/handout.html' | uri_for :>" class=""><i class="icon-document-text"></i> 講義資料</a>
