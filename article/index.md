@@ -10,6 +10,8 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
+                <dt>2022.1.16</dt>
+                <dd>公式YouTubeチャンネルのリンクを追加しました</dd>
                 <dt>2022.1.8</dt>
                 <dd>2021年度 2022年1月 perl入学式 in 東京 第3回の日程を追加しました</dd>
                 <dt>2021.11.26</dt>
