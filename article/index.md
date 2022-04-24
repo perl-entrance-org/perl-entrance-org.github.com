@@ -13,6 +13,8 @@ template: index
                 <dt>2022.4.22</dt>
                 <dd>2022年 5月 Perl入学式オンライン 第1回の日程を追加しました</dd>
                 <dd>2022年 5月 perl入学式 in 東京 第1回の日程を追加しました</dd>
+                <dt>2022.04.22</dt>
+                <dd>Perl入学式が雑誌 WEB+DB PRESS の連載『Perl Hackers Hub』に掲載されました（<a href="https://blog.perl-entrance.org/entry/2022/04/22/123000">紹介記事</a>）</dd>
                 <dt>2022.1.16</dt>
                 <dd>公式YouTubeチャンネルのリンクを追加しました</dd>
             </dl>
