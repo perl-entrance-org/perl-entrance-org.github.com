@@ -10,7 +10,7 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
-                <dt>2022.4.21</dt>
+                <dt>2022.4.22</dt>
                 <dd>2022年 5月 Perl入学式オンライン 第1回の日程を追加しました</dd>
                 <dd>2022年 5月 perl入学式 in 東京 第1回の日程を追加しました</dd>
                 <dt>2022.1.16</dt>
