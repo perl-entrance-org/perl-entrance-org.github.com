@@ -54,9 +54,11 @@ template: index
             <p class="date">
                 2022年5月21日（土）
             </p>
+            <!--
             <div class="notice">
                 次回の告知をお待ちください
             </div>
+            -->
             <table class="detail">
                 <tr>
                     <th>時間</th>
