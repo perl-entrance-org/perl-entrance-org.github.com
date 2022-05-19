@@ -10,6 +10,8 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
+                <dt>2022.5.20</dt>
+                <dd>2022年 5月 Perl入学式オンライン 第1回の延期情報を追加しました</dd>
                 <dt>2022.5.18</dt>
                 <dd>2022年 5月 Perl入学式 in 千歳 第1回の日程を追加しました</dd>
                 <dt>2022.4.22</dt>
@@ -54,13 +56,11 @@ template: index
         <div class="medium-6 large-6 columns next-event">
             <h4><i class="icon-leaf"></i> Perl入学式 オンライン 第1回</h4>
             <p class="date">
-                2022年5月21日（土）
+                <del style="color: lightgray; text-decoration:line-through;">2022年5月21日（土）</del> 延期となりました
             </p>
-            <!--
             <div class="notice">
                 次回の告知をお待ちください
             </div>
-            -->
             <table class="detail">
                 <tr>
                     <th>時間</th>
