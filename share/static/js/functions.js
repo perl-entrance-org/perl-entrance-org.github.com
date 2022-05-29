@@ -57,8 +57,7 @@ function wait(ms) {
 $(document).ready(function() {
 	"use strict";
 	const now = new Date().toLocaleString({ timeZone: 'Asia/Tokyo' });
-	$('.date').each((_, dateDom) => {
-		const $dateDom = $(dateDom);
+	$('.date').map((_,dataDom) => $(dataDom)).each((_, $dateDom) => {
 		const nextEventDate = $dateDom.data('date') !== undefined ? 
 			new Date($dateDom.data('date')).toLocaleDateString({ timeZone: 'Asia/Tokyo'})
 			: undefined;
