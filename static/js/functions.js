@@ -68,7 +68,7 @@ $(document).ready(function() {
 		}
 		// 次回開催日が今日よりも過去である場合は次回告知をしていないので、その旨を表示する
 		if (nextEventDate < now){
-			$dateDom.append('<div class="notice">次回の告知をお待ちください</div>');
+			$dateDom.after('<div class="notice">次回の告知をお待ちください</div>');
 		}
 	});
 })
