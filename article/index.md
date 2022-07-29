@@ -10,7 +10,7 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
-                <dt>2022.7.29</dt>
+                <dt>2022.8.1</dt>
                 <dd>2022年 9月 Perl入学式 in 大阪 第1回の日程を追加しました</dd>
                 <dt>2022.6.17</dt>
                 <dd>WEB+DB PRESS <a href="https://gihyo.jp/dev/serial/01/perl-hackers-hub/007201">『Perl Hackers Hub』WEB版記事</a>が掲載されました</dd>
@@ -156,7 +156,7 @@ template: index
         <!-- 大阪 -->
         <div class="medium-6 large-6 columns next-event">
             <h4><i class="icon-leaf"></i> Perl入学式 in大阪第1回</h4>
-            <p class="date" data-date="2022-09-3T00:00:00+09:00">
+            <p class="date" data-date="2022-09-03T00:00:00+09:00">
                 2022年9月3日（土）
             </p>
             <!--
