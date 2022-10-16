@@ -49,41 +49,6 @@ template: index
         </div>
     </div>
     <div class="row">
-        <!-- 千歳 -->
-        <div class="medium-6 large-6 columns next-event">
-            <h4><i class="icon-leaf"></i> Perl入学式 in千歳 （各回）</h4>
-            <p class="date">
-                <a href="https://perl-entrance-chitose.connpass.com/" style="text-decoration: underline;" target="_blank">詳細はconnpassグループでご確認下さい</a>
-            </p>
-            <!--
-            <div class="notice">
-                次回の告知をお待ちください
-            </div>
-            -->
-            <table class="detail">
-                <tr>
-                    <th>時間</th>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <th>定員</th>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <th>会場</th>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <th>住所</th>
-                    <td>-</td>
-                </tr>
-            </table>
-            <div class="read-more">
-                <p class="event-page">
-                    <a href="https://perl-entrance-chitose.connpass.com/" class="button radius expand" target="_blank" data-region="chitose">詳細はこちら!</a>
-                </p>
-            </div>
-        </div>
 
         <!-- 大阪 -->
         <div class="medium-6 large-6 columns next-event">
