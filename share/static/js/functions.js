@@ -109,7 +109,7 @@ $(document).ready(function() {
 		var r = json.events[0];
 		var $container = this.get_info_container();
 		// waiting: 補欠者, accepted: 参加者, limit: 定員
-		if ( [r.waiting, r.accepted, r.limit].every(function(x){return typeof x !== "undefined"}) ) {
+		if ( r && [r.waiting, r.accepted, r.limit].every(function(x){return typeof x !== "undefined"}) ) {
 			var description = (r.limit ? r.limit + "人" : "定員無し") + " (現在" + r.accepted + "名参加, " + r.waiting + "名補欠)";
 			$container.html(description);
 		} else {
