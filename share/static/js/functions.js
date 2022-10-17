@@ -113,7 +113,7 @@ $(document).ready(function() {
 			var description = (r.limit ? r.limit + "人" : "定員無し") + " (現在" + r.accepted + "名参加, " + r.waiting + "名補欠)";
 			$container.html(description);
 		} else {
-			$container.html("(データ取得ができませんでした)");
+			$container.html("<span style='color: lightgray'>(データ取得ができませんでした)</span>");
 		}
 	};
 
