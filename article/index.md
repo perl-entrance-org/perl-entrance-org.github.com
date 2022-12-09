@@ -54,7 +54,7 @@ template: index
 
         <!-- 大阪 -->
         <div class="medium-6 large-6 columns next-event">
-            <h4><i class="icon-leaf"></i> Perl入学式 in大阪第3回</h4>
+            <h4><i class="icon-leaf"></i> Perl入学式 in大阪第4回</h4>
             <p class="date" data-date="2022-12-03T00:00:00+09:00">
                 2023年1月14日（土）
             </p>
