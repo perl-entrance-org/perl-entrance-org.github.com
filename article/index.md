@@ -44,7 +44,7 @@ template: index
     <div class="row headspace-20">
     </div>
     <div class="row">
-        <h2>2022年度もオンラインと並行して春から東京開催スタート！</h2>
+        <h2>2023年度は春から東京・大阪でオフライン開催です！</h2>
         <div class="large-12 columns">
         </div>
     </div>
