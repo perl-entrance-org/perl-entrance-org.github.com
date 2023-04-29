@@ -10,6 +10,8 @@ template: index
         </div>
         <div class="listed column">
             <dl class="article">
+                <dt>2023.4.29</dt>
+                <dd>2023年 4月 Perl入学式 in 東京第1回の日程を追加しました</dd>
                 <dt>2023.4.3</dt>
                 <dd>2023年 4月 Perl入学式 in 大阪第6回の日程を追加しました</dd>
                 <dt>2022.6.17</dt>
@@ -44,7 +46,7 @@ template: index
     <div class="row headspace-20">
     </div>
     <div class="row">
-        <h2>2022年度もオンラインと並行して春から東京開催スタート！</h2>
+        <h2>プログラミングの第一歩、マンツーマンで学んでみませんか？</h2>
         <div class="large-12 columns">
         </div>
     </div>
@@ -88,9 +90,9 @@ template: index
 
         <!-- 東京 -->
         <div class="medium-6 large-6 columns next-event">
-            <h4><i class="icon-leaf"></i> Perl入学式 in東京 秋開講 第3回</h4>
-            <p class="date" data-date="2022-12-17T00:00:00+09:00">
-                2022年12月17日（土）
+            <h4><i class="icon-leaf"></i> Perl入学式 in東京 春開講 第1回</h4>
+            <p class="date" data-date="2023-05-13T00:00:00+09:00">
+                2023年5月13日（土）
             </p>
             <!--
             <div class="notice">
@@ -117,7 +119,7 @@ template: index
             </table>
             <div class="read-more">
                 <p class="event-page">
-                    <a href="https://perl-entrance.connpass.com/event/268713/" class="button radius expand" target="_blank" data-region="tokyo">詳細はこちら!</a>
+                    <a href="https://perl-entrance.connpass.com/event/281224/" class="button radius expand" target="_blank" data-region="tokyo">詳細はこちら!</a>
                 </p>
             </div>
         </div>
