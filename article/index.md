@@ -13,7 +13,7 @@ template: index
                 <dt>2023.5.20</dt>
                 <dd>2023年 6月 Perl入学式 in 東京第2回の日程を追加しました</dd>
                 <dt>2023.4.29</dt>
-                <dd>2023年 4月 Perl入学式 in 東京第1回の日程を追加しました</dd>
+                <dd>2023年 5月 Perl入学式 in 東京第1回の日程を追加しました</dd>
                 <dt>2022.6.17</dt>
                 <dd>WEB+DB PRESS <a href="https://gihyo.jp/dev/serial/01/perl-hackers-hub/007201">『Perl Hackers Hub』WEB版記事</a>が掲載されました</dd>
                 <dt>2022.04.22</dt>
