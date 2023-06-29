@@ -90,9 +90,9 @@ template: index
 
         <!-- 東京 -->
         <div class="medium-6 large-6 columns next-event">
-            <h4><i class="icon-leaf"></i> Perl入学式 in東京 春開講 第2回</h4>
-            <p class="date" data-date="2023-06-10T00:00:00+09:00">
-                2023年6月10日（土）
+            <h4><i class="icon-leaf"></i> Perl入学式 in東京 春開講 第2回（再）</h4>
+            <p class="date" data-date="2023-07-08T00:00:00+09:00">
+                2023年7月8日（土）
             </p>
             <!--
             <div class="notice">
