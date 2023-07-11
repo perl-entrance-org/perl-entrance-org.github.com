@@ -53,7 +53,7 @@ template: index
         <!-- 大阪 -->
         <div class="medium-6 large-6 columns next-event">
             <h4><i class="icon-leaf"></i> Perl入学式 in大阪第1回</h4>
-            <p class="date" data-date="2023-07-15T00:00:00+09:00">
+            <p class="date" data-date="2023-08-26T00:00:00+09:00">
                 2023年8月26日（土）
             </p>
             <!--
