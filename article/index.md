@@ -72,7 +72,7 @@ template: index
                 </tr>
                 <tr>
                     <th>会場</th>
-                    <td><a href="https://upnow.jp/kuraya59/Nishiumeda2" target="_blank">VILLENT西梅田ブルー</a></td>
+                    <td><a href="https://app.sugurun.jp/VILLENT/007" target="_blank">VILLENT西梅田ブルー</a></td>
                 </tr>
                 <tr>
                     <th>住所</th>
