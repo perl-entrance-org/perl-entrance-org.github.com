@@ -1,0 +1,15 @@
+{
+    "name": "Perl & Riji Project",
+    "build": {
+      "dockerfile": "Dockerfile",
+      "context": "."
+    },
+    "customizations": {
+        "settings": {
+            "terminal.integrated.shell.linux": "/bin/bash"
+          },
+          "extensions": []
+    },
+    "postCreateCommand": "cpanm Riji",
+    "remoteUser": "vscode"
+  }
