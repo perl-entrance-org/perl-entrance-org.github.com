@@ -1,14 +1,13 @@
 # 基本イメージとしてVS Codeの汎用開発コンテナベースイメージを使用
 FROM mcr.microsoft.com/vscode/devcontainers/base:ubuntu
 
-# Perl、cpanminus、および必要なビルドツールのインストール
+# Perl、および必要なビルドツールのインストール
 RUN sudo apt-get update \
-    && sudo apt-get install -y perl cpanminus build-essential \
+    && sudo apt-get install -y perl build-essential curl \
     && sudo rm -rf /var/lib/apt/lists/*
 
-# App::cpm のインストール
-# TODO: cpm 自体のインストール速度を上げたい
-RUN cpanm App::cpm
+# cpanminus, App::cpm のインストール
+RUN curl -fsSL https://raw.githubusercontent.com/skaji/cpm/main/cpm | perl - install -g App::cpm App::cpanminus
 
 # App::cpm を使用して Riji パッケージを並列でインストール
 # TODO: --no-test しないと Riji が必要とする Git::Repository などがエラーになる
