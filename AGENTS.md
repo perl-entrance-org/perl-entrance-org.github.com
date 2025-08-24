@@ -204,31 +204,6 @@ index という名前のテンプレート、すなわち `share/tmpl/index.tx` 
 
 現在の構成では1つのイベント（大阪）のみが表示されており、1列表示となっています。
 
-```html
-<div class="row">
-    <!-- 左列のイベント -->
-    <div class="medium-6 large-6 columns next-event">
-        <!-- イベント1の内容 -->
-    </div>
-
-    <!-- 右列のイベント -->
-    <div class="medium-6 large-6 columns next-event">
-        <!-- イベント2の内容 -->
-    </div>
-</div>
-
-<div class="row">
-    <!-- 3つ目以降のイベントがある場合は新しい行を作成 -->
-    <div class="medium-6 large-6 columns next-event">
-        <!-- イベント3の内容 -->
-    </div>
-
-    <div class="medium-6 large-6 columns next-event">
-        <!-- イベント4の内容 -->
-    </div>
-</div>
-```
-
 ### 1列表示の場合
 
 単一のイベントのみを表示する場合は、以下のような構成になります：
