@@ -98,6 +98,7 @@ riji publish
 3. `riji server` を実行すると確認用のローカルサーバが 3650 番ポートで起動するので、ブラウザで `http://localhost:3650` にアクセスして内容を確認する
 4. ファイルを add および commit する
 5. 上記の確認で問題がない場合は、  `riji publish` を実行して静的コンテンツとして書き出す
+   - **注意**: `riji publish` は通常 `main` ブランチでの実行を要求するが、開発作業中は `--force` オプションを付けて `riji publish --force` で実行することができる
 6. 書き出したファイルを add および commit する
 7. push して Pull-request を作成する
 8. レビュー等の対応が行われ、問題がなければ master にマージされることで本番サーバに反映される
@@ -149,4 +150,57 @@ index という名前のテンプレート、すなわち `share/tmpl/index.tx` 
 
 通常の更新においては、テンプレートを触ることは無いと思います。
 
+## イベント表示のレイアウトについて
+
+トップページ（`article/index.md`）のイベント表示は、CSS Foundationの1/2列グリッドシステムを使用しています。
+
+### 2列表示の場合
+
+複数のイベントを2列で表示する場合は、以下のような構成にします：
+
+```html
+<div class="row">
+    <!-- 左列のイベント -->
+    <div class="medium-6 large-6 columns next-event">
+        <!-- イベント1の内容 -->
+    </div>
+
+    <!-- 右列のイベント -->
+    <div class="medium-6 large-6 columns next-event">
+        <!-- イベント2の内容 -->
+    </div>
+</div>
+
+<div class="row">
+    <!-- 3つ目以降のイベントがある場合は新しい行を作成 -->
+    <div class="medium-6 large-6 columns next-event">
+        <!-- イベント3の内容 -->
+    </div>
+
+    <div class="medium-6 large-6 columns next-event">
+        <!-- イベント4の内容 -->
+    </div>
+</div>
+```
+
+### 1列表示の場合
+
+単一のイベントのみを表示する場合は、以下のような構成になります：
+
+```html
+<div class="row">
+    <div class="medium-6 large-6 columns next-event">
+        <!-- 単一イベントの内容 -->
+    </div>
+</div>
+```
+
+### 重要なポイント
+
+- `medium-6 large-6` クラスにより、中・大画面で50%幅（12列中6列）の2列表示になります
+- 小画面（スマートフォン等）では自動的に1列表示になります
+- 2つのイベントを横並びにしたい場合は、同じ `<div class="row">` 内に配置します
+- 3つ以上のイベントを表示する場合は、新しい `<div class="row">` を作成して次の行に配置します
+
+現在の構成では1つのイベント（大阪）のみが表示されており、1列表示となっています。
 
